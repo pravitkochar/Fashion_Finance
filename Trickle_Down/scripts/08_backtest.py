@@ -171,10 +171,28 @@ def main() -> int:
                     help="download/refresh Tier2/3 + bench prices first")
     ap.add_argument("--start", default=DEV_START)
     ap.add_argument("--end", default=DEV_END)
+    ap.add_argument("--window", choices=["dev", "test"], default="dev",
+                    help="test = sealed 2023-2025 window (needs frozen model)")
     ap.add_argument("--include-holdout", action="store_true")
     ap.add_argument("--cost-bps", type=float, default=20.0)
     ap.add_argument("--turnover-cap", type=float, default=0.5)
     args = ap.parse_args()
+
+    if args.window == "test":
+        # The seal (PLAN_V2/DECISIONS): the test window may only be touched
+        # once, with CV-frozen parameters on the record.
+        decisions = (lt.ROOT / "DECISIONS.md").read_text(encoding="utf-8") \
+            if (lt.ROOT / "DECISIONS.md").exists() else ""
+        frozen_cfg = lt.CONFIG / "model_v2.json"
+        if "MODEL V2 FROZEN" not in decisions or not frozen_cfg.exists():
+            log.error("TEST WINDOW SEALED: requires config/model_v2.json AND "
+                      "a 'MODEL V2 FROZEN' entry in DECISIONS.md (run "
+                      "14_tune_signals.py --freeze, log the entry, retry).")
+            return 2
+        args.start, args.end = "2023-01-01", "2025-12-31"
+        log.warning("SEALED TEST WINDOW UNLOCKED (%s..%s) — one evaluation, "
+                    "reported as-is per the objectivity charter.",
+                    args.start, args.end)
 
     lt.ensure_dirs()
     uni = universe_pieces()

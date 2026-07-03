@@ -1,4 +1,20 @@
 item_id,retailer,ticker,product_name,category,url,first_seen,composition_raw,price,currency,source
+302de7914695,asos,ASC.L,uStudio | You're Purrfect Valentines Card,archive,http://www.asos.com:80/ustudio/youre-purrfect-valentines-card/prd/7550365?,2017-01-02,,,,wayback
+c25bb9e22cca,asos,ASC.L,uStudio | I Love You From My Head Tomatoes Valentines Card,archive,http://www.asos.com:80/ustudio/i-love-you-from-my-head-tomatoes-valentines-card/prd/7825893?,2017-01-28,,,,wayback
+d55ea53d9b4f,asos,ASC.L,uStudio | UStudio Blah Patch,archive,http://www.asos.com:80/ustudio/ustudio-blah-patch/prd/7709023?,2017-07-21,100% cotton,,,wayback
+867d3dfe4985,asos,ASC.L,uStudio | UStudio Cats Patch,archive,http://www.asos.com:80/ustudio/ustudio-cats-patch/prd/7709033?,2017-07-21,100% cotton,,,wayback
+aff7ca4b8a55,asos,ASC.L,ASOS,archive,http://www.asos.com:80/us/asos/asos-star-of-the-show-embellished-heels/prd/7481104?,2017-07-22,100% other,,,wayback
+901ec7c4dd1a,asos,ASC.L,ASOS,archive,http://www.asos.com:80/us/asos/asos-tulle-maxi-prom-skirt/prd/7956067?,2017-07-24,100% polyester,,,wayback
+4bbd88a95544,asos,ASC.L,uStudio | uStudio Game of Bones Pug Card,archive,http://www.asos.com:80/ustudio/ustudio-game-of-bones-pug-card/prd/8038343/?,2017-07-27,,,,wayback
+72cd16444fb7,asos,ASC.L,uStudio | Flip It Reverse It Iron On Patches,archive,http://www.asos.com/ustudio/flip-it-reverse-it-iron-on-patches/prd/7646219,2018-01-03,,,,wayback
+aace95d99f2d,asos,ASC.L,uStudio | Toasted Heroes and Villains Card,archive,http://www.asos.com/ustudio/toasted-heroes-and-villains-card/prd/6978692,2018-01-03,,,,wayback
+0712e60c3f7e,asos,ASC.L,ASOS,archive,http://www.asos.com:80/us/asos/asos-faux-fur-natural-long-scarf/prd/8235835?,2018-01-07,"100% polyester, 30% other",,,wayback
+39a87cdd0b9a,asos,ASC.L,uStudio | uStudio Vinyl Coaster,archive,http://www.asos.com:80/ustudio/ustudio-vinyl-coaster/prd/8808984?,2018-01-07,,,,wayback
+b0915cefb95b,asos,ASC.L,ASOS,archive,http://www.asos.com:80/us/asos/asos-velvet-dobby-mix-deep-plunge-skater-mini-dress/prd/8643427?,2018-01-11,"88% polyester, 12% elastane",,,wayback
+074fed84f08b,asos,ASC.L,uStudio | Good Vibes Only Mug,archive,http://www.asos.com/ustudio/good-vibes-only-mug/prd/6959340,2018-01-12,,,,wayback
+ecd50702be3a,asos,ASC.L,uStudio | UStudio Eye Patch,archive,http://www.asos.com/ustudio/ustudio-eye-patch/prd/7709024,2018-01-15,100% cotton,,,wayback
+8658db1e005a,asos,ASC.L,ASOS Tall,archive,http://www.asos.com:80/us/asos-tall/asos-tall-woven-wrap-maxi-beach-dress-in-oversized-bright-tapestry/prd/8334387?,2018-01-19,100% viscose,,,wayback
+dc558f28cd34,asos,ASC.L,Adidas | adidas Originals Trefoil Sweatshirt In Black,archive,http://www.asos.com:80/us/adidas/adidas-originals-trefoil-sweatshirt-in-black/prd/8098080?,2018-01-23,"70% cotton, 30% polyester, 5% elastane",,,wayback
 7f32c4111979,asos,ASC.L,adidas Originals Gazelle sneakers in white BB5498,archive,https://www.asos.com/us/adidas-originals/adidas-originals-gazelle-sneakers-in-white-bb5498/prd/6755024,2022-03-10,"100% leather, 50% other",,,wayback
 9f875b6d4c14,asos,ASC.L,adidas Originals White Stan Smith Primeknit Sock Sneakers,archive,https://www.asos.com/us/adidas-originals/adidas-originals-white-stan-smith-primeknit-sock-sneakers/prd/8116259?affid=14174&channelref=product+search&mk=abc&currencyid=2&ppcadref=753857714%7C38363273206%7Cpla-336645016231&_cclid=v3_cd0604b2-7657-5994-ae1d-49a1a58ff44a&gclid=EAIaIQobChMItMbF0v-Y1wIVl7jACh047QrNEAQYAiABEgLVtPD_BwE,2022-03-15,100% polyester,,,wayback
 4ccb8105a4ea,asos,ASC.L,Alleyoop Multi-Tasker 4-in-1 Makeup Brush,archive,https://www.asos.com/us/alleyoop/alleyoop-multi-tasker-4-in-1-makeup-brush/prd/201387866,2022-03-19,,,,wayback
@@ -83,6 +99,25 @@ f6c28c82443a,asos,ASC.L,ASOS DESIGN broderie mini skirt with lace trim detail in
 73de450c21d6,asos,ASC.L,ASOS DESIGN Maxi skirt with drape side detail in lilac,new-in,https://www.asos.com/asos-design/asos-design-draped-set-in-lilac/grp/211455470#colourWayId-211095773&productId-211095771,2026-07-03,,49.99,USD,asos_live
 c475dcb0a6a1,asos,ASC.L,ASOS DESIGN wood look beaded tote,new-in,https://www.asos.com/asos-design/asos-design-wood-look-beaded-tote/prd/210624319#colourWayId-210624326,2026-07-03,,59.99,USD,asos_live
 602bac5b6bd3,asos,ASC.L,Motel Nissa mini short wtih pearl detail in burgundy - part of a set,new-in,https://www.asos.com/motel/motel-nissa-mini-shorts-halter-top-set-in-burgundy/grp/211231466#colourWayId-210837837&productId-210837830,2026-07-03,,61.0,USD,asos_live
+16f417d80287,hm,HM-B.ST,Jersey Leggings - Black - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0179123001.html,2018-07-02,"50% viscose, 46% cotton, 4% elastane",,,wayback
+570390f0fb70,hm,HM-B.ST,Inner Cushion 16x16 - White - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0184026001.html,2018-07-02,"100% other, 100% cotton",,,wayback
+77aec563767a,hm,HM-B.ST,Washed Linen Pillowcase - Pigeon blue - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0107713027.html,2018-07-02,100% linen,,,wayback
+2355f74e613c,hm,HM-B.ST,Washed Linen Pillowcase - Anthracite grey - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0107713017.html,2018-07-02,100% linen,,,wayback
+ce687af7afa0,hm,HM-B.ST,Microfiber Balconette Bra - Black - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0153115019.html,2018-07-02,"76% nylon, 24% elastane, 100% polyester",,,wayback
+c75837ff9986,hm,HM-B.ST,Washed Linen Bedskirt - White - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0117369001.html,2018-07-02,100% linen,,,wayback
+1c51622af591,hm,HM-B.ST,Sweatpants - Dark grey marl - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0118458029.html,2018-07-02,"55% cotton, 45% polyester",,,wayback
+ec6835c59082,hm,HM-B.ST,Washed Linen Pillowcase - Dark khaki green - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0107713026.html,2018-07-02,100% linen,,,wayback
+bb6bcb3ccf93,hm,HM-B.ST,Bath Mat - Dark grey - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0184022001.html,2018-07-04,100% cotton,,,wayback
+605bca200165,hm,HM-B.ST,Washed Linen Bedskirt - White - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0107721001.html,2018-07-04,"100% linen, 50% cotton, 50% polyester",,,wayback
+00633465bab7,hm,HM-B.ST,20 denier nylon stockings - Black - Ladies | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0111565001.html,2018-07-06,"88% nylon, 12% elastane",,,wayback
+6e6483d5ad20,hm,HM-B.ST,Microfiber Balconette Bra - White - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0153115021.html,2018-07-13,"76% nylon, 24% elastane, 100% polyester",,,wayback
+002b2f65d2af,hm,HM-B.ST,Laundry Bag - Black - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0119262006.html,2018-07-15,100% polyester,,,wayback
+e3a1a4c008c6,hm,HM-B.ST,3-pack trainer socks - White - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0160442010.html,2018-07-19,"72% cotton, 26% nylon, 2% elastane",,,wayback
+ac88e85cf0b5,hm,HM-B.ST,2-pack Bandeau Bras - Natural white/striped - Ladies | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0114428026.html,2018-07-20,"95% cotton, 5% elastane",,,wayback
+c97c2b3f6656,hm,HM-B.ST,Sweatpants - Dark grey marl - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0118458003.html,2018-07-23,"70% cotton, 30% polyester",,,wayback
+385c7365ce81,hm,HM-B.ST,Washed Linen Pillowcase - Gray - Home All | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0107713018.html,2018-07-25,100% linen,,,wayback
+1f1ffb464277,hm,HM-B.ST,,archive,http://www2.hm.com:80/en_us/productpage.0184136001.html,2018-07-26,,,,wayback
+0ae4c3bc1da9,hm,HM-B.ST,Chelsea boots - Cognac brown - | H&amp;M US,archive,http://www2.hm.com:80/en_us/productpage.0181160009.html,2018-07-30,"100% other, 80% polyester, 20% cotton, 100% technical",,,wayback
 68ca8ce71e9a,hm,HM-B.ST,Long-sleeved Jersey Top - Mustard yellow - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0516000095.html,2022-03-01,"Cotton 97%, Spandex 3%",,,wayback
 7bc42267338f,hm,HM-B.ST,Pumps - Dark green - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0553611028.html,2022-03-01,"Upper: Polyester 100%, Lining and insole: Polyester 100%, Sole: Thermoplastic Polyurethane 100%",,,wayback
 6ac1e6be2dd6,hm,HM-B.ST,Ribbed Tank Top - White/multicolored stripes - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0524529005.html,2022-03-09,"Rayon 40%, Acrylic 40%, Polyamide 18%, Spandex 2%",,,wayback
@@ -562,6 +597,49 @@ f7b6ec67d58f,uniqlo,9983.T,Combination Dress,new,https://www.uniqlo.com/us/en/pr
 863b57ac12c1,uniqlo,9983.T,Camisole Dress | Checked,new,https://www.uniqlo.com/us/en/products/E483340-000,2026-07-03,"Shell: 65% Cotton, 35% Rayon/ Lining: 100% Polyester ( 44% Uses Recycled Polyester Fiber )<br><br>Imported",9.9,USD,uniqlo_live
 f263010215f8,uniqlo,9983.T,Smart Wide Pants,new,https://www.uniqlo.com/us/en/products/E479292-000,2026-07-03,"66% Polyester, 28% Rayon, 6% Spandex ( 66% Uses Recycled Polyester Fiber )<br><br>Imported",49.9,USD,uniqlo_live
 53e9cb0c4287,uniqlo,9983.T,Tiered Maxi Skirt,new,https://www.uniqlo.com/us/en/products/E482286-000,2026-07-03,Shell: 100% Cotton/ Lining: 100% Polyester<br><br>Imported,49.9,USD,uniqlo_live
+71a2ffe3238f,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153557/size-guide,2016-07-03,,,,wayback
+1edf65044d13,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153033/size-guide,2016-07-07,,,,wayback
+7ef83a9a9aa3,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154458/size-guide,2016-07-08,,,,wayback
+2a51998e126d,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154387/size-guide,2016-07-08,,,,wayback
+6d4eec961b4c,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/category/817008/product/3423018/size-guide,2016-07-08,,,,wayback
+69f6884ee3a9,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154247/size-guide,2016-07-08,,,,wayback
+babc051c90a4,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154403/size-guide,2016-07-09,,,,wayback
+b2f655bded69,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153244/size-guide,2016-07-09,,,,wayback
+79f2f3b9b26d,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153688/size-guide,2016-07-09,,,,wayback
+b9b4633a41d0,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153861/size-guide,2016-07-10,,,,wayback
+9b37dff7f7ba,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153175/size-guide,2016-07-11,,,,wayback
+3f142698dfe8,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154688/size-guide,2016-07-11,,,,wayback
+26380680c350,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153559/size-guide,2016-07-12,,,,wayback
+f46fb00a6dcc,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154747/size-guide,2016-07-13,,,,wayback
+a2432988bc73,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153121/size-guide,2016-07-19,,,,wayback
+8ca0b195ae8b,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3153174/size-guide,2016-07-21,,,,wayback
+2e29794a8d8e,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154083/size-guide,2016-07-25,,,,wayback
+5c649caf7e0f,zara,ITX.MC,,archive,http://www.zara.com:80/us/en/product/3154024/size-guide,2016-07-26,,,,wayback
+ef33a7465777,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3721513/size-guide,2017-01-02,,,,wayback
+3f4985db53e0,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3612455/size-guide,2017-01-02,,,,wayback
+d5f3e59ff5a1,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3330501/size-guide,2017-01-06,,,,wayback
+b9abe83b8678,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3609152/size-guide,2017-01-06,,,,wayback
+5456a83de9b4,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3613253/size-guide,2017-01-08,,,,wayback
+f9055272e481,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3791035/size-guide,2017-01-08,,,,wayback
+d03f88865ba6,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3769139/size-guide,2017-01-14,,,,wayback
+6c7d5c760bfd,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3610497/size-guide,2017-01-16,,,,wayback
+d02a9fc854dd,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/3818076/size-guide,2017-01-18,,,,wayback
+f5e3eee2678d,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/3610814/size-guide,2017-01-18,,,,wayback
+253140f79702,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/3610839/size-guide,2017-01-26,,,,wayback
+a80414c42503,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3609254/size-guide,2017-01-27,,,,wayback
+ee90abebe552,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/3611411/size-guide,2017-01-28,,,,wayback
+2cb32e6763d0,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/3674522/size-guide,2017-01-28,,,,wayback
+78474f8521ac,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/4065069/size-guide,2017-01-29,,,,wayback
+759d4d4a6bc8,zara,ITX.MC,,archive,http://www.zara.com/us/en/product/3833009/size-guide,2017-01-29,,,,wayback
+ae5bb8a5cb4c,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4102007/size-guide,2017-07-21,,,,wayback
+4249283d6ae4,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4131022/size-guide,2017-07-22,,,,wayback
+d69baaa55f01,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4170512/size-guide,2017-07-22,,,,wayback
+db756e5dc1d6,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4444552/size-guide,2017-07-22,,,,wayback
+f871bba2800b,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4112513/size-guide,2017-07-22,,,,wayback
+02b8a61b4fe1,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4170522/size-guide,2017-07-23,,,,wayback
+4ecf870f5038,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4098004/size-guide,2017-07-23,,,,wayback
+39e3f7b497cc,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4239587/size-guide,2017-07-26,,,,wayback
+2ff34550185b,zara,ITX.MC,,archive,https://www.zara.com/us/en/product/4839058/size-guide,2017-07-28,,,,wayback
 9b93230385d4,zara,ITX.MC,HEELED LEATHER PUMPS - DRESS TIME-SALE-WOMAN,archive,https://www.zara.com/us/en/heeled-leather-pumps-p16906301.html?v1=6449580&v2=1074625,2019-03-01,,,,wayback
 f11d066db2d7,zara,ITX.MC,LONG CABLE KNIT DRESS - View all,archive,https://www.zara.com/us/en/long-cable-knit-dress-p05536138.html,2019-03-01,,,,wayback
 eec98d8e9ca6,zara,ITX.MC,T - SHIRT WITH METALLIC THREAD-View All,archive,https://www.zara.com/us/en/t-shirt-with-metallic-thread-p00264634.html?v1=6713066&v2=1074755,2019-03-06,,,,wayback

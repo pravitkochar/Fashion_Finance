@@ -92,3 +92,16 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
 - Full plan: PLAN_V2.md. The generative-designs site page is explicitly
   parked (user call, 2026-07-03) pending a proper think-through.
 
+## 2026-07-03 — Interim CV result (trends-proxy H2): NO FREEZE
+
+- Full pre-registered H2 grid (9 combos × 3 folds) run on the TRENDS PROXY
+  with partial runway tags (~1.6k looks, 2-brand skew): every combo has
+  negative mean fold IR (best z=1.5/trail=12 at −0.19; all negative in the
+  2020/2021 folds, positive only in 2022). Full table:
+  reports/cv_results.csv.
+- Per the charter this does NOT earn the sealed test window. Model V2 is
+  NOT frozen. Next tuning run happens after (a) Wayback measured mix meets
+  the coverage gates and (b) runway backfill completes — both automated.
+  H1 grid could not be scored yet (no measured retailer history at fold
+  dates), as expected.
+

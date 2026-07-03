@@ -40,6 +40,25 @@ MIN_MATERIALS = 6     # materials needed for a score (H1)
 MIN_RETAILERS = 6     # cross-section floor per rebalance date (H1)
 NOWCAST_TRAIL = 12    # trailing months for the z-score (H2)
 Z_GATE = 1.0          # |z| threshold for long/short (H2)
+LEG_DIV = 3           # cross-section leg size: 3=terciles, 5=quintiles (H1)
+
+# Post-freeze, production runs pick up the CV-chosen parameters (P5).
+MODEL_CONFIG = lt.CONFIG / "model_v2.json"
+_TUNABLE = ("WINDOW_MONTHS", "MIN_MONTHS", "MIN_MATERIALS", "MIN_RETAILERS",
+            "NOWCAST_TRAIL", "Z_GATE", "LEG_DIV")
+
+
+def _apply_model_config() -> None:
+    if MODEL_CONFIG.exists():
+        import json
+        cfg = json.loads(MODEL_CONFIG.read_text())
+        for key in _TUNABLE:
+            if key.lower() in cfg:
+                globals()[key] = cfg[key.lower()]
+        log.info("model_v2.json applied (frozen params)")
+
+
+_apply_model_config()
 
 
 class PITStore:
@@ -169,7 +188,7 @@ def build_h1(store: PITStore, cadence: str, dates: list[date],
             continue
         scored.sort(key=lambda x: -x[1])
         n = len(scored)
-        n_leg = max(1, n // 3)
+        n_leg = max(1, n // LEG_DIV)
         for rank, (ticker, s) in enumerate(scored, start=1):
             if rank <= n_leg:
                 w = 1.0 / n_leg

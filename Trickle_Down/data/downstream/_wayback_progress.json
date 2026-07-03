@@ -3,31 +3,31 @@
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2016-07": {
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2017-01": {
   "n_comp": 0,
-  "n_pages": 0,
+  "n_pages": 2,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2017-07": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 4,
+  "n_pages": 5,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2018-01": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 5,
+  "n_pages": 9,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2018-06": {
   "n_comp": 0,
@@ -175,7 +175,7 @@
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "hm|2018-06": {
   "n_comp": 0,
@@ -184,10 +184,10 @@
   "status": "cdx_error"
  },
  "hm|2018-07": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 18,
+  "n_pages": 19,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "hm|2019-01": {
   "n_comp": 0,
@@ -299,21 +299,21 @@
  },
  "zara|2016-07": {
   "n_comp": 0,
-  "n_pages": 0,
+  "n_pages": 18,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "zara|2017-01": {
   "n_comp": 0,
-  "n_pages": 0,
+  "n_pages": 16,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "zara|2017-07": {
   "n_comp": 0,
-  "n_pages": 0,
+  "n_pages": 9,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "zara|2018-01": {
   "n_comp": 0,
