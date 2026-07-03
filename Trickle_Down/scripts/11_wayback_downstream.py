@@ -48,34 +48,51 @@ PAUSE = (1.8, 3.0)
 CDX_PAUSE = (4.0, 7.0)      # CDX index is far more throttle-sensitive
 COOLOFF = 90                # seconds after a throttle/refusal
 
-# retailer -> cdx prefix, product-url regex (CDX full-match), month clamp.
-# Zara is clamped to its server-rendered era: pages after ~2017 are a JS
-# shell whose composition came from an unarchived ajax endpoint (probed
-# 2026-07-03). H&M/ASOS embed composition server-side.
+# retailer -> LIST of archive eras (cdx prefix, product-url regex as CDX
+# full-match, month clamp). Eras are where composition is actually in the
+# archived bytes (all probed 2026-07-03): Zara only pre-SPA; H&M legacy
+# domain 2014-2018 then www2; ASOS throughout; Uniqlo's coded .html era.
 SOURCES = {
-    "zara": {"prefix": "www.zara.com/us/en/",
-             "filter": r".*(/product/\d+|-p\d{6,}\.html)",
-             "from": "2016-01", "to": "2017-12"},
-    "hm":   {"prefix": "www2.hm.com/en_us/productpage",
-             "filter": r".*productpage\.\d+\.html.*",
-             "from": "2018-01", "to": "2026-12"},
-    "asos": {"prefix": "www.asos.com/us/",
-             "filter": r".*/prd/\d+.*",
-             "from": "2016-01", "to": "2026-12"},
+    "zara": [{"prefix": "www.zara.com/us/en/",
+              "filter": r".*(/product/\d+|-p\d{6,}\.html)",
+              "from": "2016-01", "to": "2017-12"}],
+    "hm":   [{"prefix": "www.hm.com/us/product",
+              "filter": r".*/product/\d+.*",
+              "from": "2014-01", "to": "2018-06"},
+             {"prefix": "www2.hm.com/en_us/productpage",
+              "filter": r".*productpage\.\d+\.html.*",
+              "from": "2018-01", "to": "2026-12"}],
+    "asos": [{"prefix": "www.asos.com/us/",
+              "filter": r".*/prd/\d+.*",
+              "from": "2016-01", "to": "2026-12"}],
+    "uniqlo": [{"prefix": "www.uniqlo.com/us/en/",
+                "filter": r".*-\d{6}\.html",
+                "from": "2016-01", "to": "2021-12"}],
 }
-TICKERS = {"zara": "ITX.MC", "hm": "HM-B.ST", "asos": "ASC.L"}
+TICKERS = {"zara": "ITX.MC", "hm": "HM-B.ST", "asos": "ASC.L",
+           "uniqlo": "9983.T"}
 
-# H&M keeps composition inside a script-block JS object — must be read from
-# RAW html before script-stripping: 'compositions': [ 'Linen 100%' ]
+# H&M keeps composition inside script-block JSON — read from RAW html before
+# script-stripping. Two vintages: www2 era 'compositions': ['Linen 100%'];
+# legacy era "composition":"100% cotton".
 HM_COMP_RE = re.compile(r"'compositions'\s*:\s*\[([^\]]*)\]")
+HM_LEGACY_RE = re.compile(r'"composition"\s*:\s*"([^"]{3,80})"')
 
 
 def extract_hm(html: str) -> str:
     m = HM_COMP_RE.search(html)
-    if not m:
-        return ""
-    parts = re.findall(r"'([^']{3,60})'", m.group(1))
-    return ", ".join(parts[:6])
+    if m:
+        parts = re.findall(r"'([^']{3,60})'", m.group(1))
+        return ", ".join(parts[:6])
+    hits = HM_LEGACY_RE.findall(html)
+    seen, keep = set(), []
+    for h in hits:
+        if h.lower() not in seen:
+            seen.add(h.lower())
+            keep.append(h)
+        if len(keep) >= 6:
+            break
+    return ", ".join(keep)
 
 
 RAW_EXTRACTORS = {"hm": extract_hm}
@@ -185,17 +202,21 @@ def month_range(start: str, end: str) -> list[str]:
 
 def process_month(retailer: str, month: str, pages: int,
                   budget: dict) -> dict:
-    src = SOURCES[retailer]
-    if not (src["from"] <= month <= src["to"]):
+    eras = [e for e in SOURCES[retailer] if e["from"] <= month <= e["to"]]
+    if not eras:
         return {"status": "ok", "n_pages": 0, "n_comp": 0,
                 "note": "outside retailer era clamp"}
-    try:
-        snaps = cdx_month(src["prefix"], src["filter"], month, pages)
-    except requests.RequestException as e:
-        log.warning("[%s %s] CDX error: %s", retailer, month, str(e)[:120])
-        return {"status": "cdx_error", "n_pages": 0, "n_comp": 0}
+    snaps = []
+    per_era = max(1, pages // len(eras))
+    for era in eras:
+        try:
+            snaps += cdx_month(era["prefix"], era["filter"], month, per_era)
+        except requests.RequestException as e:
+            log.warning("[%s %s] CDX error: %s", retailer, month,
+                        str(e)[:120])
+            return {"status": "cdx_error", "n_pages": 0, "n_comp": 0}
+        budget["used"] += 1
     pause()
-    budget["used"] += 1
     items, tags = [], []
     n_comp = 0
     for ts, url in snaps:
@@ -252,7 +273,7 @@ def write_coverage() -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--retailers", default="zara,hm,asos")
+    ap.add_argument("--retailers", default=",".join(SOURCES))
     ap.add_argument("--start", default="2016-01")
     ap.add_argument("--end", default="2025-12")
     ap.add_argument("--months", default="", help="explicit list, overrides range")
@@ -271,7 +292,13 @@ def main() -> int:
     for month in months:                    # month-major: coverage grows evenly
         for retailer in retailers:
             key = f"{retailer}|{month}"
-            if progress.get(key, {}).get("status") == "ok":
+            rec = progress.get(key, {})
+            in_era = any(e["from"] <= month <= e["to"]
+                         for e in SOURCES[retailer])
+            # clamp-skipped cells get retried once their era opens up
+            if rec.get("status") == "ok" and not (
+                    rec.get("note") == "outside retailer era clamp"
+                    and in_era):
                 continue
             if budget["used"] >= budget["max"]:
                 log.info("request budget exhausted (%d) — resuming next run",

@@ -418,6 +418,13 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "hm|2017-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "hm|2018-01": {
   "n_comp": 0,
   "n_pages": 0,
@@ -675,6 +682,12 @@
   "n_pages": 0,
   "run": "2026-07-03",
   "status": "cdx_error"
+ },
+ "zara|2017-12": {
+  "n_comp": 0,
+  "n_pages": 14,
+  "run": "2026-07-03",
+  "status": "ok"
  },
  "zara|2018-01": {
   "n_comp": 0,
