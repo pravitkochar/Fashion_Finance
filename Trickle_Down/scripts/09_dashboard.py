@@ -18,6 +18,7 @@ Usage:  python scripts/09_dashboard.py [--open]
 from __future__ import annotations
 
 import argparse
+import html as _html
 import json
 import re
 import subprocess
@@ -207,6 +208,254 @@ def build_health() -> dict:
     return {"files": rows, "source_events": events}
 
 
+# ------------------------------------------------------- static render ------
+# Server-side fallback: the same sections rendered as plain HTML/SVG so the
+# page shows its data even where inline JS is blocked (e.g. some artifact
+# viewers). When JS does run, section() clears these and draws the
+# interactive version on top.
+
+def esc(x) -> str:
+    return _html.escape("—" if x is None else str(x))
+
+
+def fmtn(x, d: int = 2) -> str:
+    try:
+        return "—" if x is None else f"{float(x):.{d}f}"
+    except (TypeError, ValueError):
+        return esc(x)
+
+
+def pctn(x, d: int = 1) -> str:
+    try:
+        return "—" if x is None else f"{100 * float(x):.{d}f}%"
+    except (TypeError, ValueError):
+        return esc(x)
+
+
+def s_header(title: str, note: str = "", badge: str = "") -> str:
+    b = f'<span class="badge">{esc(badge)}</span>' if badge else ""
+    n = f'<p class="note">{esc(note)}</p>' if note else ""
+    return f"<h2>{esc(title)}{b}</h2>{n}"
+
+
+def s_empty(script: str) -> str:
+    return ('<div class="empty">No data yet — run '
+            f"<code>scripts/{esc(script)}</code></div>")
+
+
+def s_table(headers: list, rows: list) -> str:
+    th = "".join(f"<th>{esc(h)}</th>" for h in headers)
+    trs = "".join("<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>"
+                  for r in rows)
+    return f'<div class="scroll"><table><tr>{th}</tr>{trs}</table></div>'
+
+
+def s_equity_svg(curve: dict) -> str:
+    eq = [float(v) for v in curve.get("equity", [])]
+    if len(eq) < 2:
+        return ""
+    W, H, L, R, T, B = 860, 190, 46, 12, 12, 22
+    lo, hi = min(eq + [1.0]), max(eq + [1.0])
+    rng = (hi - lo) or 1.0
+    n = len(eq)
+
+    def xs(i): return L + (W - L - R) * i / (n - 1)
+    def ys(v): return T + (H - T - B) * (1 - (v - lo) / rng)
+
+    pts = " ".join(f"{xs(i):.1f},{ys(v):.1f}" for i, v in enumerate(eq))
+    return (f'<div class="scroll"><svg width="{W}" height="{H}" role="img" '
+            'aria-label="Equity curve, net of costs">'
+            f'<line x1="{L}" y1="{ys(1.0):.1f}" x2="{W - R}" y2="{ys(1.0):.1f}" '
+            'stroke="var(--grid)" stroke-dasharray="4 3"/>'
+            f'<polyline points="{pts}" fill="none" stroke="var(--s1)" '
+            'stroke-width="1.6"/>'
+            f'<circle cx="{xs(n - 1):.1f}" cy="{ys(eq[-1]):.1f}" r="3" '
+            'fill="var(--s1)"/>'
+            f'<text x="{W - R}" y="{ys(eq[-1]) - 8:.1f}" text-anchor="end" '
+            f'class="val">{eq[-1]:.2f}</text>'
+            f'<text x="{L}" y="{H - 4}">{esc(curve["dates"][0])}</text>'
+            f'<text x="{W - R}" y="{H - 4}" text-anchor="end">'
+            f'{esc(curve["dates"][-1])}</text></svg></div>')
+
+
+def static_backtest(bt) -> str:
+    head = s_header("Backtest — pre-registered runs",
+                    "All runs reported, net of costs (objectivity charter). "
+                    "Dev window; holdout stays locked per DECISIONS.md.")
+    if not bt:
+        return head + s_empty("08_backtest.py")
+    f = bt.get("findings", {})
+    meta = f.get("meta", {})
+    primary = f.get("h2", {}).get("nowcast_trends_monthly", {})
+    out = [head]
+    if "sharpe" in primary:
+        out.append('<p class="note">H2 material-demand nowcast '
+                   '<span class="badge">TRENDS PROXY — not measured catalog '
+                   'mix</span></p>')
+        tiles = [("Sharpe", fmtn(primary.get("sharpe"))),
+                 ("IR vs XRT", fmtn(primary.get("ir"))),
+                 ("Hit rate", pctn(primary.get("hit_rate"))),
+                 ("CAR", pctn(primary.get("car"))),
+                 ("Max drawdown", pctn(primary.get("max_drawdown"))),
+                 ("Rebalances", esc(primary.get("n_rebalances")))]
+        out.append('<div class="tiles">' + "".join(
+            f'<div class="tile"><div class="lab">{esc(l)}</div>'
+            f'<div class="num">{v}</div></div>' for l, v in tiles)
+            + "</div>")
+    curve = (bt.get("curves") or {}).get("h2_nowcast_trends_monthly")
+    if curve:
+        out.append(s_equity_svg(curve))
+    rows = []
+    for root in ("h1", "h2"):
+        for key, m in f.get(root, {}).items():
+            if key == "reference_commodities_car" or not isinstance(m, dict):
+                continue
+            rows.append([f"{root}_{key}", fmtn(m.get("sharpe")),
+                         pctn(m.get("car")), pctn(m.get("max_drawdown")),
+                         m.get("status", "ok")])
+    if rows:
+        out.append(s_table(["run", "sharpe", "CAR", "maxDD", "status"], rows))
+    ref = f.get("h2", {}).get("reference_commodities_car")
+    if ref:
+        out.append('<p class="footnote">Commodity reference CAR (never P&amp;L): '
+                   + esc(", ".join(f"{k} {pctn(v)}" for k, v in ref.items()))
+                   + "</p>")
+    if meta:
+        out.append(f'<p class="footnote">Window {esc(meta.get("dev_window"))} · '
+                   f'{esc(meta.get("cost_bps_per_side"))} bps/side · turnover cap '
+                   f'{esc(meta.get("turnover_cap_oneway"))} · run '
+                   f'{esc(meta.get("run_date"))}</p>')
+    return "".join(out)
+
+
+def static_heatmap(d) -> str:
+    head = s_header("Runway material mix",
+                    "Season-level share of each material across tagged looks; "
+                    "deeper = larger share. Ring = emergent vs trailing 3 "
+                    "seasons.")
+    if not d:
+        return head + s_empty("01_scrape_runway.py → 02_tag_gemini.py → "
+                              "04_material_mix.py")
+    cw, ch, gap, left, top, bottom = 30, 20, 2, 84, 4, 46
+    vmax = max((v for row in d["values"] for v in row if v), default=1) or 1
+    parts = []
+    for r, mat in enumerate(d["materials"]):
+        y = top + r * (ch + gap)
+        parts.append(f'<text x="{left - 6}" y="{y + 14}" text-anchor="end">'
+                     f"{esc(mat)}</text>")
+        for c in range(len(d["seasons"])):
+            v = d["values"][r][c] or 0
+            fill = "var(--mid)" if v <= 0 else \
+                f"var(--heat{min(7, int(8 * v / vmax))})"
+            ring = (' stroke="var(--s3)" stroke-width="1.8"'
+                    if d.get("emergent") and d["emergent"][r][c] else "")
+            x = left + c * (cw + gap)
+            parts.append(f'<rect x="{x}" y="{y}" width="{cw}" height="{ch}" '
+                         f'rx="2" fill="{fill}"{ring}/>')
+    ybase = top + len(d["materials"]) * (ch + gap) + 12
+    for c, season in enumerate(d["seasons"]):
+        x = left + c * (cw + gap) + cw / 2
+        parts.append(f'<text x="{x}" y="{ybase}" text-anchor="end" '
+                     f'transform="rotate(-45 {x} {ybase})">{esc(season)}</text>')
+    W = left + len(d["seasons"]) * (cw + gap) + 4
+    H = top + len(d["materials"]) * (ch + gap) + bottom
+    return (head + f'<div class="scroll"><svg width="{W}" height="{H}" '
+            'role="img" aria-label="Runway material mix heatmap">'
+            + "".join(parts) + "</svg></div>")
+
+
+def static_leaderboard(lb) -> str:
+    head = s_header("Retailer adoption-speed leaderboard",
+                    "Cross-sectional score: how closely each retailer's mix "
+                    "changes tracked the prior runway season.")
+    if not lb:
+        return head + s_empty("07_signals.py (needs ≥6 months of measured "
+                              "downstream mix — accumulating)")
+    rows = [[r["ticker"], r["name"], fmtn(r.get("score"), 3), r.get("rank"),
+             fmtn(r.get("weight"), 3)] for r in lb["rows"]]
+    return (s_header("Retailer adoption-speed leaderboard",
+                     f'As of {lb["asof"]} ({lb["cadence"]}).')
+            + s_table(["ticker", "retailer", "score", "rank", "weight"], rows))
+
+
+def static_nowcast(nc) -> str:
+    head = s_header("Material-demand nowcast",
+                    "z-score of downstream share vs trailing 12 months; "
+                    "|z| > 1 gates long/short on mapped suppliers.")
+    if not nc:
+        return head + s_empty("07_signals.py (measured variant needs 13 "
+                              "months of downstream mix)")
+    rows = [[r["material"], fmtn(r.get("nowcast_z")), r.get("direction"),
+             r.get("tickers")] for r in nc["rows"]]
+    return (s_header("Material-demand nowcast", f'As of {nc["asof"]}.')
+            + s_table(["material", "z", "direction", "suppliers"], rows))
+
+
+def static_propagation(p) -> str:
+    head = s_header("Propagation lag — runway → high street",
+                    "Best cross-correlation lag per (retailer, material); "
+                    "estimates unlock at ≥12 overlapping months.")
+    if not p or not p.get("best"):
+        return head + s_empty("06_propagation_lag.py")
+    est = [r for r in p["best"] if r.get("lag_months") is not None]
+    if not est:
+        n = max((r.get("n_obs") or 0) for r in p["best"])
+        return head + ('<div class="empty">Measured downstream history is '
+                       f"accumulating ({n} month{'s' if n != 1 else ''} so "
+                       "far) — lag estimates unlock at 12 overlapping months "
+                       "(DECISIONS.md).</div>")
+    rows = [[r["retailer"], r["material"], r["lag_months"],
+             fmtn(r.get("adoption_coef")), fmtn(r.get("r")), r.get("n_obs")]
+            for r in est]
+    return head + s_table(
+        ["retailer", "material", "lag (mo)", "coef", "r", "n"], rows)
+
+
+def static_positions(pos) -> str:
+    head = s_header("Current positions (paper)",
+                    "What the signals would hold today.")
+    if not pos:
+        return head + s_empty("07_signals.py")
+    rows = [[r["sleeve"], r["ticker"], r["detail"], r["weight"], r["asof"]]
+            for r in pos["rows"]]
+    return head + s_table(["sleeve", "ticker", "detail", "weight", "as of"],
+                          rows)
+
+
+def static_health(h) -> str:
+    head = s_header("Data health",
+                    "Pipeline files, row counts, and recent source events.")
+    rows = [[f["label"], f["script"], f["rows"], f.get("latest"),
+             "ok" if f["ok"] else "MISSING"] for f in h["files"]]
+    out = head + s_table(["dataset", "script", "rows", "latest", "status"],
+                         rows)
+    if h.get("source_events"):
+        ev = [[e.get("date"), e.get("retailer"), e.get("event"),
+               str(e.get("detail", ""))[:60]] for e in h["source_events"][-5:]]
+        out += s_table(["date", "retailer", "event", "detail"], ev)
+    return out
+
+
+def inject_static(page: str, payload: dict) -> str:
+    statics = {
+        "sec-backtest": static_backtest(payload.get("backtest")),
+        "sec-heatmap": static_heatmap(payload.get("runway_heatmap")),
+        "sec-leaderboard": static_leaderboard(payload.get("leaderboard")),
+        "sec-nowcast": static_nowcast(payload.get("nowcast")),
+        "sec-propagation": static_propagation(payload.get("propagation")),
+        "sec-positions": static_positions(payload.get("positions")),
+        "sec-health": static_health(payload.get("health")),
+    }
+    for sid, content in statics.items():
+        page = re.sub(
+            rf'(<section class="card[^"]*" id="{sid}">)(</section>)',
+            lambda m, c=content: m.group(1) + c + m.group(2), page, count=1)
+    return page.replace(
+        '<p class="meta" id="meta"></p>',
+        f'<p class="meta" id="meta">Generated {esc(payload.get("generated"))}'
+        " · static snapshot · rebuilt daily</p>")
+
+
 # ----------------------------------------------------------------- html -----
 
 TEMPLATE = r"""<!doctype html>
@@ -372,6 +621,7 @@ function hover(node, rowsFn){
 /* ------------------------------ scaffolding ---------------------------- */
 function section(id, title, note, badge){
   const sec = document.getElementById(id);
+  sec.textContent = "";   // replace the server-rendered static fallback
   const h = document.createElement("h2");
   h.textContent = title;
   if (badge){
@@ -826,7 +1076,7 @@ def main() -> int:
         "health": build_health(),
     }
     blob = json.dumps(payload, default=str).replace("</", "<\\/")
-    html = TEMPLATE.replace("__PAYLOAD__", blob)
+    html = inject_static(TEMPLATE.replace("__PAYLOAD__", blob), payload)
     OUT.write_text(html, encoding="utf-8")
     # content-only copy for claude.ai Artifact publishing (host wraps it in
     # its own doctype/head/body); redeploy target URL is noted in CLAUDE.md
