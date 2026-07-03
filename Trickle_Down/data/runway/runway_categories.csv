@@ -1006,6 +1006,7 @@ balenciaga|FW2023|001,tailoring
 balenciaga|FW2024|001,knitwear
 balenciaga|FW2025|001,tailoring
 balenciaga|FW2026|001,outerwear
+balenciaga|SS2016|001,dress
 bottega-veneta|FW2015|001,tailoring
 bottega-veneta|FW2016|001,outerwear
 bottega-veneta|FW2017|001,dress
@@ -1017,6 +1018,7 @@ bottega-veneta|FW2022|001,top
 bottega-veneta|FW2023|001,dress
 bottega-veneta|FW2024|001,outerwear
 bottega-veneta|FW2026|001,outerwear
+bottega-veneta|SS2016|001,outerwear
 brunello-cucinelli|FW2015|001,outerwear
 brunello-cucinelli|FW2016|001,outerwear
 brunello-cucinelli|FW2017|001,outerwear
@@ -1027,6 +1029,7 @@ brunello-cucinelli|FW2023|001,knitwear
 brunello-cucinelli|FW2024|001,outerwear
 brunello-cucinelli|FW2025|001,outerwear
 brunello-cucinelli|FW2026|001,outerwear
+brunello-cucinelli|SS2016|001,outerwear
 burberry|FW2015|001,outerwear
 burberry|FW2016|001,tailoring
 burberry|FW2017|001,dress
@@ -1038,6 +1041,7 @@ burberry|FW2022|001,outerwear
 burberry|FW2023|001,outerwear
 burberry|FW2025|001,outerwear
 burberry|FW2026|001,outerwear
+burberry|SS2016|001,outerwear
 celine|FW2015|001,pants
 celine|FW2015|002,tailoring
 celine|FW2015|003,dress
@@ -1064,6 +1068,7 @@ celine|FW2019|001,tailoring
 celine|FW2020|001,outerwear
 celine|FW2021|001,tailoring
 celine|FW2026|001,outerwear
+celine|SS2016|001,shirt
 chloe|FW2015|001,outerwear
 chloe|FW2016|001,outerwear
 chloe|FW2017|001,outerwear
@@ -1076,6 +1081,7 @@ chloe|FW2023|001,outerwear
 chloe|FW2024|001,outerwear
 chloe|FW2025|001,tailoring
 chloe|FW2026|001,outerwear
+chloe|SS2016|001,dress
 christian-dior|FW2015|001,dress
 christian-dior|FW2016|001,dress
 christian-dior|FW2017|001,tailoring
@@ -1088,6 +1094,7 @@ christian-dior|FW2023|001,shirt
 christian-dior|FW2024|001,tailoring
 christian-dior|FW2025|001,outerwear
 christian-dior|FW2026|001,outerwear
+christian-dior|SS2016|001,top
 fendi|FW2015|001,outerwear
 fendi|FW2016|001,outerwear
 fendi|FW2017|001,tailoring
@@ -1100,6 +1107,7 @@ fendi|FW2023|001,outerwear
 fendi|FW2024|001,tailoring
 fendi|FW2025|001,outerwear
 fendi|FW2026|001,tailoring
+fendi|SS2016|001,dress
 gucci|FW2015|001,dress
 gucci|FW2016|001,dress
 gucci|FW2017|001,dress
@@ -1112,6 +1120,7 @@ gucci|FW2023|001,top
 gucci|FW2024|001,tailoring
 gucci|FW2025|001,outerwear
 gucci|FW2026|001,dress
+gucci|SS2016|001,dress
 hermes|FW2015|001,outerwear
 hermes|FW2016|001,outerwear
 hermes|FW2017|001,outerwear
@@ -1124,6 +1133,7 @@ hermes|FW2023|001,knitwear
 hermes|FW2024|001,outerwear
 hermes|FW2025|001,knitwear
 hermes|FW2026|001,outerwear
+hermes|SS2016|001,outerwear
 loewe|FW2015|001,tailoring
 loewe|FW2016|001,tailoring
 loewe|FW2017|001,tailoring
@@ -1135,6 +1145,7 @@ loewe|FW2023|001,top
 loewe|FW2024|001,dress
 loewe|FW2025|001,outerwear
 loewe|FW2026|001,dress
+loewe|SS2016|001,knitwear
 louis-vuitton|FW2015|001,outerwear
 louis-vuitton|FW2016|001,outerwear
 louis-vuitton|FW2017|001,outerwear
@@ -1147,6 +1158,7 @@ louis-vuitton|FW2023|001,outerwear
 louis-vuitton|FW2024|001,outerwear
 louis-vuitton|FW2025|001,outerwear
 louis-vuitton|FW2026|001,outerwear
+louis-vuitton|SS2016|001,outerwear
 miu-miu|FW2015|001,outerwear
 miu-miu|FW2016|001,knitwear
 miu-miu|FW2017|001,outerwear
@@ -1159,11 +1171,13 @@ miu-miu|FW2023|001,knitwear
 miu-miu|FW2024|001,outerwear
 miu-miu|FW2025|001,knitwear
 miu-miu|FW2026|001,outerwear
+miu-miu|SS2016|001,outerwear
 moncler|FW2015|001,dress
 moncler|FW2016|001,outerwear
 moncler|FW2017|001,outerwear
 moncler|FW2023|001,outerwear
 moncler|FW2024|001,outerwear
+moncler|SS2016|001,dress
 prada|FW2015|001,tailoring
 prada|FW2016|001,tailoring
 prada|FW2017|001,dress
@@ -1175,6 +1189,7 @@ prada|FW2023|001,knitwear
 prada|FW2024|001,outerwear
 prada|FW2025|001,top
 prada|FW2026|001,outerwear
+prada|SS2016|001,outerwear
 ralph-lauren|FW2015|001,knitwear
 ralph-lauren|FW2016|001,shirt
 ralph-lauren|FW2017|001,outerwear
@@ -1183,6 +1198,7 @@ ralph-lauren|FW2020|001,shirt
 ralph-lauren|FW2021|001,outerwear
 ralph-lauren|FW2025|001,outerwear
 ralph-lauren|FW2026|001,knitwear
+ralph-lauren|SS2016|001,dress
 saint-laurent|FW2015|001,tailoring
 saint-laurent|FW2016|001,outerwear
 saint-laurent|FW2017|001,tailoring
@@ -1194,6 +1210,7 @@ saint-laurent|FW2022|001,outerwear
 saint-laurent|FW2023|001,tailoring
 saint-laurent|FW2024|001,dress
 saint-laurent|FW2025|001,outerwear
+saint-laurent|FW2026|001,tailoring
 salvatore-ferragamo|FW2015|001,tailoring
 salvatore-ferragamo|FW2017|001,tailoring
 salvatore-ferragamo|FW2018|001,tailoring
@@ -1202,6 +1219,7 @@ salvatore-ferragamo|FW2020|001,outerwear
 salvatore-ferragamo|FW2021|001,tailoring
 salvatore-ferragamo|FW2023|001,outerwear
 salvatore-ferragamo|FW2024|001,outerwear
+salvatore-ferragamo|FW2026|001,outerwear
 tods|FW2016|001,outerwear
 tods|FW2017|001,outerwear
 tods|FW2018|001,outerwear
@@ -1212,6 +1230,7 @@ tods|FW2022|001,outerwear
 tods|FW2023|001,outerwear
 tods|FW2024|001,shirt
 tods|FW2025|001,tailoring
+tods|FW2026|001,outerwear
 valentino|FW2015|001,outerwear
 valentino|FW2016|001,outerwear
 valentino|FW2017|001,dress
@@ -1222,6 +1241,7 @@ valentino|FW2022|001,dress
 valentino|FW2023|001,dress
 valentino|FW2024|001,tailoring
 valentino|FW2025|001,dress
+valentino|FW2026|001,outerwear
 versace|FW2016|001,outerwear
 versace|FW2017|001,outerwear
 versace|FW2018|001,outerwear

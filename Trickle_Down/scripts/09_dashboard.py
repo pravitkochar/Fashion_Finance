@@ -84,9 +84,19 @@ def build_runway_heatmap() -> dict | None:
 
 def build_propagation() -> dict | None:
     best = safe_read(lt.DATA / "propagation.csv")
-    if best is None:
+    fitted = safe_read(lt.DATA / "propagation_train.csv")
+    if best is None and fitted is None:
         return None
-    out: dict = {"best": clean_records(best)}
+    out: dict = {"best": clean_records(best) if best is not None else []}
+    if fitted is not None and not fitted.empty:
+        # 13_fit_propagation train-window estimates (hop 1 retail, hop 2
+        # trends, hop 3 payoff) — the measured cascade for the site
+        est = fitted.dropna(subset=["lag_months"]).copy()
+        est = est.rename(columns={"entity": "retailer"})
+        out["fitted_train"] = clean_records(
+            est[["hop", "retailer", "material", "lag_months",
+                 "adoption_coef", "r", "n_obs"]]
+            .sort_values(["hop", "r"], ascending=[True, False]))
     grid = safe_read(lt.DATA / "_propagation_grid.csv")
     if grid is not None and {"retailer", "material", "lag", "r"} <= set(grid.columns):
         by_retailer: dict = {}
@@ -392,11 +402,21 @@ def static_nowcast(nc) -> str:
 
 
 def static_propagation(p) -> str:
-    head = s_header("Propagation lag — runway → high street",
-                    "Best cross-correlation lag per (retailer, material); "
-                    "estimates unlock at ≥12 overlapping months.")
-    if not p or not p.get("best"):
-        return head + s_empty("06_propagation_lag.py")
+    head = s_header("Propagation — how the cascade flows",
+                    "Lagged cross-correlation, fitted on the TRAIN window "
+                    "(2017–2022) only. Hop 2 = runway → consumer interest; "
+                    "hops 1/3 populate as measured retail history lands.")
+    if not p or (not p.get("best") and not p.get("fitted_train")):
+        return head + s_empty("06_propagation_lag.py / 13_fit_propagation.py")
+    if p.get("fitted_train"):
+        hop_names = {1: "runway→retail", 2: "runway→trends",
+                     3: "retail→payoff"}
+        rows = [[hop_names.get(r["hop"], r["hop"]), r["retailer"],
+                 r["material"], r["lag_months"], fmtn(r.get("r")),
+                 fmtn(r.get("adoption_coef")), r.get("n_obs")]
+                for r in p["fitted_train"]]
+        return head + s_table(
+            ["hop", "entity", "material", "lag (mo)", "r", "coef", "n"], rows)
     est = [r for r in p["best"] if r.get("lag_months") is not None]
     if not est:
         n = max((r.get("n_obs") or 0) for r in p["best"])
