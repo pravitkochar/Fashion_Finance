@@ -71,3 +71,24 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
   newest-season-first via a daily automation; backtest depth grows as the
   backfill completes. Coverage stats reported alongside any result.
 
+## 2026-07-03 — V2 pre-registration: historical reconstruction + train/test
+(SUPERSEDES the "H1 forward-only" clause above, BEFORE any V2 evaluation)
+
+- New evidence: Wayback Machine CDX probes show dense archived retailer
+  product pages (Zara 2017+, H&M 2021+ on current domain, ASOS 2018+; all
+  probes hit the 5,000-row cap). Historical retailer mix IS reconstructable
+  with snapshot-timestamp known_dates. The forward-only restriction is
+  therefore lifted for wherever archive coverage meets the gates below.
+- **Splits locked**: TRAIN 2017-01→2022-12; walk-forward folds validating
+  2020, 2021, 2022 (expanding fit windows); selection metric = mean fold IR
+  vs XRT. TEST 2023-01→2025-12, sealed — evaluated once, only after a
+  "MODEL V2 FROZEN" entry here; 08_backtest to enforce via a guard.
+- **Tuning grid locked** (nothing outside it): H2 z-gate {0.5,1,1.5},
+  trailing {9,12,18}m; H1 terciles/quintiles, adoption window {6,9,12}m;
+  lag = fitted ±1m; floors n_items {20,30}, materials {5,6,8}.
+- **Coverage gates**: full H1 requires ≥2 retailers × ≥60 months with
+  n_items ≥30; otherwise H1 runs on the covered subset with coverage
+  disclosed on every output.
+- Full plan: PLAN_V2.md. The generative-designs site page is explicitly
+  parked (user call, 2026-07-03) pending a proper think-through.
+
