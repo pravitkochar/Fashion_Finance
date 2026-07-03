@@ -137,9 +137,39 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "asos|2017-12": {
+  "n_comp": 6,
+  "n_pages": 18,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "asos|2018-01": {
   "n_comp": 5,
   "n_pages": 9,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-03": {
+  "n_comp": 1,
+  "n_pages": 2,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-04": {
+  "n_comp": 2,
+  "n_pages": 2,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-05": {
+  "n_comp": 0,
+  "n_pages": 0,
   "run": "2026-07-03",
   "status": "ok"
  },
@@ -147,9 +177,39 @@
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "asos|2018-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-08": {
+  "n_comp": 2,
+  "n_pages": 2,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2018-12": {
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
@@ -161,9 +221,69 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "asos|2019-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-04": {
+  "n_comp": 11,
+  "n_pages": 12,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-05": {
+  "n_comp": 10,
+  "n_pages": 14,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-06": {
+  "n_comp": 9,
+  "n_pages": 12,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "asos|2019-07": {
   "n_comp": 0,
   "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-09": {
+  "n_comp": 36,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-10": {
+  "n_comp": 37,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-11": {
+  "n_comp": 25,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2019-12": {
+  "n_comp": 22,
+  "n_pages": 39,
   "run": "2026-07-03",
   "status": "ok"
  },
@@ -171,6 +291,18 @@
   "n_comp": 14,
   "n_pages": 20,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2020-02": {
+  "n_comp": 36,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-03": {
+  "n_comp": 37,
+  "n_pages": 39,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "asos|2020-07": {
@@ -431,15 +563,69 @@
   "run": "2026-07-03",
   "status": "ok"
  },
- "hm|2018-06": {
+ "hm|2018-02": {
   "n_comp": 0,
   "n_pages": 0,
   "run": "2026-07-03",
-  "status": "cdx_error"
+  "status": "ok"
+ },
+ "hm|2018-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-06": {
+  "n_comp": 36,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
  },
  "hm|2018-07": {
   "n_comp": 18,
   "n_pages": 19,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-08": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-09": {
+  "n_comp": 30,
+  "n_pages": 39,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-10": {
+  "n_comp": 34,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-11": {
+  "n_comp": 33,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-12": {
+  "n_comp": 38,
+  "n_pages": 40,
   "run": "2026-07-03",
   "status": "ok"
  },
@@ -449,9 +635,69 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "hm|2019-02": {
+  "n_comp": 28,
+  "n_pages": 38,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-03": {
+  "n_comp": 36,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-04": {
+  "n_comp": 29,
+  "n_pages": 38,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-05": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-06": {
+  "n_comp": 35,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "hm|2019-07": {
   "n_comp": 20,
   "n_pages": 20,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-08": {
+  "n_comp": 28,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-09": {
+  "n_comp": 37,
+  "n_pages": 39,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-10": {
+  "n_comp": 31,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-11": {
+  "n_comp": 32,
+  "n_pages": 40,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2019-12": {
+  "n_comp": 24,
+  "n_pages": 37,
   "run": "2026-07-03",
   "status": "ok"
  },
@@ -459,6 +705,24 @@
   "n_comp": 20,
   "n_pages": 20,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2020-02": {
+  "n_comp": 39,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-03": {
+  "n_comp": 39,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-04": {
+  "n_comp": 38,
+  "n_pages": 38,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2020-07": {
@@ -696,7 +960,77 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2018-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "zara|2018-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-12": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
@@ -710,13 +1044,76 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2019-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "zara|2019-03": {
   "n_comp": 0,
   "n_pages": 12,
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2019-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
  "zara|2019-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-12": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
@@ -728,6 +1125,27 @@
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2020-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2020-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
   "status": "ok"
  },
  "zara|2020-07": {

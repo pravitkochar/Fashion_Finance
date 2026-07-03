@@ -26,11 +26,19 @@ step() {
 }
 
 step "01 runway"      "$PY" scripts/01_scrape_runway.py
-step "02 tag mistral" "$PY" scripts/02_tag_gemini.py --provider mistral --limit 1200 --pace 1.2
-step "02 tag gemini"  "$PY" scripts/02_tag_gemini.py --limit 200 --model gemini-2.5-flash-lite
-step "02 tag groq"    "$PY" scripts/02_tag_gemini.py --provider groq --limit 100 --pace 15
+if pgrep -f "02_tag_gemini" >/dev/null; then
+  echo "--- 02 skipped: a tagger is already running (detached session)" >> "$LOG"
+else
+  step "02 tag mistral" "$PY" scripts/02_tag_gemini.py --provider mistral --limit 1200 --pace 1.2
+  step "02 tag gemini"  "$PY" scripts/02_tag_gemini.py --limit 200 --model gemini-2.5-flash-lite
+  step "02 tag groq"    "$PY" scripts/02_tag_gemini.py --provider groq --limit 100 --pace 15
+fi
 step "03 downstream"  "$PY" scripts/03_scrape_downstream.py
-step "11 wayback"     "$PY" scripts/11_wayback_downstream.py --max-requests 1200
+if pgrep -f "11_wayback_downstream" >/dev/null; then
+  echo "--- 11 skipped: sweep already running (detached session)" >> "$LOG"
+else
+  step "11 wayback"   "$PY" scripts/11_wayback_downstream.py --max-requests 1200
+fi
 step "05 trends"      "$PY" scripts/05_google_trends.py
 step "10 confounders" "$PY" scripts/10_confounders.py
 step "04 mixes"       "$PY" scripts/04_material_mix.py

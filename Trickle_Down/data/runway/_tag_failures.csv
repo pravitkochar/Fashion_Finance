@@ -7380,3 +7380,6 @@ ralph-lauren|SS2016|023,image download failed,2026-07-03
 saint-laurent|SS2016|023,image download failed,2026-07-03
 salvatore-ferragamo|SS2016|023,image download failed,2026-07-03
 balenciaga|FW2018|024,"ReadTimeout: HTTPSConnectionPool(host='api.mistral.ai', port=443): Read timed out. (read timeout=60)",2026-07-03
+saint-laurent|FW2019|024,image download failed,2026-07-03
+balenciaga|SS2021|023,image download failed,2026-07-03
+bottega-veneta|SS2021|023,"ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",2026-07-03
