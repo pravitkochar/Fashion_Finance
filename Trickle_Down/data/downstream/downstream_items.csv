@@ -1,4 +1,12 @@
 item_id,retailer,ticker,product_name,category,url,first_seen,composition_raw,price,currency,source
+7f32c4111979,asos,ASC.L,adidas Originals Gazelle sneakers in white BB5498,archive,https://www.asos.com/us/adidas-originals/adidas-originals-gazelle-sneakers-in-white-bb5498/prd/6755024,2022-03-10,"100% leather, 50% other",,,wayback
+9f875b6d4c14,asos,ASC.L,adidas Originals White Stan Smith Primeknit Sock Sneakers,archive,https://www.asos.com/us/adidas-originals/adidas-originals-white-stan-smith-primeknit-sock-sneakers/prd/8116259?affid=14174&channelref=product+search&mk=abc&currencyid=2&ppcadref=753857714%7C38363273206%7Cpla-336645016231&_cclid=v3_cd0604b2-7657-5994-ae1d-49a1a58ff44a&gclid=EAIaIQobChMItMbF0v-Y1wIVl7jACh047QrNEAQYAiABEgLVtPD_BwE,2022-03-15,100% polyester,,,wayback
+4ccb8105a4ea,asos,ASC.L,Alleyoop Multi-Tasker 4-in-1 Makeup Brush,archive,https://www.asos.com/us/alleyoop/alleyoop-multi-tasker-4-in-1-makeup-brush/prd/201387866,2022-03-19,,,,wayback
+88afdd72c837,asos,ASC.L,Aeropostale halterneck swimsuit in lime beige,archive,https://www.asos.com/us/aeropostale/aeropostale-halterneck-swimsuit-in-lime-beige/prd/200940516,2022-03-19,100% polyester,,,wayback
+c15a6dcdb0f9,asos,ASC.L,ASOS DESIGN Curve anklet with freshwater faux pearl and colored beads,archive,https://www.asos.com/us/asos-curve/asos-design-curve-anklet-with-freshwater-faux-pearl-and-colored-beads/prd/202071584,2022-03-20,90% other,,,wayback
+1133bd3fd15e,asos,ASC.L,ASOS DESIGN Curve Barbie lounge super-soft rib button-up top & sweatpants set in pink,archive,https://www.asos.com/us/asos-curve/asos-design-curve-barbie-lounge-super-soft-rib-button-up-top-sweatpants-set-in-pink/prd/200421566,2022-03-21,"76% viscose, 20% polyester, 4% elastane",,,wayback
+8cd21317b679,asos,ASC.L,ASOS CURVE Lace Dobby Patchwork Long Sleeve Mini Dress,archive,https://www.asos.com/us/asos-curve/asos-curve-lace-dobby-patchwork-long-sleeve-mini-dress/prd/8723897?ref=popsugar.com,2022-03-24,"100% polyester, 100% nylon",,,wayback
+0f9399af1749,asos,ASC.L,ASOS DESIGN Curve bias slip midi skirt in leopard print,archive,https://www.asos.com/us/asos-curve/asos-design-curve-bias-slip-midi-skirt-in-leopard-print/prd/201472619,2022-03-28,100% polyester,,,wayback
 c3205b87ff9c,asos,ASC.L,ASOS DESIGN mix & match plisse mini skirt in green with white lace trim,new-in,https://www.asos.com/asos-design/asos-design-mix-match-plisse-mini-skirt-in-green-with-white-lace-trim/prd/210945584#colourWayId-210945585,2026-07-02,,39.99,USD,asos_live
 d18ff51d0d63,asos,ASC.L,ASOS DESIGN broderie mini skirt with lace trim detail in rust,new-in,https://www.asos.com/asos-design/asos-design-broderie-mini-skirt-with-lace-trim-detail-in-rust/prd/210378886#colourWayId-210378887,2026-07-02,,37.99,USD,asos_live
 49d70c7ab532,asos,ASC.L,ASOS DESIGN Maxi skirt with drape side detail in lilac,new-in,https://www.asos.com/asos-design/asos-design-maxi-skirt-with-drape-side-detail-in-lilac/prd/211095771#colourWayId-211095773,2026-07-02,,49.99,USD,asos_live
@@ -75,6 +83,16 @@ f6c28c82443a,asos,ASC.L,ASOS DESIGN broderie mini skirt with lace trim detail in
 73de450c21d6,asos,ASC.L,ASOS DESIGN Maxi skirt with drape side detail in lilac,new-in,https://www.asos.com/asos-design/asos-design-draped-set-in-lilac/grp/211455470#colourWayId-211095773&productId-211095771,2026-07-03,,49.99,USD,asos_live
 c475dcb0a6a1,asos,ASC.L,ASOS DESIGN wood look beaded tote,new-in,https://www.asos.com/asos-design/asos-design-wood-look-beaded-tote/prd/210624319#colourWayId-210624326,2026-07-03,,59.99,USD,asos_live
 602bac5b6bd3,asos,ASC.L,Motel Nissa mini short wtih pearl detail in burgundy - part of a set,new-in,https://www.asos.com/motel/motel-nissa-mini-shorts-halter-top-set-in-burgundy/grp/211231466#colourWayId-210837837&productId-210837830,2026-07-03,,61.0,USD,asos_live
+68ca8ce71e9a,hm,HM-B.ST,Long-sleeved Jersey Top - Mustard yellow - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0516000095.html,2022-03-01,"Cotton 97%, Spandex 3%",,,wayback
+7bc42267338f,hm,HM-B.ST,Pumps - Dark green - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0553611028.html,2022-03-01,"Upper: Polyester 100%, Lining and insole: Polyester 100%, Sole: Thermoplastic Polyurethane 100%",,,wayback
+6ac1e6be2dd6,hm,HM-B.ST,Ribbed Tank Top - White/multicolored stripes - Ladies | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0524529005.html,2022-03-09,"Rayon 40%, Acrylic 40%, Polyamide 18%, Spandex 2%",,,wayback
+d4d659077459,hm,HM-B.ST,Linen Twin Duvet Cover Set - Mocha beige - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0188590061.html,2022-03-14,Linen 100%,,,wayback
+3e53ebb05a7d,hm,HM-B.ST,Washed Linen Tablecloth - Light turquoise - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0573688016.html,2022-03-20,Linen 100%,,,wayback
+4d0933683964,hm,HM-B.ST,Washed Linen Tablecloth - Beige - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0573688013.html,2022-03-20,Linen 100%,,,wayback
+26a2c04ecfb3,hm,HM-B.ST,Washed Linen Tablecloth - Light taupe - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0573688024.html,2022-03-20,Linen 100%,,,wayback
+f8a54d4ec9a4,hm,HM-B.ST,Washed Linen Tablecloth - White - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0573688015.html,2022-03-20,Linen 100%,,,wayback
+48f2b7371323,hm,HM-B.ST,3-pack Short Cotton Boxer Shorts - Dark blue/burgundy - Men | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0564309061.html,2022-03-25,"Cotton 57%, Polyester 38%, Spandex 5%, Other materials: Cotton 95%, Spandex 5%",,,wayback
+4bb34b9f147a,hm,HM-B.ST,Crinkled Cotton Throw - Dark camel - Home All | H&amp;M US,archive,https://www2.hm.com/en_us/productpage.0505269006.html,2022-03-31,Cotton 100%,,,wayback
 7e7df81fa268,hm,HM-B.ST,Cotton Poplin Skirt,new-arrivals,https://www2.hm.com/en_us/productpage.1345514001.html,2026-07-03,,49.99,USD,hm_live
 0ec861da0150,hm,HM-B.ST,Linen-Blend Halterneck Dress,new-arrivals,https://www2.hm.com/en_us/productpage.1346188001.html,2026-07-03,,59.99,USD,hm_live
 5235f932366b,hm,HM-B.ST,Lace-Trimmed Wrap Top,new-arrivals,https://www2.hm.com/en_us/productpage.1346462001.html,2026-07-03,,39.99,USD,hm_live
@@ -544,6 +562,18 @@ f7b6ec67d58f,uniqlo,9983.T,Combination Dress,new,https://www.uniqlo.com/us/en/pr
 863b57ac12c1,uniqlo,9983.T,Camisole Dress | Checked,new,https://www.uniqlo.com/us/en/products/E483340-000,2026-07-03,"Shell: 65% Cotton, 35% Rayon/ Lining: 100% Polyester ( 44% Uses Recycled Polyester Fiber )<br><br>Imported",9.9,USD,uniqlo_live
 f263010215f8,uniqlo,9983.T,Smart Wide Pants,new,https://www.uniqlo.com/us/en/products/E479292-000,2026-07-03,"66% Polyester, 28% Rayon, 6% Spandex ( 66% Uses Recycled Polyester Fiber )<br><br>Imported",49.9,USD,uniqlo_live
 53e9cb0c4287,uniqlo,9983.T,Tiered Maxi Skirt,new,https://www.uniqlo.com/us/en/products/E482286-000,2026-07-03,Shell: 100% Cotton/ Lining: 100% Polyester<br><br>Imported,49.9,USD,uniqlo_live
+9b93230385d4,zara,ITX.MC,HEELED LEATHER PUMPS - DRESS TIME-SALE-WOMAN,archive,https://www.zara.com/us/en/heeled-leather-pumps-p16906301.html?v1=6449580&v2=1074625,2019-03-01,,,,wayback
+f11d066db2d7,zara,ITX.MC,LONG CABLE KNIT DRESS - View all,archive,https://www.zara.com/us/en/long-cable-knit-dress-p05536138.html,2019-03-01,,,,wayback
+eec98d8e9ca6,zara,ITX.MC,T - SHIRT WITH METALLIC THREAD-View All,archive,https://www.zara.com/us/en/t-shirt-with-metallic-thread-p00264634.html?v1=6713066&v2=1074755,2019-03-06,,,,wayback
+077f94661aa7,zara,ITX.MC,RUSTIC PALAZZO PANTS - View all,archive,https://www.zara.com/us/en/rustic-palazzo-pants-p06096101.html?v1=6453160&v2=1074755,2019-03-06,,,,wayback
+3982156d241d,zara,ITX.MC,RIBBED CULOTTE - View all,archive,https://www.zara.com/us/en/ribbed-culotte-p05584454.html?v1=6778009&v2=1074755,2019-03-07,,,,wayback
+84438c94e444,zara,ITX.MC,OVERSIZED SWEATER - KNITWEAR-SALE-WOMAN,archive,https://www.zara.com/us/en/oversized-sweater-p05755119.html,2019-03-07,,,,wayback
+51b155336e2b,zara,ITX.MC,ANIMAL PRINT HANDKERCHIEF - ACCESSORIES-SALE-WOMAN,archive,https://www.zara.com/us/en/animal-print-handkerchief-p04758227.html,2019-03-07,,,,wayback
+972e6268b88d,zara,ITX.MC,BRAIDED SLIDES - Flat Sandals-SHOES &amp; ACCESSORIES-SALE-WOMAN,archive,https://www.zara.com/us/en/braided-slides-p15607301.html?v1=6455047&v2=1074515,2019-03-08,,,,wayback
+154ff5fc1ac5,zara,ITX.MC,CAT EYE SUNGLASSES - COLLECTION-SALE-WOMAN,archive,https://www.zara.com/us/en/cat-eye-sunglasses-p04646201.html,2019-03-08,,,,wayback
+615ae9926c6c,zara,ITX.MC,CROPPED PANTS - Culottes-PANTS-WOMAN,archive,https://www.zara.com/us/en/cropped-pants-p07102170.html?v1=8202545&v2=1180407,2019-03-31,,,,wayback
+21d811444928,zara,ITX.MC,SOFT WHITE SNEAKERS - Sneakers-SHOES-MAN,archive,https://www.zara.com/us/en/soft-white-sneakers-p12215002.html?v1=8714126&v2=1181114,2019-03-31,,,,wayback
+598796e270d9,zara,ITX.MC,SPARKLY SEMI - SHEER TOP-Sweaters-KNITWEAR-WOMAN,archive,https://www.zara.com/us/en/sparkly-semi-sheer-top-p09874012.html?v1=8474739&v2=1180367,2019-03-31,,,,wayback
 de2273d979dc,zara,ITX.MC,LINEN BLEND WRAP SKIRT WITH TOPSTITCHING,new-in,https://www.zara.com/es/en/linen-blend-topstitched-wrap-skirt-p07027753.html,2026-07-02,"OUTER SHELL: 55% linen, 45% viscose",29.95,EUR,zara_live
 4776a46c2d94,zara,ITX.MC,RIBBED CROP TOP,new-in,https://www.zara.com/es/en/ribbed-crop-top-p03641327.html,2026-07-02,"OUTER SHELL: 93% cotton, 7% elastane",3.97,EUR,zara_live
 bc4320978cc9,zara,ITX.MC,SATIN DRESS WITH 3D FLOWERS,new-in,https://www.zara.com/es/en/satin-dress-with-3d-flowers-p07521157.html,2026-07-02,,89.95,EUR,zara_live

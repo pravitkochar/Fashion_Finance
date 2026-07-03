@@ -1,0 +1,450 @@
+{
+ "asos|2016-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2016-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2017-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2017-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2018-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2018-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2018-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2019-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2019-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2020-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2020-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2021-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2021-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2022-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2022-03": {
+  "n_comp": 7,
+  "n_pages": 8,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2022-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2023-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2023-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2024-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2024-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2025-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2025-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2026-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "asos|2026-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2016-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2016-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2017-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2017-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2018-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2018-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2018-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2019-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2019-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2020-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2020-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2021-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2021-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2022-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2022-03": {
+  "n_comp": 10,
+  "n_pages": 10,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2022-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2023-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2023-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2024-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2024-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2025-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2025-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2026-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "hm|2026-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "zara|2016-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "zara|2016-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "zara|2017-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "zara|2017-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-03",
+  "status": "cdx_error"
+ },
+ "zara|2018-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2018-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-03": {
+  "n_comp": 0,
+  "n_pages": 12,
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2019-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2020-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2020-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2021-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2021-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2022-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2022-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2023-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2023-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2024-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2024-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2025-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2025-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2026-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2026-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-03",
+  "status": "ok"
+ }
+}
