@@ -1,0 +1,46 @@
+look_id,reason,logged
+celine|FW2015|016,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-02
+alexander-mcqueen|FW2015|003,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-02
+alexander-mcqueen|FW2015|030,image download failed,2026-07-02
+alexander-mcqueen|FW2015|032,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-02
+alexander-mcqueen|FW2015|036,image download failed,2026-07-02
+alexander-mcqueen|FW2015|037,"ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",2026-07-02
+alexander-mcqueen|FW2015|043,image download failed,2026-07-02
+alexander-mcqueen|FW2015|045,image download failed,2026-07-02
+alexander-mcqueen|FW2015|047,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2015|048,image download failed,2026-07-03
+alexander-mcqueen|FW2015|049,image download failed,2026-07-03
+alexander-mcqueen|FW2015|053,image download failed,2026-07-03
+alexander-mcqueen|FW2015|056,image download failed,2026-07-03
+alexander-mcqueen|FW2015|058,image download failed,2026-07-03
+alexander-mcqueen|FW2016|001,image download failed,2026-07-03
+alexander-mcqueen|FW2016|003,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2016|004,image download failed,2026-07-03
+alexander-mcqueen|FW2016|006,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2016|007,image download failed,2026-07-03
+alexander-mcqueen|FW2016|009,image download failed,2026-07-03
+alexander-mcqueen|FW2016|011,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2016|012,image download failed,2026-07-03
+alexander-mcqueen|FW2016|014,image download failed,2026-07-03
+alexander-mcqueen|FW2016|016,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2016|017,image download failed,2026-07-03
+alexander-mcqueen|FW2016|020,image download failed,2026-07-03
+alexander-mcqueen|FW2016|022,image download failed,2026-07-03
+alexander-mcqueen|FW2016|027,image download failed,2026-07-03
+alexander-mcqueen|FW2016|028,"ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",2026-07-03
+alexander-mcqueen|FW2016|029,image download failed,2026-07-03
+alexander-mcqueen|FW2016|030,image download failed,2026-07-03
+alexander-mcqueen|FW2016|032,image download failed,2026-07-03
+alexander-mcqueen|FW2016|037,image download failed,2026-07-03
+alexander-mcqueen|FW2016|039,"ReadTimeout: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|FW2016|040,image download failed,2026-07-03
+alexander-mcqueen|FW2016|042,image download failed,2026-07-03
+alexander-mcqueen|FW2017|016,image download failed,2026-07-03
+alexander-mcqueen|FW2017|018,image download failed,2026-07-03
+alexander-mcqueen|FW2017|019,"ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",2026-07-03
+alexander-mcqueen|FW2017|050,image download failed,2026-07-03
+alexander-mcqueen|FW2017|059,image download failed,2026-07-03
+alexander-mcqueen|FW2017|060,"ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",2026-07-03
+alexander-mcqueen|FW2018|029,image download failed,2026-07-03
+alexander-mcqueen|FW2018|038,"ReadTimeout: HTTPSConnectionPool(host='api.mistral.ai', port=443): Read timed out. (read timeout=60)",2026-07-03
+alexander-mcqueen|SS2021|009,"TypeError: the JSON object must be str, bytes or bytearray, not NoneType",2026-07-03

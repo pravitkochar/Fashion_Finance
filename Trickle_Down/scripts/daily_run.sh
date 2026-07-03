@@ -1,0 +1,44 @@
+#!/bin/zsh
+# Trickle_Down daily continuation job (launchd: com.pravit.trickledown.daily)
+#
+# Keeps the pipeline filling itself within free-tier quotas:
+#   runway scrape (new shows) -> gemini tag backfill (quota-paced) ->
+#   downstream snapshot -> trends refresh -> confounders -> prices ->
+#   mixes -> propagation -> signals -> backtest -> dashboard
+#
+# Each step is independent: a failure logs and moves on (the pipeline is
+# idempotent/resumable, so tomorrow's run picks up whatever today missed).
+
+PROJ="$HOME/Documents/Claude/Projects/Fashion Thing/Trickle_Down"
+PY="$HOME/.venvs/trickle_down/bin/python"
+LOG_DIR="$PROJ/reports/logs"
+mkdir -p "$LOG_DIR"
+LOG="$LOG_DIR/daily_$(date +%Y%m%d).log"
+
+cd "$PROJ" || exit 1
+echo "===== daily run start $(date) =====" >> "$LOG"
+
+step() {
+  local name="$1"; shift
+  echo "--- $name @ $(date +%H:%M:%S)" >> "$LOG"
+  "$@" >> "$LOG" 2>&1
+  echo "--- $name exit=$? " >> "$LOG"
+}
+
+step "01 runway"      "$PY" scripts/01_scrape_runway.py
+step "02 tag mistral" "$PY" scripts/02_tag_gemini.py --provider mistral --limit 1200 --pace 1.2
+step "02 tag gemini"  "$PY" scripts/02_tag_gemini.py --limit 200 --model gemini-2.5-flash-lite
+step "02 tag groq"    "$PY" scripts/02_tag_gemini.py --provider groq --limit 100 --pace 15
+step "03 downstream"  "$PY" scripts/03_scrape_downstream.py
+step "05 trends"      "$PY" scripts/05_google_trends.py
+step "10 confounders" "$PY" scripts/10_confounders.py
+step "04 mixes"       "$PY" scripts/04_material_mix.py
+step "06 propagation" "$PY" scripts/06_propagation_lag.py
+step "07 signals"     "$PY" scripts/07_signals.py
+step "08 backtest"    "$PY" scripts/08_backtest.py --fetch
+step "09 dashboard"   "$PY" scripts/09_dashboard.py
+
+# keep 30 days of logs
+find "$LOG_DIR" -name "daily_*.log" -mtime +30 -delete 2>/dev/null
+
+echo "===== daily run end $(date) =====" >> "$LOG"

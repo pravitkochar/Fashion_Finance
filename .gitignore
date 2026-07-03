@@ -1,0 +1,17 @@
+# environments — never commit venvs (and this one is iCloud-corrupted anyway)
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# regenerable caches / logs
+Trickle_Down/data/runway/images/
+Trickle_Down/reports/logs/
+*.tmp
+_archive/
+
+# secrets live in ~/.config/trickle_down/env — NEVER in this repo
+*.env
+env

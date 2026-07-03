@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trickle Down — Trend Cascade</title>
+<style>
+:root{
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e;
+  --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+  --border:rgba(11,11,11,.10);
+  --s1:#2a78d6; --s2:#1baf7a; --s3:#eda100; --s4:#008300;
+  --s5:#4a3aa7; --s6:#e34948; --s7:#e87ba4; --s8:#eb6834;
+  --pos:#2a78d6; --neg:#e34948; --mid:#f0efec;
+  --good:#0ca30c; --warn:#fab219;
+  --heat0:#cde2fb; --heat1:#9ec5f4; --heat2:#86b6ef; --heat3:#5598e7;
+  --heat4:#3987e5; --heat5:#256abf; --heat6:#184f95; --heat7:#0d366b;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7;
+    --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+    --border:rgba(255,255,255,.10);
+    --s1:#3987e5; --s2:#199e70; --s3:#c98500; --s4:#008300;
+    --s5:#9085e9; --s6:#e66767; --s7:#d55181; --s8:#d95926;
+    --pos:#3987e5; --neg:#e66767; --mid:#383835;
+    --heat0:#184f95; --heat1:#1c5cab; --heat2:#256abf; --heat3:#3987e5;
+    --heat4:#5598e7; --heat5:#86b6ef; --heat6:#9ec5f4; --heat7:#cde2fb;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);
+  font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+header h1{font-size:22px;font-weight:650;margin:0}
+header .sub{color:var(--ink2);margin:4px 0 0}
+header .meta{color:var(--muted);font-size:12px;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:20px}
+.card{grid-column:span 12;background:var(--surface);border:1px solid var(--border);
+  border-radius:10px;padding:16px 18px}
+.card.half{grid-column:span 6}
+@media (max-width:900px){.card.half{grid-column:span 12}}
+.card h2{font-size:15px;font-weight:650;margin:0 0 2px}
+.card .note{color:var(--muted);font-size:12px;margin:0 0 10px}
+.badge{display:inline-block;font-size:11px;color:var(--ink2);
+  border:1px solid var(--border);border-radius:999px;padding:1px 8px;
+  margin-left:6px;vertical-align:1px}
+.empty{color:var(--muted);padding:26px 8px;text-align:center;font-size:13px}
+.empty code{background:var(--mid);border-radius:4px;padding:1px 5px}
+.scroll{overflow-x:auto}
+svg{display:block}
+svg text{font:11px system-ui,-apple-system,"Segoe UI",sans-serif;fill:var(--ink2)}
+svg .muted{fill:var(--muted)}
+svg .val{fill:var(--ink);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 8px;font-size:12px;
+  color:var(--ink2)}
+.legend .key{display:inline-flex;align-items:center;gap:6px}
+.legend .line{width:14px;height:0;border-top:2.5px solid}
+.legend .swatch{width:10px;height:10px;border-radius:2px}
+.tiles{display:flex;flex-wrap:wrap;gap:12px;margin:4px 0 14px}
+.tile{flex:1 1 120px;min-width:120px;background:var(--page);
+  border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.tile .lab{font-size:11px;color:var(--muted)}
+.tile .num{font-size:24px;font-weight:600;margin-top:2px}
+.tile .num.na{color:var(--muted);font-weight:400}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{color:var(--muted);text-align:left;font-weight:500;border-bottom:1px solid var(--grid);
+  padding:5px 10px 5px 0}
+td{border-bottom:1px solid var(--grid);padding:5px 10px 5px 0;
+  font-variant-numeric:tabular-nums}
+details{margin-top:10px}
+details summary{cursor:pointer;color:var(--muted);font-size:12px}
+.status{display:inline-flex;align-items:center;gap:5px}
+.status .dot{width:8px;height:8px;border-radius:50%}
+#tip{position:fixed;pointer-events:none;background:var(--surface);
+  border:1px solid var(--border);border-radius:8px;padding:8px 10px;
+  font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.18);display:none;z-index:9;
+  max-width:280px}
+#tip .t-val{font-weight:650;color:var(--ink)}
+#tip .t-row{display:flex;align-items:center;gap:6px;margin-top:2px;color:var(--ink2)}
+#tip .t-key{width:12px;height:0;border-top:2.5px solid}
+.footnote{color:var(--muted);font-size:11.5px;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Trickle Down — Trend Cascade</h1>
+    <p class="sub">Runway → high street → material demand. Point-in-time signals; all results net of costs.</p>
+    <p class="meta" id="meta"></p>
+  </header>
+  <div class="grid">
+    <section class="card" id="sec-backtest"></section>
+    <section class="card" id="sec-heatmap"></section>
+    <section class="card half" id="sec-leaderboard"></section>
+    <section class="card half" id="sec-nowcast"></section>
+    <section class="card" id="sec-propagation"></section>
+    <section class="card half" id="sec-positions"></section>
+    <section class="card half" id="sec-health"></section>
+  </div>
+</div>
+<div id="tip"></div>
+<script id="payload" type="application/json">{"generated": "2026-07-03", "runway_heatmap": {"seasons": ["FW2015", "SS2016", "FW2016", "SS2017", "FW2017", "SS2018", "FW2018", "SS2019", "FW2019", "SS2020", "FW2020", "SS2021", "FW2021", "FW2022", "FW2023", "FW2024", "FW2025", "FW2026"], "materials": ["viscose", "polyester", "wool", "leather", "nylon", "elastane", "cotton", "silk", "technical", "other", "denim", "linen", "cashmere"], "values": [[0.1245, 0.435, 0.0947, 0.315, 0.262, 0.2933, 0.1167, 0.3375, 0.1358, 0.4058, 0.235, 0.1688, 0.2683, 0.2117, 0.1267, 0.1667, 0.2192, 0.2292], [0.1591, 0.2408, 0.3842, 0.205, 0.2417, 0.2567, 0.2217, 0.2367, 0.225, 0.195, 0.205, 0.2031, 0.2467, 0.235, 0.195, 0.1925, 0.1742, 0.1667], [0.1735, 0.08, 0.1842, 0.1867, 0.1667, 0.1917, 0.2825, 0.0783, 0.31, 0.135, 0.2467, 0.2687, 0.1733, 0.155, 0.345, 0.2367, 0.25, 0.2708], [0.1599, 0.0167, 0.1658, 0.1017, 0.1259, 0.06, 0.1342, 0.155, 0.1608, 0.1033, 0.1017, 0.0187, 0.0767, 0.1825, 0.1042, 0.205, 0.1192, 0.0917], [0.0139, 0.0758, 0.0026, 0.0642, 0.0981, 0.0567, 0.05, 0.065, 0.0692, 0.0242, 0.0658, 0.0, 0.0517, 0.0933, 0.0642, 0.0833, 0.0983, 0.1183], [0.0054, 0.0633, 0.0, 0.06, 0.0852, 0.055, 0.0583, 0.0625, 0.0483, 0.0933, 0.085, 0.0094, 0.06, 0.0592, 0.0967, 0.0533, 0.0483, 0.065], [0.1556, 0.0067, 0.0447, 0.005, 0.0, 0.0117, 0.045, 0.0117, 0.0117, 0.0233, 0.02, 0.2687, 0.0067, 0.0, 0.0117, 0.0, 0.0, 0.015], [0.0706, 0.0517, 0.1026, 0.0317, 0.013, 0.0633, 0.065, 0.0117, 0.015, 0.0117, 0.0167, 0.0187, 0.0283, 0.0117, 0.025, 0.0117, 0.0167, 0.0233], [0.0599, 0.0, 0.0, 0.0117, 0.0, 0.0117, 0.0117, 0.0342, 0.0058, 0.0067, 0.0117, 0.0, 0.05, 0.0433, 0.0167, 0.0, 0.0, 0.0133], [0.0369, 0.005, 0.0, 0.0192, 0.0056, 0.0, 0.0067, 0.0025, 0.0067, 0.0, 0.0042, 0.0, 0.0092, 0.0083, 0.01, 0.0408, 0.0642, 0.0017], [0.0248, 0.01, 0.0211, 0.0, 0.0019, 0.0, 0.0083, 0.0, 0.0, 0.0017, 0.0083, 0.0437, 0.0292, 0.0, 0.0, 0.01, 0.005, 0.005], [0.016, 0.015, 0.0, 0.0, 0.0, 0.0, 0.0, 0.005, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0117, 0.0, 0.0, 0.0, 0.0, 0.0, 0.005, 0.0, 0.005, 0.0]], "emergent": [[false, false, false, true, false, true, false, true, false, true, false, false, false, false, false, false, true, true], [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false], [false, false, false, true, false, false, true, false, true, false, true, true, false, false, true, false, false, false], [false, false, false, false, true, false, true, true, true, false, false, false, false, true, false, true, false, false], [false, false, false, true, true, false, false, false, false, false, false, false, true, true, false, false, false, true], [false, false, false, true, true, false, false, false, false, true, false, false, false, false, true, false, false, false], [false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false], [false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false], [false, false, false, false, false, false, false, true, false, false, false, false, true, true, false, false, false, false], [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false], [false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false], [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false], [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]]}, "propagation": {"best": [{"retailer": "uniqlo", "material": "cashmere", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "cotton", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "denim", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "elastane", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "leather", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "linen", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "nylon", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "polyester", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "silk", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "technical", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "viscose", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "uniqlo", "material": "wool", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "cashmere", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "cotton", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "denim", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "elastane", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "leather", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "linen", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "nylon", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "polyester", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "silk", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "technical", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "viscose", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}, {"retailer": "zara", "material": "wool", "lag_months": null, "adoption_coef": null, "r": null, "n_obs": 1}]}, "leaderboard": null, "nowcast": null, "positions": null, "backtest": {"findings": {"h1": {"seasonal": {"status": "no_signals"}, "monthly": {"status": "no_signals"}}, "h2": {"nowcast_monthly": {"status": "missing_signals"}, "nowcast_trends_monthly": {"sharpe": -0.3419, "ir": -0.5716, "hit_rate": 0.3333, "car": -0.4518, "max_drawdown": -0.5677, "n_days": 1957, "periods_per_year": 12, "n_periods": 90, "n_rebalances": 90, "downstream_source": "google_trends_proxy (v1 addendum \u2014 NOT measured catalog mix)"}, "reference_commodities_car": {"CT=F": 0.28, "CL=F": 0.9344, "LE=F": 0.2789}}, "meta": {"run_date": "2026-07-03", "dev_window": ["2016-01-01", "2023-12-31"], "holdout_included": false, "cost_bps_per_side": 20.0, "turnover_cap_oneway": 0.5, "universe_hash": "96e3367d0f62", "note": "All pre-registered runs reported (objectivity charter). Metrics net of costs."}}, "curves": {"h2_nowcast_trends_monthly": {"dates": ["2016-07-04", "2016-07-08", "2016-07-14", "2016-07-20", "2016-07-26", "2016-08-01", "2016-08-05", "2016-08-11", "2016-08-17", "2016-08-23", "2016-08-29", "2016-09-02", "2016-09-08", "2016-09-14", "2016-09-20", "2016-09-26", "2016-09-30", "2016-10-06", "2016-10-12", "2016-10-18", "2016-10-24", "2016-10-28", "2016-11-03", "2016-11-09", "2016-11-15", "2016-11-21", "2016-11-25", "2016-12-01", "2016-12-07", "2016-12-13", "2016-12-19", "2016-12-23", "2016-12-29", "2017-01-04", "2017-01-10", "2017-01-16", "2017-01-20", "2017-01-26", "2017-02-01", "2017-02-07", "2017-02-13", "2017-02-17", "2017-02-23", "2017-03-01", "2017-03-07", "2017-03-13", "2017-03-17", "2017-03-23", "2017-03-29", "2017-04-04", "2017-04-10", "2017-04-14", "2017-04-20", "2017-04-26", "2017-05-02", "2017-05-08", "2017-05-12", "2017-05-18", "2017-05-24", "2017-05-30", "2017-06-05", "2017-06-09", "2017-06-15", "2017-06-21", "2017-06-27", "2017-07-03", "2017-07-07", "2017-07-13", "2017-07-19", "2017-07-25", "2017-07-31", "2017-08-04", "2017-08-10", "2017-08-16", "2017-08-22", "2017-08-28", "2017-09-01", "2017-09-07", "2017-09-13", "2017-09-19", "2017-09-25", "2017-09-29", "2017-10-05", "2017-10-11", "2017-10-17", "2017-10-23", "2017-10-27", "2017-11-02", "2017-11-08", "2017-11-14", "2017-11-20", "2017-11-24", "2017-11-30", "2017-12-06", "2017-12-12", "2017-12-18", "2017-12-22", "2017-12-28", "2018-01-03", "2018-01-09", "2018-01-15", "2018-01-19", "2018-01-25", "2018-01-31", "2018-02-06", "2018-02-12", "2018-02-16", "2018-02-22", "2018-02-28", "2018-03-06", "2018-03-12", "2018-03-16", "2018-03-22", "2018-03-28", "2018-04-03", "2018-04-09", "2018-04-13", "2018-04-19", "2018-04-25", "2018-05-01", "2018-05-07", "2018-05-11", "2018-05-17", "2018-05-23", "2018-05-29", "2018-06-04", "2018-06-08", "2018-06-14", "2018-06-20", "2018-06-26", "2018-07-02", "2018-07-06", "2018-07-12", "2018-07-18", "2018-07-24", "2018-07-30", "2018-08-03", "2018-08-09", "2018-08-15", "2018-08-21", "2018-08-27", "2018-08-31", "2018-09-06", "2018-09-12", "2018-09-18", "2018-09-24", "2018-09-28", "2018-10-04", "2018-10-10", "2018-10-16", "2018-10-22", "2018-10-26", "2018-11-01", "2018-11-07", "2018-11-13", "2018-11-19", "2018-11-23", "2018-11-29", "2018-12-05", "2018-12-11", "2018-12-17", "2018-12-21", "2018-12-27", "2019-01-02", "2019-01-08", "2019-01-14", "2019-01-18", "2019-01-24", "2019-01-30", "2019-02-05", "2019-02-11", "2019-02-15", "2019-02-21", "2019-02-27", "2019-03-05", "2019-03-11", "2019-03-15", "2019-03-21", "2019-03-27", "2019-04-02", "2019-04-08", "2019-04-12", "2019-04-18", "2019-04-24", "2019-04-30", "2019-05-06", "2019-05-10", "2019-05-16", "2019-05-22", "2019-05-28", "2019-06-03", "2019-06-07", "2019-06-13", "2019-06-19", "2019-06-25", "2019-07-01", "2019-07-05", "2019-07-11", "2019-07-17", "2019-07-23", "2019-07-29", "2019-08-02", "2019-08-08", "2019-08-14", "2019-08-20", "2019-08-26", "2019-08-30", "2019-09-05", "2019-09-11", "2019-09-17", "2019-09-23", "2019-09-27", "2019-10-03", "2019-10-09", "2019-10-15", "2019-10-21", "2019-10-25", "2019-10-30", "2019-11-05", "2019-11-11", "2019-11-15", "2019-11-21", "2019-11-27", "2019-12-03", "2019-12-09", "2019-12-13", "2019-12-19", "2019-12-25", "2019-12-31", "2020-01-06", "2020-01-10", "2020-01-16", "2020-01-22", "2020-01-28", "2020-02-03", "2020-02-07", "2020-02-13", "2020-02-19", "2020-02-25", "2020-03-02", "2020-03-06", "2020-03-12", "2020-03-18", "2020-03-24", "2020-03-30", "2020-04-03", "2020-04-09", "2020-04-15", "2020-04-21", "2020-04-27", "2020-05-01", "2020-05-07", "2020-05-13", "2020-05-19", "2020-05-25", "2020-05-29", "2020-06-04", "2020-06-10", "2020-06-16", "2020-06-22", "2020-06-26", "2020-07-02", "2020-07-08", "2020-07-14", "2020-07-20", "2020-07-24", "2020-07-30", "2020-08-05", "2020-08-11", "2020-08-17", "2020-08-21", "2020-08-27", "2020-09-02", "2020-09-08", "2020-09-14", "2020-09-18", "2020-09-24", "2020-09-30", "2020-10-06", "2020-10-12", "2020-10-16", "2020-10-22", "2020-10-28", "2020-11-03", "2020-11-09", "2020-11-13", "2020-11-18", "2020-11-24", "2020-11-30", "2020-12-04", "2020-12-10", "2020-12-16", "2020-12-22", "2020-12-28", "2021-01-01", "2021-01-07", "2021-01-13", "2021-01-19", "2021-01-25", "2021-01-29", "2021-02-04", "2021-02-10", "2021-02-16", "2021-02-22", "2021-02-26", "2021-03-04", "2021-03-10", "2021-03-16", "2021-03-22", "2021-03-26", "2021-04-01", "2021-04-07", "2021-04-13", "2021-04-19", "2021-04-23", "2021-04-29", "2021-05-05", "2021-05-11", "2021-05-17", "2021-05-21", "2021-05-27", "2021-06-02", "2021-06-08", "2021-06-14", "2021-06-18", "2021-06-24", "2021-06-30", "2021-07-06", "2021-07-12", "2021-07-16", "2021-07-22", "2021-07-28", "2021-08-03", "2021-08-09", "2021-08-13", "2021-08-19", "2021-08-25", "2021-08-31", "2021-09-06", "2021-09-10", "2021-09-16", "2021-09-22", "2021-09-28", "2021-10-04", "2021-10-08", "2021-10-14", "2021-10-20", "2021-10-26", "2021-11-01", "2021-11-05", "2021-11-11", "2021-11-17", "2021-11-23", "2021-11-29", "2021-12-03", "2021-12-09", "2021-12-15", "2021-12-21", "2021-12-27", "2021-12-31", "2022-01-06", "2022-01-12", "2022-01-18", "2022-01-24", "2022-01-28", "2022-02-03", "2022-02-09", "2022-02-15", "2022-02-21", "2022-02-25", "2022-03-03", "2022-03-09", "2022-03-15", "2022-03-21", "2022-03-25", "2022-03-31", "2022-04-06", "2022-04-12", "2022-04-18", "2022-04-22", "2022-04-28", "2022-05-04", "2022-05-10", "2022-05-16", "2022-05-20", "2022-05-26", "2022-06-01", "2022-06-07", "2022-06-13", "2022-06-17", "2022-06-23", "2022-06-29", "2022-07-05", "2022-07-11", "2022-07-15", "2022-07-21", "2022-07-27", "2022-08-02", "2022-08-08", "2022-08-12", "2022-08-18", "2022-08-24", "2022-08-30", "2022-09-05", "2022-09-09", "2022-09-15", "2022-09-21", "2022-09-27", "2022-10-03", "2022-10-07", "2022-10-13", "2022-10-19", "2022-10-25", "2022-10-31", "2022-11-04", "2022-11-10", "2022-11-16", "2022-11-22", "2022-11-28", "2022-12-02", "2022-12-08", "2022-12-14", "2022-12-20", "2022-12-26", "2022-12-30", "2023-01-05", "2023-01-11", "2023-01-17", "2023-01-23", "2023-01-27", "2023-02-02", "2023-02-08", "2023-02-14", "2023-02-20", "2023-02-24", "2023-03-02", "2023-03-08", "2023-03-14", "2023-03-20", "2023-03-24", "2023-03-30", "2023-04-05", "2023-04-11", "2023-04-17", "2023-04-21", "2023-04-27", "2023-05-03", "2023-05-09", "2023-05-15", "2023-05-19", "2023-05-25", "2023-05-31", "2023-06-06", "2023-06-12", "2023-06-16", "2023-06-22", "2023-06-28", "2023-07-04", "2023-07-10", "2023-07-14", "2023-07-20", "2023-07-26", "2023-08-01", "2023-08-07", "2023-08-11", "2023-08-17", "2023-08-23", "2023-08-29", "2023-09-04", "2023-09-08", "2023-09-14", "2023-09-20", "2023-09-26", "2023-10-02", "2023-10-06", "2023-10-12", "2023-10-18", "2023-10-24", "2023-10-30", "2023-11-03", "2023-11-09", "2023-11-15", "2023-11-21", "2023-11-27", "2023-12-01", "2023-12-07", "2023-12-13", "2023-12-19", "2023-12-25", "2023-12-29"], "equity": [1.0111, 1.0187, 1.0167, 1.0158, 1.0272, 1.0149, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0129, 1.0283, 1.0402, 1.034, 1.0079, 0.9889, 0.9928, 0.9933, 0.9837, 0.9968, 1.0124, 1.0243, 1.0345, 1.0144, 1.014, 1.014, 1.0112, 1.0355, 1.0357, 1.0349, 1.0346, 1.0343, 1.0206, 0.9997, 0.9875, 0.9905, 0.9852, 0.9975, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 0.9858, 1.0014, 0.9981, 1.0009, 1.0223, 1.0271, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0318, 1.0238, 1.0152, 1.0268, 1.0387, 1.0511, 1.0328, 1.0331, 1.0037, 1.0104, 1.0192, 1.0312, 1.0144, 1.0223, 1.0238, 1.0216, 1.0285, 1.0348, 1.0457, 1.0531, 1.0624, 1.0476, 1.0526, 1.0273, 0.9881, 1.002, 1.0248, 1.0212, 1.0389, 1.0367, 1.0272, 1.0277, 1.0375, 0.97, 0.9593, 0.9592, 0.9635, 0.9475, 0.9422, 0.9414, 0.9386, 0.9673, 0.9826, 0.9711, 0.9581, 0.9684, 0.9507, 0.9358, 0.9367, 0.9525, 0.9487, 0.9487, 0.9487, 0.9487, 0.9487, 0.9487, 0.9561, 0.9244, 0.91, 0.9557, 0.9608, 0.971, 0.9694, 0.9408, 0.9408, 0.9623, 0.9806, 0.9728, 0.9708, 0.9803, 0.976, 0.9753, 0.9772, 0.9702, 0.9895, 0.9851, 0.9782, 0.9901, 0.9905, 1.0052, 1.0089, 1.0184, 0.9911, 0.9766, 0.9622, 0.9461, 0.9538, 0.9346, 0.9335, 0.9328, 0.9788, 0.957, 0.9212, 0.939, 0.9371, 0.9371, 0.9371, 0.9371, 0.9371, 0.9344, 0.9472, 0.9501, 0.9174, 0.879, 0.8963, 0.9085, 0.9089, 0.9026, 0.914, 0.9378, 0.9374, 0.932, 0.9523, 0.9484, 0.94, 0.9355, 0.9321, 0.929, 0.9231, 0.9168, 0.957, 0.9636, 0.9812, 0.9769, 0.9779, 0.9664, 0.9541, 0.9584, 0.9022, 0.8939, 0.8804, 0.9088, 0.9554, 0.9667, 0.9625, 0.9641, 0.9749, 0.9734, 0.9677, 0.9545, 0.937, 0.9458, 0.9688, 0.954, 0.9455, 0.9366, 0.9469, 0.9605, 0.9571, 0.9517, 0.9571, 0.947, 0.9331, 0.9464, 0.9957, 0.9846, 0.9827, 0.9443, 0.977, 1.0178, 1.0344, 1.077, 1.0725, 1.1106, 1.1502, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.1762, 1.2371, 1.0508, 1.0603, 1.0032, 0.938, 0.9378, 0.9378, 0.9378, 0.9378, 0.9378, 0.965, 0.9812, 0.9861, 0.9932, 0.9841, 0.9709, 0.9599, 0.962, 0.9636, 0.9594, 0.9819, 0.9799, 0.9857, 0.9712, 0.964, 0.9664, 0.9918, 0.9656, 0.9622, 0.9601, 0.9506, 0.9431, 0.9518, 0.9256, 0.9353, 0.9255, 0.9277, 0.9331, 0.9287, 0.9365, 0.9526, 0.9548, 0.9641, 0.9517, 0.9581, 0.9576, 0.9567, 0.9694, 0.9836, 1.0039, 0.9882, 0.9821, 0.9683, 0.9548, 0.9617, 0.9568, 0.9403, 0.9383, 0.9508, 0.9555, 0.9469, 0.9655, 0.9595, 0.9509, 0.9494, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9475, 0.9418, 0.9416, 0.9453, 0.9749, 0.9689, 0.9666, 0.9668, 0.9746, 0.9885, 0.9895, 0.9962, 1.0062, 1.0311, 1.0468, 1.0261, 1.0315, 1.0243, 0.9886, 0.9482, 0.9645, 0.9323, 0.9837, 1.0125, 1.0309, 0.9867, 0.9381, 0.9697, 0.9445, 0.9668, 0.9301, 0.8244, 0.8482, 0.7738, 0.7164, 0.6997, 0.6828, 0.681, 0.6771, 0.6915, 0.733, 0.7309, 0.7414, 0.7319, 0.7277, 0.7362, 0.752, 0.7303, 0.736, 0.7258, 0.7425, 0.7366, 0.7417, 0.7482, 0.7555, 0.751, 0.7319, 0.747, 0.7674, 0.7614, 0.7669, 0.7669, 0.7669, 0.7669, 0.7669, 0.7669, 0.7543, 0.7591, 0.7411, 0.7466, 0.752, 0.7298, 0.7174, 0.7259, 0.711, 0.6973, 0.7052, 0.7386, 0.7371, 0.6785, 0.6801, 0.6115, 0.6406, 0.6108, 0.627, 0.6234, 0.6331, 0.63, 0.6074, 0.6076, 0.6033, 0.5877, 0.6217, 0.6123, 0.5787, 0.588, 0.5556, 0.5483, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482, 0.5482]}}, "periods": [{"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-07-01", "period_end": "2016-08-01", "port_ret": 0.01489}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-08-01", "period_end": "2016-09-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-09-01", "period_end": "2016-10-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-10-01", "period_end": "2016-11-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-11-01", "period_end": "2016-12-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2016-12-01", "period_end": "2017-01-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-01-01", "period_end": "2017-02-01", "port_ret": -0.019797}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-02-01", "period_end": "2017-03-01", "port_ret": 0.031707}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-03-01", "period_end": "2017-04-01", "port_ret": 0.00355}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-04-01", "period_end": "2017-05-01", "port_ret": -0.002937}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-05-01", "period_end": "2017-06-01", "port_ret": -0.036264}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-06-01", "period_end": "2017-07-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-07-01", "period_end": "2017-08-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-08-01", "period_end": "2017-09-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-09-01", "period_end": "2017-10-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-10-01", "period_end": "2017-11-01", "port_ret": 0.048807}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-11-01", "period_end": "2017-12-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2017-12-01", "period_end": "2018-01-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-01-01", "period_end": "2018-02-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-02-01", "period_end": "2018-03-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-03-01", "period_end": "2018-04-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-04-01", "period_end": "2018-05-01", "port_ret": 0.000934}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-05-01", "period_end": "2018-06-01", "port_ret": -0.018533}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-06-01", "period_end": "2018-07-01", "port_ret": 0.017659}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-07-01", "period_end": "2018-08-01", "port_ret": 0.013657}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-08-01", "period_end": "2018-09-01", "port_ret": -0.006413}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-09-01", "period_end": "2018-10-01", "port_ret": -0.071136}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-10-01", "period_end": "2018-11-01", "port_ret": -0.024515}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-11-01", "period_end": "2018-12-01", "port_ret": 0.018726}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2018-12-01", "period_end": "2019-01-01", "port_ret": -0.008732}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-01-01", "period_end": "2019-02-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-02-01", "period_end": "2019-03-01", "port_ret": 0.001333}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-03-01", "period_end": "2019-04-01", "port_ret": 0.030658}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-04-01", "period_end": "2019-05-01", "port_ret": -0.003894}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-05-01", "period_end": "2019-06-01", "port_ret": 0.014026}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-06-01", "period_end": "2019-07-01", "port_ret": 0.002137}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-07-01", "period_end": "2019-08-01", "port_ret": -0.046377}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-08-01", "period_end": "2019-09-01", "port_ret": -0.006489}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-09-01", "period_end": "2019-10-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-10-01", "period_end": "2019-11-01", "port_ret": -0.051087}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-11-01", "period_end": "2019-12-01", "port_ret": 0.05186}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2019-12-01", "period_end": "2020-01-01", "port_ret": -0.001215}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-01-01", "period_end": "2020-02-01", "port_ret": 0.027659}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-02-01", "period_end": "2020-03-01", "port_ret": -0.004785}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-03-01", "period_end": "2020-04-01", "port_ret": 0.004349}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-04-01", "period_end": "2020-05-01", "port_ret": 0.014404}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-05-01", "period_end": "2020-06-01", "port_ret": -0.009876}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-06-01", "period_end": "2020-07-01", "port_ret": -0.023497}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-07-01", "period_end": "2020-08-01", "port_ret": 0.019755}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-08-01", "period_end": "2020-09-01", "port_ret": 0.018929}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-09-01", "period_end": "2020-10-01", "port_ret": 0.205193}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-10-01", "period_end": "2020-11-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-11-01", "period_end": "2020-12-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2020-12-01", "period_end": "2021-01-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-01-01", "period_end": "2021-02-01", "port_ret": -0.201112}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-02-01", "period_end": "2021-03-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-03-01", "period_end": "2021-04-01", "port_ret": 0.03525}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-04-01", "period_end": "2021-05-01", "port_ret": 0.017159}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-05-01", "period_end": "2021-06-01", "port_ret": -0.007914}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-06-01", "period_end": "2021-07-01", "port_ret": -0.034751}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-07-01", "period_end": "2021-08-01", "port_ret": -0.027095}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-08-01", "period_end": "2021-09-01", "port_ret": 0.038676}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-09-01", "period_end": "2021-10-01", "port_ret": 0.020037}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-10-01", "period_end": "2021-11-01", "port_ret": -0.02048}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-11-01", "period_end": "2021-12-01", "port_ret": 1.9e-05}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2021-12-01", "period_end": "2022-01-01", "port_ret": -0.00572}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-01-01", "period_end": "2022-02-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-02-01", "period_end": "2022-03-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-03-01", "period_end": "2022-04-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-04-01", "period_end": "2022-05-01", "port_ret": 0.025369}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-05-01", "period_end": "2022-06-01", "port_ret": 0.025474}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-06-01", "period_end": "2022-07-01", "port_ret": 0.036988}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-07-01", "period_end": "2022-08-01", "port_ret": -0.048373}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-08-01", "period_end": "2022-09-01", "port_ret": -0.014699}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-09-01", "period_end": "2022-10-01", "port_ret": -0.199495}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-10-01", "period_end": "2022-11-01", "port_ret": -0.13805}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-11-01", "period_end": "2022-12-01", "port_ret": 0.086485}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2022-12-01", "period_end": "2023-01-01", "port_ret": -0.000534}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-01-01", "period_end": "2023-02-01", "port_ret": 0.043469}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-02-01", "period_end": "2023-03-01", "port_ret": 0.014683}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-03-01", "period_end": "2023-04-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-04-01", "period_end": "2023-05-01", "port_ret": -0.021763}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-05-01", "period_end": "2023-06-01", "port_ret": -0.066354}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-06-01", "period_end": "2023-07-01", "port_ret": -0.092984}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-07-01", "period_end": "2023-08-01", "port_ret": -0.008337}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-08-01", "period_end": "2023-09-01", "port_ret": -0.024436}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-09-01", "period_end": "2023-10-01", "port_ret": -0.106247}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-10-01", "period_end": "2023-11-01", "port_ret": -0.002}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-11-01", "period_end": "2023-12-01", "port_ret": 0.0}, {"strategy": "h2_nowcast_trends_monthly", "period_start": "2023-12-01", "period_end": "2023-12-31", "port_ret": 0.0}]}, "health": {"files": [{"label": "runway looks", "script": "01_scrape_runway.py", "rows": 26855, "latest": "2026-03-12", "ok": true}, {"label": "runway tags", "script": "02_tag_gemini.py", "rows": 2172, "latest": null, "ok": true}, {"label": "downstream items", "script": "03_scrape_downstream.py", "rows": 1039, "latest": "2026-07-03", "ok": true}, {"label": "runway mix", "script": "04_material_mix.py", "rows": 481, "latest": "2026-04-05", "ok": true}, {"label": "downstream mix", "script": "04_material_mix.py", "rows": 26, "latest": "2026-07-31", "ok": true}, {"label": "google trends", "script": "05_google_trends.py", "rows": 2919, "latest": "2026-07-01", "ok": true}, {"label": "propagation", "script": "06_propagation_lag.py", "rows": 24, "latest": null, "ok": true}, {"label": "adoption signals", "script": "07_signals.py", "rows": 0, "latest": null, "ok": false}, {"label": "nowcast signals", "script": "07_signals.py", "rows": 0, "latest": null, "ok": false}, {"label": "prices tier2/3", "script": "08_backtest.py --fetch", "rows": 84366, "latest": "2026-07-01", "ok": true}], "source_events": [{"date": "2026-07-02", "retailer": "zara", "source": "zara_live", "event": "request_error", "detail": "https://www.zara.com/es/en/products-details?productIds=548172234&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"}, {"date": "2026-07-02", "retailer": "zara", "source": "zara_live", "event": "request_error", "detail": "https://www.zara.com/es/en/products-details?productIds=547823532&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"}, {"date": "2026-07-02", "retailer": "zara", "source": "zara_live", "event": "request_error", "detail": "https://www.zara.com/es/en/products-details?productIds=564177707&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"}, {"date": "2026-07-02", "retailer": "zara", "source": "zara_live", "event": "request_error", "detail": "https://www.zara.com/es/en/products-details?productIds=555526592&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"}, {"date": "2026-07-02", "retailer": "zara", "source": "zara_live", "event": "request_error", "detail": "https://www.zara.com/es/en/products-details?productIds=564880276&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"}, {"date": "2026-07-02", "retailer": "hm", "source": "dataset", "event": "fallback_engaged", "detail": "live returned no items"}, {"date": "2026-07-02", "retailer": "uniqlo", "source": "uniqlo_live", "event": "schema_drift", "detail": "no products in listing response"}, {"date": "2026-07-02", "retailer": "uniqlo", "source": "dataset", "event": "fallback_engaged", "detail": "live returned no items"}, {"date": "2026-07-03", "retailer": "hm", "source": "dataset", "event": "fallback_engaged", "detail": "live returned no items"}, {"date": "2026-07-03", "retailer": "uniqlo", "source": "uniqlo_live", "event": "schema_drift", "detail": "no products in listing response"}, {"date": "2026-07-03", "retailer": "uniqlo", "source": "dataset", "event": "fallback_engaged", "detail": "live returned no items"}, {"date": "2026-07-03", "retailer": "hm", "source": "dataset", "event": "fallback_engaged", "detail": "live returned no items"}, {"date": "2026-07-03", "retailer": "hm", "source": "hm_live", "event": "blocked", "detail": "403 https://www2.hm.com/en_us/productpage.1345514001.html"}]}}</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById("payload").textContent);
+const SVGNS = "http://www.w3.org/2000/svg";
+const SERIES = ["--s1","--s2","--s3","--s4","--s5","--s6","--s7","--s8"];
+const cssv = n => `var(${n})`;
+
+function el(tag, attrs, parent){
+  const node = document.createElementNS(SVGNS, tag);
+  for (const k in attrs || {}) node.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(node);
+  return node;
+}
+function div(cls, parent){
+  const d = document.createElement("div");
+  if (cls) d.className = cls;
+  if (parent) parent.appendChild(d);
+  return d;
+}
+function fmt(x, d){
+  if (x === null || x === undefined || Number.isNaN(x)) return "—";
+  return Number(x).toFixed(d === undefined ? 2 : d);
+}
+function pct(x, d){
+  return x === null || x === undefined ? "—" : (100 * x).toFixed(d === undefined ? 1 : d) + "%";
+}
+
+/* ---------- tooltip (textContent only — labels are untrusted) ---------- */
+const tip = document.getElementById("tip");
+function tipShow(evt, rows){
+  tip.textContent = "";
+  rows.forEach(function(r, i){
+    const line = div(i === 0 ? "t-val" : "t-row", tip);
+    if (r.color){
+      const key = div("t-key", line);
+      key.style.borderTopColor = r.color;
+    }
+    line.appendChild(document.createTextNode(r.text));
+  });
+  tip.style.display = "block";
+  tipMove(evt);
+}
+function tipMove(evt){
+  const pad = 14;
+  let x = evt.clientX + pad, y = evt.clientY + pad;
+  const r = tip.getBoundingClientRect();
+  if (x + r.width > innerWidth - 8) x = evt.clientX - r.width - pad;
+  if (y + r.height > innerHeight - 8) y = evt.clientY - r.height - pad;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function tipHide(){ tip.style.display = "none"; }
+function hover(node, rowsFn){
+  node.addEventListener("pointerenter", e => tipShow(e, rowsFn()));
+  node.addEventListener("pointermove", tipMove);
+  node.addEventListener("pointerleave", tipHide);
+}
+
+/* ------------------------------ scaffolding ---------------------------- */
+function section(id, title, note, badge){
+  const sec = document.getElementById(id);
+  const h = document.createElement("h2");
+  h.textContent = title;
+  if (badge){
+    const b = document.createElement("span");
+    b.className = "badge"; b.textContent = badge;
+    h.appendChild(b);
+  }
+  sec.appendChild(h);
+  if (note){
+    const p = document.createElement("p");
+    p.className = "note"; p.textContent = note;
+    sec.appendChild(p);
+  }
+  return sec;
+}
+function emptyState(sec, script){
+  const e = div("empty", sec);
+  e.appendChild(document.createTextNode("No data yet — run "));
+  const c = document.createElement("code");
+  c.textContent = "scripts/" + script;
+  e.appendChild(c);
+}
+function makeTable(parent, headers, rows){
+  const wrap = div("scroll", parent);
+  const t = document.createElement("table");
+  const tr = document.createElement("tr");
+  headers.forEach(function(h){
+    const th = document.createElement("th"); th.textContent = h; tr.appendChild(th);
+  });
+  t.appendChild(tr);
+  rows.forEach(function(row){
+    const trr = document.createElement("tr");
+    row.forEach(function(cell){
+      const td = document.createElement("td");
+      td.textContent = (cell === null || cell === undefined) ? "—" : String(cell);
+      trr.appendChild(td);
+    });
+    t.appendChild(trr);
+  });
+  wrap.appendChild(t);
+  return wrap;
+}
+function tableTwin(parent, headers, rows){
+  const d = document.createElement("details");
+  const s = document.createElement("summary");
+  s.textContent = "Table view";
+  d.appendChild(s);
+  makeTable(d, headers, rows);
+  parent.appendChild(d);
+}
+function legend(parent, entries, mark){
+  const lg = div("legend", parent);
+  entries.forEach(function(e){
+    const k = div("key", lg);
+    const sw = div(mark === "line" ? "line" : "swatch", k);
+    if (mark === "line") sw.style.borderTopColor = e.color;
+    else sw.style.background = e.color;
+    k.appendChild(document.createTextNode(e.label));
+  });
+}
+
+/* ------------------------------- heatmap ------------------------------- */
+function renderHeatmap(){
+  const sec = section("sec-heatmap", "Runway material mix",
+    "Season-level share of each material across tagged looks; deeper = larger share. Ring = emergent (rising vs trailing 3 seasons).");
+  const d = DATA.runway_heatmap;
+  if (!d){ emptyState(sec, "01_scrape_runway.py → 02_tag_gemini.py → 04_material_mix.py"); return; }
+  const cw = 30, ch = 20, gap = 2, left = 84, top = 4, bottom = 46;
+  const W = left + d.seasons.length * (cw + gap);
+  const H = top + d.materials.length * (ch + gap) + bottom;
+  const wrap = div("scroll", sec);
+  const svg = el("svg", {width: W, height: H, role: "img",
+                         "aria-label": "Runway material mix heatmap"}, null);
+  wrap.appendChild(svg);
+  let vmax = 0;
+  d.values.forEach(r => r.forEach(v => { if (v !== null && v > vmax) vmax = v; }));
+  vmax = vmax || 1;
+  d.materials.forEach(function(mat, i){
+    const t = el("text", {x: left - 8, y: top + i * (ch + gap) + ch / 2 + 4,
+                          "text-anchor": "end"}, svg);
+    t.textContent = mat;
+    d.seasons.forEach(function(se, j){
+      const v = d.values[i][j];
+      const x = left + j * (cw + gap), y = top + i * (ch + gap);
+      const cell = el("rect", {x: x, y: y, width: cw, height: ch, rx: 2}, svg);
+      if (v === null){
+        cell.setAttribute("fill", "var(--mid)");
+      } else {
+        const step = Math.min(7, Math.floor((v / vmax) * 7.999));
+        cell.setAttribute("fill", cssv("--heat" + step));
+        if (d.emergent && d.emergent[i][j])
+          cell.setAttribute("stroke", cssv("--s3")),
+          cell.setAttribute("stroke-width", "2");
+      }
+      hover(cell, () => [
+        {text: v === null ? "no looks tagged" : pct(v)},
+        {text: mat + " · " + se}]);
+    });
+  });
+  d.seasons.forEach(function(se, j){
+    if (j % 2 === 1 && d.seasons.length > 14) return;   // thin dense axis
+    const t = el("text", {x: left + j * (cw + gap) + cw / 2,
+                          y: H - bottom + 14, "text-anchor": "middle",
+                          class: "muted"}, svg);
+    t.textContent = se.replace("20", "'");
+  });
+  tableTwin(sec, ["material"].concat(d.seasons),
+    d.materials.map((m, i) => [m].concat(d.values[i].map(v => v === null ? null : pct(v)))));
+}
+
+/* --------------------------- propagation lags -------------------------- */
+function renderPropagation(){
+  const sec = section("sec-propagation", "Propagation lag — runway → retailer",
+    "Cross-correlation of runway share vs downstream share by lag (months). Peak = how long a trend takes to reach the racks.");
+  const d = DATA.propagation;
+  if (!d){ emptyState(sec, "06_propagation_lag.py"); return; }
+  if (d.grid){
+    const mats = [];
+    Object.values(d.grid).forEach(g => Object.keys(g).forEach(m => {
+      if (!mats.includes(m)) mats.push(m);
+    }));
+    const shown = mats.slice(0, 8);                 // fixed slots, never cycled
+    const colorOf = m => cssv(SERIES[shown.indexOf(m)]);
+    legend(sec, shown.map(m => ({label: m, color: colorOf(m)})), "line");
+    const row = div("scroll", sec);
+    row.style.display = "flex"; row.style.gap = "14px";
+    Object.keys(d.grid).forEach(function(ret){
+      const g = d.grid[ret];
+      const cardW = 190, plotW = 160, plotH = 90, lx = 22, ty = 18;
+      const holder = document.createElement("div");
+      const svg = el("svg", {width: cardW, height: plotH + ty + 28}, null);
+      holder.appendChild(svg);
+      const title = el("text", {x: lx, y: 11, class: "val"}, svg);
+      title.textContent = ret;
+      el("line", {x1: lx, x2: lx + plotW, y1: ty + plotH / 2, y2: ty + plotH / 2,
+                  stroke: "var(--axis)", "stroke-width": 1}, svg);
+      const xOf = i => lx + (i / 12) * plotW;
+      const yOf = r => ty + plotH / 2 - r * (plotH / 2);
+      Object.keys(g).forEach(function(mat){
+        if (!shown.includes(mat)) return;
+        const pts = g[mat].map((r, i) => r === null ? null : [xOf(i), yOf(Math.max(-1, Math.min(1, r)))])
+                          .filter(Boolean);
+        if (pts.length < 2) return;
+        el("path", {d: "M" + pts.map(p => p[0] + "," + p[1]).join("L"),
+                    fill: "none", "stroke-width": 2,
+                    "stroke-linejoin": "round", "stroke-linecap": "round",
+                    style: "stroke:" + colorOf(mat)}, svg);
+      });
+      [0, 6, 12].forEach(function(lag){
+        const t = el("text", {x: xOf(lag), y: ty + plotH + 16,
+                              "text-anchor": "middle", class: "muted"}, svg);
+        t.textContent = lag + "m";
+      });
+      const hit = el("rect", {x: lx, y: ty, width: plotW, height: plotH,
+                              fill: "transparent"}, svg);
+      hit.addEventListener("pointermove", function(e){
+        const box = svg.getBoundingClientRect();
+        const lag = Math.max(0, Math.min(12,
+          Math.round(((e.clientX - box.left) - lx) / plotW * 12)));
+        const rows = [{text: ret + " · lag " + lag + "m"}];
+        Object.keys(g).forEach(function(mat){
+          if (!shown.includes(mat)) return;
+          rows.push({text: mat + "  r=" + fmt(g[mat][lag]),
+                     color: getComputedStyle(document.documentElement)
+                            .getPropertyValue(SERIES[shown.indexOf(mat)])});
+        });
+        tipShow(e, rows);
+      });
+      hit.addEventListener("pointerleave", tipHide);
+      row.appendChild(holder);
+    });
+  }
+  tableTwin(sec, ["retailer", "material", "lag (m)", "adoption coef", "r", "n"],
+    d.best.map(b => [b.retailer, b.material, b.lag_months, fmt(b.adoption_coef, 3),
+                     fmt(b.r, 3), b.n_obs]));
+}
+
+/* ----------------------------- leaderboard ----------------------------- */
+function renderLeaderboard(){
+  const sec = section("sec-leaderboard", "Retailer adoption-speed leaderboard", null);
+  const d = DATA.leaderboard;
+  if (!d){ emptyState(sec, "07_signals.py"); return; }
+  sec.querySelector("h2").appendChild(Object.assign(
+    document.createElement("span"),
+    {className: "badge", textContent: d.cadence + " · as of " + d.asof.slice(0, 10)}));
+  const rows = d.rows;
+  const barMax = 24, rowH = 26, left = 56, plotW = 300, right = 56;
+  const scores = rows.map(r => Math.abs(r.score || 0));
+  const smax = Math.max.apply(null, scores.concat([0.0001]));
+  const W = left + plotW + right, H = rows.length * rowH + 8;
+  const wrap = div("scroll", sec);
+  const svg = el("svg", {width: W, height: H}, null);
+  wrap.appendChild(svg);
+  const x0 = left + plotW / 2;
+  el("line", {x1: x0, x2: x0, y1: 0, y2: H - 6, stroke: "var(--axis)",
+              "stroke-width": 1}, svg);
+  rows.forEach(function(r, i){
+    const y = i * rowH + 4, bh = Math.min(barMax, rowH - 8);
+    const w = (Math.abs(r.score || 0) / smax) * (plotW / 2 - 6);
+    const isPos = (r.score || 0) >= 0;
+    const bx = isPos ? x0 : x0 - w;
+    const bar = el("rect", {x: bx, y: y, width: Math.max(w, 1), height: bh,
+                            rx: 4, style: "fill:" + (isPos ? "var(--pos)" : "var(--neg)")}, svg);
+    const lab = el("text", {x: left - 8, y: y + bh / 2 + 4, "text-anchor": "end"}, svg);
+    lab.textContent = r.ticker;
+    const val = el("text", {x: isPos ? x0 + w + 6 : x0 - w - 6,
+                            y: y + bh / 2 + 4,
+                            "text-anchor": isPos ? "start" : "end",
+                            class: "val"}, svg);
+    val.textContent = fmt(r.score, 2);
+    hover(bar, () => [
+      {text: "score " + fmt(r.score, 3)},
+      {text: r.name + " (" + r.ticker + ")"},
+      {text: "rank " + r.rank + " · weight " + fmt(r.weight, 3)}]);
+  });
+  const fn = div("footnote", sec);
+  fn.textContent = "Blue = converging to runway (long candidates), red = diverging (short candidates).";
+  tableTwin(sec, ["ticker", "name", "score", "rank", "weight"],
+    rows.map(r => [r.ticker, r.name, fmt(r.score, 3), r.rank, fmt(r.weight, 3)]));
+}
+
+/* -------------------------------- nowcast ------------------------------ */
+function renderNowcast(){
+  const sec = section("sec-nowcast", "Material-demand nowcast",
+    "z-score of current downstream share vs trailing 12 months. |z| > 1 arms the supplier sleeve.");
+  const d = DATA.nowcast;
+  if (!d){ emptyState(sec, "07_signals.py"); return; }
+  sec.querySelector("h2").appendChild(Object.assign(
+    document.createElement("span"),
+    {className: "badge", textContent: "as of " + d.asof.slice(0, 7)}));
+  const rows = d.rows, rowH = 26, left = 76, plotW = 240, right = 90;
+  const W = left + plotW + right, H = rows.length * rowH + 8;
+  const wrap = div("scroll", sec);
+  const svg = el("svg", {width: W, height: H}, null);
+  wrap.appendChild(svg);
+  const x0 = left + plotW / 2, zmax = 3;
+  el("line", {x1: x0, x2: x0, y1: 0, y2: H - 6, stroke: "var(--axis)"}, svg);
+  rows.forEach(function(r, i){
+    const y = i * rowH + 5, bh = 14;
+    el("rect", {x: left, y: y, width: plotW, height: bh, rx: 4,
+                fill: "var(--mid)"}, svg);
+    const z = Math.max(-zmax, Math.min(zmax, r.nowcast_z || 0));
+    const w = Math.abs(z) / zmax * (plotW / 2);
+    const bar = el("rect", {x: z >= 0 ? x0 : x0 - w, y: y, width: Math.max(w, 1),
+                            height: bh, rx: 4,
+                            style: "fill:" + (z >= 0 ? "var(--pos)" : "var(--neg)")}, svg);
+    const lab = el("text", {x: left - 8, y: y + bh / 2 + 4, "text-anchor": "end"}, svg);
+    lab.textContent = r.material;
+    const val = el("text", {x: left + plotW + 8, y: y + bh / 2 + 4, class: "val"}, svg);
+    val.textContent = fmt(r.nowcast_z, 2) + (r.direction !== "flat" ? " · " + r.direction : "");
+    hover(bar, () => [
+      {text: "z = " + fmt(r.nowcast_z, 2) + " (" + r.direction + ")"},
+      {text: r.material},
+      {text: r.tickers ? "suppliers: " + r.tickers : "no listed supplier mapping"}]);
+  });
+  tableTwin(sec, ["material", "z", "direction", "suppliers"],
+    rows.map(r => [r.material, fmt(r.nowcast_z, 2), r.direction, r.tickers]));
+}
+
+/* ------------------------------- positions ----------------------------- */
+function renderPositions(){
+  const sec = section("sec-positions", "Current signal positions", null);
+  const d = DATA.positions;
+  if (!d){ emptyState(sec, "07_signals.py"); return; }
+  makeTable(sec, ["sleeve", "ticker", "detail", "weight", "as of"],
+    d.rows.map(r => [r.sleeve, r.ticker, r.detail, fmt(r.weight, 3),
+                     String(r.asof).slice(0, 10)]));
+}
+
+/* -------------------------------- backtest ----------------------------- */
+function renderBacktest(){
+  const sec = section("sec-backtest", "Backtest — pre-registered runs",
+    "Seasonal is the primary; monthly is robustness. Net of 20 bps/side, turnover-capped, local-index excess returns.");
+  const d = DATA.backtest;
+  if (!d){ emptyState(sec, "08_backtest.py"); return; }
+  const meta = d.findings.meta || {};
+  sec.querySelector("h2").appendChild(Object.assign(
+    document.createElement("span"),
+    {className: "badge",
+     textContent: "dev window " + (meta.dev_window || []).join(" → ")}));
+  const primary = (d.findings.h1 || {}).seasonal || {};
+  const tiles = div("tiles", sec);
+  [["Sharpe", fmt(primary.sharpe)], ["IR vs XRT", fmt(primary.ir)],
+   ["Hit rate", primary.hit_rate == null ? "—" : pct(primary.hit_rate, 0)],
+   ["CAR", primary.car == null ? "—" : pct(primary.car)],
+   ["Max drawdown", primary.max_drawdown == null ? "—" : pct(primary.max_drawdown)]]
+  .forEach(function(pair){
+    const t = div("tile", tiles);
+    div("lab", t).textContent = pair[0] + " (H1 seasonal)";
+    const n = div("num" + (pair[1] === "—" ? " na" : ""), t);
+    n.textContent = pair[1];
+  });
+  if (d.curves && Object.keys(d.curves).length){
+    const strats = Object.keys(d.curves).slice(0, 8);
+    legend(sec, strats.map((s, i) => ({label: s, color: cssv(SERIES[i])})), "line");
+    const W = 1080, H = 240, lx = 46, rx = 12, ty = 8, by = 28;
+    const plotW = W - lx - rx, plotH = H - ty - by;
+    let lo = Infinity, hi = -Infinity, maxN = 0;
+    strats.forEach(function(s){
+      d.curves[s].equity.forEach(function(v){
+        if (v < lo) lo = v; if (v > hi) hi = v;
+      });
+      maxN = Math.max(maxN, d.curves[s].equity.length);
+    });
+    if (lo === hi){ lo -= 0.01; hi += 0.01; }
+    const wrap = div("scroll", sec);
+    const svg = el("svg", {width: W, height: H}, null);
+    wrap.appendChild(svg);
+    const yOf = v => ty + (1 - (v - lo) / (hi - lo)) * plotH;
+    [lo, 1, hi].forEach(function(v){
+      if (v < lo || v > hi) return;
+      el("line", {x1: lx, x2: lx + plotW, y1: yOf(v), y2: yOf(v),
+                  stroke: "var(--grid)", "stroke-width": 1}, svg);
+      const t = el("text", {x: lx - 6, y: yOf(v) + 4, "text-anchor": "end",
+                            class: "muted"}, svg);
+      t.textContent = fmt(v, 2);
+    });
+    const xall = d.curves[strats[0]].dates;
+    strats.forEach(function(s, i){
+      const c = d.curves[s];
+      const n = c.equity.length;
+      const pts = c.equity.map((v, k) =>
+        [lx + (n === 1 ? 0 : k / (n - 1)) * plotW, yOf(v)]);
+      el("path", {d: "M" + pts.map(p => fmt(p[0], 1) + "," + fmt(p[1], 1)).join("L"),
+                  fill: "none", "stroke-width": 2, "stroke-linejoin": "round",
+                  "stroke-linecap": "round", style: "stroke:" + cssv(SERIES[i])}, svg);
+    });
+    [0, Math.floor(xall.length / 2), xall.length - 1].forEach(function(k){
+      if (k < 0 || !xall[k]) return;
+      const t = el("text", {x: lx + (xall.length === 1 ? 0 : k / (xall.length - 1)) * plotW,
+                            y: H - 8, "text-anchor": "middle", class: "muted"}, svg);
+      t.textContent = String(xall[k]).slice(0, 10);
+    });
+    const cross = el("line", {y1: ty, y2: ty + plotH, stroke: "var(--axis)",
+                              "stroke-width": 1, opacity: 0}, svg);
+    const hit = el("rect", {x: lx, y: ty, width: plotW, height: plotH,
+                            fill: "transparent"}, svg);
+    hit.addEventListener("pointermove", function(e){
+      const box = svg.getBoundingClientRect();
+      const fx = Math.max(0, Math.min(1, (e.clientX - box.left - lx) / plotW));
+      cross.setAttribute("x1", lx + fx * plotW);
+      cross.setAttribute("x2", lx + fx * plotW);
+      cross.setAttribute("opacity", 1);
+      const rows = [];
+      strats.forEach(function(s, i){
+        const c = d.curves[s];
+        const k = Math.round(fx * (c.equity.length - 1));
+        if (!rows.length) rows.push({text: String(c.dates[k]).slice(0, 10)});
+        rows.push({text: s + "  " + fmt(c.equity[k], 3),
+                   color: getComputedStyle(document.documentElement)
+                          .getPropertyValue(SERIES[i])});
+      });
+      tipShow(e, rows);
+    });
+    hit.addEventListener("pointerleave", function(){
+      cross.setAttribute("opacity", 0); tipHide();
+    });
+  }
+  const allRuns = [];
+  ["h1", "h2"].forEach(function(root){
+    const grp = d.findings[root] || {};
+    Object.keys(grp).forEach(function(k){
+      const m = grp[k];
+      if (m && typeof m === "object")
+        allRuns.push([root + "_" + k, fmt(m.sharpe), fmt(m.ir),
+                      m.hit_rate == null ? "—" : pct(m.hit_rate, 0),
+                      m.car == null ? "—" : pct(m.car),
+                      m.max_drawdown == null ? "—" : pct(m.max_drawdown),
+                      m.n_rebalances || m.status || ""]);
+    });
+  });
+  makeTable(sec, ["run", "sharpe", "IR", "hit", "CAR", "maxDD", "n / status"], allRuns);
+  const fn = div("footnote", sec);
+  fn.textContent = "All pre-registered runs shown (objectivity charter — no cherry-picking). " +
+    (meta.holdout_included ? "Holdout runs included and keyed separately." :
+     "2024–2025 holdout locked until dev methodology is frozen in DECISIONS.md.");
+}
+
+/* -------------------------------- health ------------------------------- */
+function renderHealth(){
+  const sec = section("sec-health", "Pipeline data health", null);
+  const d = DATA.health;
+  const rows = d.files.map(function(f){
+    return [f.label, f.ok ? "ok" : "missing", f.rows,
+            f.latest || "—", f.script];
+  });
+  const wrap = div("scroll", sec);
+  const t = document.createElement("table");
+  const hr = document.createElement("tr");
+  ["dataset", "status", "rows", "latest", "feeds from"].forEach(function(h){
+    const th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
+  });
+  t.appendChild(hr);
+  rows.forEach(function(r){
+    const tr = document.createElement("tr");
+    r.forEach(function(cell, ci){
+      const td = document.createElement("td");
+      if (ci === 1){
+        const st = div("status", td);
+        const dot = div("dot", st);
+        dot.style.background = cell === "ok" ? "var(--good)" : "var(--muted)";
+        st.appendChild(document.createTextNode(cell === "ok" ? "✓ ok" : "– no data"));
+      } else td.textContent = String(cell);
+      tr.appendChild(td);
+    });
+    t.appendChild(tr);
+  });
+  wrap.appendChild(t);
+  if (d.source_events.length){
+    const dt = document.createElement("details");
+    const s = document.createElement("summary");
+    s.textContent = "Source/adapter events (" + d.source_events.length + ")";
+    dt.appendChild(s);
+    makeTable(dt, ["date", "retailer", "source", "event", "detail"],
+      d.source_events.map(e => [e.date, e.retailer, e.source, e.event, e.detail]));
+    sec.appendChild(dt);
+  }
+}
+
+document.getElementById("meta").textContent =
+  "Generated " + DATA.generated + " · static snapshot · rebuild with scripts/09_dashboard.py";
+renderBacktest();
+renderHeatmap();
+renderLeaderboard();
+renderNowcast();
+renderPropagation();
+renderPositions();
+renderHealth();
+</script>
+</body>
+</html>

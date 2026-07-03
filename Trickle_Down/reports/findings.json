@@ -1,0 +1,44 @@
+{
+  "h1": {
+    "seasonal": {
+      "status": "no_signals"
+    },
+    "monthly": {
+      "status": "no_signals"
+    }
+  },
+  "h2": {
+    "nowcast_monthly": {
+      "status": "missing_signals"
+    },
+    "nowcast_trends_monthly": {
+      "sharpe": -0.3419,
+      "ir": -0.5716,
+      "hit_rate": 0.3333,
+      "car": -0.4518,
+      "max_drawdown": -0.5677,
+      "n_days": 1957,
+      "periods_per_year": 12,
+      "n_periods": 90,
+      "n_rebalances": 90,
+      "downstream_source": "google_trends_proxy (v1 addendum \u2014 NOT measured catalog mix)"
+    },
+    "reference_commodities_car": {
+      "CT=F": 0.28,
+      "CL=F": 0.9344,
+      "LE=F": 0.2789
+    }
+  },
+  "meta": {
+    "run_date": "2026-07-03",
+    "dev_window": [
+      "2016-01-01",
+      "2023-12-31"
+    ],
+    "holdout_included": false,
+    "cost_bps_per_side": 20.0,
+    "turnover_cap_oneway": 0.5,
+    "universe_hash": "96e3367d0f62",
+    "note": "All pre-registered runs reported (objectivity charter). Metrics net of costs."
+  }
+}

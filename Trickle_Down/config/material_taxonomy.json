@@ -1,0 +1,41 @@
+{
+  "locked": "2026-07-02",
+  "notes": "12 canonical materials + 'other' catch-all. Aliases are matched after stripping qualifiers (recycled/organic/virgin/...). Unmapped fibers -> 'other', never silently dropped. trends_terms feed 05_google_trends.py.",
+
+  "materials": {
+    "cotton":    {"aliases": ["cotton", "pima", "algodon", "coton", "baumwolle", "cotone"],
+                  "trends_terms": ["cotton dress", "cotton shirt"]},
+    "denim":     {"aliases": ["denim", "jean"],
+                  "trends_terms": ["denim jacket", "baggy jeans", "wide leg jeans"],
+                  "note": "detected from product name/category as well as composition"},
+    "wool":      {"aliases": ["wool", "merino", "lana", "laine", "wolle", "mohair", "alpaca", "lambswool"],
+                  "trends_terms": ["wool coat", "wool sweater"]},
+    "cashmere":  {"aliases": ["cashmere", "kaschmir", "cachemire"],
+                  "trends_terms": ["cashmere sweater"]},
+    "silk":      {"aliases": ["silk", "seide", "soie", "seda", "mulberry silk"],
+                  "trends_terms": ["silk dress", "silk skirt"]},
+    "leather":   {"aliases": ["leather", "suede", "calfskin", "lambskin", "sheepskin", "goatskin", "cowhide", "nubuck", "shearling", "cuir", "leder", "piel"],
+                  "trends_terms": ["leather jacket", "suede jacket"]},
+    "linen":     {"aliases": ["linen", "flax", "lino", "lin", "leinen"],
+                  "trends_terms": ["linen pants", "linen shirt"]},
+    "viscose":   {"aliases": ["viscose", "rayon", "lyocell", "tencel", "modal", "cupro", "acetate", "triacetate", "bamboo viscose"],
+                  "trends_terms": ["lyocell", "tencel"]},
+    "polyester": {"aliases": ["polyester", "poliester", "pet"],
+                  "trends_terms": ["satin dress"]},
+    "nylon":     {"aliases": ["nylon", "polyamide", "polyamid", "poliamida"],
+                  "trends_terms": ["nylon jacket"]},
+    "elastane":  {"aliases": ["elastane", "spandex", "lycra", "elastan", "elasthanne", "elastano"],
+                  "trends_terms": []},
+    "technical": {"aliases": ["neoprene", "gore-tex", "goretex", "polyurethane", "softshell", "ripstop", "cordura", "primaloft"],
+                  "trends_terms": ["gorpcore", "technical jacket"]},
+    "other":     {"aliases": ["acrylic", "metallic fibre", "metallic fiber", "metallised fibre", "polypropylene", "rubber", "down", "feather", "hemp", "jute", "raffia"],
+                  "trends_terms": [],
+                  "note": "catch-all; excluded from H1/H2 signals but reported in mixes"}
+  },
+
+  "qualifier_prefixes": ["recycled", "organic", "virgin", "regenerated", "responsible", "sustainable", "certified", "premium", "pure", "brushed", "washed", "stretch", "combed", "mercerized", "italian", "japanese"],
+
+  "colors": ["black", "white", "cream", "grey", "beige", "brown", "red", "burgundy", "pink", "orange", "yellow", "green", "olive", "blue", "navy", "light-blue", "purple", "metallic", "multicolor"],
+
+  "categories": ["dress", "top", "shirt", "knitwear", "outerwear", "tailoring", "pants", "denim", "skirt", "activewear", "bag", "shoes", "accessory"]
+}

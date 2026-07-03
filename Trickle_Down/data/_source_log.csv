@@ -1,0 +1,14 @@
+date,retailer,source,event,detail
+2026-07-02,zara,zara_live,request_error,"https://www.zara.com/es/en/products-details?productIds=548172234&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-07-02,zara,zara_live,request_error,"https://www.zara.com/es/en/products-details?productIds=547823532&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-07-02,zara,zara_live,request_error,"https://www.zara.com/es/en/products-details?productIds=564177707&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-07-02,zara,zara_live,request_error,"https://www.zara.com/es/en/products-details?productIds=555526592&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-07-02,zara,zara_live,request_error,"https://www.zara.com/es/en/products-details?productIds=564880276&ajax=true ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-07-02,hm,dataset,fallback_engaged,live returned no items
+2026-07-02,uniqlo,uniqlo_live,schema_drift,no products in listing response
+2026-07-02,uniqlo,dataset,fallback_engaged,live returned no items
+2026-07-03,hm,dataset,fallback_engaged,live returned no items
+2026-07-03,uniqlo,uniqlo_live,schema_drift,no products in listing response
+2026-07-03,uniqlo,dataset,fallback_engaged,live returned no items
+2026-07-03,hm,dataset,fallback_engaged,live returned no items
+2026-07-03,hm,hm_live,blocked,403 https://www2.hm.com/en_us/productpage.1345514001.html

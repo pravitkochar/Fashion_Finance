@@ -1,0 +1,15 @@
+{
+  "brief_2_met_gala": {
+    "status": "SKIPPED",
+    "phase_failed": "Phase 1 (panel scrape)",
+    "reason": "Vogue article URL patterns yielded usable content for only 1/25 galas (2025), producing tier-A subset = 0 (floor 8). Wikipedia has no per-year Met Gala articles. Per the failure cascade in master CLAUDE.md, threshold relaxation (8 -> 4) does not address tier-A=0; mid-run methodology improvement is forbidden.",
+    "panel_built": 375,
+    "panel_floor_required": 300,
+    "tier_a_built": 0,
+    "tier_a_floor_required": 8,
+    "articles_found": 1,
+    "articles_attempted": 25,
+    "skipped_at": "2026-04-28T21:12:42.271933Z",
+    "remedy_for_phase_2": "Source pivot to a curated celebrity-attendee dataset (e.g., a manually compiled or alternate-API attendee list) is the right next step. Also consider widening tier coding to use any documented dress credit (collapsing C and A) since tier coding is the bottleneck, not panel construction."
+  }
+}

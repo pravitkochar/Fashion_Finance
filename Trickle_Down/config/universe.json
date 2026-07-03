@@ -1,0 +1,60 @@
+{
+  "locked": "2026-07-02",
+  "notes": "Locked per DECISIONS.md. Additions require a new DECISIONS.md entry. parent_ticker=null means trend-signal-only (no price mapping).",
+
+  "tier1_runway": [
+    {"slug": "louis-vuitton",      "name": "Louis Vuitton",      "parent_ticker": "MC.PA",   "group": "LVMH",   "city": "paris",  "role": "anchor"},
+    {"slug": "christian-dior",     "name": "Dior",               "parent_ticker": "MC.PA",   "group": "LVMH",   "city": "paris",  "role": "anchor"},
+    {"slug": "celine",             "name": "Celine",             "parent_ticker": "MC.PA",   "group": "LVMH",   "city": "paris",  "role": "anchor"},
+    {"slug": "loewe",              "name": "Loewe",              "parent_ticker": "MC.PA",   "group": "LVMH",   "city": "paris",  "role": "anchor"},
+    {"slug": "fendi",              "name": "Fendi",              "parent_ticker": "MC.PA",   "group": "LVMH",   "city": "milan",  "role": "anchor"},
+    {"slug": "gucci",              "name": "Gucci",              "parent_ticker": "KER.PA",  "group": "Kering", "city": "milan",  "role": "anchor"},
+    {"slug": "saint-laurent",      "name": "Saint Laurent",      "parent_ticker": "KER.PA",  "group": "Kering", "city": "paris",  "role": "anchor"},
+    {"slug": "bottega-veneta",     "name": "Bottega Veneta",     "parent_ticker": "KER.PA",  "group": "Kering", "city": "milan",  "role": "anchor"},
+    {"slug": "balenciaga",         "name": "Balenciaga",         "parent_ticker": "KER.PA",  "group": "Kering", "city": "paris",  "role": "anchor"},
+    {"slug": "alexander-mcqueen",  "name": "Alexander McQueen",  "parent_ticker": "KER.PA",  "group": "Kering", "city": "paris",  "role": "anchor"},
+    {"slug": "prada",              "name": "Prada",              "parent_ticker": "1913.HK", "group": "Prada",  "city": "milan",  "role": "anchor"},
+    {"slug": "miu-miu",            "name": "Miu Miu",            "parent_ticker": "1913.HK", "group": "Prada",  "city": "paris",  "role": "anchor"},
+    {"slug": "hermes",             "name": "Hermès",             "parent_ticker": "RMS.PA",  "group": null,     "city": "paris",  "role": "anchor"},
+    {"slug": "burberry",           "name": "Burberry",           "parent_ticker": "BRBY.L",  "group": null,     "city": "london", "role": "anchor"},
+    {"slug": "moncler",            "name": "Moncler",            "parent_ticker": "MONC.MI", "group": null,     "city": "milan",  "role": "anchor", "note": "Genius format irregular some seasons"},
+    {"slug": "brunello-cucinelli", "name": "Brunello Cucinelli", "parent_ticker": "BC.MI",   "group": null,     "city": "milan",  "role": "anchor", "note": "often presentations, sparse look counts"},
+    {"slug": "ralph-lauren",       "name": "Ralph Lauren",       "parent_ticker": "RL",      "group": null,     "city": "new-york", "role": "anchor"},
+    {"slug": "zegna",              "name": "Zegna",              "parent_ticker": "ZGN",     "group": null,     "city": "milan",  "role": "anchor", "note": "listed NYSE 2021; menswear-led"},
+    {"slug": "tods",               "name": "Tod's",              "parent_ticker": "TOD.MI",  "group": null,     "city": "milan",  "role": "anchor", "note": "delisted 2024 (LVMH/L Catterton); prices end then"},
+    {"slug": "salvatore-ferragamo","name": "Ferragamo",          "parent_ticker": "SFER.MI", "group": null,     "city": "milan",  "role": "anchor"},
+    {"slug": "chloe",              "name": "Chloé",              "parent_ticker": null,      "group": "Richemont", "city": "paris", "role": "pace-setter", "note": "Richemont CFR.SW not in parent panel; trend-only"},
+    {"slug": "valentino",          "name": "Valentino",          "parent_ticker": null,      "group": "Mayhoola/Kering 30%", "city": "paris", "role": "pace-setter"},
+    {"slug": "versace",            "name": "Versace",            "parent_ticker": null,      "group": null,     "city": "milan",  "role": "pace-setter", "note": "Capri-owned through 2025, Prada acquisition announced Apr 2025; trend-only to avoid ownership discontinuity"}
+  ],
+
+  "tier2_retailers": [
+    {"key": "zara",        "name": "Inditex (Zara)",          "ticker": "ITX.MC",  "bench": "^IBEX",  "scrapeable": true},
+    {"key": "hm",          "name": "H&M",                     "ticker": "HM-B.ST", "bench": "^OMX",   "scrapeable": true},
+    {"key": "uniqlo",      "name": "Fast Retailing (Uniqlo)", "ticker": "9983.T",  "bench": "^N225",  "scrapeable": true},
+    {"key": "zalando",     "name": "Zalando",                 "ticker": "ZAL.DE",  "bench": "^GDAXI", "scrapeable": true},
+    {"key": "asos",        "name": "ASOS",                    "ticker": "ASC.L",   "bench": "^FTSE",  "scrapeable": true},
+    {"key": "next",        "name": "Next",                    "ticker": "NXT.L",   "bench": "^FTSE",  "scrapeable": true},
+    {"key": "primark",     "name": "AB Foods (Primark)",      "ticker": "ABF.L",   "bench": "^FTSE",  "scrapeable": false, "note": "no e-commerce catalog; datasets/trends only"},
+    {"key": "gap",         "name": "Gap Inc",                 "ticker": "GAP",     "bench": "^GSPC",  "scrapeable": true, "note": "ticker GPS before Aug 2024 rename; yfinance GAP carries history"},
+    {"key": "abercrombie", "name": "Abercrombie & Fitch",     "ticker": "ANF",     "bench": "^GSPC",  "scrapeable": true},
+    {"key": "urban",       "name": "Urban Outfitters",        "ticker": "URBN",    "bench": "^GSPC",  "scrapeable": true},
+    {"key": "ae",          "name": "American Eagle",          "ticker": "AEO",     "bench": "^GSPC",  "scrapeable": true},
+    {"key": "shein",       "name": "Shein",                   "ticker": null,      "bench": null,     "scrapeable": false, "note": "private; Google Trends proxy only"}
+  ],
+
+  "tier3_suppliers": [
+    {"name": "Indorama Ventures", "ticker": "IVL.BK",     "bench": null,    "materials": ["polyester"], "note": "SET index not reliable on yfinance; use basket-neutral"},
+    {"name": "Toray Industries",  "ticker": "3402.T",     "bench": "^N225", "materials": ["polyester", "nylon", "technical"]},
+    {"name": "Reliance Industries","ticker": "RELIANCE.NS","bench": "^NSEI","materials": ["polyester"], "note": "conglomerate; fiber is minority of revenue — weak mapping, disclose"},
+    {"name": "Lenzing",           "ticker": "LNZ.VI",     "bench": "^ATX",  "materials": ["viscose"]}
+  ],
+
+  "commodities": [
+    {"name": "Cotton No.2 futures", "ticker": "CT=F", "materials": ["cotton", "denim"]},
+    {"name": "WTI crude futures",   "ticker": "CL=F", "materials": ["polyester", "nylon"], "note": "synthetics feedstock, reference only"},
+    {"name": "Live cattle futures", "ticker": "LE=F", "materials": ["leather"], "note": "loose proxy, reference only"}
+  ],
+
+  "benchmark_etf": "XRT"
+}

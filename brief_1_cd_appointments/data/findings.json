@@ -1,0 +1,175 @@
+{
+  "full_panel": {
+    "n": 29,
+    "test1": [
+      {
+        "window": "CAR_pre10",
+        "lo": -10,
+        "hi": -1,
+        "n": 29,
+        "mean_CAR": 0.019509433575856227,
+        "sd": 0.04367057698430427,
+        "se": 0.00810942256148736,
+        "t_stat": 2.405773460185552,
+        "p_value": 0.022988170635929173,
+        "flagged": true
+      },
+      {
+        "window": "CAR_0to1",
+        "lo": 0,
+        "hi": 1,
+        "n": 29,
+        "mean_CAR": -0.0004375847663356281,
+        "sd": 0.014287287522379408,
+        "se": 0.0026530826881010178,
+        "t_stat": -0.16493446220058663,
+        "p_value": 0.870180565517755,
+        "flagged": false
+      },
+      {
+        "window": "CAR_0to5",
+        "lo": 0,
+        "hi": 5,
+        "n": 29,
+        "mean_CAR": -0.001092320507639678,
+        "sd": 0.028163151444195646,
+        "se": 0.005229765931561437,
+        "t_stat": -0.2088660414125928,
+        "p_value": 0.8360648872895613,
+        "flagged": false
+      },
+      {
+        "window": "CAR_0to10",
+        "lo": 0,
+        "hi": 10,
+        "n": 29,
+        "mean_CAR": 0.008256208281466337,
+        "sd": 0.043204955392710485,
+        "se": 0.008022958802573815,
+        "t_stat": 1.0290727504194206,
+        "p_value": 0.31225349867033136,
+        "flagged": false
+      }
+    ],
+    "test2": {
+      "company_results": [
+        {
+          "ticker": "1913.HK",
+          "median_CAR_0to5": -0.014696102699381396,
+          "n_events": 1,
+          "flagged": false
+        },
+        {
+          "ticker": "BRBY.L",
+          "median_CAR_0to5": 0.026938797996198454,
+          "n_events": 2,
+          "flagged": false
+        },
+        {
+          "ticker": "KER.PA",
+          "median_CAR_0to5": -0.005921627214510955,
+          "n_events": 10,
+          "flagged": false
+        },
+        {
+          "ticker": "MC.PA",
+          "median_CAR_0to5": -0.006163785282501,
+          "n_events": 13,
+          "flagged": false
+        },
+        {
+          "ticker": "PVH",
+          "median_CAR_0to5": -0.05573234574611059,
+          "n_events": 1,
+          "flagged": true
+        },
+        {
+          "ticker": "TPR",
+          "median_CAR_0to5": 0.01932102882199065,
+          "n_events": 2,
+          "flagged": false
+        }
+      ],
+      "n_flagged": 1,
+      "flagged": true,
+      "threshold": 0.03,
+      "group_col": "ticker"
+    },
+    "test3": {
+      "peak_deflection": 0.05218354246351659,
+      "flagged": true,
+      "threshold": 0.015
+    }
+  },
+  "pre_leaked_cohorts": {
+    "UNKNOWN": {
+      "n": 29,
+      "test1": [
+        {
+          "window": "CAR_pre10",
+          "lo": -10,
+          "hi": -1,
+          "n": 29,
+          "mean_CAR": 0.019509433575856227,
+          "sd": 0.04367057698430427,
+          "se": 0.00810942256148736,
+          "t_stat": 2.405773460185552,
+          "p_value": 0.022988170635929173,
+          "flagged": true
+        },
+        {
+          "window": "CAR_0to1",
+          "lo": 0,
+          "hi": 1,
+          "n": 29,
+          "mean_CAR": -0.0004375847663356281,
+          "sd": 0.014287287522379408,
+          "se": 0.0026530826881010178,
+          "t_stat": -0.16493446220058663,
+          "p_value": 0.870180565517755,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to5",
+          "lo": 0,
+          "hi": 5,
+          "n": 29,
+          "mean_CAR": -0.001092320507639678,
+          "sd": 0.028163151444195646,
+          "se": 0.005229765931561437,
+          "t_stat": -0.2088660414125928,
+          "p_value": 0.8360648872895613,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to10",
+          "lo": 0,
+          "hi": 10,
+          "n": 29,
+          "mean_CAR": 0.008256208281466337,
+          "sd": 0.043204955392710485,
+          "se": 0.008022958802573815,
+          "t_stat": 1.0290727504194206,
+          "p_value": 0.31225349867033136,
+          "flagged": false
+        }
+      ]
+    },
+    "TRUE": {
+      "n": 0,
+      "skipped": "n<5"
+    },
+    "FALSE": {
+      "n": 0,
+      "skipped": "n<5"
+    }
+  },
+  "leaked_vs_not_t_test": {
+    "skipped": "insufficient cohort sizes",
+    "n_leaked": 0,
+    "n_not": 0
+  },
+  "any_flagged_full": true,
+  "n_events": 29,
+  "n_companies": 6
+}

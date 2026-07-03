@@ -1,0 +1,508 @@
+{
+  "n_events": 600,
+  "n_companies": 12,
+  "n_weeks": 208,
+  "full_panel": {
+    "n": 600,
+    "test1": [
+      {
+        "window": "CAR_pre10",
+        "lo": -10,
+        "hi": -1,
+        "n": 600,
+        "mean_CAR": 0.007024591049927329,
+        "sd": 0.06522754090402447,
+        "se": 0.0026629032065229687,
+        "t_stat": 2.6379445684394756,
+        "p_value": 0.00855773377207969,
+        "flagged": true
+      },
+      {
+        "window": "CAR_0to1",
+        "lo": 0,
+        "hi": 1,
+        "n": 600,
+        "mean_CAR": 0.0010491260957904446,
+        "sd": 0.026783832883640613,
+        "se": 0.0010934453986816079,
+        "t_stat": 0.959468206693631,
+        "p_value": 0.3377100425952182,
+        "flagged": false
+      },
+      {
+        "window": "CAR_0to5",
+        "lo": 0,
+        "hi": 5,
+        "n": 600,
+        "mean_CAR": -2.002244886310715e-05,
+        "sd": 0.043564407840848515,
+        "se": 0.0017785095026096917,
+        "t_stat": -0.011257993749106911,
+        "p_value": 0.9910213587872083,
+        "flagged": false
+      },
+      {
+        "window": "CAR_0to10",
+        "lo": 0,
+        "hi": 10,
+        "n": 600,
+        "mean_CAR": 0.001802505915058404,
+        "sd": 0.059962404942016524,
+        "se": 0.0024479549309680136,
+        "t_stat": 0.7363313320256372,
+        "p_value": 0.46181734391865525,
+        "flagged": false
+      }
+    ],
+    "test2": {
+      "company_results": [
+        {
+          "ticker": "1913.HK",
+          "median_CAR_0to5": -0.006392493830633299,
+          "n_events": 36,
+          "flagged": false
+        },
+        {
+          "ticker": "BC.MI",
+          "median_CAR_0to5": -0.006911938949720097,
+          "n_events": 26,
+          "flagged": false
+        },
+        {
+          "ticker": "BRBY.L",
+          "median_CAR_0to5": 0.0013029818292810951,
+          "n_events": 47,
+          "flagged": false
+        },
+        {
+          "ticker": "CPRI",
+          "median_CAR_0to5": -0.0013702974254727008,
+          "n_events": 28,
+          "flagged": false
+        },
+        {
+          "ticker": "KER.PA",
+          "median_CAR_0to5": -0.004164958939629851,
+          "n_events": 104,
+          "flagged": false
+        },
+        {
+          "ticker": "MC.PA",
+          "median_CAR_0to5": 0.003916707196786397,
+          "n_events": 104,
+          "flagged": false
+        },
+        {
+          "ticker": "MONC.MI",
+          "median_CAR_0to5": -0.008844028328742898,
+          "n_events": 23,
+          "flagged": false
+        },
+        {
+          "ticker": "PVH",
+          "median_CAR_0to5": 0.004279788983501901,
+          "n_events": 51,
+          "flagged": false
+        },
+        {
+          "ticker": "RL",
+          "median_CAR_0to5": 0.007098953310962202,
+          "n_events": 51,
+          "flagged": false
+        },
+        {
+          "ticker": "RMS.PA",
+          "median_CAR_0to5": 0.0014542170946154009,
+          "n_events": 52,
+          "flagged": false
+        },
+        {
+          "ticker": "SFER.MI",
+          "median_CAR_0to5": 0.004956543119995399,
+          "n_events": 28,
+          "flagged": false
+        },
+        {
+          "ticker": "TPR",
+          "median_CAR_0to5": 0.005551576126764448,
+          "n_events": 50,
+          "flagged": false
+        }
+      ],
+      "n_flagged": 0,
+      "flagged": false,
+      "threshold": 0.03,
+      "group_col": "ticker"
+    },
+    "test3": {
+      "peak_deflection": 0.02015412697771148,
+      "flagged": true,
+      "threshold": 0.015
+    }
+  },
+  "city_cohorts": {
+    "paris": {
+      "n": 156,
+      "test1": [
+        {
+          "window": "CAR_pre10",
+          "lo": -10,
+          "hi": -1,
+          "n": 156,
+          "mean_CAR": 0.0007189823540845499,
+          "sd": 0.050731584566323394,
+          "se": 0.004061777488106009,
+          "t_stat": 0.17701175315238862,
+          "p_value": 0.8597302494882553,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to1",
+          "lo": 0,
+          "hi": 1,
+          "n": 156,
+          "mean_CAR": -0.0013283257929314126,
+          "sd": 0.02024387740213067,
+          "se": 0.0016208073571298538,
+          "t_stat": -0.8195457572969244,
+          "p_value": 0.41373350272970777,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to5",
+          "lo": 0,
+          "hi": 5,
+          "n": 156,
+          "mean_CAR": -0.001587316143692532,
+          "sd": 0.031248249152710458,
+          "se": 0.0025018622232324517,
+          "t_stat": -0.6344538595901138,
+          "p_value": 0.5267199779910898,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to10",
+          "lo": 0,
+          "hi": 10,
+          "n": 156,
+          "mean_CAR": 0.004258390575072274,
+          "sd": 0.04994265004033502,
+          "se": 0.003998612173546204,
+          "t_stat": 1.0649671411608002,
+          "p_value": 0.28854696325354423,
+          "flagged": false
+        }
+      ],
+      "test2": {
+        "company_results": [
+          {
+            "ticker": "KER.PA",
+            "median_CAR_0to5": -0.003813269103130403,
+            "n_events": 52,
+            "flagged": false
+          },
+          {
+            "ticker": "MC.PA",
+            "median_CAR_0to5": 0.005535835202412449,
+            "n_events": 52,
+            "flagged": false
+          },
+          {
+            "ticker": "RMS.PA",
+            "median_CAR_0to5": 0.0014542170946154009,
+            "n_events": 52,
+            "flagged": false
+          }
+        ],
+        "n_flagged": 0,
+        "flagged": false,
+        "threshold": 0.03,
+        "group_col": "ticker"
+      }
+    },
+    "milan": {
+      "n": 217,
+      "test1": [
+        {
+          "window": "CAR_pre10",
+          "lo": -10,
+          "hi": -1,
+          "n": 217,
+          "mean_CAR": 0.0029454691988963265,
+          "sd": 0.05378276558509043,
+          "se": 0.0036510120268478936,
+          "t_stat": 0.8067541758933349,
+          "p_value": 0.4206955221045743,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to1",
+          "lo": 0,
+          "hi": 1,
+          "n": 217,
+          "mean_CAR": 9.127823464097965e-05,
+          "sd": 0.03267687672746025,
+          "se": 0.0022182509328760995,
+          "t_stat": 0.041148741690207144,
+          "p_value": 0.9672153271410271,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to5",
+          "lo": 0,
+          "hi": 5,
+          "n": 217,
+          "mean_CAR": -0.002558225578060311,
+          "sd": 0.04173399733623889,
+          "se": 0.0028330883424352257,
+          "t_stat": -0.9029812236145619,
+          "p_value": 0.3675417441666462,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to10",
+          "lo": 0,
+          "hi": 10,
+          "n": 217,
+          "mean_CAR": 0.0004967551204853653,
+          "sd": 0.05832747405011918,
+          "se": 0.003959526940200308,
+          "t_stat": 0.125458199423246,
+          "p_value": 0.9002775057450676,
+          "flagged": false
+        }
+      ],
+      "test2": {
+        "company_results": [
+          {
+            "ticker": "1913.HK",
+            "median_CAR_0to5": -0.006392493830633299,
+            "n_events": 36,
+            "flagged": false
+          },
+          {
+            "ticker": "BC.MI",
+            "median_CAR_0to5": -0.006911938949720097,
+            "n_events": 26,
+            "flagged": false
+          },
+          {
+            "ticker": "KER.PA",
+            "median_CAR_0to5": -0.008333107589763182,
+            "n_events": 52,
+            "flagged": false
+          },
+          {
+            "ticker": "MC.PA",
+            "median_CAR_0to5": -0.0021127707555930876,
+            "n_events": 52,
+            "flagged": false
+          },
+          {
+            "ticker": "MONC.MI",
+            "median_CAR_0to5": -0.008844028328742898,
+            "n_events": 23,
+            "flagged": false
+          },
+          {
+            "ticker": "SFER.MI",
+            "median_CAR_0to5": 0.004956543119995399,
+            "n_events": 28,
+            "flagged": false
+          }
+        ],
+        "n_flagged": 0,
+        "flagged": false,
+        "threshold": 0.03,
+        "group_col": "ticker"
+      }
+    },
+    "new_york": {
+      "n": 180,
+      "test1": [
+        {
+          "window": "CAR_pre10",
+          "lo": -10,
+          "hi": -1,
+          "n": 180,
+          "mean_CAR": 0.020743060961717352,
+          "sd": 0.08495010951652214,
+          "se": 0.00633180731916651,
+          "t_stat": 3.2760095050472686,
+          "p_value": 0.0012643366176712245,
+          "flagged": true
+        },
+        {
+          "window": "CAR_0to1",
+          "lo": 0,
+          "hi": 1,
+          "n": 180,
+          "mean_CAR": 0.004157090539427365,
+          "sd": 0.025431934306987446,
+          "se": 0.0018955844636577644,
+          "t_stat": 2.193038938188882,
+          "p_value": 0.029593792285407483,
+          "flagged": true
+        },
+        {
+          "window": "CAR_0to5",
+          "lo": 0,
+          "hi": 5,
+          "n": 180,
+          "mean_CAR": 0.005134438238182189,
+          "sd": 0.05361377103190487,
+          "se": 0.0039961345519149444,
+          "t_stat": 1.2848511909394469,
+          "p_value": 0.20050443056743972,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to10",
+          "lo": 0,
+          "hi": 10,
+          "n": 180,
+          "mean_CAR": 0.0019708765999791296,
+          "sd": 0.06773194328646748,
+          "se": 0.005048440981223393,
+          "t_stat": 0.39039311488623674,
+          "p_value": 0.6967100673939024,
+          "flagged": false
+        }
+      ],
+      "test2": {
+        "company_results": [
+          {
+            "ticker": "CPRI",
+            "median_CAR_0to5": -0.0013702974254727008,
+            "n_events": 28,
+            "flagged": false
+          },
+          {
+            "ticker": "PVH",
+            "median_CAR_0to5": 0.004279788983501901,
+            "n_events": 51,
+            "flagged": false
+          },
+          {
+            "ticker": "RL",
+            "median_CAR_0to5": 0.007098953310962202,
+            "n_events": 51,
+            "flagged": false
+          },
+          {
+            "ticker": "TPR",
+            "median_CAR_0to5": 0.005551576126764448,
+            "n_events": 50,
+            "flagged": false
+          }
+        ],
+        "n_flagged": 0,
+        "flagged": false,
+        "threshold": 0.03,
+        "group_col": "ticker"
+      }
+    },
+    "london": {
+      "n": 47,
+      "test1": [
+        {
+          "window": "CAR_pre10",
+          "lo": -10,
+          "hi": -1,
+          "n": 47,
+          "mean_CAR": -0.005751583118094005,
+          "sd": 0.0628465521441695,
+          "se": 0.009167111794181271,
+          "t_stat": -0.6274149641924038,
+          "p_value": 0.5334894506825814,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to1",
+          "lo": 0,
+          "hi": 1,
+          "n": 47,
+          "mean_CAR": 0.0014598044076074184,
+          "sd": 0.019192277688242703,
+          "se": 0.002799481421820753,
+          "t_stat": 0.5214552939086757,
+          "p_value": 0.6045513351925833,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to5",
+          "lo": 0,
+          "hi": 5,
+          "n": 47,
+          "mean_CAR": -0.0028394911347986427,
+          "sd": 0.04368669994403448,
+          "se": 0.00637236011590766,
+          "t_stat": -0.4455948946937683,
+          "p_value": 0.6579800709057408,
+          "flagged": false
+        },
+        {
+          "window": "CAR_0to10",
+          "lo": 0,
+          "hi": 10,
+          "n": 47,
+          "mean_CAR": -0.000965085740804253,
+          "sd": 0.06746582194031539,
+          "se": 0.009840901543722573,
+          "t_stat": -0.09806883409171722,
+          "p_value": 0.9223037241448462,
+          "flagged": false
+        }
+      ],
+      "test2": {
+        "company_results": [
+          {
+            "ticker": "BRBY.L",
+            "median_CAR_0to5": 0.0013029818292810951,
+            "n_events": 47,
+            "flagged": false
+          }
+        ],
+        "n_flagged": 0,
+        "flagged": false,
+        "threshold": 0.03,
+        "group_col": "ticker"
+      }
+    }
+  },
+  "index_sanity_check": {
+    "paris": {
+      "index": "^FCHI",
+      "n_weeks": 52,
+      "mean_during_fw_log_return": -0.0005504753504621999,
+      "t_stat_vs_0": -0.13073675673175933,
+      "p_value": 0.896497896590839,
+      "flagged": false
+    },
+    "milan": {
+      "index": "FTSEMIB.MI",
+      "n_weeks": 52,
+      "mean_during_fw_log_return": -0.004727138811639314,
+      "t_stat_vs_0": -1.1483404709043565,
+      "p_value": 0.25618582195519574,
+      "flagged": false
+    },
+    "new_york": {
+      "index": "^GSPC",
+      "n_weeks": 52,
+      "mean_during_fw_log_return": 0.004639694528415979,
+      "t_stat_vs_0": 1.5265762479663356,
+      "p_value": 0.13304485106731245,
+      "flagged": false
+    },
+    "london": {
+      "index": "^FTSE",
+      "n_weeks": 52,
+      "mean_during_fw_log_return": -0.00504894314162251,
+      "t_stat_vs_0": -2.0644925520418167,
+      "p_value": 0.04407440318700772,
+      "flagged": true
+    }
+  },
+  "any_flagged_full": true
+}
