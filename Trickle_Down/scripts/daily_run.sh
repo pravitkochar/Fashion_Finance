@@ -37,7 +37,14 @@ step "04 mixes"       "$PY" scripts/04_material_mix.py
 step "06 propagation" "$PY" scripts/06_propagation_lag.py
 step "07 signals"     "$PY" scripts/07_signals.py
 step "08 backtest"    "$PY" scripts/08_backtest.py --fetch
+step "12 trends norm" "$PY" scripts/12_normalize_trends.py
+step "13 fit"         "$PY" scripts/13_fit_propagation.py --folds
+step "14 tune"        "$PY" scripts/14_tune_signals.py
 step "09 dashboard"   "$PY" scripts/09_dashboard.py
+step "16 site pages"  "$PY" scripts/16_site_pages.py
+
+# surface a loud marker when CV clears zero — freezing stays a deliberate act
+grep -q "READY TO FREEZE" "$LOG" && echo "*** CV CLEARED ZERO — review reports/cv_results.csv and freeze ***" >> "$LOG"
 
 # keep 30 days of logs
 find "$LOG_DIR" -name "daily_*.log" -mtime +30 -delete 2>/dev/null

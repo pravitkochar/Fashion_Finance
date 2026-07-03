@@ -131,9 +131,13 @@ commodities → P6 dashboard + public site. Light up in order; see signal early.
   plus the full free-tier API stack (Groq/Mistral/OpenRouter vision fallbacks,
   FMP/Finnhub/Tiingo/FRED/EIA/etc).
 
-## Published site
-- Live dashboard artifact:
+## Published site (3 pages, rebuilt daily by 09 + 16)
+- /live dashboard:
   https://claude.ai/code/artifact/57a50a53-698c-431c-a44f-0d9cfe8a4723
+- /historical (dashboard/historical.html):
+  https://claude.ai/code/artifact/ddd3c092-3b9f-4ce3-9816-3987d2292233
+- /predictions (dashboard/predictions.html):
+  https://claude.ai/code/artifact/1a5cf72b-e103-4b2a-b53d-9c8e00f88c96
 - 09_dashboard.py emits dashboard/artifact.html (content-only copy) each
   build; to refresh the live page, publish that file to the URL above via the
   Artifact tool (pass the URL so it redeploys instead of minting a new one).

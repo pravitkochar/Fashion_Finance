@@ -172,6 +172,10 @@ def main() -> int:
                .agg(["mean", "count"]).reset_index()
                .sort_values(["sleeve", "mean"], ascending=[True, False]))
     log.info("CV summary (mean fold IR):\n%s", summary.to_string(index=False))
+    if not summary.empty and summary["mean"].max() > 0:
+        log.info("READY TO FREEZE: best combo clears zero — review "
+                 "cv_results.csv, then 14_tune_signals.py --freeze + "
+                 "DECISIONS entry")
 
     if args.freeze:
         cfg = {"frozen": date.today().isoformat(), "h2_source": h2_src,
