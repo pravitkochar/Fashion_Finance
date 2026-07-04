@@ -305,10 +305,58 @@
   "run": "2026-07-04",
   "status": "ok"
  },
+ "asos|2020-04": {
+  "n_comp": 35,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-05": {
+  "n_comp": 38,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-06": {
+  "n_comp": 36,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "asos|2020-07": {
   "n_comp": 15,
   "n_pages": 19,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2020-08": {
+  "n_comp": 25,
+  "n_pages": 33,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-09": {
+  "n_comp": 28,
+  "n_pages": 34,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-10": {
+  "n_comp": 35,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-11": {
+  "n_comp": 33,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2020-12": {
+  "n_comp": 36,
+  "n_pages": 38,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "asos|2021-01": {
@@ -317,10 +365,70 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "asos|2021-02": {
+  "n_comp": 35,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-03": {
+  "n_comp": 38,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-04": {
+  "n_comp": 31,
+  "n_pages": 37,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-05": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-06": {
+  "n_comp": 34,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "asos|2021-07": {
   "n_comp": 18,
   "n_pages": 19,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2021-08": {
+  "n_comp": 34,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-09": {
+  "n_comp": 36,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-10": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-11": {
+  "n_comp": 38,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2021-12": {
+  "n_comp": 39,
+  "n_pages": 40,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "asos|2022-01": {
@@ -329,11 +437,35 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "asos|2022-02": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "asos|2022-03": {
   "n_comp": 7,
   "n_pages": 8,
   "run": "2026-07-03",
   "status": "ok"
+ },
+ "asos|2022-04": {
+  "n_comp": 39,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2022-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "asos|2022-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
  },
  "asos|2022-07": {
   "n_comp": 19,
@@ -341,10 +473,64 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "asos|2022-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "asos|2022-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "asos|2022-10": {
+  "n_comp": 38,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2022-11": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2022-12": {
+  "n_comp": 39,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "asos|2023-01": {
   "n_comp": 17,
   "n_pages": 20,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "asos|2023-02": {
+  "n_comp": 35,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2023-03": {
+  "n_comp": 39,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2023-04": {
+  "n_comp": 36,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "asos|2023-05": {
+  "n_comp": 34,
+  "n_pages": 40,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "asos|2023-07": {
@@ -390,24 +576,21 @@
   "status": "cdx_error"
  },
  "hm|2016-01": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 28,
+  "n_pages": 29,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-02": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 26,
+  "n_pages": 28,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-03": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-04": {
@@ -725,10 +908,52 @@
   "run": "2026-07-04",
   "status": "ok"
  },
+ "hm|2020-05": {
+  "n_comp": 39,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-06": {
+  "n_comp": 36,
+  "n_pages": 37,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "hm|2020-07": {
   "n_comp": 9,
   "n_pages": 20,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2020-08": {
+  "n_comp": 33,
+  "n_pages": 36,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-09": {
+  "n_comp": 29,
+  "n_pages": 33,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-10": {
+  "n_comp": 28,
+  "n_pages": 34,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-11": {
+  "n_comp": 39,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2020-12": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2021-01": {
@@ -737,10 +962,70 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "hm|2021-02": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-03": {
+  "n_comp": 37,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-04": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-05": {
+  "n_comp": 30,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-06": {
+  "n_comp": 36,
+  "n_pages": 36,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "hm|2021-07": {
   "n_comp": 19,
   "n_pages": 19,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2021-08": {
+  "n_comp": 38,
+  "n_pages": 38,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-09": {
+  "n_comp": 36,
+  "n_pages": 36,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-10": {
+  "n_comp": 33,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-11": {
+  "n_comp": 32,
+  "n_pages": 36,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2021-12": {
+  "n_comp": 29,
+  "n_pages": 40,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2022-01": {
@@ -749,11 +1034,35 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "hm|2022-02": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "hm|2022-03": {
   "n_comp": 10,
   "n_pages": 10,
   "run": "2026-07-03",
   "status": "ok"
+ },
+ "hm|2022-04": {
+  "n_comp": 37,
+  "n_pages": 37,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2022-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "hm|2022-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
  },
  "hm|2022-07": {
   "n_comp": 19,
@@ -761,10 +1070,70 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "hm|2022-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "hm|2022-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "hm|2022-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "cdx_error"
+ },
+ "hm|2022-11": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2022-12": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "hm|2023-01": {
   "n_comp": 19,
   "n_pages": 19,
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "hm|2023-02": {
+  "n_comp": 37,
+  "n_pages": 39,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2023-03": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2023-04": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2023-05": {
+  "n_comp": 36,
+  "n_pages": 40,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "hm|2023-06": {
+  "n_comp": 40,
+  "n_pages": 40,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2023-07": {
@@ -808,6 +1177,24 @@
   "n_pages": 0,
   "run": "2026-07-03",
   "status": "cdx_error"
+ },
+ "uniqlo|2016-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "uniqlo|2016-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "uniqlo|2016-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "ok"
  },
  "zara|2016-01": {
   "n_comp": 0,
@@ -1148,11 +1535,60 @@
   "run": "2026-07-04",
   "status": "ok"
  },
+ "zara|2020-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "zara|2020-07": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2020-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2020-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
   "status": "ok"
  },
  "zara|2021-01": {
@@ -1162,11 +1598,81 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2021-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "zara|2021-07": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2021-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2021-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
   "status": "ok"
  },
  "zara|2022-01": {
@@ -1176,6 +1682,41 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2022-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "zara|2022-07": {
   "n_comp": 0,
   "n_pages": 0,
@@ -1183,11 +1724,81 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2022-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2022-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
  "zara|2023-01": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2023-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2023-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2023-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2023-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "zara|2023-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-04",
   "status": "ok"
  },
  "zara|2023-07": {

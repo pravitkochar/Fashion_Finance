@@ -1,0 +1,7 @@
+2026-07-04 17:21:24,832 INFO [hm 2016-01] ok: 29 pages, 28 with composition
+2026-07-04 17:21:41,160 INFO [uniqlo 2016-01] ok: 0 pages, 0 with composition
+2026-07-04 17:26:06,046 INFO [hm 2016-02] ok: 28 pages, 26 with composition
+2026-07-04 17:26:20,863 INFO [uniqlo 2016-02] ok: 0 pages, 0 with composition
+2026-07-04 17:26:21,121 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-04 17:31:26,652 INFO [hm 2016-03] ok: 25 pages, 25 with composition
+2026-07-04 17:31:40,740 INFO [uniqlo 2016-03] ok: 0 pages, 0 with composition

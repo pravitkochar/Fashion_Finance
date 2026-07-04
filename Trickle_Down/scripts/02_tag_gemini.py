@@ -150,7 +150,21 @@ def tag_openai_compat(img: bytes, provider: str, model: str,
               "temperature": 0.0, "max_tokens": 400},
         timeout=60)
     if r.status_code == 429:
-        raise QuotaExhausted(r.text[:200])
+        # transient rate-limit ≠ daily quota: back off and retry once
+        time.sleep(25 + random.uniform(0, 10))
+        r = session.post(
+            f"{cfg['base']}/chat/completions",
+            headers={"Authorization": f"Bearer {key}"},
+            json={"model": model,
+                  "messages": [{"role": "user", "content": [
+                      {"type": "image_url",
+                       "image_url": {"url": f"data:image/jpeg;base64,{b64}"}},
+                      {"type": "text", "text": instr}]}],
+                  "response_format": {"type": "json_object"},
+                  "temperature": 0.0, "max_tokens": 400},
+            timeout=60)
+        if r.status_code == 429:
+            raise QuotaExhausted(r.text[:200])
     r.raise_for_status()
     txt = r.json()["choices"][0]["message"]["content"].strip()
     if txt.startswith("```"):
@@ -256,7 +270,10 @@ def main() -> int:
                     default="gemini")
     ap.add_argument("--retry-failures", action="store_true")
     ap.add_argument("--pace", type=float, default=5.5,
-                    help="seconds between requests (free tier ~10 RPM)")
+                    help="seconds between request SUBMISSIONS (rate cap)")
+    ap.add_argument("--workers", type=int, default=3,
+                    help="in-flight requests; latency overlaps, pace still "
+                         "caps the submission rate")
     args = ap.parse_args()
     if not args.model:
         args.model = ("gemini-2.5-flash" if args.provider == "gemini"
@@ -305,14 +322,27 @@ def main() -> int:
     cat_rows: list[dict] = []
     n_ok = n_fail = 0
 
-    for _, look in tqdm(pending.iterrows(), total=len(pending), desc="gemini tag"):
+    # pipelined: N workers keep requests in flight while `pace` caps the
+    # SUBMISSION rate; all bookkeeping/file writes stay in this thread
+    import threading
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    rate_lock = threading.Lock()
+    last_submit = [0.0]
+
+    def paced():
+        with rate_lock:
+            wait = args.pace - (time.monotonic() - last_submit[0])
+            if wait > 0:
+                time.sleep(wait)
+            last_submit[0] = time.monotonic()
+
+    def tag_one(look) -> tuple[str, tuple | None, str, bool]:
         look_id = look["look_id"]
         img = fetch_image(look_id, look["image_url"], session)
         if img is None:
-            progress[look_id] = "fail"
-            append_failure(look_id, "image download failed")
-            n_fail += 1
-            continue
+            return look_id, None, "image download failed", False
+        paced()
         try:
             if args.provider == "gemini":
                 resp = client.models.generate_content(
@@ -328,45 +358,57 @@ def main() -> int:
                 )
                 raw = json.loads(resp.text)
             else:
-                raw = tag_openai_compat(img, args.provider, args.model, session)
-            parsed = validate_result(raw, tax)
+                raw = tag_openai_compat(img, args.provider, args.model,
+                                        session)
+            return look_id, validate_result(raw, tax), "", False
         except QuotaExhausted:
-            log.warning("quota exhausted on %s — stopping run; remaining "
-                        "looks stay pending for the daily job", args.model)
-            break
-        except Exception as e:  # API error, JSON error, schema drift
+            return look_id, None, "", True
+        except Exception as e:
             msg = str(e)
-            if ("429" in msg or "RESOURCE_EXHAUSTED" in msg
-                    or "quota" in msg.lower()):
-                log.warning("quota exhausted on %s — stopping run; remaining "
-                            "looks stay pending for the daily job", args.model)
-                break
-            progress[look_id] = "fail"
-            append_failure(look_id, f"{type(e).__name__}: {e}")
-            n_fail += 1
-            time.sleep(args.pace + random.uniform(0, 1.5))
-            continue
-        if parsed is None:
-            progress[look_id] = "fail"
-            append_failure(look_id, "empty/invalid materials")
-            n_fail += 1
-            continue
+            quota = ("429" in msg or "RESOURCE_EXHAUSTED" in msg
+                     or "quota" in msg.lower())
+            return look_id, None, f"{type(e).__name__}: {e}", quota
 
-        materials, colors, category = parsed
-        tag_rows.extend({"look_id": look_id, "material": m, "share": s}
-                        for m, s in materials)
-        color_rows.extend({"look_id": look_id, "color": c, "weight": w}
-                          for c, w in colors)
-        cat_rows.append({"look_id": look_id, "category": category})
-        with open(lt.RUNWAY / "_tag_log.csv", "a", encoding="utf-8") as f:
-            if f.tell() == 0:
-                f.write("look_id,model,tagged_at\n")
-            f.write(f"{look_id},{args.model},{date.today().isoformat()}\n")
-        progress[look_id] = "ok"
-        n_ok += 1
-        if n_ok % FLUSH_EVERY == 0:
-            flush(tag_rows, color_rows, cat_rows, progress)
-        time.sleep(args.pace + random.uniform(0, 1.5))
+    looks_list = [row for _, row in pending.iterrows()]
+    chunk_size = max(8, args.workers * 8)
+    stop = False
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for start in tqdm(range(0, len(looks_list), chunk_size),
+                          desc=f"tag x{args.workers}"):
+            if stop:
+                break
+            futures = [pool.submit(tag_one, lk)
+                       for lk in looks_list[start:start + chunk_size]]
+            for fut in as_completed(futures):
+                look_id, parsed, err, quota_hit = fut.result()
+                if quota_hit:
+                    if not stop:
+                        log.warning("quota exhausted on %s — stopping; "
+                                    "remaining looks stay pending",
+                                    args.model)
+                    stop = True
+                    continue     # not marked failed — stays pending
+                if parsed is None:
+                    progress[look_id] = "fail"
+                    append_failure(look_id, err or "empty/invalid materials")
+                    n_fail += 1
+                    continue
+                materials, colors, category = parsed
+                tag_rows.extend({"look_id": look_id, "material": m,
+                                 "share": s} for m, s in materials)
+                color_rows.extend({"look_id": look_id, "color": c,
+                                   "weight": w} for c, w in colors)
+                cat_rows.append({"look_id": look_id, "category": category})
+                with open(lt.RUNWAY / "_tag_log.csv", "a",
+                          encoding="utf-8") as f:
+                    if f.tell() == 0:
+                        f.write("look_id,model,tagged_at\n")
+                    f.write(f"{look_id},{args.model},"
+                            f"{date.today().isoformat()}\n")
+                progress[look_id] = "ok"
+                n_ok += 1
+                if n_ok % FLUSH_EVERY == 0:
+                    flush(tag_rows, color_rows, cat_rows, progress)
 
     flush(tag_rows, color_rows, cat_rows, progress)
     log.info("tagging done: +%d ok, +%d fail (model=%s)", n_ok, n_fail, args.model)

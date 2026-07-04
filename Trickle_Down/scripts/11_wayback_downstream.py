@@ -216,15 +216,27 @@ def process_month(retailer: str, month: str, pages: int,
                         str(e)[:120])
             return {"status": "cdx_error", "n_pages": 0, "n_comp": 0}
         budget["used"] += 1
-    pause()
+
+    # fetch in a small pool — latency overlaps, per-worker pacing keeps the
+    # aggregate rate polite (~2-3 req/s across 4 connections); parsing and
+    # all file writes stay in this thread
+    remaining = max(0, budget["max"] - budget["used"])
+    snaps = snaps[:remaining]
+    budget["used"] += len(snaps)
+
+    def _fetch(tsurl):
+        ts, url = tsurl
+        html = fetch_snapshot(ts, url)
+        time.sleep(random.uniform(0.8, 1.4))
+        return ts, url, html
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        fetched = list(pool.map(_fetch, snaps))
+
     items, tags = [], []
     n_comp = 0
-    for ts, url in snaps:
-        if budget["used"] >= budget["max"]:
-            break
-        html = fetch_snapshot(ts, url)
-        pause()
-        budget["used"] += 1
+    for ts, url, html in fetched:
         if not html:
             continue
         comp = (RAW_EXTRACTORS.get(retailer, lambda h: "")(html)
