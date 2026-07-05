@@ -316,7 +316,13 @@ def main() -> int:
     tax = lt.load_taxonomy()
     schema = build_schema()
     client = genai.Client() if args.provider == "gemini" else None
-    session = requests.Session()
+    try:
+        # image CDN intermittently blocks plain python TLS (2026-07-04:
+        # 11.6k false failures) — impersonate a browser when available
+        from curl_cffi import requests as cf_requests
+        session = cf_requests.Session(impersonate="chrome")
+    except ImportError:
+        session = requests.Session()
     tag_rows: list[dict] = []
     color_rows: list[dict] = []
     cat_rows: list[dict] = []
@@ -372,6 +378,7 @@ def main() -> int:
     looks_list = [row for _, row in pending.iterrows()]
     chunk_size = max(8, args.workers * 8)
     stop = False
+    img_streak = 0
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         for start in tqdm(range(0, len(looks_list), chunk_size),
                           desc=f"tag x{args.workers}"):
@@ -389,10 +396,22 @@ def main() -> int:
                     stop = True
                     continue     # not marked failed — stays pending
                 if parsed is None:
+                    # circuit breaker: a CDN/network outage must STOP the
+                    # run, not mark the whole queue failed (2026-07-04)
+                    if err == "image download failed":
+                        img_streak += 1
+                        if img_streak >= 30:
+                            if not stop:
+                                log.warning("30 consecutive image failures — "
+                                            "CDN block/offline; stopping, "
+                                            "rest stays pending")
+                            stop = True
+                            continue
                     progress[look_id] = "fail"
                     append_failure(look_id, err or "empty/invalid materials")
                     n_fail += 1
                     continue
+                img_streak = 0
                 materials, colors, category = parsed
                 tag_rows.extend({"look_id": look_id, "material": m,
                                  "share": s} for m, s in materials)

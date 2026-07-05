@@ -594,80 +594,69 @@
   "status": "ok"
  },
  "hm|2016-04": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 27,
+  "n_pages": 27,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-05": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 22,
+  "n_pages": 23,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-06": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 17,
+  "n_pages": 17,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-07": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 35,
+  "n_pages": 36,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-08": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 35,
+  "n_pages": 35,
+  "run": "2026-07-04",
   "status": "ok"
  },
  "hm|2016-09": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 9,
+  "n_pages": 9,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2016-10": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 12,
+  "n_pages": 13,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2016-11": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 35,
+  "n_pages": 37,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2016-12": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 32,
+  "n_pages": 34,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2017-01": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 30,
+  "n_pages": 33,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2017-02": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 24,
+  "n_pages": 25,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2017-03": {
@@ -1196,6 +1185,66 @@
   "run": "2026-07-04",
   "status": "ok"
  },
+ "uniqlo|2016-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "uniqlo|2016-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-04",
+  "status": "ok"
+ },
+ "uniqlo|2016-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2016-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2016-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2016-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2016-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "cdx_error"
+ },
+ "uniqlo|2016-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "cdx_error"
+ },
+ "uniqlo|2016-12": {
+  "n_comp": 36,
+  "n_pages": 37,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-05",
+  "status": "cdx_error"
+ },
  "zara|2016-01": {
   "n_comp": 0,
   "n_pages": 0,
@@ -1246,9 +1295,9 @@
  },
  "zara|2016-09": {
   "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2016-10": {
   "n_comp": 0,

@@ -9,7 +9,7 @@
 # Each step is independent: a failure logs and moves on (the pipeline is
 # idempotent/resumable, so tomorrow's run picks up whatever today missed).
 
-PROJ="$HOME/Documents/Claude/Projects/Fashion Thing/Trickle_Down"
+PROJ="$HOME/Developer/fashion-thing/Trickle_Down"
 PY="$HOME/.venvs/trickle_down/bin/python"
 LOG_DIR="$PROJ/reports/logs"
 mkdir -p "$LOG_DIR"

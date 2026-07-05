@@ -9,7 +9,15 @@
   },
   "h2": {
     "nowcast_monthly": {
-      "status": "missing_signals"
+      "sharpe": -0.7074,
+      "ir": -0.8248,
+      "hit_rate": 0.3636,
+      "car": -0.4727,
+      "max_drawdown": -0.5572,
+      "n_days": 1197,
+      "periods_per_year": 12,
+      "n_periods": 55,
+      "n_rebalances": 55
     },
     "nowcast_trends_monthly": {
       "sharpe": -0.3419,
@@ -30,7 +38,7 @@
     }
   },
   "meta": {
-    "run_date": "2026-07-03",
+    "run_date": "2026-07-05",
     "dev_window": [
       "2016-01-01",
       "2023-12-31"

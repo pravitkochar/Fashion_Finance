@@ -12,3 +12,4 @@ date,retailer,source,event,detail
 2026-07-03,uniqlo,dataset,fallback_engaged,live returned no items
 2026-07-03,hm,dataset,fallback_engaged,live returned no items
 2026-07-03,hm,hm_live,blocked,403 https://www2.hm.com/en_us/productpage.1345514001.html
+2026-07-05,hm,hm_live,blocked,403 https://www2.hm.com/en_us/productpage.1346462001.html
