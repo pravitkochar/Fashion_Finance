@@ -1222,16 +1222,16 @@
   "status": "ok"
  },
  "uniqlo|2016-10": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 2,
+  "n_pages": 2,
   "run": "2026-07-05",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "uniqlo|2016-11": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 12,
+  "n_pages": 12,
   "run": "2026-07-05",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "uniqlo|2016-12": {
   "n_comp": 36,
@@ -1240,10 +1240,16 @@
   "status": "ok"
  },
  "uniqlo|2017-01": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 23,
+  "n_pages": 25,
   "run": "2026-07-05",
-  "status": "cdx_error"
+  "status": "ok"
+ },
+ "uniqlo|2017-02": {
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2016-01": {
   "n_comp": 0,

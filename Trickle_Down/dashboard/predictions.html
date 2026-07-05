@@ -1,79 +1,146 @@
 <title>Trickle Down — Predictions</title>
 <style>
 :root{
-  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e;
-  --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
-  --border:rgba(11,11,11,.10);
-  --s1:#2a78d6; --s2:#1baf7a; --s3:#eda100; --s4:#008300;
-  --s5:#4a3aa7; --s6:#e34948; --s7:#e87ba4; --s8:#eb6834;
-  --pos:#2a78d6; --neg:#e34948; --mid:#f0efec;
-  --good:#0ca30c; --warn:#fab219;
-  --heat0:#cde2fb; --heat1:#9ec5f4; --heat2:#86b6ef; --heat3:#5598e7;
-  --heat4:#3987e5; --heat5:#256abf; --heat6:#184f95; --heat7:#0d366b;
+  --page:#faf7f1; --surface:#fffdf9; --slip:#f4efe4;
+  --ink:#1a1613; --ink2:#5c554b; --muted:#8f887c;
+  --hair:#e0d8c8; --thread-gap:#faf7f1;
+  --selvage:#B6382E; --good:#3a7d44;
+  --m-wool:#B5762E;--m-polyester:#3E6FB0;--m-viscose:#0E9080;--m-leather:#96430E;--m-nylon:#6C5BB5;--m-cotton:#8A7A14;--m-elastane:#B04A78;--m-silk:#2E8FC4;--m-denim:#31518F;--m-cashmere:#9C6A45;--m-linen:#6E7A3A;--m-technical:#55636E;--m-other:#77706A;
+  --serif:"Bodoni 72","Didot","Playfair Display",Georgia,"Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",sans-serif;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7;
-    --muted:#898781; --grid:#2c2c2a; --axis:#383835;
-    --border:rgba(255,255,255,.10);
-    --s1:#3987e5; --s2:#199e70; --s3:#c98500; --s4:#008300;
-    --s5:#9085e9; --s6:#e66767; --s7:#d55181; --s8:#d95926;
-    --pos:#3987e5; --neg:#e66767; --mid:#383835;
-    --heat0:#184f95; --heat1:#1c5cab; --heat2:#256abf; --heat3:#3987e5;
-    --heat4:#5598e7; --heat5:#86b6ef; --heat6:#9ec5f4; --heat7:#cde2fb;
-  }
-}
+@media (prefers-color-scheme:dark){:root{
+  --page:#131110; --surface:#1d1a17; --slip:#141210;
+  --ink:#f0eade; --ink2:#b5ac9d; --muted:#867e70;
+  --hair:#332e27; --thread-gap:#131110; --selvage:#D95F4F;
+  --good:#5da768; --m-wool:#BD8035;--m-polyester:#4E86D4;--m-viscose:#17A08E;--m-leather:#B85A1F;--m-nylon:#8B77D9;--m-cotton:#9C8B1A;--m-elastane:#C75D8D;--m-silk:#2E97CC;--m-denim:#5D7FC7;--m-cashmere:#C08A5C;--m-linen:#8C9A50;--m-technical:#7C8E9C;--m-other:#8F8880;
+}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--page);color:var(--ink);
-  font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
-header h1{font-size:22px;font-weight:650;margin:0}
-header .sub{color:var(--ink2);margin:4px 0 0}
-header .meta{color:var(--muted);font-size:12px;margin-top:6px}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:20px}
-.card{grid-column:span 12;background:var(--surface);border:1px solid var(--border);
-  border-radius:10px;padding:16px 18px}
-.card.half{grid-column:span 6}
-@media (max-width:900px){.card.half{grid-column:span 12}}
-.card h2{font-size:15px;font-weight:650;margin:0 0 2px}
-.card .note{color:var(--muted);font-size:12px;margin:0 0 10px}
-.badge{display:inline-block;font-size:11px;color:var(--ink2);
-  border:1px solid var(--border);border-radius:999px;padding:1px 8px;
-  margin-left:6px;vertical-align:1px}
-.empty{color:var(--muted);padding:26px 8px;text-align:center;font-size:13px}
-.empty code{background:var(--mid);border-radius:4px;padding:1px 5px}
-.scroll{overflow-x:auto}
-svg{display:block}
-svg text{font:11px system-ui,-apple-system,"Segoe UI",sans-serif;fill:var(--ink2)}
-svg .muted{fill:var(--muted)}
-svg .val{fill:var(--ink);font-weight:600}
-.legend{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 8px;font-size:12px;
-  color:var(--ink2)}
-.legend .key{display:inline-flex;align-items:center;gap:6px}
-.legend .line{width:14px;height:0;border-top:2.5px solid}
-.legend .swatch{width:10px;height:10px;border-radius:2px}
-.tiles{display:flex;flex-wrap:wrap;gap:12px;margin:4px 0 14px}
-.tile{flex:1 1 120px;min-width:120px;background:var(--page);
-  border:1px solid var(--border);border-radius:8px;padding:10px 12px}
-.tile .lab{font-size:11px;color:var(--muted)}
-.tile .num{font-size:24px;font-weight:600;margin-top:2px}
-.tile .num.na{color:var(--muted);font-weight:400}
-table{border-collapse:collapse;width:100%;font-size:12.5px}
-th{color:var(--muted);text-align:left;font-weight:500;border-bottom:1px solid var(--grid);
-  padding:5px 10px 5px 0}
-td{border-bottom:1px solid var(--grid);padding:5px 10px 5px 0;
-  font-variant-numeric:tabular-nums}
-details{margin-top:10px}
-details summary{cursor:pointer;color:var(--muted);font-size:12px}
-.status{display:inline-flex;align-items:center;gap:5px}
-.status .dot{width:8px;height:8px;border-radius:50%}
-#tip{position:fixed;pointer-events:none;background:var(--surface);
-  border:1px solid var(--border);border-radius:8px;padding:8px 10px;
-  font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.18);display:none;z-index:9;
-  max-width:280px}
-#tip .t-val{font-weight:650;color:var(--ink)}
-#tip .t-row{display:flex;align-items:center;gap:6px;margin-top:2px;color:var(--ink2)}
-#tip .t-key{width:12px;height:0;border-top:2.5px solid}
-.footnote{color:var(--muted);font-size:11.5px;margin-top:8px}
+  font:15px/1.6 var(--sans);
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 27px,
+      color-mix(in srgb,var(--ink) 3%,transparent) 27px 28px),
+    repeating-linear-gradient(90deg,transparent 0 27px,
+      color-mix(in srgb,var(--ink) 2%,transparent) 27px 28px);}
+.wrap{max-width:1080px;margin:0 auto;padding:34px 24px 90px}
+
+/* masthead */
+.mast{border-bottom:3px double var(--hair);padding-bottom:18px}
+.mast .kicker{font:600 11px/1 var(--sans);letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink2)}
+.mast h1{font:400 58px/1.02 var(--serif);letter-spacing:.01em;margin:10px 0 6px;
+  text-wrap:balance}
+.mast .pages{font:12px var(--mono);color:var(--muted);margin-top:8px}
+.mast .pages b{color:var(--ink)}
+.dateline{font:11px var(--mono);color:var(--muted);margin-top:4px}
+
+/* editorial sections */
+section.block{margin-top:46px}
+.block>h2{font:400 27px/1.15 var(--serif);margin:0 0 4px;text-wrap:balance}
+.block>.note{font:13px/1.5 var(--sans);color:var(--ink2);max-width:64ch;
+  margin:0 0 16px}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 14px}
+.prose{max-width:66ch;font:15px/1.65 Georgia,var(--serif)}
+.callout{font:400 21px/1.4 var(--serif);max-width:56ch;margin:14px 0;
+  padding-left:14px;border-left:3px solid var(--selvage)}
+.callout .num{font-family:var(--mono);font-size:17px}
+
+/* terminal slips (quant tables) */
+.slip{background:var(--slip);border:1px solid var(--hair);border-radius:3px;
+  padding:10px 14px;overflow-x:auto;margin-top:8px}
+.slip table{border-collapse:collapse;width:100%;
+  font:12px/1.5 var(--mono);font-variant-numeric:tabular-nums}
+.slip th{text-align:left;font:600 10px/1.2 var(--sans);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);padding:4px 14px 6px 0;
+  border-bottom:1px solid var(--hair)}
+.slip td{padding:4.5px 14px 4.5px 0;border-bottom:1px solid
+  color-mix(in srgb,var(--hair) 55%,transparent);white-space:nowrap}
+.slip tr:last-child td{border-bottom:0}
+.neg{color:var(--selvage)} .pos{color:var(--good)}
+
+/* badges / status */
+.badge{display:inline-block;font:600 9.5px/1 var(--sans);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink2);border:1px solid var(--hair);
+  border-radius:2px;padding:3px 7px;margin-left:8px;vertical-align:2px}
+.badge.warn{color:var(--selvage);border-color:var(--selvage)}
+.emergent{font:600 9.5px/1 var(--sans);letter-spacing:.14em;
+  color:var(--selvage)}
+
+/* swatch chips */
+.chip{display:inline-flex;align-items:center;gap:7px;font:12px var(--mono)}
+.chip svg{flex:none}
+
+/* palette strip */
+.strip{display:flex;height:64px;border:1px solid var(--hair);
+  border-radius:3px;overflow:hidden;margin:14px 0 4px}
+.strip .sw{position:relative;min-width:3px}
+.striplabels{display:flex;font:10.5px var(--mono);color:var(--ink2);
+  gap:0;margin-bottom:8px}
+.striplabels span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  padding:2px 3px 0}
+
+/* loom hero */
+.loom-wrap{overflow-x:auto;margin-top:10px}
+.loom text{font:10.5px var(--mono);fill:var(--ink2)}
+.loom .bandlab{font:600 10px var(--sans);letter-spacing:.22em;
+  fill:var(--muted)}
+.loom .lag{fill:var(--ink)}
+.loom .thread-stitch{animation:drift 26s linear infinite}
+@keyframes drift{to{stroke-dashoffset:-240}}
+@media (prefers-reduced-motion:reduce){.loom .thread-stitch{animation:none}}
+.loom .thread:hover{filter:brightness(1.12)}
+
+.empty{color:var(--muted);padding:24px 8px;text-align:center;font:13px
+  var(--sans)}
+.empty code{background:var(--slip);border-radius:3px;padding:1px 5px;
+  font-family:var(--mono)}
+.footnote{color:var(--muted);font:11.5px/1.5 var(--sans);margin-top:10px;
+  max-width:70ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--selvage);outline-offset:2px}
 </style>
-<div class="wrap"><header><h1>Trickle Down — Predictions</h1><p class="meta">Trickle Down — <b>Predictions</b> · pages: Historical / Predictions / Live dashboard</p><p class="meta">Generated 2026-07-05 · rebuilt daily · all results net of costs, point-in-time</p></header><div class="grid"><section class="card"><h2>Model status</h2><p><b>No frozen model yet.</b> Everything below is the pre-registered machinery running on accumulating data — directional context, not tradeable advice. It graduates when cross-validation clears zero and the model freezes.</p></section><section class="card"><h2>Latest runway season: FW2026</h2><p class="note">Share vs trailing-3-season mean.</p><div class="scroll"><table><tr><th>material</th><th>share</th><th>Δ vs trail-3</th><th></th></tr><tr><td>wool</td><td>27.4%</td><td>9.6%</td><td>EMERGENT</td></tr><tr><td>cotton</td><td>5.4%</td><td>1.2%</td><td></td></tr><tr><td>nylon</td><td>4.4%</td><td>0.9%</td><td></td></tr><tr><td>silk</td><td>1.2%</td><td>0.7%</td><td></td></tr><tr><td>denim</td><td>1.9%</td><td>0.7%</td><td></td></tr><tr><td>other</td><td>1.1%</td><td>0.3%</td><td></td></tr><tr><td>leather</td><td>6.8%</td><td>0.2%</td><td></td></tr><tr><td>cashmere</td><td>0.5%</td><td>0.1%</td><td></td></tr><tr><td>linen</td><td>0.0%</td><td>0.0%</td><td></td></tr><tr><td>technical</td><td>0.6%</td><td>-0.1%</td><td></td></tr><tr><td>elastane</td><td>8.3%</td><td>-1.8%</td><td></td></tr><tr><td>polyester</td><td>22.4%</td><td>-5.5%</td><td></td></tr><tr><td>viscose</td><td>19.9%</td><td>-6.3%</td><td></td></tr></table></div></section><section class="card"><h2>Implied demand path (fitted lags)</h2><p class="note">Runway shifts propagate to consumer interest at the train-fitted lag per material.</p><div class="scroll"><table><tr><th>material</th><th>runway Δ (FW2026)</th><th>fitted lag</th><th>impact window</th><th>read</th></tr><tr><td>nylon</td><td>0.9%</td><td>+9mo (r=0.68)</td><td>2027-01</td><td>rising interest expected</td></tr><tr><td>wool</td><td>9.6%</td><td>+5mo (r=0.61)</td><td>2026-09</td><td>rising interest expected</td></tr><tr><td>polyester</td><td>-5.5%</td><td>+3mo (r=0.54)</td><td>2026-07</td><td>fading interest expected</td></tr><tr><td>cotton</td><td>1.2%</td><td>+4mo (r=0.51)</td><td>2026-08</td><td>rising interest expected</td></tr><tr><td>leather</td><td>0.2%</td><td>+5mo (r=0.50)</td><td>2026-09</td><td>rising interest expected</td></tr><tr><td>viscose</td><td>-6.3%</td><td>+5mo (r=0.47)</td><td>2026-09</td><td>fading interest expected</td></tr><tr><td>cashmere</td><td>0.1%</td><td>+5mo (r=0.39)</td><td>2026-09</td><td>rising interest expected</td></tr><tr><td>silk</td><td>0.7%</td><td>+2mo (r=0.34)</td><td>2026-06</td><td>rising interest expected</td></tr><tr><td>linen</td><td>0.0%</td><td>+5mo (r=0.32)</td><td>2026-09</td><td>fading interest expected</td></tr><tr><td>denim</td><td>0.7%</td><td>+10mo (r=0.28)</td><td>2027-02</td><td>rising interest expected</td></tr></table></div></section><section class="card"><h2>Supplier / commodity read — 2026-07-01</h2><p class="note">TRENDS PROXY (v1 addendum), pre-freeze.</p><div class="scroll"><table><tr><th>material</th><th>z</th><th>direction</th><th>mapped names</th></tr><tr><td>viscose</td><td>0.94</td><td>flat</td><td>LNZ.VI</td></tr><tr><td>cotton</td><td>0.17</td><td>flat</td><td>CT=F</td></tr><tr><td>polyester</td><td>-0.04</td><td>flat</td><td>IVL.BK;3402.T;RELIANCE.NS;CL=F</td></tr><tr><td>nylon</td><td>-0.07</td><td>flat</td><td>3402.T;CL=F</td></tr><tr><td>denim</td><td>-0.26</td><td>flat</td><td>CT=F</td></tr><tr><td>technical</td><td>-0.29</td><td>flat</td><td>3402.T</td></tr><tr><td>leather</td><td>-0.35</td><td>flat</td><td>LE=F</td></tr></table></div></section></div></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="tx-twill" width="7" height="7" patternUnits="userSpaceOnUse"
+ patternTransform="rotate(45)"><rect width="7" height="7" fill="none"/>
+ <line x1="0" y1="0" x2="0" y2="7" stroke="currentColor" stroke-width="2.4"
+  opacity=".35"/></pattern>
+<pattern id="tx-knit" width="9" height="7" patternUnits="userSpaceOnUse">
+ <path d="M0 6 Q2.2 1 4.5 6 Q6.8 1 9 6" fill="none" stroke="currentColor"
+  stroke-width="1.1" opacity=".38"/></pattern>
+<pattern id="tx-grain" width="10" height="10" patternUnits="userSpaceOnUse">
+ <circle cx="2" cy="3" r=".9" fill="currentColor" opacity=".4"/>
+ <circle cx="7" cy="7" r=".7" fill="currentColor" opacity=".3"/>
+ <circle cx="5" cy="1" r=".6" fill="currentColor" opacity=".25"/></pattern>
+<pattern id="tx-slub" width="14" height="6" patternUnits="userSpaceOnUse">
+ <line x1="0" y1="2" x2="9" y2="2" stroke="currentColor" stroke-width="1"
+  opacity=".3"/><line x1="5" y1="5" x2="14" y2="5" stroke="currentColor"
+  stroke-width=".8" opacity=".22"/></pattern>
+<pattern id="tx-weave" width="6" height="6" patternUnits="userSpaceOnUse">
+ <path d="M0 3 H6 M3 0 V6" stroke="currentColor" stroke-width=".8"
+  opacity=".3"/></pattern>
+<pattern id="tx-tech" width="6" height="6" patternUnits="userSpaceOnUse"
+ patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="6"
+ stroke="currentColor" stroke-width=".9" opacity=".3"/></pattern>
+</defs></svg><div class="wrap"><header class="mast"><div class="kicker">Runway → High Street → Mills · a measured trend cascade</div><h1>Trickle Down<span style="font-style:italic"> · Predictions</span></h1><div class="pages">pages: Historical / <b>Predictions</b> / Live</div><div class="dateline">Generated 2026-07-05 · rebuilt daily · point-in-time, net of costs · negative results published</div></header><section class="block"><div style="font:italic 400 92px/1 var(--serif);margin:26px 0 6px">FW 2026</div><p class="note">The season&#x27;s cloth, as tagged from the runway.</p><div class="strip"><div class="sw" style="flex:0 0 27.44%;color:var(--m-wool);background:var(--m-wool)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-knit)"/></svg></div><div class="sw" style="flex:0 0 22.40%;color:var(--m-polyester);background:var(--m-polyester)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 19.94%;color:var(--m-viscose);background:var(--m-viscose)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 8.30%;color:var(--m-elastane);background:var(--m-elastane)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 6.82%;color:var(--m-leather);background:var(--m-leather)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-grain)"/></svg></div><div class="sw" style="flex:0 0 5.39%;color:var(--m-cotton);background:var(--m-cotton)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 4.39%;color:var(--m-nylon);background:var(--m-nylon)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 1.86%;color:var(--m-denim);background:var(--m-denim)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-twill)"/></svg></div><div class="sw" style="flex:0 0 1.18%;color:var(--m-silk);background:var(--m-silk)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-slub)"/></svg></div><div class="sw" style="flex:0 0 1.12%;color:var(--m-other);background:var(--m-other)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-technical);background:var(--m-technical)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-cashmere);background:var(--m-cashmere)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-knit)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-linen);background:var(--m-linen)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-slub)"/></svg></div></div><div class="striplabels"><span style="flex:0 0 27.44%">wool 27%</span><span style="flex:0 0 22.40%">polyester 22%</span><span style="flex:0 0 19.94%">viscose 20%</span><span style="flex:0 0 8.30%">elastane 8%</span><span style="flex:0 0 6.82%">leather 7%</span><span style="flex:0 0 5.39%"></span><span style="flex:0 0 4.39%"></span><span style="flex:0 0 1.86%"></span><span style="flex:0 0 1.18%"></span><span style="flex:0 0 1.12%"></span><span style="flex:0 0 0.80%"></span><span style="flex:0 0 0.80%"></span><span style="flex:0 0 0.80%"></span></div><div style="margin:10px 0 6px"><span class="chip"><svg width="15" height="15" style="color:var(--m-wool)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-wool)"/><rect width="15" height="15" rx="2" fill="url(#tx-knit)"/></svg>wool</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-polyester)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-polyester)"/><rect width="15" height="15" rx="2" fill="url(#tx-tech)"/></svg>polyester</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-viscose)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-viscose)"/><rect width="15" height="15" rx="2" fill="url(#tx-weave)"/></svg>viscose</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-elastane)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-elastane)"/><rect width="15" height="15" rx="2" fill="url(#tx-tech)"/></svg>elastane</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-leather)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-leather)"/><rect width="15" height="15" rx="2" fill="url(#tx-grain)"/></svg>leather</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-cotton)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-cotton)"/><rect width="15" height="15" rx="2" fill="url(#tx-weave)"/></svg>cotton</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-nylon)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-nylon)"/><rect width="15" height="15" rx="2" fill="url(#tx-tech)"/></svg>nylon</span> &nbsp; <span class="chip"><svg width="15" height="15" style="color:var(--m-denim)" aria-hidden="true"><rect width="15" height="15" rx="2" fill="var(--m-denim)"/><rect width="15" height="15" rx="2" fill="url(#tx-twill)"/></svg>denim</span></div><p class="callout"><b>Wool</b> is having a moment — <span class="num">27.4%</span> of FW2026 looks, <span class="num">+9.6%</span> versus its trailing three seasons. <span class="emergent">EMERGENT</span></p></section><section class="block"><h2>Model status<span class="badge warn">pre-freeze</span></h2><hr class="rule"><p class="prose"><b>No frozen model yet.</b> Everything below is the pre-registered machinery running on accumulating data — directional context, not tradeable advice. It graduates when cross-validation clears zero and the model freezes.</p></section><section class="block"><h2>Implied demand path</h2><p class="note">Runway shifts in FW2026 propagate to consumer interest at each material&#x27;s fitted lag.</p><hr class="rule"><div class="slip"><table><tr><th>material</th><th>runway Δ (FW2026)</th><th>lag</th><th>r</th><th>impact window</th><th>read</th></tr><tr><td>nylon</td><td class="pos">+0.9%</td><td>+9mo</td><td>0.68</td><td>2027-01</td><td>interest rising</td></tr><tr><td>wool</td><td class="pos">+9.6%</td><td>+5mo</td><td>0.61</td><td>2026-09</td><td>interest rising</td></tr><tr><td>polyester</td><td class="neg">-5.5%</td><td>+3mo</td><td>0.54</td><td>2026-07</td><td>interest fading</td></tr><tr><td>cotton</td><td class="pos">+1.2%</td><td>+4mo</td><td>0.51</td><td>2026-08</td><td>interest rising</td></tr><tr><td>leather</td><td class="pos">+0.2%</td><td>+5mo</td><td>0.50</td><td>2026-09</td><td>interest rising</td></tr><tr><td>viscose</td><td class="neg">-6.3%</td><td>+5mo</td><td>0.47</td><td>2026-09</td><td>interest fading</td></tr><tr><td>cashmere</td><td class="pos">+0.1%</td><td>+5mo</td><td>0.39</td><td>2026-09</td><td>interest rising</td></tr><tr><td>silk</td><td class="pos">+0.7%</td><td>+2mo</td><td>0.34</td><td>2026-06</td><td>interest rising</td></tr><tr><td>linen</td><td class="pos">+0.0%</td><td>+5mo</td><td>0.32</td><td>2026-09</td><td>interest fading</td></tr><tr><td>denim</td><td class="pos">+0.7%</td><td>+10mo</td><td>0.28</td><td>2027-02</td><td>interest rising</td></tr></table></div></section><section class="block"><h2>Supplier / commodity read — 2026-07-01<span class="badge warn">trends proxy</span></h2><p class="note">z-score of proxy demand vs its trailing year; |z|&gt;1 gates long/short on mapped names. Commodities are references, never P&amp;L.</p><hr class="rule"><div class="slip"><table><tr><th>material</th><th>z</th><th>direction</th><th>mapped names</th></tr><tr><td>viscose</td><td class="pos">0.94</td><td>flat</td><td>LNZ.VI</td></tr><tr><td>cotton</td><td class="pos">0.17</td><td>flat</td><td>CT=F</td></tr><tr><td>polyester</td><td class="neg">-0.04</td><td>flat</td><td>IVL.BK;3402.T;RELIANCE.NS;CL=F</td></tr><tr><td>nylon</td><td class="neg">-0.07</td><td>flat</td><td>3402.T;CL=F</td></tr><tr><td>denim</td><td class="neg">-0.26</td><td>flat</td><td>CT=F</td></tr><tr><td>technical</td><td class="neg">-0.29</td><td>flat</td><td>3402.T</td></tr><tr><td>leather</td><td class="neg">-0.35</td><td>flat</td><td>LE=F</td></tr></table></div></section></div><script>
+(function(){
+ "use strict";
+ var tip=document.createElement("div");
+ tip.style.cssText="position:fixed;display:none;pointer-events:none;"+
+  "background:var(--surface);border:1px solid var(--hair);border-radius:3px;"+
+  "padding:7px 10px;font:12px ui-monospace,Menlo,monospace;z-index:9;"+
+  "max-width:300px;box-shadow:0 4px 16px rgba(0,0,0,.16)";
+ document.body.appendChild(tip);
+ document.querySelectorAll(".loom .thread").forEach(function(g){
+  var t=g.querySelector("title");if(!t)return;var txt=t.textContent;
+  g.addEventListener("pointermove",function(e){
+   tip.textContent=txt;tip.style.display="block";
+   var x=e.clientX+14,y=e.clientY+14,r=tip.getBoundingClientRect();
+   if(x+r.width>innerWidth-8)x=e.clientX-r.width-14;
+   if(y+r.height>innerHeight-8)y=e.clientY-r.height-14;
+   tip.style.left=x+"px";tip.style.top=y+"px";});
+  g.addEventListener("pointerleave",function(){tip.style.display="none";});
+ });
+})();
+</script>

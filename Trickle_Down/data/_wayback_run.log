@@ -2,3 +2,8 @@
 2026-07-05 15:49:54,136 INFO [uniqlo 2016-07] ok: 0 pages, 0 with composition
 2026-07-05 15:50:20,591 INFO [uniqlo 2016-08] ok: 0 pages, 0 with composition
 2026-07-05 15:55:40,994 INFO [zara 2016-09] ok: 24 pages, 0 with composition
+2026-07-05 15:56:56,454 INFO [uniqlo 2016-10] ok: 2 pages, 2 with composition
+2026-07-05 15:57:49,095 INFO [uniqlo 2016-11] ok: 12 pages, 12 with composition
+2026-07-05 15:57:49,537 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-05 16:03:24,324 INFO [uniqlo 2017-01] ok: 25 pages, 23 with composition
+2026-07-05 16:07:43,399 INFO [uniqlo 2017-02] ok: 25 pages, 25 with composition
