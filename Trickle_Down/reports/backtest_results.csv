@@ -16,7 +16,7 @@ h2_nowcast_monthly,2020-07-01,2020-08-01,-0.0091
 h2_nowcast_monthly,2020-08-01,2020-09-01,-0.022382
 h2_nowcast_monthly,2020-09-01,2020-10-01,-0.107048
 h2_nowcast_monthly,2020-10-01,2020-11-01,-0.239825
-h2_nowcast_monthly,2020-11-01,2020-12-01,-0.023195
+h2_nowcast_monthly,2020-11-01,2020-12-01,-0.023194
 h2_nowcast_monthly,2020-12-01,2021-01-01,-0.017074
 h2_nowcast_monthly,2021-01-01,2021-02-01,-0.002
 h2_nowcast_monthly,2021-02-01,2021-03-01,0.0
@@ -61,7 +61,7 @@ h2_nowcast_trends_monthly,2016-10-01,2016-11-01,0.0
 h2_nowcast_trends_monthly,2016-11-01,2016-12-01,0.0
 h2_nowcast_trends_monthly,2016-12-01,2017-01-01,0.0
 h2_nowcast_trends_monthly,2017-01-01,2017-02-01,-0.019797
-h2_nowcast_trends_monthly,2017-02-01,2017-03-01,0.031707
+h2_nowcast_trends_monthly,2017-02-01,2017-03-01,0.031708
 h2_nowcast_trends_monthly,2017-03-01,2017-04-01,0.00355
 h2_nowcast_trends_monthly,2017-04-01,2017-05-01,-0.002937
 h2_nowcast_trends_monthly,2017-05-01,2017-06-01,-0.036264
@@ -102,7 +102,7 @@ h2_nowcast_trends_monthly,2020-03-01,2020-04-01,0.004349
 h2_nowcast_trends_monthly,2020-04-01,2020-05-01,0.014404
 h2_nowcast_trends_monthly,2020-05-01,2020-06-01,-0.009876
 h2_nowcast_trends_monthly,2020-06-01,2020-07-01,-0.023497
-h2_nowcast_trends_monthly,2020-07-01,2020-08-01,0.019755
+h2_nowcast_trends_monthly,2020-07-01,2020-08-01,0.019756
 h2_nowcast_trends_monthly,2020-08-01,2020-09-01,0.018929
 h2_nowcast_trends_monthly,2020-09-01,2020-10-01,0.205193
 h2_nowcast_trends_monthly,2020-10-01,2020-11-01,-0.002
@@ -117,7 +117,7 @@ h2_nowcast_trends_monthly,2021-06-01,2021-07-01,-0.034751
 h2_nowcast_trends_monthly,2021-07-01,2021-08-01,-0.027095
 h2_nowcast_trends_monthly,2021-08-01,2021-09-01,0.038676
 h2_nowcast_trends_monthly,2021-09-01,2021-10-01,0.020037
-h2_nowcast_trends_monthly,2021-10-01,2021-11-01,-0.02048
+h2_nowcast_trends_monthly,2021-10-01,2021-11-01,-0.020481
 h2_nowcast_trends_monthly,2021-11-01,2021-12-01,1.9e-05
 h2_nowcast_trends_monthly,2021-12-01,2022-01-01,-0.00572
 h2_nowcast_trends_monthly,2022-01-01,2022-02-01,-0.002
