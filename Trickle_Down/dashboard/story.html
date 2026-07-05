@@ -1,0 +1,282 @@
+<title>Does fashion trickle down? — a field study</title>
+<style>
+:root{
+  --page:#f6f7f4; --ink:#20242a; --ink2:#565d68; --faint:#8a919b;
+  --hair:#d6dad3; --grid:rgba(45,58,74,.055); --thread-gap:#f6f7f4;
+  --hi:#e9f286; --pencil:#6a7280; --m-wool:#B5762E;--m-polyester:#3E6FB0;--m-viscose:#0E9080;--m-leather:#96430E;--m-nylon:#6C5BB5;--m-cotton:#8A7A14;--m-elastane:#B04A78;--m-silk:#2E8FC4;--m-denim:#31518F;--m-cashmere:#9C6A45;--m-linen:#6E7A3A;--m-technical:#55636E;--m-other:#77706A;
+  --body:Charter,"Iowan Old Style",Georgia,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --hand:"Noteworthy","Segoe Print","Bradley Hand",cursive;
+}
+@media (prefers-color-scheme:dark){:root{
+  --page:#15181d; --ink:#e6e4dc; --ink2:#a7adb6; --faint:#767d87;
+  --hair:#2d323b; --grid:rgba(160,175,195,.06); --thread-gap:#15181d;
+  --hi:#555e1c; --pencil:#8b93a0; --m-wool:#BD8035;--m-polyester:#4E86D4;--m-viscose:#17A08E;--m-leather:#B85A1F;--m-nylon:#8B77D9;--m-cotton:#9C8B1A;--m-elastane:#C75D8D;--m-silk:#2E97CC;--m-denim:#5D7FC7;--m-cashmere:#C08A5C;--m-linen:#8C9A50;--m-technical:#7C8E9C;--m-other:#8F8880;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);
+  font:16.5px/1.66 var(--body);
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 27px,var(--grid) 27px 28px),
+    repeating-linear-gradient(90deg,transparent 0 27px,var(--grid) 27px 28px)}
+.sheet{max-width:1000px;margin:0 auto;padding:52px 26px 110px}
+
+/* header — plain, like a working paper */
+h1{font:700 38px/1.15 var(--body);letter-spacing:-.01em;margin:0;
+  max-width:18ch;text-wrap:balance}
+.byline{font:13px/1.5 var(--mono);color:var(--ink2);margin:14px 0 0}
+.byline .hi{background:var(--hi);padding:1px 4px}
+
+/* body grid: text column + margin rail */
+section{display:grid;grid-template-columns:minmax(0,620px) 1fr;
+  column-gap:44px;margin-top:64px}
+section>*{grid-column:1}
+aside{grid-column:2;grid-row:1/span 9;align-self:start;
+  font:14px/1.55 var(--hand);color:var(--pencil);max-width:250px;
+  padding-top:6px;transform:rotate(-.4deg)}
+aside .n + .n{margin-top:26px;display:block}
+aside .n{display:block}
+@media(max-width:900px){section{grid-template-columns:1fr}
+  aside{grid-column:1;grid-row:auto;transform:none;max-width:none;
+  border-left:2px solid var(--hair);padding-left:14px}}
+
+h2{font:700 24px/1.25 var(--body);margin:0 0 2px}
+h2 .no{color:var(--faint);font-weight:400;margin-right:10px}
+.underline{display:block;margin:2px 0 18px}
+p{max-width:62ch;margin:0 0 16px;text-align:left}
+p b{font-weight:700}
+.hi{background:var(--hi);padding:0 3px;box-decoration-break:clone;
+  -webkit-box-decoration-break:clone}
+sup{font:11px var(--mono);color:var(--pencil)}
+
+/* taped-in figures */
+figure{grid-column:1/-1;margin:18px 0 8px;background:var(--page);
+  border:1px solid var(--hair);padding:18px 16px 12px;position:relative;
+  transform:rotate(.35deg);box-shadow:0 1px 6px rgba(20,25,32,.07)}
+figure.straight{transform:none}
+figure:nth-of-type(2n){transform:rotate(-.3deg)}
+figure::before{content:"";position:absolute;top:-11px;left:46px;width:74px;
+  height:20px;background:var(--hi);opacity:.5;transform:rotate(-2deg)}
+figcaption{font:12.5px/1.5 var(--mono);color:var(--ink2);margin-top:10px;
+  max-width:none}
+.figscroll{overflow-x:auto}
+
+/* specimen slips (method steps) */
+.spec{display:flex;gap:18px;flex-wrap:wrap;grid-column:1/-1;margin:8px 0}
+.spec .card{flex:1 1 240px;border:1px solid var(--hair);padding:14px 16px;
+  background:var(--page)}
+.spec .k{font:700 26px/1 var(--mono);letter-spacing:-.02em}
+.spec .k small{font-size:14px;color:var(--ink2);font-weight:400}
+.spec .what{font:13px/1.5 var(--body);color:var(--ink2);margin-top:8px}
+.spec .step{font:11px var(--mono);color:var(--faint);
+  text-transform:uppercase;letter-spacing:.12em}
+
+/* data tables — mono slips */
+table{border-collapse:collapse;font:12.5px/1.6 var(--mono);
+  font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:400;color:var(--faint);
+  border-bottom:1px solid var(--hair);padding:3px 18px 5px 0}
+td{padding:4px 18px 4px 0;border-bottom:1px dotted var(--hair);
+  white-space:nowrap}
+tr:last-child td{border-bottom:0}
+
+/* loom + strip (from the shared system, reskinned by the vars above) */
+.loom-wrap{overflow-x:auto}
+.loom text{font:10.5px var(--mono);fill:var(--ink2)}
+.loom .bandlab{font:600 10px var(--mono);letter-spacing:.2em;
+  fill:var(--faint)}
+.loom .lag{fill:var(--ink)}
+.loom .thread-stitch{animation:drift 26s linear infinite}
+@keyframes drift{to{stroke-dashoffset:-240}}
+@media(prefers-reduced-motion:reduce){.loom .thread-stitch{animation:none}}
+.strip{display:flex;height:56px;border:1px solid var(--hair);
+  overflow:hidden;margin:10px 0 3px}
+.strip .sw{position:relative;min-width:3px}
+.striplabels{display:flex;font:11px var(--mono);color:var(--ink2);
+  margin-bottom:6px}
+.striplabels span{overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;padding:2px 3px 0}
+
+/* footnotes */
+.foot{margin-top:70px;border-top:1px solid var(--hair);padding-top:14px;
+  font:13px/1.6 var(--body);color:var(--ink2);max-width:70ch}
+.foot li{margin-bottom:8px}
+.appendix{font:12.5px var(--mono);color:var(--faint);margin-top:34px}
+a{color:inherit;text-decoration-color:var(--pencil)}
+:focus-visible{outline:2px solid var(--pencil);outline-offset:2px}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="tx-twill" width="7" height="7" patternUnits="userSpaceOnUse"
+ patternTransform="rotate(45)"><rect width="7" height="7" fill="none"/>
+ <line x1="0" y1="0" x2="0" y2="7" stroke="currentColor" stroke-width="2.4"
+  opacity=".35"/></pattern>
+<pattern id="tx-knit" width="9" height="7" patternUnits="userSpaceOnUse">
+ <path d="M0 6 Q2.2 1 4.5 6 Q6.8 1 9 6" fill="none" stroke="currentColor"
+  stroke-width="1.1" opacity=".38"/></pattern>
+<pattern id="tx-grain" width="10" height="10" patternUnits="userSpaceOnUse">
+ <circle cx="2" cy="3" r=".9" fill="currentColor" opacity=".4"/>
+ <circle cx="7" cy="7" r=".7" fill="currentColor" opacity=".3"/>
+ <circle cx="5" cy="1" r=".6" fill="currentColor" opacity=".25"/></pattern>
+<pattern id="tx-slub" width="14" height="6" patternUnits="userSpaceOnUse">
+ <line x1="0" y1="2" x2="9" y2="2" stroke="currentColor" stroke-width="1"
+  opacity=".3"/><line x1="5" y1="5" x2="14" y2="5" stroke="currentColor"
+  stroke-width=".8" opacity=".22"/></pattern>
+<pattern id="tx-weave" width="6" height="6" patternUnits="userSpaceOnUse">
+ <path d="M0 3 H6 M3 0 V6" stroke="currentColor" stroke-width=".8"
+  opacity=".3"/></pattern>
+<pattern id="tx-tech" width="6" height="6" patternUnits="userSpaceOnUse"
+ patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="6"
+ stroke="currentColor" stroke-width=".9" opacity=".3"/></pattern>
+</defs></svg>
+<div class="sheet">
+
+<header>
+<h1>Does fashion actually trickle down?</h1>
+<p class="byline">An ongoing field study · July 2026 ·
+<span class="hi">updated nightly by the pipeline</span><br>
+runway shows → high-street racks → fiber mills, measured</p>
+</header>
+
+<section>
+<h2><span class="no">1.</span>The question</h2><svg class="underline" width="130" height="7" aria-hidden="true"><path d="M2 4 Q 32.5 1 65.0 4 T 128 3.4" fill="none" stroke="var(--pencil)" stroke-width="1.6" opacity=".65"/></svg>
+<aside>
+<span class="n"><svg width="30" height="16" aria-hidden="true" style="vertical-align:-3px"><path d="M28 8 C 18 2, 10 2, 2 9" fill="none" stroke="var(--pencil)" stroke-width="1.3"/><path d="M7 5 L2 9 L8 12" fill="none" stroke="var(--pencil)" stroke-width="1.3"/></svg> the 1899 “trickle-down” theory, finally with receipts</span>
+<span class="n">nobody keeps old Zara pages… except the Internet
+Archive</span>
+</aside>
+<p>In March, Prada sends wool coats down a runway in Milan. The theory —
+it goes back to Veblen — says that look works its way down: into Zara and
+H&amp;M within a few seasons, into what people search for, and eventually
+into order books at the mills that spin the fiber. Everyone in fashion
+repeats some version of this. As far as we could find, nobody had actually
+<b>measured</b> it end to end.</p>
+<p>So we did. And since the fashion press can't tell you whether any of it
+is tradeable, we also wired the whole thing to stock prices and made the
+math show its work.</p>
+</section>
+
+<section>
+<h2><span class="no">2.</span>How we measured it</h2><svg class="underline" width="180" height="7" aria-hidden="true"><path d="M2 4 Q 45.0 1 90.0 4 T 178 3.4" fill="none" stroke="var(--pencil)" stroke-width="1.6" opacity=".65"/></svg>
+<aside>
+<span class="n"><svg width="30" height="16" aria-hidden="true" style="vertical-align:-3px"><path d="M28 8 C 18 2, 10 2, 2 9" fill="none" stroke="var(--pencil)" stroke-width="1.3"/><path d="M7 5 L2 9 L8 12" fill="none" stroke="var(--pencil)" stroke-width="1.3"/></svg> each archive snapshot is timestamped — we only ever “know” a fact after its date. no hindsight allowed</span>
+</aside>
+<div class="spec">
+<div class="card"><div class="step">step 1 · the runway</div>
+<div class="k">26,855<small> looks</small></div>
+<div class="what">Every outfit from 22 major houses across
+11 years of fashion weeks, scraped from Vogue Runway. A vision model looks
+at each photo and estimates the fabric mix — "wool 0.6, silk 0.4".
+8,670 tagged so far; the rest are being worked through
+nightly.<sup>1</sup></div></div>
+<div class="card"><div class="step">step 2 · the high street</div>
+<div class="k">3,762<small> fabric labels</small></div>
+<div class="what">What did Zara stock in March 2018? We dug
+5,790 product pages out of the Internet Archive
+(H&M 2,216, ASOS 1,448, UNIQLO 98) and read the composition field off each one — "87% cotton,
+13% elastane" — month by month back to 2016-01.<sup>2</sup>
+</div></div>
+<div class="card"><div class="step">step 3 · the money</div>
+<div class="k">27<small> tickers</small></div>
+<div class="what">Google search interest per fabric, listed fast-fashion
+retailers, the fiber makers (polyester, viscose, nylon), and the
+commodities behind them — cotton futures, crude, live cattle.</div></div>
+</div>
+<p>Then one guardrail over everything: <span class="hi">a fact only counts
+from the day we could have known it</span> — the show date, the snapshot
+date, the filing date. That single rule is what separates a measurement
+from a story told in hindsight.</p>
+</section>
+
+<section>
+<h2><span class="no">3.</span>What we found</h2><svg class="underline" width="165" height="7" aria-hidden="true"><path d="M2 4 Q 41.25 1 82.5 4 T 163 3.4" fill="none" stroke="var(--pencil)" stroke-width="1.6" opacity=".65"/></svg>
+<aside>
+<span class="n"><svg width="30" height="16" aria-hidden="true" style="vertical-align:-3px"><path d="M28 8 C 18 2, 10 2, 2 9" fill="none" stroke="var(--pencil)" stroke-width="1.3"/><path d="M7 5 L2 9 L8 12" fill="none" stroke="var(--pencil)" stroke-width="1.3"/></svg> read it top to bottom: runway → shops → mills. wider thread = more of the season</span>
+<span class="n">the faded stub is honesty: elastane has no reliable lag
+yet</span>
+</aside>
+<p>Fashion does trickle down, and you can clock it. Each thread below is
+one material in the current season (FW2026); it drops from
+the runway band to the high-street band at its <b>measured lag</b> —
+where the thread lands and the label at the bend tell you how many months
+and how tight the fit is.<sup>3</sup></p>
+<figure class="straight"><div class="loom-wrap"><div class="loom-wrap"><svg class="loom" viewBox="0 0 1060 620" width="100%" style="max-width:1060px;min-width:760px" role="img" aria-label="The cascade: FW2026 runway shares flowing to high street at fitted lags, then to mills"><line x1="24" y1="120" x2="1036" y2="120" stroke="var(--hair)" stroke-width="1"/><text x="24" y="108" class="bandlab" style="paint-order:stroke" stroke="var(--page)" stroke-width="4">RUNWAY · FW2026</text><line x1="24" y1="340" x2="1036" y2="340" stroke="var(--hair)" stroke-width="1"/><text x="24" y="328" class="bandlab" style="paint-order:stroke" stroke="var(--page)" stroke-width="4">HIGH STREET</text><line x1="24" y1="528" x2="1036" y2="528" stroke="var(--hair)" stroke-width="1"/><text x="24" y="516" class="bandlab" style="paint-order:stroke" stroke="var(--page)" stroke-width="4">MILLS</text><g class="thread"><title>wool: 27.8% of FW2026; +5mo lag, r=0.63</title><path d="M154,120 C154,230 138,230 138,340" fill="none" stroke="var(--m-wool)" stroke-width="21.1" stroke-linecap="round"/><path class="thread-stitch" d="M154,120 C154,230 138,230 138,340" fill="none" stroke="var(--thread-gap)" stroke-width="18.5" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="154" y="98" text-anchor="middle">wool</text><circle cx="138" cy="340" r="12.1" fill="var(--m-wool)"/><text x="138" y="358" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+5mo · r 0.63</text></g><g class="thread"><title>polyester: 22.3% of FW2026; +3mo lag, r=0.54</title><path d="M269,120 C269,230 221,230 221,340 C221,420 221,448 221,528" fill="none" stroke="var(--m-polyester)" stroke-width="18.9" stroke-linecap="round"/><path class="thread-stitch" d="M269,120 C269,230 221,230 221,340 C221,420 221,448 221,528" fill="none" stroke="var(--thread-gap)" stroke-width="16.3" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="269" y="98" text-anchor="middle">polyester</text><circle cx="221" cy="340" r="10.9" fill="var(--m-polyester)"/><text x="221" y="373" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+3mo · r 0.54</text><circle cx="221" cy="528" r="10.9" fill="var(--m-polyester)"/><text x="221" y="562" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">IVL.BK · 3402.T +2</text></g><g class="thread"><title>viscose: 20.0% of FW2026; +5mo lag, r=0.49</title><path d="M385,120 C385,230 369,230 369,340 C369,420 369,448 369,528" fill="none" stroke="var(--m-viscose)" stroke-width="17.9" stroke-linecap="round"/><path class="thread-stitch" d="M385,120 C385,230 369,230 369,340 C369,420 369,448 369,528" fill="none" stroke="var(--thread-gap)" stroke-width="15.3" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="385" y="98" text-anchor="middle">viscose</text><circle cx="369" cy="340" r="10.4" fill="var(--m-viscose)"/><text x="369" y="388" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+5mo · r 0.49</text><circle cx="369" cy="528" r="10.4" fill="var(--m-viscose)"/><text x="369" y="548" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">LNZ.VI</text></g><g class="thread" opacity=".28"><title>elastane: 8.5% of FW2026; no fitted lag yet</title><path d="M500,120 V194" fill="none" stroke="var(--m-elastane)" stroke-width="11.7" stroke-dasharray="3 7" stroke-linecap="round"/><text x="500" y="98" text-anchor="middle">elastane</text></g><g class="thread"><title>leather: 6.9% of FW2026; +5mo lag, r=0.49</title><path d="M616,120 C616,230 600,230 600,340 C600,420 600,448 600,528" fill="none" stroke="var(--m-leather)" stroke-width="10.5" stroke-linecap="round"/><path class="thread-stitch" d="M616,120 C616,230 600,230 600,340 C600,420 600,448 600,528" fill="none" stroke="var(--thread-gap)" stroke-width="7.9" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="616" y="98" text-anchor="middle">leather</text><circle cx="600" cy="340" r="6.8" fill="var(--m-leather)"/><text x="600" y="373" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+5mo · r 0.49</text><circle cx="600" cy="528" r="6.8" fill="var(--m-leather)"/><text x="600" y="548" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">LE=F</text></g><g class="thread"><title>cotton: 5.1% of FW2026; +4mo lag, r=0.54</title><path d="M731,120 C731,230 699,230 699,340 C699,420 699,448 699,528" fill="none" stroke="var(--m-cotton)" stroke-width="9.0" stroke-linecap="round"/><path class="thread-stitch" d="M731,120 C731,230 699,230 699,340 C699,420 699,448 699,528" fill="none" stroke="var(--thread-gap)" stroke-width="6.4" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="731" y="98" text-anchor="middle">cotton</text><circle cx="699" cy="340" r="6.0" fill="var(--m-cotton)"/><text x="699" y="388" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+4mo · r 0.54</text><circle cx="699" cy="528" r="6.0" fill="var(--m-cotton)"/><text x="699" y="562" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">CT=F</text></g><g class="thread"><title>nylon: 4.3% of FW2026; +9mo lag, r=0.55</title><path d="M847,120 C847,230 895,230 895,340 C895,420 895,448 895,528" fill="none" stroke="var(--m-nylon)" stroke-width="8.3" stroke-linecap="round"/><path class="thread-stitch" d="M847,120 C847,230 895,230 895,340 C895,420 895,448 895,528" fill="none" stroke="var(--thread-gap)" stroke-width="5.7" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="847" y="98" text-anchor="middle">nylon</text><circle cx="895" cy="340" r="5.7" fill="var(--m-nylon)"/><text x="895" y="358" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+9mo · r 0.55</text><circle cx="895" cy="528" r="5.7" fill="var(--m-nylon)"/><text x="895" y="548" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">3402.T · CL=F</text></g><g class="thread"><title>denim: 1.8% of FW2026; +10mo lag, r=0.07</title><path d="M962,120 C962,230 986,230 986,340 C986,420 986,448 986,528" fill="none" stroke="var(--m-denim)" stroke-width="5.3" stroke-linecap="round"/><path class="thread-stitch" d="M962,120 C962,230 986,230 986,340 C986,420 986,448 986,528" fill="none" stroke="var(--thread-gap)" stroke-width="2.7" stroke-dasharray="8 6" stroke-linecap="round" opacity=".5"/><text x="962" y="98" text-anchor="middle">denim</text><circle cx="986" cy="340" r="4.2" fill="var(--m-denim)"/><text x="986" y="373" text-anchor="middle" class="lag" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">+10mo · r 0.07</text><circle cx="986" cy="528" r="4.2" fill="var(--m-denim)"/><text x="986" y="562" text-anchor="middle" style="paint-order:stroke" stroke="var(--page)" stroke-width="3.5">CT=F</text></g></svg></div></div>
+<figcaption>The cascade, drawn from the fitted numbers — not an
+illustration. Thread width ∝ √(share of season); bend = fitted lag;
+r at the bend; tickers at the mill end.</figcaption></figure>
+<p>The headline numbers: <b>wool shows up in search interest about
+5 months after it walks</b> (r&nbsp;=&nbsp;0.63 across 78 months); nylon takes ~9; cotton ~4.
+ASOS's rack composition follows the runway's denim share about 4 months later (r&nbsp;=&nbsp;0.52 over 25 measured months). And at the far end of the chain, Indorama Ventures, the world's biggest polyester maker tracks the high-street polyester tilt about 6 months later (r&nbsp;=&nbsp;0.59).</p>
+<p>Which makes the current season interesting:
+<span class="hi">wool is 28% of FW2026 —
++9.3 points above its three-season average</span> — the
+biggest jump on the board. If the lags keep holding, that shift reaches
+consumer demand around <b>September 2026</b>.</p>
+<figure><div class="figscroll"><div class="strip"><div class="sw" style="flex:0 0 27.83%;color:var(--m-wool);background:var(--m-wool)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-knit)"/></svg></div><div class="sw" style="flex:0 0 22.31%;color:var(--m-polyester);background:var(--m-polyester)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 20.00%;color:var(--m-viscose);background:var(--m-viscose)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 8.52%;color:var(--m-elastane);background:var(--m-elastane)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 6.91%;color:var(--m-leather);background:var(--m-leather)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-grain)"/></svg></div><div class="sw" style="flex:0 0 5.09%;color:var(--m-cotton);background:var(--m-cotton)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 4.31%;color:var(--m-nylon);background:var(--m-nylon)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 1.76%;color:var(--m-denim);background:var(--m-denim)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-twill)"/></svg></div><div class="sw" style="flex:0 0 1.12%;color:var(--m-silk);background:var(--m-silk)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-slub)"/></svg></div><div class="sw" style="flex:0 0 1.06%;color:var(--m-other);background:var(--m-other)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-weave)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-technical);background:var(--m-technical)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-tech)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-cashmere);background:var(--m-cashmere)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-knit)"/></svg></div><div class="sw" style="flex:0 0 0.80%;color:var(--m-linen);background:var(--m-linen)"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#tx-slub)"/></svg></div></div><div class="striplabels"><span style="flex:0 0 27.83%">wool 28%</span><span style="flex:0 0 22.31%">polyester 22%</span><span style="flex:0 0 20.00%">viscose 20%</span><span style="flex:0 0 8.52%">elastane 9%</span><span style="flex:0 0 6.91%">leather 7%</span><span style="flex:0 0 5.09%"></span><span style="flex:0 0 4.31%"></span><span style="flex:0 0 1.76%"></span><span style="flex:0 0 1.12%"></span><span style="flex:0 0 1.06%"></span><span style="flex:0 0 0.80%"></span><span style="flex:0 0 0.80%"></span><span style="flex:0 0 0.80%"></span></div></div>
+<figcaption>FW2026's cloth, as tagged from the runway.
+Textures distinguish the fiber families without relying on color.
+</figcaption></figure>
+</section>
+
+<section>
+<h2><span class="no">4.</span>The part where we don't make money
+(yet)</h2><svg class="underline" width="300" height="7" aria-hidden="true"><path d="M2 4 Q 75.0 1 150.0 4 T 298 3.4" fill="none" stroke="var(--pencil)" stroke-width="1.6" opacity=".65"/></svg>
+<aside>
+<span class="n"><svg width="30" height="16" aria-hidden="true" style="vertical-align:-3px"><path d="M28 8 C 18 2, 10 2, 2 9" fill="none" stroke="var(--pencil)" stroke-width="1.3"/><path d="M7 5 L2 9 L8 12" fill="none" stroke="var(--pencil)" stroke-width="1.3"/></svg> a system that can say “no” is the only kind whose “yes” means anything</span>
+</aside>
+<p>We built the obvious trading strategy on top of this — tilt toward the
+fiber makers when their material is heating up downstream — and tested it
+the way you'd test a drug: rules registered <b>before</b> each run,
+walk-forward validation on 2017–2022, and 2023–2025 locked in a sealed
+test window that the code physically refuses to open until a model earns
+it.</p>
+<p>So far, none has. All nine parameter combinations lost money in
+validation (best information ratio -0.60); the naive version returned -45%
+over seven years with a 33% hit rate.
+<span class="hi">We publish that number at the same size as the good
+ones.</span><sup>4</sup></p>
+<figure><table><tr><th>strategy variant</th><th>mean fold IR</th>
+<th>folds</th></tr><tr><td>z=0.5,trail=12</td><td>-0.60</td><td>3</td></tr><tr><td>z=0.5,trail=9</td><td>-0.65</td><td>3</td></tr><tr><td>z=1.0,trail=12</td><td>-0.81</td><td>3</td></tr><tr><td>z=1.0,trail=9</td><td>-0.84</td><td>3</td></tr><tr><td>z=1.5,trail=9</td><td>-0.89</td><td>3</td></tr><tr><td>z=1.5,trail=12</td><td>-0.97</td><td>3</td></tr><tr><td>z=0.5,trail=18</td><td>-1.29</td><td>3</td></tr><tr><td>z=1.0,trail=18</td><td>-1.29</td><td>3</td></tr><tr><td>z=1.5,trail=18</td><td>-1.34</td><td>3</td></tr></table>
+<figcaption>Every combination tried, every fold, nothing cherry-picked.
+The trading leg so far runs on a Google-Trends proxy — the measured
+retailer data above is what should eventually replace it.</figcaption>
+</figure>
+<p>Why be this strict? Because with enough retries, random noise will
+hand you a beautiful backtest. The propagation lags in section&nbsp;3
+survive this regime; a tradeable edge hasn't yet. Both statements are
+worth exactly as much because they were produced the same way.</p>
+</section>
+
+<section>
+<h2><span class="no">5.</span>Still on the loom</h2><svg class="underline" width="150" height="7" aria-hidden="true"><path d="M2 4 Q 37.5 1 75.0 4 T 148 3.4" fill="none" stroke="var(--pencil)" stroke-width="1.6" opacity=".65"/></svg>
+<aside><span class="n"><svg width="30" height="16" aria-hidden="true" style="vertical-align:-3px"><path d="M28 8 C 18 2, 10 2, 2 9" fill="none" stroke="var(--pencil)" stroke-width="1.3"/><path d="M7 5 L2 9 L8 12" fill="none" stroke="var(--pencil)" stroke-width="1.3"/></svg> this page rebuilds itself every night at 6:30</span></aside>
+<p>The archive dig is roughly half done (87 retailer-months
+reconstructed) and the vision tagging is at
+32%. As those fill in, the
+retailer-level questions unlock: who copies the runway fastest, and is
+their speed priced? If a strategy ever clears validation, it gets one —
+exactly one — shot at the sealed 2023–2025 window, and the result goes
+here, whichever way it lands.</p>
+<p class="appendix">Appendix — the full working files:
+<a href="https://claude.ai/code/artifact/ddd3c092-3b9f-4ce3-9816-3987d2292233">Historical</a> (every season, every fit) ·
+<a href="https://claude.ai/code/artifact/1a5cf72b-e103-4b2a-b53d-9c8e00f88c96">Predictions</a> (the current read) ·
+<a href="https://claude.ai/code/artifact/57a50a53-698c-431c-a44f-0d9cfe8a4723">Live</a> (pipeline health).
+Code: <a href="https://github.com/pravitkochar/Fashion_Finance">github.com/pravitkochar/Fashion_Finance</a></p>
+</section>
+
+<ol class="foot">
+<li>Tagging runs on open vision models within free-tier quotas, one look
+at a time; each look's model is logged so systematic disagreement between
+models can be checked before their tags are pooled.</li>
+<li>The Wayback Machine serves the original archived bytes with the crawl
+timestamp. A label read from a March-2018 snapshot is knowledge dated
+March 2018 — that's what makes the history usable for testing, not just
+narrating.</li>
+<li>Lags are Pearson correlations at the best of 0–12 monthly offsets,
+fitted only on the 2017–2022 training window, minimum 12 overlapping
+months; pairs that don't meet the floor are dropped, not imputed.</li>
+<li>Net of 20&nbsp;bps costs per side with a turnover cap; every
+methodology decision is time-stamped in a public decisions log before the
+run that uses it.</li>
+</ol>
+</div>

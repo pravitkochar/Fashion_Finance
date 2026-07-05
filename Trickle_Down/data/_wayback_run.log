@@ -7,3 +7,8 @@
 2026-07-05 15:57:49,537 INFO CDX throttled (ConnectionError) — cooling off 90s
 2026-07-05 16:03:24,324 INFO [uniqlo 2017-01] ok: 25 pages, 23 with composition
 2026-07-05 16:07:43,399 INFO [uniqlo 2017-02] ok: 25 pages, 25 with composition
+2026-07-05 16:11:18,788 INFO [hm 2017-03] ok: 24 pages, 24 with composition
+2026-07-05 16:15:57,665 INFO [uniqlo 2017-03] ok: 23 pages, 23 with composition
+2026-07-05 16:20:08,313 INFO [hm 2017-04] ok: 26 pages, 26 with composition
+2026-07-05 16:20:08,500 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-05 16:25:19,282 INFO [uniqlo 2017-04] ok: 25 pages, 25 with composition

@@ -660,17 +660,15 @@
   "status": "ok"
  },
  "hm|2017-03": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2017-04": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
   "status": "ok"
  },
  "hm|2017-05": {
@@ -1246,6 +1244,18 @@
   "status": "ok"
  },
  "uniqlo|2017-02": {
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-03": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-04": {
   "n_comp": 25,
   "n_pages": 25,
   "run": "2026-07-05",

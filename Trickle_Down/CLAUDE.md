@@ -131,7 +131,9 @@ commodities → P6 dashboard + public site. Light up in order; see signal early.
   plus the full free-tier API stack (Groq/Mistral/OpenRouter vision fallbacks,
   FMP/Finnhub/Tiingo/FRED/EIA/etc).
 
-## Published site (3 pages, rebuilt daily by 09 + 16)
+## Published site (rebuilt daily)
+- MAIN — the story page (dashboard/story.html, built by 18):
+  https://claude.ai/code/artifact/5c0036f7-5a22-4b77-8a3d-257a23ca6a4e
 - /live dashboard:
   https://claude.ai/code/artifact/57a50a53-698c-431c-a44f-0d9cfe8a4723
 - /historical (dashboard/historical.html):
