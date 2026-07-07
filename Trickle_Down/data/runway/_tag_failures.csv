@@ -19059,3 +19059,22 @@ fendi|FW2015|007,"DNSError: Failed to perform, curl: (6) Recv failure: Operation
 miu-miu|FW2015|007,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-05
 christian-dior|FW2016|007,image download failed,2026-07-05
 gucci|SS2018|001,empty/invalid materials,2026-07-05
+alexander-mcqueen|FW2015|047,JSONDecodeError: Extra data: line 2 column 1 (char 198),2026-07-06
+burberry|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+christian-dior|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+fendi|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+loewe|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+louis-vuitton|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+ralph-lauren|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+saint-laurent|FW2015|014,"ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",2026-07-06
+miu-miu|FW2015|018,image download failed,2026-07-06
+balenciaga|SS2022|031,empty/invalid materials,2026-07-06
+hermes|FW2016|040,HTTPError: HTTP Error 500: ,2026-07-06
+balenciaga|FW2016|052,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+salvatore-ferragamo|FW2015|052,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+bottega-veneta|FW2016|046,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+burberry|FW2016|046,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+brunello-cucinelli|FW2016|046,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+valentino|FW2015|052,"DNSError: Failed to perform, curl: (6) Could not resolve host: api.mistral.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",2026-07-06
+tods|FW2016|046,image download failed,2026-07-06
+brunello-cucinelli|FW2024|057,image download failed,2026-07-06

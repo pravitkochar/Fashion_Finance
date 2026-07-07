@@ -56,7 +56,7 @@
  "asos|2016-10": {
   "n_comp": 2,
   "n_pages": 2,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2016-11": {
@@ -68,7 +68,7 @@
  "asos|2016-12": {
   "n_comp": 1,
   "n_pages": 4,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-01": {
@@ -80,73 +80,73 @@
  "asos|2017-02": {
   "n_comp": 4,
   "n_pages": 7,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-03": {
-  "n_comp": 8,
-  "n_pages": 14,
-  "run": "2026-07-03",
+  "n_comp": 7,
+  "n_pages": 11,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-04": {
   "n_comp": 4,
   "n_pages": 7,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-05": {
   "n_comp": 4,
   "n_pages": 8,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-06": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_comp": 3,
+  "n_pages": 3,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2017-07": {
   "n_comp": 4,
   "n_pages": 5,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-08": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_comp": 1,
+  "n_pages": 4,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2017-09": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_comp": 1,
+  "n_pages": 6,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2017-10": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_comp": 1,
+  "n_pages": 6,
+  "run": "2026-07-07",
+  "status": "ok"
  },
  "asos|2017-11": {
   "n_comp": 2,
-  "n_pages": 11,
-  "run": "2026-07-03",
+  "n_pages": 5,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2017-12": {
   "n_comp": 6,
   "n_pages": 18,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2018-01": {
   "n_comp": 5,
   "n_pages": 9,
-  "run": "2026-07-03",
+  "run": "2026-07-07",
   "status": "ok"
  },
  "asos|2018-02": {
@@ -158,13 +158,13 @@
  "asos|2018-03": {
   "n_comp": 1,
   "n_pages": 2,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2018-04": {
   "n_comp": 2,
   "n_pages": 2,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2018-05": {
@@ -188,7 +188,7 @@
  "asos|2018-08": {
   "n_comp": 2,
   "n_pages": 2,
-  "run": "2026-07-03",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2018-09": {
@@ -234,21 +234,21 @@
   "status": "ok"
  },
  "asos|2019-04": {
-  "n_comp": 11,
-  "n_pages": 12,
-  "run": "2026-07-03",
-  "status": "ok"
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-06",
+  "status": "cdx_error"
  },
  "asos|2019-05": {
-  "n_comp": 10,
-  "n_pages": 14,
-  "run": "2026-07-03",
+  "n_comp": 11,
+  "n_pages": 15,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2019-06": {
-  "n_comp": 9,
-  "n_pages": 12,
-  "run": "2026-07-03",
+  "n_comp": 0,
+  "n_pages": 2,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2019-07": {
@@ -276,21 +276,21 @@
   "status": "ok"
  },
  "asos|2019-11": {
-  "n_comp": 25,
-  "n_pages": 40,
-  "run": "2026-07-03",
+  "n_comp": 34,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2019-12": {
-  "n_comp": 22,
-  "n_pages": 39,
-  "run": "2026-07-03",
+  "n_comp": 34,
+  "n_pages": 60,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2020-01": {
-  "n_comp": 14,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 54,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2020-02": {
@@ -324,21 +324,21 @@
   "status": "ok"
  },
  "asos|2020-07": {
-  "n_comp": 15,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 48,
+  "n_pages": 55,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2020-08": {
-  "n_comp": 25,
-  "n_pages": 33,
-  "run": "2026-07-04",
+  "n_comp": 48,
+  "n_pages": 58,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2020-09": {
-  "n_comp": 28,
-  "n_pages": 34,
-  "run": "2026-07-04",
+  "n_comp": 48,
+  "n_pages": 54,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2020-10": {
@@ -360,9 +360,9 @@
   "status": "ok"
  },
  "asos|2021-01": {
-  "n_comp": 17,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 49,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2021-02": {
@@ -396,9 +396,9 @@
   "status": "ok"
  },
  "asos|2021-07": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 54,
+  "n_pages": 58,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2021-08": {
@@ -432,9 +432,9 @@
   "status": "ok"
  },
  "asos|2022-01": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 57,
+  "n_pages": 59,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2022-02": {
@@ -444,9 +444,9 @@
   "status": "ok"
  },
  "asos|2022-03": {
-  "n_comp": 7,
-  "n_pages": 8,
-  "run": "2026-07-03",
+  "n_comp": 51,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2022-04": {
@@ -456,34 +456,34 @@
   "status": "ok"
  },
  "asos|2022-05": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 54,
+  "n_pages": 55,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2022-06": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 55,
+  "n_pages": 55,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2022-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 47,
+  "n_pages": 51,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2022-08": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 49,
+  "n_pages": 53,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2022-09": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 50,
+  "n_pages": 50,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "asos|2022-10": {
   "n_comp": 38,
@@ -504,9 +504,9 @@
   "status": "ok"
  },
  "asos|2023-01": {
-  "n_comp": 17,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 47,
+  "n_pages": 52,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2023-02": {
@@ -533,34 +533,100 @@
   "run": "2026-07-04",
   "status": "ok"
  },
+ "asos|2023-06": {
+  "n_comp": 47,
+  "n_pages": 47,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
  "asos|2023-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 55,
+  "n_pages": 55,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2023-08": {
+  "n_comp": 54,
+  "n_pages": 54,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2023-09": {
+  "n_comp": 37,
+  "n_pages": 39,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "asos|2023-10": {
+  "n_comp": 52,
+  "n_pages": 53,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2023-11": {
+  "n_comp": 53,
+  "n_pages": 56,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2023-12": {
+  "n_comp": 52,
+  "n_pages": 57,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "asos|2024-01": {
-  "n_comp": 17,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 54,
+  "n_pages": 56,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2024-02": {
+  "n_comp": 54,
+  "n_pages": 54,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2024-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-06",
+  "status": "cdx_error"
+ },
+ "asos|2024-04": {
+  "n_comp": 51,
+  "n_pages": 52,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "asos|2024-05": {
+  "n_comp": 51,
+  "n_pages": 56,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2024-06": {
+  "n_comp": 79,
+  "n_pages": 82,
+  "run": "2026-07-07",
   "status": "ok"
  },
  "asos|2024-07": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 76,
+  "n_pages": 80,
+  "run": "2026-07-07",
   "status": "ok"
  },
- "asos|2025-01": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+ "asos|2024-08": {
+  "n_comp": 70,
+  "n_pages": 83,
+  "run": "2026-07-07",
   "status": "ok"
  },
- "asos|2025-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+ "asos|2024-09": {
+  "n_comp": 77,
+  "n_pages": 84,
+  "run": "2026-07-07",
   "status": "ok"
  },
  "asos|2026-01": {
@@ -576,39 +642,39 @@
   "status": "cdx_error"
  },
  "hm|2016-01": {
-  "n_comp": 28,
-  "n_pages": 29,
-  "run": "2026-07-04",
+  "n_comp": 48,
+  "n_pages": 51,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-02": {
-  "n_comp": 26,
-  "n_pages": 28,
-  "run": "2026-07-04",
+  "n_comp": 42,
+  "n_pages": 47,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-03": {
-  "n_comp": 25,
-  "n_pages": 25,
-  "run": "2026-07-04",
+  "n_comp": 50,
+  "n_pages": 50,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-04": {
-  "n_comp": 27,
-  "n_pages": 27,
-  "run": "2026-07-04",
+  "n_comp": 43,
+  "n_pages": 48,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-05": {
-  "n_comp": 22,
-  "n_pages": 23,
-  "run": "2026-07-04",
+  "n_comp": 56,
+  "n_pages": 58,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-06": {
-  "n_comp": 17,
-  "n_pages": 17,
-  "run": "2026-07-04",
+  "n_comp": 50,
+  "n_pages": 52,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-07": {
@@ -624,15 +690,15 @@
   "status": "ok"
  },
  "hm|2016-09": {
-  "n_comp": 9,
-  "n_pages": 9,
-  "run": "2026-07-05",
+  "n_comp": 52,
+  "n_pages": 52,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-10": {
-  "n_comp": 12,
-  "n_pages": 13,
-  "run": "2026-07-05",
+  "n_comp": 59,
+  "n_pages": 60,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2016-11": {
@@ -654,77 +720,69 @@
   "status": "ok"
  },
  "hm|2017-02": {
-  "n_comp": 24,
-  "n_pages": 25,
-  "run": "2026-07-05",
+  "n_comp": 54,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-03": {
-  "n_comp": 24,
-  "n_pages": 24,
-  "run": "2026-07-05",
+  "n_comp": 59,
+  "n_pages": 60,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-04": {
-  "n_comp": 26,
-  "n_pages": 26,
-  "run": "2026-07-05",
+  "n_comp": 47,
+  "n_pages": 49,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-05": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 60,
+  "n_pages": 62,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-06": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 46,
+  "n_pages": 48,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-07": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 51,
+  "n_pages": 52,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-08": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 48,
+  "n_pages": 50,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-09": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 53,
+  "n_pages": 54,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-10": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 48,
+  "n_pages": 52,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-11": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 52,
+  "n_pages": 53,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2017-12": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "note": "outside retailer era clamp",
-  "run": "2026-07-03",
+  "n_comp": 49,
+  "n_pages": 50,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2018-01": {
@@ -764,9 +822,9 @@
   "status": "ok"
  },
  "hm|2018-07": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 49,
+  "n_pages": 50,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2018-08": {
@@ -800,15 +858,15 @@
   "status": "ok"
  },
  "hm|2019-01": {
-  "n_comp": 6,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 17,
+  "n_pages": 53,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2019-02": {
-  "n_comp": 28,
-  "n_pages": 38,
-  "run": "2026-07-03",
+  "n_comp": 47,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2019-03": {
@@ -818,9 +876,9 @@
   "status": "ok"
  },
  "hm|2019-04": {
-  "n_comp": 29,
-  "n_pages": 38,
-  "run": "2026-07-03",
+  "n_comp": 30,
+  "n_pages": 37,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2019-05": {
@@ -836,15 +894,15 @@
   "status": "ok"
  },
  "hm|2019-07": {
-  "n_comp": 20,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 54,
+  "n_pages": 54,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2019-08": {
-  "n_comp": 28,
-  "n_pages": 40,
-  "run": "2026-07-03",
+  "n_comp": 29,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2019-09": {
@@ -866,15 +924,15 @@
   "status": "ok"
  },
  "hm|2019-12": {
-  "n_comp": 24,
-  "n_pages": 37,
-  "run": "2026-07-03",
+  "n_comp": 22,
+  "n_pages": 54,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2020-01": {
-  "n_comp": 20,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 54,
+  "n_pages": 55,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2020-02": {
@@ -908,9 +966,9 @@
   "status": "ok"
  },
  "hm|2020-07": {
-  "n_comp": 9,
-  "n_pages": 20,
-  "run": "2026-07-03",
+  "n_comp": 32,
+  "n_pages": 45,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2020-08": {
@@ -920,15 +978,15 @@
   "status": "ok"
  },
  "hm|2020-09": {
-  "n_comp": 29,
-  "n_pages": 33,
-  "run": "2026-07-04",
+  "n_comp": 50,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2020-10": {
-  "n_comp": 28,
-  "n_pages": 34,
-  "run": "2026-07-04",
+  "n_comp": 47,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2020-11": {
@@ -944,9 +1002,9 @@
   "status": "ok"
  },
  "hm|2021-01": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 56,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2021-02": {
@@ -980,9 +1038,9 @@
   "status": "ok"
  },
  "hm|2021-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 55,
+  "n_pages": 55,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2021-08": {
@@ -1010,15 +1068,15 @@
   "status": "ok"
  },
  "hm|2021-12": {
-  "n_comp": 29,
-  "n_pages": 40,
-  "run": "2026-07-04",
+  "n_comp": 50,
+  "n_pages": 59,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2022-01": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 53,
+  "n_pages": 53,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2022-02": {
@@ -1028,9 +1086,9 @@
   "status": "ok"
  },
  "hm|2022-03": {
-  "n_comp": 10,
-  "n_pages": 10,
-  "run": "2026-07-03",
+  "n_comp": 55,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2022-04": {
@@ -1040,40 +1098,40 @@
   "status": "ok"
  },
  "hm|2022-05": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 56,
+  "n_pages": 57,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "hm|2022-06": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 39,
+  "n_pages": 40,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "hm|2022-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 44,
+  "n_pages": 44,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2022-08": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 33,
+  "n_pages": 33,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "hm|2022-09": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 47,
+  "n_pages": 47,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "hm|2022-10": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-04",
-  "status": "cdx_error"
+  "n_comp": 56,
+  "n_pages": 57,
+  "run": "2026-07-06",
+  "status": "ok"
  },
  "hm|2022-11": {
   "n_comp": 40,
@@ -1088,10 +1146,10 @@
   "status": "ok"
  },
  "hm|2023-01": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
-  "status": "ok"
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-06",
+  "status": "cdx_error"
  },
  "hm|2023-02": {
   "n_comp": 37,
@@ -1124,39 +1182,93 @@
   "status": "ok"
  },
  "hm|2023-07": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 55,
+  "n_pages": 55,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2023-08": {
+  "n_comp": 54,
+  "n_pages": 54,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2023-09": {
+  "n_comp": 44,
+  "n_pages": 53,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2023-10": {
+  "n_comp": 53,
+  "n_pages": 53,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2023-11": {
+  "n_comp": 55,
+  "n_pages": 55,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2023-12": {
+  "n_comp": 55,
+  "n_pages": 56,
+  "run": "2026-07-06",
   "status": "ok"
  },
  "hm|2024-01": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 57,
+  "n_pages": 57,
+  "run": "2026-07-06",
   "status": "ok"
+ },
+ "hm|2024-02": {
+  "n_comp": 30,
+  "n_pages": 30,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2024-03": {
+  "n_comp": 30,
+  "n_pages": 31,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2024-04": {
+  "n_comp": 51,
+  "n_pages": 52,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "hm|2024-05": {
+  "n_comp": 50,
+  "n_pages": 57,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2024-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "run": "2026-07-07",
+  "status": "cdx_error"
  },
  "hm|2024-07": {
-  "n_comp": 18,
-  "n_pages": 19,
-  "run": "2026-07-03",
+  "n_comp": 67,
+  "n_pages": 70,
+  "run": "2026-07-07",
   "status": "ok"
  },
- "hm|2025-01": {
-  "n_comp": 19,
-  "n_pages": 19,
-  "run": "2026-07-03",
+ "hm|2024-08": {
+  "n_comp": 80,
+  "n_pages": 80,
+  "run": "2026-07-07",
   "status": "ok"
  },
- "hm|2025-07": {
-  "n_comp": 17,
-  "n_pages": 19,
-  "run": "2026-07-03",
-  "status": "ok"
- },
- "hm|2026-01": {
-  "n_comp": 6,
-  "n_pages": 19,
-  "run": "2026-07-03",
+ "hm|2024-09": {
+  "n_comp": 73,
+  "n_pages": 73,
+  "run": "2026-07-07",
   "status": "ok"
  },
  "hm|2026-07": {
@@ -1259,6 +1371,678 @@
   "n_comp": 25,
   "n_pages": 25,
   "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-05": {
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-06": {
+  "n_comp": 28,
+  "n_pages": 28,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-07": {
+  "n_comp": 20,
+  "n_pages": 20,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-08": {
+  "n_comp": 22,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-09": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-10": {
+  "n_comp": 25,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2017-11": {
+  "n_comp": 47,
+  "n_pages": 47,
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2017-12": {
+  "n_comp": 22,
+  "n_pages": 22,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-01": {
+  "n_comp": 28,
+  "n_pages": 28,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-02": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-03": {
+  "n_comp": 21,
+  "n_pages": 21,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-04": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-05": {
+  "n_comp": 25,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-06": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-07": {
+  "n_comp": 24,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-08": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-09": {
+  "n_comp": 27,
+  "n_pages": 28,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-10": {
+  "n_comp": 21,
+  "n_pages": 21,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-11": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2018-12": {
+  "n_comp": 27,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-01": {
+  "n_comp": 29,
+  "n_pages": 29,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-02": {
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-03": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-04": {
+  "n_comp": 22,
+  "n_pages": 22,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-05": {
+  "n_comp": 23,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-06": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-07": {
+  "n_comp": 21,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-08": {
+  "n_comp": 18,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-09": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-10": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-11": {
+  "n_comp": 20,
+  "n_pages": 21,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2019-12": {
+  "n_comp": 27,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-01": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-02": {
+  "n_comp": 21,
+  "n_pages": 21,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-03": {
+  "n_comp": 20,
+  "n_pages": 21,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-04": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-05": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-06": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-07": {
+  "n_comp": 29,
+  "n_pages": 29,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-08": {
+  "n_comp": 25,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-09": {
+  "n_comp": 28,
+  "n_pages": 30,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-10": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-11": {
+  "n_comp": 27,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2020-12": {
+  "n_comp": 26,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-01": {
+  "n_comp": 29,
+  "n_pages": 29,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-02": {
+  "n_comp": 19,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-03": {
+  "n_comp": 26,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-04": {
+  "n_comp": 28,
+  "n_pages": 28,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-05": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-06": {
+  "n_comp": 23,
+  "n_pages": 23,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-07": {
+  "n_comp": 26,
+  "n_pages": 27,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-08": {
+  "n_comp": 25,
+  "n_pages": 25,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-09": {
+  "n_comp": 26,
+  "n_pages": 26,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-10": {
+  "n_comp": 23,
+  "n_pages": 29,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-11": {
+  "n_comp": 24,
+  "n_pages": 24,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2021-12": {
+  "n_comp": 31,
+  "n_pages": 31,
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2022-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "uniqlo|2023-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2023-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2024-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-01": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-07": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "uniqlo|2025-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "zara|2016-01": {
@@ -1377,27 +2161,27 @@
  },
  "zara|2017-08": {
   "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_pages": 7,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2017-09": {
   "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_pages": 20,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2017-10": {
   "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_pages": 8,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2017-11": {
   "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-03",
-  "status": "cdx_error"
+  "n_pages": 12,
+  "run": "2026-07-05",
+  "status": "ok"
  },
  "zara|2017-12": {
   "n_comp": 0,
@@ -1873,11 +2657,81 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2023-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "zara|2023-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "zara|2023-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "zara|2023-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-05",
+  "status": "ok"
+ },
+ "zara|2023-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
  "zara|2024-01": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2024-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "zara|2024-07": {
@@ -1887,6 +2741,41 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2024-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2024-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
  "zara|2025-01": {
   "n_comp": 0,
   "n_pages": 0,
@@ -1894,11 +2783,81 @@
   "run": "2026-07-03",
   "status": "ok"
  },
+ "zara|2025-02": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-03": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-04": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-05": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-06": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
  "zara|2025-07": {
   "n_comp": 0,
   "n_pages": 0,
   "note": "outside retailer era clamp",
   "run": "2026-07-03",
+  "status": "ok"
+ },
+ "zara|2025-08": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-09": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-10": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-11": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
+  "status": "ok"
+ },
+ "zara|2025-12": {
+  "n_comp": 0,
+  "n_pages": 0,
+  "note": "outside retailer era clamp",
+  "run": "2026-07-06",
   "status": "ok"
  },
  "zara|2026-01": {

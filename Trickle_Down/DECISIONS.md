@@ -105,3 +105,27 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
   H1 grid could not be scored yet (no measured retailer history at fold
   dates), as expected.
 
+
+## 2026-07-07 — H1 floor amendment (BEFORE any H1 score exists)
+
+- MIN_RETAILERS lowered 6 → 4. The original floor assumed live scraping of
+  11 listed retailers; the Wayback archive (the only source of HISTORICAL
+  mix) covers exactly 4 (Zara, H&M, ASOS, Uniqlo). This amendment is
+  availability-driven: as of this entry, H1 has never produced any score,
+  so the change cannot be results-motivated. Coverage gates themselves
+  (2×60 months @ n≥30) are MET (H&M 95, ASOS 60).
+- Everything else unchanged. H1 CV runs immediately after this entry.
+
+## 2026-07-07 — H1 historical verdict: NOT TESTABLE from archives
+
+- Diagnostic (2018-2022, floor 4 then measured directly): max 2 retailers
+  ever score on one rebalance date (26 dates n=1, 35 dates n=2, zero n>=3).
+  The archive yields deep histories for H&M and ASOS only; a two-name
+  "cross-section" is a pair trade, not an adoption factor.
+- H1 therefore remains FORWARD-ONLY (per the original v1 addendum), scored
+  live as the running scrapers accumulate 4+ retailer breadth. No historical
+  H1 number will be claimed. The 2026-07-07 floor amendment stands for the
+  live track only.
+- Sealed test window remains sealed: nothing has earned it (H2 measured CV
+  best mean fold IR -0.39; all combos negative). This is the charter
+  functioning as designed.
