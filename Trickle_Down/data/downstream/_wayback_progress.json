@@ -689,6 +689,36 @@
   "run": "2026-07-07",
   "status": "ok"
  },
+ "asos|2025-08": {
+  "n_comp": 52,
+  "n_pages": 55,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2025-09": {
+  "n_comp": 38,
+  "n_pages": 50,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2025-10": {
+  "n_comp": 49,
+  "n_pages": 50,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2025-11": {
+  "n_comp": 51,
+  "n_pages": 53,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2025-12": {
+  "n_comp": 52,
+  "n_pages": 55,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
  "asos|2026-01": {
   "n_comp": 0,
   "n_pages": 0,
@@ -1394,6 +1424,30 @@
  "hm|2025-08": {
   "n_comp": 53,
   "n_pages": 53,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2025-09": {
+  "n_comp": 51,
+  "n_pages": 51,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2025-10": {
+  "n_comp": 56,
+  "n_pages": 56,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2025-11": {
+  "n_comp": 43,
+  "n_pages": 43,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2025-12": {
+  "n_comp": 42,
+  "n_pages": 52,
   "run": "2026-07-07",
   "status": "ok"
  },

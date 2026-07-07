@@ -42,3 +42,17 @@
 2026-07-07 14:45:00,365 INFO CDX throttled (ConnectionError) — cooling off 90s
 2026-07-07 14:55:02,393 INFO [hm 2025-08] ok: 53 pages, 53 with composition
 2026-07-07 14:55:02,596 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 15:05:41,067 INFO [asos 2025-08] ok: 55 pages, 52 with composition
+2026-07-07 15:16:20,897 INFO [hm 2025-09] ok: 51 pages, 51 with composition
+2026-07-07 15:27:27,288 INFO [asos 2025-09] ok: 50 pages, 38 with composition
+2026-07-07 15:27:27,482 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 15:39:37,468 INFO [hm 2025-10] ok: 56 pages, 56 with composition
+2026-07-07 15:39:37,666 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 15:49:11,250 INFO [asos 2025-10] ok: 50 pages, 49 with composition
+2026-07-07 15:58:34,310 INFO [hm 2025-11] ok: 43 pages, 43 with composition
+2026-07-07 15:58:34,511 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 16:08:27,043 INFO [asos 2025-11] ok: 53 pages, 51 with composition
+2026-07-07 16:18:33,276 INFO [hm 2025-12] ok: 52 pages, 42 with composition
+2026-07-07 16:29:04,800 INFO [asos 2025-12] ok: 55 pages, 52 with composition
+2026-07-07 16:29:04,961 INFO coverage: 297 retailer-months sampled; months with n_comp>=30: {'asos': 76, 'hm': 102, 'uniqlo': 3}
+2026-07-07 16:29:04,963 INFO sweep complete for requested range

@@ -9,11 +9,11 @@
   },
   "h2": {
     "nowcast_monthly": {
-      "sharpe": -0.7338,
-      "ir": -0.7641,
+      "sharpe": -0.7186,
+      "ir": -0.7553,
       "hit_rate": 0.2651,
-      "car": -0.6048,
-      "max_drawdown": -0.623,
+      "car": -0.5954,
+      "max_drawdown": -0.6224,
       "n_days": 1804,
       "periods_per_year": 12,
       "n_periods": 83,
