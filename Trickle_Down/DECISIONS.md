@@ -173,3 +173,28 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
   revenue YoY. Probes chosen AFTER seeing H2/H4 results — nothing herein is
   confirmatory; any pursued channel requires fresh pre-registration with
   overlap-robust inference before a full study.
+
+## 2026-07-07 — H5 pre-registration: cascade indicators vs commodity futures
+(entry written from the coordinator's approved spec BEFORE any H5 code runs;
+the exploratory screen that motivated it is post-hoc and non-confirmatory)
+
+- **Indicators** (monthly, PIT): (a) search composite = mean trends value_z
+  over group materials; (b) runway z = season-share step function (ffill
+  from known_date), trailing-36m z (shift-1). Groups: leather→LE=F,
+  cotton+denim→CT=F, polyester+nylon→CL=F.
+- **Cells**: indicator {search, runway} × group (3) × forward horizon
+  {3,6,9}m raw futures returns. EVERY cell reported with: Pearson r,
+  Newey-West t (Bartlett, lag = horizon in months), moving-block bootstrap
+  two-sided p (2,000 draws, circular blocks, block length = horizon months,
+  indicator series resampled under H0), sign-agreement rate, n.
+- **Headline cell (declared now)**: leather / search / 6m.
+- **Tradability check**: walk-forward folds validating 2020, 2021, 2022
+  (fit window = dev start through fold-year minus 1). Strategy: monthly
+  position on the future, |indicator z| > 1 gate, direction = sign of the
+  fit-window correlation (learned in-sample only), net 10 bps/side on
+  position changes. Report per-fold IR + mean; no promotion post-hoc.
+- **Secondary**: house emergence intensity vs parent fwd {3,6}m excess,
+  pooled Spearman with season-clustered bootstrap p (2,000 draws).
+- **Windows**: dev 2017-01..2022-12 headline; 2023+ rows computed but
+  flagged eval_window=false; the 2023-2025 trading seal applies to H5
+  exactly as to H1/H2/H4.

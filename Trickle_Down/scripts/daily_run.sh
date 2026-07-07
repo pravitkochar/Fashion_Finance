@@ -50,6 +50,7 @@ step "13 fit"         "$PY" scripts/13_fit_propagation.py --folds
 step "14 tune"        "$PY" scripts/14_tune_signals.py
 step "19 event study" "$PY" scripts/19_event_study.py
 step "20 nowcast"     "$PY" scripts/20_nowcast_census.py
+step "22 h5 commodities" "$PY" scripts/22_h5_commodities.py
 step "09 dashboard"   "$PY" scripts/09_dashboard.py
 step "16 site pages"  "$PY" scripts/16_site_pages.py
 step "18 story"       "$PY" scripts/18_story_page.py

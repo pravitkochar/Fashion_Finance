@@ -647,6 +647,12 @@
   "run": "2026-07-07",
   "status": "ok"
  },
+ "asos|2025-01": {
+  "n_comp": 50,
+  "n_pages": 52,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
  "asos|2026-01": {
   "n_comp": 0,
   "n_pages": 0,

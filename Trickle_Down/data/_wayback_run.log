@@ -18,3 +18,4 @@
 2026-07-07 12:13:38,627 INFO [asos 2024-12] ok: 57 pages, 57 with composition
 2026-07-07 12:24:18,610 INFO [hm 2025-01] ok: 54 pages, 49 with composition
 2026-07-07 12:24:18,817 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 12:34:50,128 INFO [asos 2025-01] ok: 52 pages, 50 with composition
