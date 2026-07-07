@@ -163,3 +163,13 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
   measured-mix composite}; turning-point precision AND recall vs (a) naive
   persistence, (b) AR(3) baseline; pseudo-real-time PIT evaluation;
   subperiod robustness ex-COVID (drop 2020); full scorecard published.
+
+## 2026-07-07 — Exploratory screen (post-hoc, SCREENING ONLY)
+
+- Ran scripts/21_exploratory_screen.py: P1 monthly ICs (alignment level/YoY,
+  supplier demand z vs fwd 1/3/6m excess), P2 indicator-vs-commodity lags
+  (CT=F/LE=F/CL=F x runway_z/trends_z x fwd 3/6/9m), P3 house emergence vs
+  parent fwd excess, P4 pre-earnings signal vs surprise sign, P5 supplier
+  revenue YoY. Probes chosen AFTER seeing H2/H4 results — nothing herein is
+  confirmatory; any pursued channel requires fresh pre-registration with
+  overlap-robust inference before a full study.

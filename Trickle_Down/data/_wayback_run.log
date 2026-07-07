@@ -16,3 +16,5 @@
 2026-07-07 11:51:24,102 INFO CDX throttled (ConnectionError) — cooling off 90s
 2026-07-07 12:02:29,761 INFO [hm 2024-12] ok: 50 pages, 44 with composition
 2026-07-07 12:13:38,627 INFO [asos 2024-12] ok: 57 pages, 57 with composition
+2026-07-07 12:24:18,610 INFO [hm 2025-01] ok: 54 pages, 49 with composition
+2026-07-07 12:24:18,817 INFO CDX throttled (ConnectionError) — cooling off 90s
