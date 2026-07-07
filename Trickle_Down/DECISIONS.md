@@ -149,3 +149,17 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
   MRTSSM448USN (clothing-store retail sales); judged on directional
   turning-point calls at 3-6 month leads vs a naive persistence baseline;
   no trading claim.
+
+## 2026-07-07 — H4 + nowcast depth expansion (pre-registered, no results seen)
+
+- **H4 robustness grid (all runs reported)**: split {median, quartile} ×
+  window {[-1,+1], [0,+2]} × signal {mix-alignment YoY, adoption-score YoY,
+  material-demand YoY} × benchmark {XRT excess, local-index excess};
+  headline = median split, [-1,+1], mix-alignment, XRT (declared now).
+- **H4 validation**: per-year fold table 2017-2022; permutation placebo
+  (1,000 random side-assignments → empirical p); pre-event placebo window
+  [-10,-8]; retailer-only vs supplier-only subsets; net of 20 bps/side.
+- **Nowcast grid**: leads 1-12 months × indicator {trends-composite,
+  measured-mix composite}; turning-point precision AND recall vs (a) naive
+  persistence, (b) AR(3) baseline; pseudo-real-time PIT evaluation;
+  subperiod robustness ex-COVID (drop 2020); full scorecard published.
