@@ -322,7 +322,7 @@ def build(g: dict) -> str:
 <p class="byline">An ongoing field study · {g['today']} ·
 <span class="hi">updated nightly by the pipeline</span><br>
 runway shows → high-street racks → fiber mills, measured</p>
-<p class="byline"><a class="paperlink" href="https://raw.githubusercontent.com/pravitkochar/Fashion_Finance/main/Trickle_Down/paper/Trickle_Down_Paper.pdf">↓ Download the full paper (PDF)</a></p>
+<p class="byline"><a class="paperlink" href="https://raw.githubusercontent.com/pravitkochar/Fashion_Finance/main/Trickle_Down/paper/Trickle_Down_Paper.pdf">↓ Download the full paper (PDF)</a>&nbsp;&nbsp;<a class="paperlink" href="https://raw.githubusercontent.com/pravitkochar/Fashion_Finance/main/Trickle_Down/paper/Trickle_Down_Deck.pdf">↓ Download the pitch deck (PDF)</a></p>
 </header>
 
 <section>
