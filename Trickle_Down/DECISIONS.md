@@ -129,3 +129,23 @@ live catalog scraping only yields today's snapshot. Consequences, locked now:
 - Sealed test window remains sealed: nothing has earned it (H2 measured CV
   best mean fold IR -0.39; all combos negative). This is the charter
   functioning as designed.
+
+## 2026-07-07 — H4 pre-registration: earnings-window event study (BEFORE code)
+
+- Motivation (external, before any H4 result): deep-research verdict — slow
+  alt-data returns concentrate at disclosure (JFQA 2025 4.76%/event; JFE
+  2017 3.4%), which also explains H2's continuous-holding CV failure.
+- **Signal**: per listed name, YoY change in cascade alignment measured
+  BEFORE the earnings date (retailers: adoption/mix-alignment delta vs
+  year-ago same month; suppliers: mapped material-demand delta). All inputs
+  through known_date filtering.
+- **Construction**: cross-sectional above/below-median (quartiles if n≥8
+  per date) long/short, positions held ONLY [-1,+1] trading days around
+  each earnings announcement (dates via FMP). Abnormal = excess vs XRT.
+- **Metrics (locked)**: mean per-event L/S spread, t-stat, hit rate,
+  n_events; dev window 2017-2022; the 2023-2025 seal applies to H4 exactly
+  as to H1/H2.
+- **Nowcast demo (locked, descriptive)**: cascade indicator vs FRED
+  MRTSSM448USN (clothing-store retail sales); judged on directional
+  turning-point calls at 3-6 month leads vs a naive persistence baseline;
+  no trading claim.
