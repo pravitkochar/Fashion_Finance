@@ -16,7 +16,7 @@ h2_nowcast_monthly,2018-03-01,2018-04-01,0.0
 h2_nowcast_monthly,2018-04-01,2018-05-01,0.0
 h2_nowcast_monthly,2018-05-01,2018-06-01,0.0
 h2_nowcast_monthly,2018-06-01,2018-07-01,0.0
-h2_nowcast_monthly,2018-07-01,2018-08-01,0.015151
+h2_nowcast_monthly,2018-07-01,2018-08-01,0.01515
 h2_nowcast_monthly,2018-08-01,2018-09-01,-0.002
 h2_nowcast_monthly,2018-09-01,2018-10-01,0.081022
 h2_nowcast_monthly,2018-10-01,2018-11-01,0.036483
@@ -30,7 +30,7 @@ h2_nowcast_monthly,2019-05-01,2019-06-01,-0.068471
 h2_nowcast_monthly,2019-06-01,2019-07-01,-0.034029
 h2_nowcast_monthly,2019-07-01,2019-08-01,0.010443
 h2_nowcast_monthly,2019-08-01,2019-09-01,-0.022475
-h2_nowcast_monthly,2019-09-01,2019-10-01,0.018105
+h2_nowcast_monthly,2019-09-01,2019-10-01,0.018106
 h2_nowcast_monthly,2019-10-01,2019-11-01,-0.00125
 h2_nowcast_monthly,2019-11-01,2019-12-01,0.015501
 h2_nowcast_monthly,2019-12-01,2020-01-01,0.017888
@@ -38,13 +38,13 @@ h2_nowcast_monthly,2020-01-01,2020-02-01,-0.009945
 h2_nowcast_monthly,2020-02-01,2020-03-01,-0.002
 h2_nowcast_monthly,2020-03-01,2020-04-01,0.0
 h2_nowcast_monthly,2020-04-01,2020-05-01,0.0
-h2_nowcast_monthly,2020-05-01,2020-06-01,-0.005797
+h2_nowcast_monthly,2020-05-01,2020-06-01,-0.005796
 h2_nowcast_monthly,2020-06-01,2020-07-01,-0.002
 h2_nowcast_monthly,2020-07-01,2020-08-01,0.0
 h2_nowcast_monthly,2020-08-01,2020-09-01,-0.034879
 h2_nowcast_monthly,2020-09-01,2020-10-01,-0.076607
 h2_nowcast_monthly,2020-10-01,2020-11-01,-0.06638
-h2_nowcast_monthly,2020-11-01,2020-12-01,-0.012925
+h2_nowcast_monthly,2020-11-01,2020-12-01,-0.012924
 h2_nowcast_monthly,2020-12-01,2021-01-01,-0.015755
 h2_nowcast_monthly,2021-01-01,2021-02-01,-0.002
 h2_nowcast_monthly,2021-02-01,2021-03-01,0.0
@@ -62,7 +62,7 @@ h2_nowcast_monthly,2022-01-01,2022-02-01,0.059402
 h2_nowcast_monthly,2022-02-01,2022-03-01,0.007237
 h2_nowcast_monthly,2022-03-01,2022-04-01,0.032866
 h2_nowcast_monthly,2022-04-01,2022-05-01,-0.0017
-h2_nowcast_monthly,2022-05-01,2022-06-01,-0.074749
+h2_nowcast_monthly,2022-05-01,2022-06-01,-0.074748
 h2_nowcast_monthly,2022-06-01,2022-07-01,-0.002
 h2_nowcast_monthly,2022-07-01,2022-08-01,-0.052198
 h2_nowcast_monthly,2022-08-01,2022-09-01,-0.033584
@@ -75,7 +75,7 @@ h2_nowcast_monthly,2023-02-01,2023-03-01,-0.001
 h2_nowcast_monthly,2023-03-01,2023-04-01,-0.001661
 h2_nowcast_monthly,2023-04-01,2023-05-01,-0.002
 h2_nowcast_monthly,2023-05-01,2023-06-01,-0.020081
-h2_nowcast_monthly,2023-06-01,2023-07-01,-0.045486
+h2_nowcast_monthly,2023-06-01,2023-07-01,-0.045485
 h2_nowcast_monthly,2023-07-01,2023-08-01,0.002671
 h2_nowcast_monthly,2023-08-01,2023-09-01,-0.027565
 h2_nowcast_monthly,2023-09-01,2023-10-01,-0.001333
@@ -130,7 +130,7 @@ h2_nowcast_trends_monthly,2020-03-01,2020-04-01,0.004349
 h2_nowcast_trends_monthly,2020-04-01,2020-05-01,0.014404
 h2_nowcast_trends_monthly,2020-05-01,2020-06-01,-0.009876
 h2_nowcast_trends_monthly,2020-06-01,2020-07-01,-0.023497
-h2_nowcast_trends_monthly,2020-07-01,2020-08-01,0.019756
+h2_nowcast_trends_monthly,2020-07-01,2020-08-01,0.019755
 h2_nowcast_trends_monthly,2020-08-01,2020-09-01,0.018929
 h2_nowcast_trends_monthly,2020-09-01,2020-10-01,0.205193
 h2_nowcast_trends_monthly,2020-10-01,2020-11-01,-0.002

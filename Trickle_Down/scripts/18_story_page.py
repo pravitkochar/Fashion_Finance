@@ -156,6 +156,9 @@ h1{{font:700 38px/1.15 var(--body);letter-spacing:-.01em;margin:0;
   max-width:18ch;text-wrap:balance}}
 .byline{{font:13px/1.5 var(--mono);color:var(--ink2);margin:14px 0 0}}
 .byline .hi{{background:var(--hi);padding:1px 4px}}
+.byline .paperlink{{display:inline-block;margin-top:9px;font-weight:700;
+  text-decoration:none;border-bottom:2px solid var(--hi);padding-bottom:1px}}
+.byline .paperlink:hover{{background:var(--hi)}}
 
 /* body grid: text column + margin rail */
 section{{display:grid;grid-template-columns:minmax(0,620px) 1fr;
@@ -319,6 +322,7 @@ def build(g: dict) -> str:
 <p class="byline">An ongoing field study · {g['today']} ·
 <span class="hi">updated nightly by the pipeline</span><br>
 runway shows → high-street racks → fiber mills, measured</p>
+<p class="byline"><a class="paperlink" href="https://raw.githubusercontent.com/pravitkochar/Fashion_Finance/main/Trickle_Down/paper/Trickle_Down_Paper.pdf">↓ Download the full paper (PDF)</a></p>
 </header>
 
 <section>

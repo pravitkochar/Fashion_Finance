@@ -30,3 +30,4 @@ date,retailer,source,event,detail
 2026-07-07,uniqlo,uniqlo_live,request_error,"https://www.uniqlo.com/us/api/commerce/v5/en/products/E484300-000 Failed to perform, curl: (28) Operation timed out after 25002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
 2026-07-07,uniqlo,uniqlo_live,request_error,"https://www.uniqlo.com/us/api/commerce/v5/en/products/E488010-000 Failed to perform, curl: (28) Operation timed out after 220897 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
 2026-07-07,uniqlo,uniqlo_live,request_error,"https://www.uniqlo.com/us/api/commerce/v5/en/products/E487589-000 Failed to perform, curl: (28) Operation timed out after 25002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+2026-07-07,hm,hm_live,blocked,403 https://www2.hm.com/en_us/productpage.1358073001.html

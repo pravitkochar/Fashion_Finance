@@ -3272,6 +3272,10 @@ date,series,value,source,known_date
 2026-06-24,usd_broad_index,121.412,FRED,2026-07-31
 2026-06-25,usd_broad_index,121.0559,FRED,2026-07-31
 2026-06-26,usd_broad_index,120.8866,FRED,2026-07-31
+2026-06-29,usd_broad_index,120.9525,FRED,2026-07-31
+2026-06-30,usd_broad_index,120.9248,FRED,2026-07-31
+2026-07-01,usd_broad_index,121.1455,FRED,2026-08-31
+2026-07-02,usd_broad_index,120.6902,FRED,2026-08-31
 2015-01-01,wti_spot_monthly,47.22,EIA,2015-02-28
 2015-02-01,wti_spot_monthly,50.58,EIA,2015-03-31
 2015-03-01,wti_spot_monthly,47.82,EIA,2015-04-30

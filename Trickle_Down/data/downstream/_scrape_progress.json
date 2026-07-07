@@ -1,22 +1,22 @@
 {
  "asos": {
   "items": 72,
-  "last_run": "2026-07-06",
+  "last_run": "2026-07-07",
   "with_composition": 0
  },
  "hm": {
   "items": 72,
-  "last_run": "2026-07-06",
+  "last_run": "2026-07-07",
   "with_composition": 0
  },
  "uniqlo": {
-  "items": 387,
-  "last_run": "2026-07-06",
+  "items": 389,
+  "last_run": "2026-07-07",
   "with_composition": 150
  },
  "zara": {
-  "items": 859,
-  "last_run": "2026-07-06",
-  "with_composition": 150
+  "items": 861,
+  "last_run": "2026-07-07",
+  "with_composition": 148
  }
 }

@@ -1,7 +1,7 @@
 {
   "grid": {
     "median/[-1,+1]/material_demand_yoy/xrt": {
-      "spread": -0.02029,
+      "spread": -0.02028,
       "mean_signed": -0.0098,
       "mean_signed_net": -0.0138,
       "t_stat": -1.142,
@@ -267,7 +267,7 @@
       "n_short": 3
     },
     "supplier_only": {
-      "spread": -0.02029,
+      "spread": -0.02028,
       "mean_signed": -0.0098,
       "mean_signed_net": -0.0138,
       "t_stat": -1.142,
