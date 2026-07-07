@@ -19,3 +19,26 @@
 2026-07-07 12:24:18,610 INFO [hm 2025-01] ok: 54 pages, 49 with composition
 2026-07-07 12:24:18,817 INFO CDX throttled (ConnectionError) — cooling off 90s
 2026-07-07 12:34:50,128 INFO [asos 2025-01] ok: 52 pages, 50 with composition
+2026-07-07 12:46:50,721 INFO [hm 2025-02] ok: 59 pages, 55 with composition
+2026-07-07 12:58:02,164 INFO [asos 2025-02] ok: 60 pages, 56 with composition
+2026-07-07 12:58:02,353 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 13:09:59,930 INFO [hm 2025-03] ok: 56 pages, 56 with composition
+2026-07-07 13:10:00,119 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 13:21:37,563 INFO [asos 2025-03] ok: 57 pages, 56 with composition
+2026-07-07 13:21:37,761 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 13:31:01,984 INFO [hm 2025-04] ok: 51 pages, 51 with composition
+2026-07-07 13:41:04,803 INFO [asos 2025-04] ok: 45 pages, 45 with composition
+2026-07-07 13:41:05,016 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 13:51:09,839 INFO [hm 2025-05] ok: 53 pages, 53 with composition
+2026-07-07 13:51:10,031 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 14:01:32,399 INFO [asos 2025-05] ok: 55 pages, 54 with composition
+2026-07-07 14:01:32,601 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 14:12:13,078 INFO [hm 2025-06] ok: 53 pages, 53 with composition
+2026-07-07 14:22:51,378 INFO [asos 2025-06] ok: 54 pages, 54 with composition
+2026-07-07 14:22:51,583 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 14:32:48,877 INFO [hm 2025-07] ok: 48 pages, 48 with composition
+2026-07-07 14:32:49,072 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 14:45:00,165 INFO [asos 2025-07] ok: 58 pages, 54 with composition
+2026-07-07 14:45:00,365 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 14:55:02,393 INFO [hm 2025-08] ok: 53 pages, 53 with composition
+2026-07-07 14:55:02,596 INFO CDX throttled (ConnectionError) — cooling off 90s
