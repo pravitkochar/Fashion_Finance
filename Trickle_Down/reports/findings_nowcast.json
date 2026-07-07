@@ -1,0 +1,590 @@
+{
+  "leads": {
+    "1": {
+      "trends_composite": {
+        "precision": 0.273,
+        "recall": 0.25,
+        "hits": 3,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.333,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.308,
+        "recall": 0.333,
+        "hits": 4,
+        "n_sales_tps": 12,
+        "n_ind_tps": 13
+      }
+    },
+    "2": {
+      "trends_composite": {
+        "precision": 0.273,
+        "recall": 0.25,
+        "hits": 3,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.222,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 9
+      }
+    },
+    "3": {
+      "trends_composite": {
+        "precision": 0.182,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.667,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.2,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 5
+      }
+    },
+    "4": {
+      "trends_composite": {
+        "precision": 0.182,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.667,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.25,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 4
+      }
+    },
+    "5": {
+      "trends_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.667,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.143,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 7
+      }
+    },
+    "6": {
+      "trends_composite": {
+        "precision": 0.182,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.333,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 6
+      }
+    },
+    "7": {
+      "trends_composite": {
+        "precision": 0.182,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.333,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      }
+    },
+    "8": {
+      "trends_composite": {
+        "precision": 0.273,
+        "recall": 0.25,
+        "hits": 3,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.286,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 7
+      }
+    },
+    "9": {
+      "trends_composite": {
+        "precision": 0.273,
+        "recall": 0.25,
+        "hits": 3,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.333,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.222,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 9
+      }
+    },
+    "10": {
+      "trends_composite": {
+        "precision": 0.455,
+        "recall": 0.417,
+        "hits": 5,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.667,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.143,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 7
+      }
+    },
+    "11": {
+      "trends_composite": {
+        "precision": 0.455,
+        "recall": 0.417,
+        "hits": 5,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.667,
+        "recall": 0.167,
+        "hits": 2,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.143,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 7
+      }
+    },
+    "12": {
+      "trends_composite": {
+        "precision": 0.273,
+        "recall": 0.25,
+        "hits": 3,
+        "n_sales_tps": 12,
+        "n_ind_tps": 11
+      },
+      "measured_composite": {
+        "precision": 0.333,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      },
+      "ar3": {
+        "precision": 0.333,
+        "recall": 0.083,
+        "hits": 1,
+        "n_sales_tps": 12,
+        "n_ind_tps": 3
+      }
+    }
+  },
+  "corr_by_lead": {
+    "1": {
+      "trends_composite": 0.242,
+      "measured_composite": -0.23
+    },
+    "2": {
+      "trends_composite": 0.12,
+      "measured_composite": -0.135
+    },
+    "3": {
+      "trends_composite": -0.061,
+      "measured_composite": -0.122
+    },
+    "4": {
+      "trends_composite": -0.142,
+      "measured_composite": -0.143
+    },
+    "5": {
+      "trends_composite": -0.191,
+      "measured_composite": -0.35
+    },
+    "6": {
+      "trends_composite": -0.124,
+      "measured_composite": -0.299
+    },
+    "7": {
+      "trends_composite": -0.176,
+      "measured_composite": -0.05
+    },
+    "8": {
+      "trends_composite": -0.111,
+      "measured_composite": -0.167
+    },
+    "9": {
+      "trends_composite": -0.103,
+      "measured_composite": 0.0
+    },
+    "10": {
+      "trends_composite": -0.15,
+      "measured_composite": 0.133
+    },
+    "11": {
+      "trends_composite": -0.226,
+      "measured_composite": 0.004
+    },
+    "12": {
+      "trends_composite": -0.457,
+      "measured_composite": 0.058
+    }
+  },
+  "ex_covid": {
+    "1": {
+      "trends_composite": {
+        "precision": 0.2,
+        "recall": 0.25,
+        "hits": 2,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "2": {
+      "trends_composite": {
+        "precision": 0.2,
+        "recall": 0.25,
+        "hits": 2,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "3": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "4": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "5": {
+      "trends_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "6": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "7": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "8": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "9": {
+      "trends_composite": {
+        "precision": 0.2,
+        "recall": 0.25,
+        "hits": 2,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "10": {
+      "trends_composite": {
+        "precision": 0.3,
+        "recall": 0.375,
+        "hits": 3,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "11": {
+      "trends_composite": {
+        "precision": 0.3,
+        "recall": 0.375,
+        "hits": 3,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    },
+    "12": {
+      "trends_composite": {
+        "precision": 0.1,
+        "recall": 0.125,
+        "hits": 1,
+        "n_sales_tps": 8,
+        "n_ind_tps": 10
+      },
+      "measured_composite": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "hits": 0,
+        "n_sales_tps": 8,
+        "n_ind_tps": 1
+      }
+    }
+  },
+  "baselines": {
+    "persistence": {
+      "recall": 0.0,
+      "precision": null,
+      "note": "persistence never calls a turn \u2014 recall 0 by construction; the honest bar is the AR(3) column."
+    }
+  },
+  "meta": {
+    "sales_tps": [
+      [
+        "2016-04",
+        "trough"
+      ],
+      [
+        "2016-12",
+        "peak"
+      ],
+      [
+        "2017-09",
+        "trough"
+      ],
+      [
+        "2018-06",
+        "peak"
+      ],
+      [
+        "2019-06",
+        "trough"
+      ],
+      [
+        "2020-01",
+        "peak"
+      ],
+      [
+        "2020-04",
+        "trough"
+      ],
+      [
+        "2020-10",
+        "peak"
+      ],
+      [
+        "2020-11",
+        "trough"
+      ],
+      [
+        "2021-04",
+        "peak"
+      ],
+      [
+        "2022-06",
+        "trough"
+      ],
+      [
+        "2022-09",
+        "peak"
+      ]
+    ],
+    "dev_end": "2022-12-31",
+    "tolerance_months": 1,
+    "prominence": {
+      "sales_pp": 1.5,
+      "ind_z": 0.35
+    },
+    "pseudo_real_time": "all indicator inputs enter at their known_date; sales evaluated on the SA series as published"
+  }
+}

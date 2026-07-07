@@ -1,0 +1,281 @@
+{
+  "grid": {
+    "median/[-1,+1]/material_demand_yoy/xrt": {
+      "spread": -0.02029,
+      "mean_signed": -0.0098,
+      "mean_signed_net": -0.0138,
+      "t_stat": -1.142,
+      "p_value": 0.2612,
+      "hit_rate": 0.405,
+      "n_events": 37,
+      "n_long": 18,
+      "n_short": 19
+    },
+    "median/[-1,+1]/material_demand_yoy/local": {
+      "spread": -0.02568,
+      "mean_signed": -0.01284,
+      "mean_signed_net": -0.01684,
+      "t_stat": -1.627,
+      "p_value": 0.1126,
+      "hit_rate": 0.389,
+      "n_events": 36,
+      "n_long": 18,
+      "n_short": 18
+    },
+    "median/[0,+2]/material_demand_yoy/xrt": {
+      "spread": -0.03394,
+      "mean_signed": -0.0178,
+      "mean_signed_net": -0.0218,
+      "t_stat": -2.106,
+      "p_value": 0.0422,
+      "hit_rate": 0.459,
+      "n_events": 37,
+      "n_long": 20,
+      "n_short": 17
+    },
+    "median/[0,+2]/material_demand_yoy/local": {
+      "spread": -0.02871,
+      "mean_signed": -0.01535,
+      "mean_signed_net": -0.01935,
+      "t_stat": -2.114,
+      "p_value": 0.0419,
+      "hit_rate": 0.457,
+      "n_events": 35,
+      "n_long": 20,
+      "n_short": 15
+    },
+    "quartile/[-1,+1]/material_demand_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[-1,+1]/material_demand_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/material_demand_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/material_demand_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "median/[-1,+1]/mix_alignment_yoy/xrt": {
+      "spread": 0.03067,
+      "mean_signed": 0.01534,
+      "mean_signed_net": 0.01134,
+      "t_stat": 0.868,
+      "p_value": 0.4252,
+      "hit_rate": 0.667,
+      "n_events": 6,
+      "n_long": 3,
+      "n_short": 3
+    },
+    "median/[-1,+1]/mix_alignment_yoy/local": {
+      "spread": 0.06262,
+      "mean_signed": 0.03131,
+      "mean_signed_net": 0.02731,
+      "t_stat": 1.731,
+      "p_value": 0.1441,
+      "hit_rate": 0.5,
+      "n_events": 6,
+      "n_long": 3,
+      "n_short": 3
+    },
+    "median/[0,+2]/mix_alignment_yoy/xrt": {
+      "spread": 0.09341,
+      "mean_signed": 0.03831,
+      "mean_signed_net": 0.03431,
+      "t_stat": 1.457,
+      "p_value": 0.2188,
+      "hit_rate": 0.8,
+      "n_events": 5,
+      "n_long": 3,
+      "n_short": 2
+    },
+    "median/[0,+2]/mix_alignment_yoy/local": {
+      "spread": 0.08474,
+      "mean_signed": 0.04237,
+      "mean_signed_net": 0.03837,
+      "t_stat": 1.813,
+      "p_value": 0.1296,
+      "hit_rate": 0.667,
+      "n_events": 6,
+      "n_long": 3,
+      "n_short": 3
+    },
+    "quartile/[-1,+1]/mix_alignment_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[-1,+1]/mix_alignment_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/mix_alignment_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/mix_alignment_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "median/[-1,+1]/adoption_yoy/xrt": {
+      "spread": 0.00412,
+      "mean_signed": 0.00206,
+      "mean_signed_net": -0.00194,
+      "t_stat": 0.113,
+      "p_value": 0.9124,
+      "hit_rate": 0.6,
+      "n_events": 10,
+      "n_long": 5,
+      "n_short": 5
+    },
+    "median/[-1,+1]/adoption_yoy/local": {
+      "spread": 0.0074,
+      "mean_signed": 0.0037,
+      "mean_signed_net": -0.0003,
+      "t_stat": 0.178,
+      "p_value": 0.863,
+      "hit_rate": 0.4,
+      "n_events": 10,
+      "n_long": 5,
+      "n_short": 5
+    },
+    "median/[0,+2]/adoption_yoy/xrt": {
+      "spread": 0.02462,
+      "mean_signed": 0.01084,
+      "mean_signed_net": 0.00684,
+      "t_stat": 0.522,
+      "p_value": 0.6161,
+      "hit_rate": 0.667,
+      "n_events": 9,
+      "n_long": 5,
+      "n_short": 4
+    },
+    "median/[0,+2]/adoption_yoy/local": {
+      "spread": 0.03361,
+      "mean_signed": 0.01681,
+      "mean_signed_net": 0.01281,
+      "t_stat": 0.828,
+      "p_value": 0.4292,
+      "hit_rate": 0.6,
+      "n_events": 10,
+      "n_long": 5,
+      "n_short": 5
+    },
+    "quartile/[-1,+1]/adoption_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[-1,+1]/adoption_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/adoption_yoy/xrt": {
+      "status": "insufficient_events",
+      "n_events": 0
+    },
+    "quartile/[0,+2]/adoption_yoy/local": {
+      "status": "insufficient_events",
+      "n_events": 0
+    }
+  },
+  "meta": {
+    "dev_window": [
+      "2017-01-01",
+      "2022-12-31"
+    ],
+    "headline_cell": "median/[-1,+1]/mix_alignment_yoy/xrt",
+    "earnings_missing_free": [
+      "RELIANCE.NS"
+    ],
+    "retailer_sleeve_note": "ASC.L lacks historical earnings dates on free sources; retailer signals are effectively HM-B.ST only (disclosed).",
+    "cost_bps_per_side": 20,
+    "n_permutations": 1000
+  },
+  "headline": {
+    "spread": 0.03067,
+    "mean_signed": 0.01534,
+    "mean_signed_net": 0.01134,
+    "t_stat": 0.868,
+    "p_value": 0.4252,
+    "hit_rate": 0.667,
+    "n_events": 6,
+    "n_long": 3,
+    "n_short": 3
+  },
+  "placebos": {
+    "permutation_p_one_sided": 0.117,
+    "pre_event_window_[-10,-8]": {
+      "spread": 0.07223,
+      "mean_signed": 0.03385,
+      "mean_signed_net": 0.02985,
+      "t_stat": 4.069,
+      "p_value": 0.0152,
+      "hit_rate": 1.0,
+      "n_events": 5,
+      "n_long": 2,
+      "n_short": 3
+    }
+  },
+  "per_year": {
+    "2020": {
+      "spread": 0.01814,
+      "mean_signed": 0.00907,
+      "mean_signed_net": 0.00507,
+      "t_stat": 0.144,
+      "p_value": 0.9088,
+      "hit_rate": 0.5,
+      "n_events": 2,
+      "n_long": 1,
+      "n_short": 1
+    },
+    "2021": {
+      "spread": 0.03374,
+      "mean_signed": 0.01687,
+      "mean_signed_net": 0.01287,
+      "t_stat": 1.403,
+      "p_value": 0.3942,
+      "hit_rate": 1.0,
+      "n_events": 2,
+      "n_long": 1,
+      "n_short": 1
+    },
+    "2022": {
+      "spread": 0.04013,
+      "mean_signed": 0.02007,
+      "mean_signed_net": 0.01607,
+      "t_stat": 0.877,
+      "p_value": 0.5417,
+      "hit_rate": 0.5,
+      "n_events": 2,
+      "n_long": 1,
+      "n_short": 1
+    }
+  },
+  "subsets": {
+    "retailer_only": {
+      "spread": 0.03067,
+      "mean_signed": 0.01534,
+      "mean_signed_net": 0.01134,
+      "t_stat": 0.868,
+      "p_value": 0.4252,
+      "hit_rate": 0.667,
+      "n_events": 6,
+      "n_long": 3,
+      "n_short": 3
+    },
+    "supplier_only": {
+      "spread": -0.02029,
+      "mean_signed": -0.0098,
+      "mean_signed_net": -0.0138,
+      "t_stat": -1.142,
+      "p_value": 0.2612,
+      "hit_rate": 0.405,
+      "n_events": 37,
+      "n_long": 18,
+      "n_short": 19
+    }
+  }
+}

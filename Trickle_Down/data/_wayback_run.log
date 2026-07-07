@@ -1,2 +1,18 @@
 2026-07-07 10:32:09,751 INFO [asos 2017-10] ok: 6 pages, 1 with composition
 2026-07-07 10:32:47,385 INFO [asos 2018-01] ok: 9 pages, 5 with composition
+2026-07-07 10:34:41,692 INFO [asos 2019-04] ok: 1 pages, 1 with composition
+2026-07-07 10:34:41,889 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 10:44:17,642 INFO [hm 2023-01] ok: 54 pages, 54 with composition
+2026-07-07 10:59:22,666 INFO [asos 2024-03] ok: 59 pages, 59 with composition
+2026-07-07 11:08:54,255 INFO [hm 2024-06] ok: 45 pages, 45 with composition
+2026-07-07 11:08:54,451 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 11:18:31,914 INFO [hm 2024-10] ok: 50 pages, 50 with composition
+2026-07-07 11:19:32,314 INFO CDX throttled (ReadTimeout) — cooling off 90s
+2026-07-07 11:30:34,024 INFO [asos 2024-10] ok: 55 pages, 53 with composition
+2026-07-07 11:30:34,227 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 11:41:58,401 INFO [hm 2024-11] ok: 56 pages, 51 with composition
+2026-07-07 11:41:58,590 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 11:51:23,913 INFO [asos 2024-11] ok: 51 pages, 47 with composition
+2026-07-07 11:51:24,102 INFO CDX throttled (ConnectionError) — cooling off 90s
+2026-07-07 12:02:29,761 INFO [hm 2024-12] ok: 50 pages, 44 with composition
+2026-07-07 12:13:38,627 INFO [asos 2024-12] ok: 57 pages, 57 with composition

@@ -234,10 +234,10 @@
   "status": "ok"
  },
  "asos|2019-04": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-06",
-  "status": "cdx_error"
+  "n_comp": 1,
+  "n_pages": 1,
+  "run": "2026-07-07",
+  "status": "ok"
  },
  "asos|2019-05": {
   "n_comp": 11,
@@ -588,10 +588,10 @@
   "status": "ok"
  },
  "asos|2024-03": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-06",
-  "status": "cdx_error"
+  "n_comp": 59,
+  "n_pages": 59,
+  "run": "2026-07-07",
+  "status": "ok"
  },
  "asos|2024-04": {
   "n_comp": 51,
@@ -626,6 +626,24 @@
  "asos|2024-09": {
   "n_comp": 77,
   "n_pages": 84,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2024-10": {
+  "n_comp": 53,
+  "n_pages": 55,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2024-11": {
+  "n_comp": 47,
+  "n_pages": 51,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "asos|2024-12": {
+  "n_comp": 57,
+  "n_pages": 57,
   "run": "2026-07-07",
   "status": "ok"
  },
@@ -1146,10 +1164,10 @@
   "status": "ok"
  },
  "hm|2023-01": {
-  "n_comp": 0,
-  "n_pages": 0,
-  "run": "2026-07-06",
-  "status": "cdx_error"
+  "n_comp": 54,
+  "n_pages": 54,
+  "run": "2026-07-07",
+  "status": "ok"
  },
  "hm|2023-02": {
   "n_comp": 37,
@@ -1248,10 +1266,10 @@
   "status": "ok"
  },
  "hm|2024-06": {
-  "n_comp": 0,
-  "n_pages": 0,
+  "n_comp": 45,
+  "n_pages": 45,
   "run": "2026-07-07",
-  "status": "cdx_error"
+  "status": "ok"
  },
  "hm|2024-07": {
   "n_comp": 67,
@@ -1268,6 +1286,24 @@
  "hm|2024-09": {
   "n_comp": 73,
   "n_pages": 73,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2024-10": {
+  "n_comp": 50,
+  "n_pages": 50,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2024-11": {
+  "n_comp": 51,
+  "n_pages": 56,
+  "run": "2026-07-07",
+  "status": "ok"
+ },
+ "hm|2024-12": {
+  "n_comp": 44,
+  "n_pages": 50,
   "run": "2026-07-07",
   "status": "ok"
  },
