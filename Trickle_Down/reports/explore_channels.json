@@ -1,0 +1,644 @@
+{
+  "_note": "EXPLORATORY / post-hoc screen. No result is confirmatory. Any PURSUE requires a fresh pre-registered study.",
+  "A_commodity_trade": {
+    "CT=F|runway|3m": {
+      "n": 72,
+      "spearman": -0.022,
+      "nw_t": -0.67,
+      "boot_p": 0.8611,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.694,
+      "trade_apriori_folds": [
+        -2.071,
+        0.336,
+        -2.712,
+        1.673
+      ],
+      "trade_mom_meanIR": -0.694,
+      "trade_con_meanIR": 0.638,
+      "verdict": "DEAD"
+    },
+    "CT=F|runway|6m": {
+      "n": 72,
+      "spearman": -0.131,
+      "nw_t": -1.01,
+      "boot_p": 0.2759,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.169,
+      "trade_apriori_folds": [
+        -2.853,
+        1.514,
+        -1.613,
+        2.275
+      ],
+      "trade_mom_meanIR": -0.169,
+      "trade_con_meanIR": 0.091,
+      "verdict": "DEAD"
+    },
+    "CT=F|runway|9m": {
+      "n": 72,
+      "spearman": -0.046,
+      "nw_t": -0.18,
+      "boot_p": 0.7016,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.169,
+      "trade_apriori_folds": [
+        -2.909,
+        2.225,
+        -0.498,
+        1.86
+      ],
+      "trade_mom_meanIR": 0.169,
+      "trade_con_meanIR": -0.26,
+      "verdict": "DEAD"
+    },
+    "CT=F|runway|12m": {
+      "n": 72,
+      "spearman": 0.07,
+      "nw_t": 0.78,
+      "boot_p": 0.5452,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 1.082,
+      "trade_apriori_folds": [
+        -1.713,
+        2.681,
+        1.206,
+        2.152
+      ],
+      "trade_mom_meanIR": 1.082,
+      "trade_con_meanIR": -1.189,
+      "verdict": "DEAD"
+    },
+    "CT=F|downstream|3m": {
+      "n": 66,
+      "spearman": 0.137,
+      "nw_t": 1.35,
+      "boot_p": 0.2799,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.903,
+      "trade_apriori_folds": [
+        1.072,
+        1.892,
+        1.18,
+        -0.533
+      ],
+      "trade_mom_meanIR": 0.903,
+      "trade_con_meanIR": -0.991,
+      "verdict": "DEAD"
+    },
+    "CT=F|downstream|6m": {
+      "n": 66,
+      "spearman": -0.056,
+      "nw_t": -0.07,
+      "boot_p": 0.6507,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.145,
+      "trade_apriori_folds": [
+        -1.143,
+        1.909,
+        -0.23,
+        -1.115
+      ],
+      "trade_mom_meanIR": -0.145,
+      "trade_con_meanIR": 0.045,
+      "verdict": "DEAD"
+    },
+    "CT=F|downstream|9m": {
+      "n": 66,
+      "spearman": 0.128,
+      "nw_t": 1.44,
+      "boot_p": 0.3078,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.332,
+      "trade_apriori_folds": [
+        0.184,
+        1.934,
+        0.872,
+        -1.663
+      ],
+      "trade_mom_meanIR": 0.332,
+      "trade_con_meanIR": -0.726,
+      "verdict": "DEAD"
+    },
+    "CT=F|downstream|12m": {
+      "n": 66,
+      "spearman": 0.13,
+      "nw_t": 1.31,
+      "boot_p": 0.2944,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.271,
+      "trade_apriori_folds": [
+        0.871,
+        1.946,
+        -0.296,
+        -1.436
+      ],
+      "trade_mom_meanIR": 0.271,
+      "trade_con_meanIR": -0.475,
+      "verdict": "DEAD"
+    },
+    "CT=F|search|3m": {
+      "n": 72,
+      "spearman": 0.029,
+      "nw_t": -0.34,
+      "boot_p": 0.8011,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.658,
+      "trade_apriori_folds": [
+        0.629,
+        -3.003,
+        -3.355,
+        3.097
+      ],
+      "trade_mom_meanIR": 0.559,
+      "trade_con_meanIR": -0.658,
+      "verdict": "DEAD"
+    },
+    "CT=F|search|6m": {
+      "n": 72,
+      "spearman": 0.164,
+      "nw_t": 0.32,
+      "boot_p": 0.1704,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -1.255,
+      "trade_apriori_folds": [
+        0.708,
+        -4.188,
+        -4.563,
+        3.022
+      ],
+      "trade_mom_meanIR": 1.106,
+      "trade_con_meanIR": -1.255,
+      "verdict": "DEAD"
+    },
+    "CT=F|search|9m": {
+      "n": 72,
+      "spearman": 0.097,
+      "nw_t": 0.36,
+      "boot_p": 0.4198,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.754,
+      "trade_apriori_folds": [
+        1.914,
+        -4.398,
+        -3.75,
+        3.218
+      ],
+      "trade_mom_meanIR": 0.559,
+      "trade_con_meanIR": -0.754,
+      "verdict": "DEAD"
+    },
+    "CT=F|search|12m": {
+      "n": 72,
+      "spearman": 0.098,
+      "nw_t": 0.36,
+      "boot_p": 0.4063,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.773,
+      "trade_apriori_folds": [
+        1.132,
+        -4.681,
+        -2.599,
+        3.058
+      ],
+      "trade_mom_meanIR": 0.592,
+      "trade_con_meanIR": -0.773,
+      "verdict": "DEAD"
+    },
+    "CL=F|runway|3m": {
+      "n": 72,
+      "spearman": 0.137,
+      "nw_t": 0.46,
+      "boot_p": 0.2444,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.615,
+      "trade_apriori_folds": [
+        0.0,
+        -1.558,
+        2.573,
+        1.445
+      ],
+      "trade_mom_meanIR": 0.615,
+      "trade_con_meanIR": -0.636,
+      "verdict": "DEAD"
+    },
+    "CL=F|runway|6m": {
+      "n": 72,
+      "spearman": 0.034,
+      "nw_t": 0.05,
+      "boot_p": 0.7856,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.202,
+      "trade_apriori_folds": [
+        0.0,
+        -2.248,
+        2.634,
+        -1.193
+      ],
+      "trade_mom_meanIR": -0.202,
+      "trade_con_meanIR": 0.153,
+      "verdict": "DEAD"
+    },
+    "CL=F|runway|9m": {
+      "n": 72,
+      "spearman": -0.084,
+      "nw_t": -0.72,
+      "boot_p": 0.4693,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.707,
+      "trade_apriori_folds": [
+        0.0,
+        -2.808,
+        2.09,
+        -2.109
+      ],
+      "trade_mom_meanIR": -0.707,
+      "trade_con_meanIR": 0.639,
+      "verdict": "DEAD"
+    },
+    "CL=F|runway|12m": {
+      "n": 72,
+      "spearman": -0.031,
+      "nw_t": -0.79,
+      "boot_p": 0.7981,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.706,
+      "trade_apriori_folds": [
+        0.0,
+        -2.954,
+        2.495,
+        -2.366
+      ],
+      "trade_mom_meanIR": -0.706,
+      "trade_con_meanIR": 0.635,
+      "verdict": "DEAD"
+    },
+    "CL=F|downstream|3m": {
+      "n": 66,
+      "spearman": -0.107,
+      "nw_t": -1.6,
+      "boot_p": 0.4148,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.614,
+      "trade_apriori_folds": [
+        -1.059,
+        1.044,
+        -0.702,
+        -1.739
+      ],
+      "trade_mom_meanIR": -0.614,
+      "trade_con_meanIR": 0.541,
+      "verdict": "DEAD"
+    },
+    "CL=F|downstream|6m": {
+      "n": 66,
+      "spearman": -0.266,
+      "nw_t": -2.29,
+      "boot_p": 0.0365,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.966,
+      "trade_apriori_folds": [
+        -1.356,
+        1.044,
+        -1.588,
+        -1.965
+      ],
+      "trade_mom_meanIR": -0.966,
+      "trade_con_meanIR": 0.89,
+      "verdict": "MAYBE"
+    },
+    "CL=F|downstream|9m": {
+      "n": 66,
+      "spearman": -0.267,
+      "nw_t": -1.59,
+      "boot_p": 0.032,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.384,
+      "trade_apriori_folds": [
+        0.046,
+        1.044,
+        -1.122,
+        -1.505
+      ],
+      "trade_mom_meanIR": -0.384,
+      "trade_con_meanIR": 0.294,
+      "verdict": "DEAD"
+    },
+    "CL=F|downstream|12m": {
+      "n": 66,
+      "spearman": -0.293,
+      "nw_t": -2.63,
+      "boot_p": 0.0145,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.433,
+      "trade_apriori_folds": [
+        -0.606,
+        1.044,
+        -0.416,
+        -1.755
+      ],
+      "trade_mom_meanIR": -0.433,
+      "trade_con_meanIR": 0.305,
+      "verdict": "MAYBE"
+    },
+    "CL=F|search|3m": {
+      "n": 72,
+      "spearman": -0.279,
+      "nw_t": -1.55,
+      "boot_p": 0.015,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": 0.258,
+      "trade_apriori_folds": [
+        1.248,
+        1.349,
+        -2.527,
+        0.96
+      ],
+      "trade_mom_meanIR": -0.288,
+      "trade_con_meanIR": 0.258,
+      "verdict": "DEAD"
+    },
+    "CL=F|search|6m": {
+      "n": 72,
+      "spearman": -0.33,
+      "nw_t": -1.7,
+      "boot_p": 0.009,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": 0.599,
+      "trade_apriori_folds": [
+        2.935,
+        1.24,
+        -3.688,
+        1.906
+      ],
+      "trade_mom_meanIR": -0.647,
+      "trade_con_meanIR": 0.599,
+      "verdict": "DEAD"
+    },
+    "CL=F|search|9m": {
+      "n": 72,
+      "spearman": -0.384,
+      "nw_t": -1.24,
+      "boot_p": 0.0025,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": 0.408,
+      "trade_apriori_folds": [
+        4.201,
+        0.96,
+        -5.438,
+        1.908
+      ],
+      "trade_mom_meanIR": -0.5,
+      "trade_con_meanIR": 0.408,
+      "verdict": "DEAD"
+    },
+    "CL=F|search|12m": {
+      "n": 72,
+      "spearman": -0.384,
+      "nw_t": -1.05,
+      "boot_p": 0.001,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": 0.574,
+      "trade_apriori_folds": [
+        5.963,
+        -1.154,
+        -4.401,
+        1.889
+      ],
+      "trade_mom_meanIR": -0.682,
+      "trade_con_meanIR": 0.574,
+      "verdict": "DEAD"
+    },
+    "LE=F|runway|3m": {
+      "n": 72,
+      "spearman": 0.315,
+      "nw_t": 1.94,
+      "boot_p": 0.007,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.5,
+      "trade_apriori_folds": [
+        1.187,
+        -1.044,
+        -1.982,
+        3.839
+      ],
+      "trade_mom_meanIR": 0.5,
+      "trade_con_meanIR": -0.602,
+      "verdict": "DEAD"
+    },
+    "LE=F|runway|6m": {
+      "n": 72,
+      "spearman": 0.246,
+      "nw_t": 1.17,
+      "boot_p": 0.0435,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.257,
+      "trade_apriori_folds": [
+        0.129,
+        -1.044,
+        -1.939,
+        3.881
+      ],
+      "trade_mom_meanIR": 0.257,
+      "trade_con_meanIR": -0.338,
+      "verdict": "DEAD"
+    },
+    "LE=F|runway|9m": {
+      "n": 72,
+      "spearman": -0.029,
+      "nw_t": -0.14,
+      "boot_p": 0.8036,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.604,
+      "trade_apriori_folds": [
+        -2.874,
+        -1.044,
+        -2.411,
+        3.913
+      ],
+      "trade_mom_meanIR": -0.604,
+      "trade_con_meanIR": 0.474,
+      "verdict": "DEAD"
+    },
+    "LE=F|runway|12m": {
+      "n": 72,
+      "spearman": -0.142,
+      "nw_t": -0.83,
+      "boot_p": 0.2374,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": -0.477,
+      "trade_apriori_folds": [
+        -2.201,
+        -1.044,
+        -2.451,
+        3.788
+      ],
+      "trade_mom_meanIR": -0.477,
+      "trade_con_meanIR": 0.367,
+      "verdict": "DEAD"
+    },
+    "LE=F|downstream|3m": {
+      "n": 66,
+      "spearman": -0.008,
+      "nw_t": -0.44,
+      "boot_p": 0.9495,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.206,
+      "trade_apriori_folds": [
+        -1.497,
+        -0.539,
+        1.31,
+        1.549
+      ],
+      "trade_mom_meanIR": 0.206,
+      "trade_con_meanIR": -0.294,
+      "verdict": "DEAD"
+    },
+    "LE=F|downstream|6m": {
+      "n": 66,
+      "spearman": -0.034,
+      "nw_t": -0.41,
+      "boot_p": 0.7756,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.468,
+      "trade_apriori_folds": [
+        -1.033,
+        0.009,
+        1.41,
+        1.485
+      ],
+      "trade_mom_meanIR": 0.468,
+      "trade_con_meanIR": -0.665,
+      "verdict": "DEAD"
+    },
+    "LE=F|downstream|9m": {
+      "n": 66,
+      "spearman": 0.055,
+      "nw_t": 0.55,
+      "boot_p": 0.6542,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.735,
+      "trade_apriori_folds": [
+        -0.282,
+        0.256,
+        1.421,
+        1.545
+      ],
+      "trade_mom_meanIR": 0.735,
+      "trade_con_meanIR": -0.988,
+      "verdict": "MAYBE"
+    },
+    "LE=F|downstream|12m": {
+      "n": 66,
+      "spearman": 0.006,
+      "nw_t": 0.26,
+      "boot_p": 0.961,
+      "apriori_sign": "momentum",
+      "trade_apriori_meanIR": 0.357,
+      "trade_apriori_folds": [
+        -1.8,
+        0.259,
+        1.426,
+        1.544
+      ],
+      "trade_mom_meanIR": 0.357,
+      "trade_con_meanIR": -0.706,
+      "verdict": "DEAD"
+    },
+    "LE=F|search|3m": {
+      "n": 72,
+      "spearman": 0.023,
+      "nw_t": -0.04,
+      "boot_p": 0.8496,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.174,
+      "trade_apriori_folds": [
+        1.494,
+        1.216,
+        -1.407,
+        -1.998
+      ],
+      "trade_mom_meanIR": 0.139,
+      "trade_con_meanIR": -0.174,
+      "verdict": "DEAD"
+    },
+    "LE=F|search|6m": {
+      "n": 72,
+      "spearman": -0.489,
+      "nw_t": -3.79,
+      "boot_p": 0.0005,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": 0.74,
+      "trade_apriori_folds": [
+        2.965,
+        2.513,
+        -0.595,
+        -1.921
+      ],
+      "trade_mom_meanIR": -0.8,
+      "trade_con_meanIR": 0.74,
+      "verdict": "MAYBE"
+    },
+    "LE=F|search|9m": {
+      "n": 72,
+      "spearman": -0.421,
+      "nw_t": -3.32,
+      "boot_p": 0.0005,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.339,
+      "trade_apriori_folds": [
+        -0.029,
+        2.467,
+        -1.808,
+        -1.986
+      ],
+      "trade_mom_meanIR": 0.287,
+      "trade_con_meanIR": -0.339,
+      "verdict": "MAYBE"
+    },
+    "LE=F|search|12m": {
+      "n": 72,
+      "spearman": -0.179,
+      "nw_t": -1.8,
+      "boot_p": 0.1309,
+      "apriori_sign": "contrarian",
+      "trade_apriori_meanIR": -0.433,
+      "trade_apriori_folds": [
+        -0.632,
+        2.676,
+        -1.968,
+        -1.809
+      ],
+      "trade_mom_meanIR": 0.34,
+      "trade_con_meanIR": -0.433,
+      "verdict": "DEAD"
+    }
+  },
+  "B_accessories_parents": {
+    "3m": {
+      "n": 325,
+      "ic_emergence": -0.054,
+      "ic_level": -0.049
+    },
+    "6m": {
+      "n": 325,
+      "ic_emergence": -0.08,
+      "ic_level": -0.015
+    },
+    "verdict": "DEAD",
+    "note": "accessory looks are sparse on runway (bag/shoes/accessory = dominant garment rarely); shares small"
+  },
+  "C_color": {
+    "n_seasons": 23,
+    "mean_hhi": 0.133,
+    "color_share_persistence_r": 0.856,
+    "persistence_n": 418,
+    "tradeable_target": "ABSENT \u2014 downstream scrape has no color field; no listed pure-play color/dye equity",
+    "verdict": "FEASIBILITY-ONLY",
+    "note": "runway color trend exists & persists, but nothing downstream/tradeable to point it at without new data"
+  },
+  "D_silhouette_prints": {
+    "verdict": "UNTESTABLE-NOW",
+    "note": "We tag material %, color, and dominant category \u2014 NOT silhouette or print. Testing needs a re-tag pass over the 26,838 cached look images (feasible, ~a day of vision calls). Choi et al. (2024) found silhouette propagated runway->retail where styling did not, so silhouette is the highest-potential future tag; prints are highly searchable but, like color, have no pure-play tradeable target."
+  }
+}

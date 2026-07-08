@@ -198,3 +198,35 @@ the exploratory screen that motivated it is post-hoc and non-confirmatory)
 - **Windows**: dev 2017-01..2022-12 headline; 2023+ rows computed but
   flagged eval_window=false; the 2023-2025 trading seal applies to H5
   exactly as to H1/H2/H4.
+
+## 2026-07-08 — Exploratory channel screen (post-hoc, screening only)
+
+Ran scripts/24_explore_channels.py to see whether the cascade trades on
+actual commodities, or tracks in other attributes (accessories, color,
+silhouette). SCREENING ONLY — no result below is confirmatory; any PURSUE
+would need a fresh pre-registered study. Verdict guard: association credited
+only when Newey-West HAC |t|>=2 AND block-bootstrap p<0.05 (the bootstrap
+alone over-rejects on overlapping forward returns); trades judged on the
+a-priori sign per indicator (momentum for demand, contrarian for search) —
+no post-hoc sign picking.
+
+- PROBE A (commodity trade, CT=F/CL=F/LE=F × runway/downstream/search ×
+  {3,6,9,12}m): NO cell PURSUE. Only robust association is leather↔search
+  (nw_t -3.79, the tangential H5 already reviewed and cut); its contrarian
+  trade is not fold-consistent. Crude↔downstream-polyester clears the assoc
+  bar (nw_t -2.6) but is wrong-signed economically and its momentum trade
+  loses money. Verdict: the cascade does NOT robustly trade on commodities.
+- PROBE B (accessories/category → luxury parents): DEAD. IC(emergence) -0.05
+  to -0.08, n=325; runway accessory looks are sparse (dominant-garment
+  tagging rarely picks bag/shoes). Not tradeable on current tags.
+- PROBE C (color): FEASIBILITY-ONLY. Runway color trend is real and highly
+  persistent (share autocorr r=0.86, 23 seasons) but downstream has no color
+  field and there is no listed pure-play color/dye equity — no tradeable
+  target without new data.
+- PROBE D (silhouette/prints): UNTESTABLE-NOW — not tagged; needs a re-tag
+  pass. Highest-potential future tag per Choi et al. (silhouette propagated
+  where styling did not).
+
+Net: no new tradeable channel found. Descriptive color-cascade and a
+silhouette re-tag are the only research-worthwhile extensions, neither
+tradeable. Files: scripts/24_explore_channels.py, reports/explore_channels.json.
