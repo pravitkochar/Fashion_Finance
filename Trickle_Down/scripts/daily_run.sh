@@ -53,6 +53,7 @@ step "20 nowcast"     "$PY" scripts/20_nowcast_census.py
 step "09 dashboard"   "$PY" scripts/09_dashboard.py
 step "16 site pages"  "$PY" scripts/16_site_pages.py
 step "18 story"       "$PY" scripts/18_story_page.py
+step "23 site"        "$PY" scripts/23_site.py
 
 # surface a loud marker when CV clears zero — freezing stays a deliberate act
 grep -q "READY TO FREEZE" "$LOG" && echo "*** CV CLEARED ZERO — review reports/cv_results.csv and freeze ***" >> "$LOG"
