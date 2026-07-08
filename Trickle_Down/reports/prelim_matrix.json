@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "generated": "2026-07-08",
+    "status": "EXPLORATORY / screening only \u2014 not confirmatory",
+    "trend_terms_pulled": 25,
+    "price_tickers": 26,
+    "caveats": "search interest proxies the missing downstream color/accessory/print fields; overlap-inflated t at long lags; small independent-obs counts; runway shape/print untagged"
+  },
+  "cells": {
+    "color.Q1_runway_to_retail": {
+      "best_proxy_used": "runway trend-color share z -> color search z",
+      "best_stat": 3.94,
+      "lag": 0,
+      "n": 109,
+      "sign": null,
+      "verdict": "SIGNAL",
+      "worth_deeper": true,
+      "one_line": "runway trend-color emergence vs color search interest, best |t|=3.94 at +0mo (overlap-inflated)"
+    },
+    "color.Q2_retail_to_supplier": {
+      "best_proxy_used": "color search z -> pigment-maker returns",
+      "best_stat": -2.41,
+      "lag": 4,
+      "n": 116,
+      "sign": null,
+      "verdict": "WEAK",
+      "worth_deeper": true,
+      "one_line": "color demand vs pigment/dye equities (CE), best |t|=-2.41 at +4mo"
+    },
+    "color.Q3_tradeable": {
+      "best_proxy_used": "color search z -> wide equity sweep",
+      "best_stat": null,
+      "lag": null,
+      "n": null,
+      "sign": null,
+      "verdict": "NONE (too sparse)",
+      "worth_deeper": false,
+      "one_line": "no candidate traded >=12 active months (a +-1z signal fires ~4x/yr) \u2014 too sparse to evaluate; no tradeable edge",
+      "best_ticker": null,
+      "raw_ir": null,
+      "sel_p": null,
+      "frac_pos": null
+    },
+    "accessories.Q1_runway_to_retail": {
+      "best_proxy_used": "runway accessory share z -> accessory search z",
+      "best_stat": 3.19,
+      "lag": 9,
+      "n": 100,
+      "sign": null,
+      "verdict": "SIGNAL",
+      "worth_deeper": true,
+      "one_line": "runway bag/shoe share vs accessory search, best |t|=3.19 at +9mo"
+    },
+    "accessories.Q2_retail_to_supplier": {
+      "best_proxy_used": "accessory search z -> leather/parent returns",
+      "best_stat": -2.37,
+      "lag": 7,
+      "n": 113,
+      "sign": null,
+      "verdict": "WEAK",
+      "worth_deeper": true,
+      "one_line": "accessory demand vs MC.PA (leather/luxury parents), best |t|=-2.37 at +7mo"
+    },
+    "accessories.Q3_tradeable": {
+      "best_proxy_used": "accessory search z -> bag/shoe/luxury sweep",
+      "best_stat": 0.381,
+      "lag": 10,
+      "n": 26,
+      "sign": 1,
+      "verdict": "NONE (mining artifact)",
+      "worth_deeper": false,
+      "one_line": "best-of-246 IR=2.414 (DECK,+10mo) but selection-p=0.381, 0.49 of combos positive",
+      "best_ticker": "DECK",
+      "raw_ir": 2.414,
+      "sel_p": 0.381,
+      "frac_pos": 0.49
+    },
+    "silhouette.Q1_runway_to_retail": {
+      "best_proxy_used": "runway structured-share z -> silhouette search z",
+      "best_stat": -1.76,
+      "lag": 6,
+      "n": 103,
+      "sign": null,
+      "verdict": "WEAK",
+      "worth_deeper": true,
+      "one_line": "runway tailoring/outerwear share vs silhouette search, best |t|=-1.76 at +6mo (category is a crude shape proxy)"
+    },
+    "silhouette.Q2_retail_to_supplier": {
+      "best_proxy_used": "n/a \u2014 shape has no material supplier",
+      "best_stat": null,
+      "lag": null,
+      "n": 0,
+      "sign": null,
+      "verdict": "UNTESTABLE",
+      "worth_deeper": false,
+      "one_line": "silhouette is a shape, not a material input \u2014 no fiber/commodity supplier maps to it"
+    },
+    "silhouette.Q3_tradeable": {
+      "best_proxy_used": "silhouette search z -> retailer/parent sweep",
+      "best_stat": 0.905,
+      "lag": 11,
+      "n": 18,
+      "sign": 1,
+      "verdict": "NONE (mining artifact)",
+      "worth_deeper": false,
+      "one_line": "best-of-308 IR=1.512 (DECK,+11mo) but selection-p=0.905, 0.49 of combos positive",
+      "best_ticker": "DECK",
+      "raw_ir": 1.512,
+      "sel_p": 0.905,
+      "frac_pos": 0.49
+    },
+    "prints.Q1_runway_to_retail": {
+      "best_proxy_used": "print search only (runway print UNTAGGED)",
+      "best_stat": null,
+      "lag": null,
+      "n": 0,
+      "sign": null,
+      "verdict": "UNTESTABLE",
+      "worth_deeper": false,
+      "one_line": "runway print tags do not exist; print search interest autocorr(1)=0.88 \u2014 cannot test runway->retail"
+    },
+    "prints.Q2_retail_to_supplier": {
+      "best_proxy_used": "n/a \u2014 no listed print/textile pure-play",
+      "best_stat": null,
+      "lag": null,
+      "n": 0,
+      "sign": null,
+      "verdict": "UNTESTABLE",
+      "worth_deeper": false,
+      "one_line": "prints relate to textile printers/mills; no pure-play listed supplier to map"
+    },
+    "prints.Q3_tradeable": {
+      "best_proxy_used": "print search z -> retailer sweep",
+      "best_stat": null,
+      "lag": null,
+      "n": null,
+      "sign": null,
+      "verdict": "NONE (too sparse)",
+      "worth_deeper": false,
+      "one_line": "no candidate traded >=12 active months (a +-1z signal fires ~4x/yr) \u2014 too sparse to evaluate; no tradeable edge",
+      "best_ticker": null,
+      "raw_ir": null,
+      "sel_p": null,
+      "frac_pos": null
+    },
+    "materials.Q1_runway_to_retail": {
+      "best_proxy_used": "measured downstream fabric (proven elsewhere)",
+      "best_stat": null,
+      "lag": null,
+      "n": 0,
+      "sign": null,
+      "verdict": "UNTESTABLE",
+      "worth_deeper": false,
+      "one_line": "PROVEN in main study: runway fabric leads H&M/ASOS rack composition +4-12mo (not re-run here)"
+    },
+    "materials.Q2_retail_to_supplier": {
+      "best_proxy_used": "material demand z -> fiber/commodity",
+      "best_stat": -4.52,
+      "lag": 7,
+      "n": 96,
+      "sign": null,
+      "verdict": "SIGNAL",
+      "worth_deeper": true,
+      "one_line": "material demand vs fiber/commodity (wool->RELIANCE.NS), best |t|=-4.52 \u2014 mostly spurious/wrong-signed per full study"
+    },
+    "materials.Q3_tradeable": {
+      "best_proxy_used": "material demand z -> fiber/commodity/ETF sweep",
+      "best_stat": 0.095,
+      "lag": 2,
+      "n": 16,
+      "sign": -1,
+      "verdict": "NONE (degenerate IR \u2014 small-sample)",
+      "worth_deeper": false,
+      "one_line": "best-of-240 IR=4.486 (leather->IVL.BK,+2mo) but selection-p=0.095, 0.48 of combos positive",
+      "best_ticker": "IVL.BK",
+      "raw_ir": 4.486,
+      "sel_p": 0.095,
+      "frac_pos": 0.48
+    }
+  }
+}

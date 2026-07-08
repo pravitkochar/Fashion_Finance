@@ -230,3 +230,20 @@ no post-hoc sign picking.
 Net: no new tradeable channel found. Descriptive color-cascade and a
 silhouette re-tag are the only research-worthwhile extensions, neither
 tradeable. Files: scripts/24_explore_channels.py, reports/explore_channels.json.
+
+## 2026-07-08 — Exploratory 15-cell channel matrix (POST-HOC, screening only)
+
+scripts/25_prelim_matrix.py + reports/prelim_matrix.json. 5 channels
+(color, accessories, silhouette, prints, materials) x 3 questions (runway->
+retail assoc; retail->supplier; tradeable). Search interest proxies the
+missing downstream color/accessory/print fields. NOT confirmatory — any
+"worth_deeper" cell needs a fresh pre-registered study.
+
+Tradeable cells use a SELECTION-AWARE null: best-of-sweep IR is compared to
+the best IR from circularly-rotated (scrambled) signals; a raw IR>3 or
+sel_p>0.05 or ~50%-of-combos-positive => mining artifact, not signal. Under
+this guard EVERY tradeable cell is NONE (artifact / too-sparse / degenerate)
+— consistent with the main study's "info real, naive trading absent".
+Association t-stats are overlap-inflated (season signals ffilled to monthly);
+effective independent N ~ #seasons, so SIGNAL/WEAK labels flag candidates for
+proper seasonal-frequency testing, not findings.

@@ -1,0 +1,3476 @@
+date,term,kind,value
+2015-01-01,burgundy dress,color,3
+2015-02-01,burgundy dress,color,3
+2015-03-01,burgundy dress,color,2
+2015-04-01,burgundy dress,color,2
+2015-05-01,burgundy dress,color,2
+2015-06-01,burgundy dress,color,2
+2015-07-01,burgundy dress,color,2
+2015-08-01,burgundy dress,color,3
+2015-09-01,burgundy dress,color,5
+2015-10-01,burgundy dress,color,4
+2015-11-01,burgundy dress,color,5
+2015-12-01,burgundy dress,color,5
+2016-01-01,burgundy dress,color,5
+2016-02-01,burgundy dress,color,5
+2016-03-01,burgundy dress,color,5
+2016-04-01,burgundy dress,color,5
+2016-05-01,burgundy dress,color,4
+2016-06-01,burgundy dress,color,3
+2016-07-01,burgundy dress,color,3
+2016-08-01,burgundy dress,color,4
+2016-09-01,burgundy dress,color,7
+2016-10-01,burgundy dress,color,7
+2016-11-01,burgundy dress,color,7
+2016-12-01,burgundy dress,color,7
+2017-01-01,burgundy dress,color,6
+2017-02-01,burgundy dress,color,6
+2017-03-01,burgundy dress,color,6
+2017-04-01,burgundy dress,color,6
+2017-05-01,burgundy dress,color,5
+2017-06-01,burgundy dress,color,5
+2017-07-01,burgundy dress,color,5
+2017-08-01,burgundy dress,color,6
+2017-09-01,burgundy dress,color,9
+2017-10-01,burgundy dress,color,9
+2017-11-01,burgundy dress,color,9
+2017-12-01,burgundy dress,color,7
+2018-01-01,burgundy dress,color,7
+2018-02-01,burgundy dress,color,7
+2018-03-01,burgundy dress,color,7
+2018-04-01,burgundy dress,color,7
+2018-05-01,burgundy dress,color,6
+2018-06-01,burgundy dress,color,5
+2018-07-01,burgundy dress,color,5
+2018-08-01,burgundy dress,color,6
+2018-09-01,burgundy dress,color,8
+2018-10-01,burgundy dress,color,8
+2018-11-01,burgundy dress,color,8
+2018-12-01,burgundy dress,color,6
+2019-01-01,burgundy dress,color,7
+2019-02-01,burgundy dress,color,6
+2019-03-01,burgundy dress,color,6
+2019-04-01,burgundy dress,color,6
+2019-05-01,burgundy dress,color,5
+2019-06-01,burgundy dress,color,5
+2019-07-01,burgundy dress,color,5
+2019-08-01,burgundy dress,color,6
+2019-09-01,burgundy dress,color,8
+2019-10-01,burgundy dress,color,8
+2019-11-01,burgundy dress,color,7
+2019-12-01,burgundy dress,color,6
+2020-01-01,burgundy dress,color,6
+2020-02-01,burgundy dress,color,5
+2020-03-01,burgundy dress,color,3
+2020-04-01,burgundy dress,color,2
+2020-05-01,burgundy dress,color,3
+2020-06-01,burgundy dress,color,3
+2020-07-01,burgundy dress,color,4
+2020-08-01,burgundy dress,color,4
+2020-09-01,burgundy dress,color,4
+2020-10-01,burgundy dress,color,4
+2020-11-01,burgundy dress,color,4
+2020-12-01,burgundy dress,color,3
+2021-01-01,burgundy dress,color,3
+2021-02-01,burgundy dress,color,3
+2021-03-01,burgundy dress,color,4
+2021-04-01,burgundy dress,color,4
+2021-05-01,burgundy dress,color,4
+2021-06-01,burgundy dress,color,4
+2021-07-01,burgundy dress,color,4
+2021-08-01,burgundy dress,color,4
+2021-09-01,burgundy dress,color,6
+2021-10-01,burgundy dress,color,6
+2021-11-01,burgundy dress,color,6
+2021-12-01,burgundy dress,color,5
+2022-01-01,burgundy dress,color,4
+2022-02-01,burgundy dress,color,4
+2022-03-01,burgundy dress,color,4
+2022-04-01,burgundy dress,color,4
+2022-05-01,burgundy dress,color,4
+2022-06-01,burgundy dress,color,3
+2022-07-01,burgundy dress,color,4
+2022-08-01,burgundy dress,color,4
+2022-09-01,burgundy dress,color,5
+2022-10-01,burgundy dress,color,5
+2022-11-01,burgundy dress,color,5
+2022-12-01,burgundy dress,color,4
+2023-01-01,burgundy dress,color,4
+2023-02-01,burgundy dress,color,3
+2023-03-01,burgundy dress,color,3
+2023-04-01,burgundy dress,color,3
+2023-05-01,burgundy dress,color,3
+2023-06-01,burgundy dress,color,3
+2023-07-01,burgundy dress,color,3
+2023-08-01,burgundy dress,color,3
+2023-09-01,burgundy dress,color,5
+2023-10-01,burgundy dress,color,4
+2023-11-01,burgundy dress,color,5
+2023-12-01,burgundy dress,color,4
+2024-01-01,burgundy dress,color,4
+2024-02-01,burgundy dress,color,4
+2024-03-01,burgundy dress,color,4
+2024-04-01,burgundy dress,color,4
+2024-05-01,burgundy dress,color,4
+2024-06-01,burgundy dress,color,3
+2024-07-01,burgundy dress,color,3
+2024-08-01,burgundy dress,color,4
+2024-09-01,burgundy dress,color,8
+2024-10-01,burgundy dress,color,10
+2024-11-01,burgundy dress,color,12
+2024-12-01,burgundy dress,color,12
+2025-01-01,burgundy dress,color,7
+2025-02-01,burgundy dress,color,7
+2025-03-01,burgundy dress,color,6
+2025-04-01,burgundy dress,color,6
+2025-05-01,burgundy dress,color,5
+2025-06-01,burgundy dress,color,5
+2025-07-01,burgundy dress,color,6
+2025-08-01,burgundy dress,color,10
+2025-09-01,burgundy dress,color,15
+2025-10-01,burgundy dress,color,15
+2025-11-01,burgundy dress,color,19
+2025-12-01,burgundy dress,color,16
+2026-01-01,burgundy dress,color,11
+2026-02-01,burgundy dress,color,29
+2026-03-01,burgundy dress,color,13
+2026-04-01,burgundy dress,color,19
+2026-05-01,burgundy dress,color,17
+2026-06-01,burgundy dress,color,11
+2026-07-01,burgundy dress,color,8
+2015-01-01,olive green,color,12
+2015-02-01,olive green,color,12
+2015-03-01,olive green,color,12
+2015-04-01,olive green,color,12
+2015-05-01,olive green,color,11
+2015-06-01,olive green,color,12
+2015-07-01,olive green,color,12
+2015-08-01,olive green,color,14
+2015-09-01,olive green,color,15
+2015-10-01,olive green,color,18
+2015-11-01,olive green,color,18
+2015-12-01,olive green,color,20
+2016-01-01,olive green,color,20
+2016-02-01,olive green,color,20
+2016-03-01,olive green,color,19
+2016-04-01,olive green,color,19
+2016-05-01,olive green,color,18
+2016-06-01,olive green,color,18
+2016-07-01,olive green,color,19
+2016-08-01,olive green,color,20
+2016-09-01,olive green,color,25
+2016-10-01,olive green,color,27
+2016-11-01,olive green,color,28
+2016-12-01,olive green,color,29
+2017-01-01,olive green,color,25
+2017-02-01,olive green,color,24
+2017-03-01,olive green,color,23
+2017-04-01,olive green,color,24
+2017-05-01,olive green,color,21
+2017-06-01,olive green,color,22
+2017-07-01,olive green,color,22
+2017-08-01,olive green,color,26
+2017-09-01,olive green,color,27
+2017-10-01,olive green,color,30
+2017-11-01,olive green,color,31
+2017-12-01,olive green,color,32
+2018-01-01,olive green,color,26
+2018-02-01,olive green,color,26
+2018-03-01,olive green,color,27
+2018-04-01,olive green,color,24
+2018-05-01,olive green,color,22
+2018-06-01,olive green,color,22
+2018-07-01,olive green,color,23
+2018-08-01,olive green,color,28
+2018-09-01,olive green,color,27
+2018-10-01,olive green,color,27
+2018-11-01,olive green,color,29
+2018-12-01,olive green,color,29
+2019-01-01,olive green,color,28
+2019-02-01,olive green,color,25
+2019-03-01,olive green,color,24
+2019-04-01,olive green,color,23
+2019-05-01,olive green,color,22
+2019-06-01,olive green,color,22
+2019-07-01,olive green,color,22
+2019-08-01,olive green,color,23
+2019-09-01,olive green,color,26
+2019-10-01,olive green,color,27
+2019-11-01,olive green,color,28
+2019-12-01,olive green,color,28
+2020-01-01,olive green,color,25
+2020-02-01,olive green,color,24
+2020-03-01,olive green,color,19
+2020-04-01,olive green,color,19
+2020-05-01,olive green,color,24
+2020-06-01,olive green,color,24
+2020-07-01,olive green,color,25
+2020-08-01,olive green,color,25
+2020-09-01,olive green,color,27
+2020-10-01,olive green,color,28
+2020-11-01,olive green,color,28
+2020-12-01,olive green,color,26
+2021-01-01,olive green,color,27
+2021-02-01,olive green,color,27
+2021-03-01,olive green,color,28
+2021-04-01,olive green,color,26
+2021-05-01,olive green,color,26
+2021-06-01,olive green,color,26
+2021-07-01,olive green,color,24
+2021-08-01,olive green,color,28
+2021-09-01,olive green,color,30
+2021-10-01,olive green,color,32
+2021-11-01,olive green,color,34
+2021-12-01,olive green,color,33
+2022-01-01,olive green,color,32
+2022-02-01,olive green,color,31
+2022-03-01,olive green,color,32
+2022-04-01,olive green,color,33
+2022-05-01,olive green,color,30
+2022-06-01,olive green,color,29
+2022-07-01,olive green,color,31
+2022-08-01,olive green,color,34
+2022-09-01,olive green,color,35
+2022-10-01,olive green,color,35
+2022-11-01,olive green,color,36
+2022-12-01,olive green,color,37
+2023-01-01,olive green,color,34
+2023-02-01,olive green,color,35
+2023-03-01,olive green,color,34
+2023-04-01,olive green,color,36
+2023-05-01,olive green,color,34
+2023-06-01,olive green,color,34
+2023-07-01,olive green,color,34
+2023-08-01,olive green,color,35
+2023-09-01,olive green,color,37
+2023-10-01,olive green,color,40
+2023-11-01,olive green,color,45
+2023-12-01,olive green,color,45
+2024-01-01,olive green,color,41
+2024-02-01,olive green,color,42
+2024-03-01,olive green,color,46
+2024-04-01,olive green,color,41
+2024-05-01,olive green,color,37
+2024-06-01,olive green,color,38
+2024-07-01,olive green,color,39
+2024-08-01,olive green,color,42
+2024-09-01,olive green,color,44
+2024-10-01,olive green,color,45
+2024-11-01,olive green,color,47
+2024-12-01,olive green,color,47
+2025-01-01,olive green,color,44
+2025-02-01,olive green,color,45
+2025-03-01,olive green,color,47
+2025-04-01,olive green,color,45
+2025-05-01,olive green,color,46
+2025-06-01,olive green,color,47
+2025-07-01,olive green,color,45
+2025-08-01,olive green,color,60
+2025-09-01,olive green,color,59
+2025-10-01,olive green,color,60
+2025-11-01,olive green,color,100
+2025-12-01,olive green,color,55
+2026-01-01,olive green,color,58
+2026-02-01,olive green,color,84
+2026-03-01,olive green,color,70
+2026-04-01,olive green,color,91
+2026-05-01,olive green,color,92
+2026-06-01,olive green,color,67
+2026-07-01,olive green,color,50
+2015-01-01,sage green,color,4
+2015-02-01,sage green,color,4
+2015-03-01,sage green,color,5
+2015-04-01,sage green,color,4
+2015-05-01,sage green,color,4
+2015-06-01,sage green,color,4
+2015-07-01,sage green,color,4
+2015-08-01,sage green,color,4
+2015-09-01,sage green,color,4
+2015-10-01,sage green,color,4
+2015-11-01,sage green,color,4
+2015-12-01,sage green,color,4
+2016-01-01,sage green,color,5
+2016-02-01,sage green,color,5
+2016-03-01,sage green,color,5
+2016-04-01,sage green,color,5
+2016-05-01,sage green,color,5
+2016-06-01,sage green,color,5
+2016-07-01,sage green,color,5
+2016-08-01,sage green,color,5
+2016-09-01,sage green,color,5
+2016-10-01,sage green,color,5
+2016-11-01,sage green,color,5
+2016-12-01,sage green,color,4
+2017-01-01,sage green,color,6
+2017-02-01,sage green,color,6
+2017-03-01,sage green,color,5
+2017-04-01,sage green,color,6
+2017-05-01,sage green,color,5
+2017-06-01,sage green,color,5
+2017-07-01,sage green,color,6
+2017-08-01,sage green,color,6
+2017-09-01,sage green,color,5
+2017-10-01,sage green,color,5
+2017-11-01,sage green,color,5
+2017-12-01,sage green,color,5
+2018-01-01,sage green,color,6
+2018-02-01,sage green,color,6
+2018-03-01,sage green,color,6
+2018-04-01,sage green,color,6
+2018-05-01,sage green,color,5
+2018-06-01,sage green,color,6
+2018-07-01,sage green,color,6
+2018-08-01,sage green,color,6
+2018-09-01,sage green,color,6
+2018-10-01,sage green,color,6
+2018-11-01,sage green,color,6
+2018-12-01,sage green,color,5
+2019-01-01,sage green,color,6
+2019-02-01,sage green,color,6
+2019-03-01,sage green,color,7
+2019-04-01,sage green,color,7
+2019-05-01,sage green,color,7
+2019-06-01,sage green,color,7
+2019-07-01,sage green,color,7
+2019-08-01,sage green,color,8
+2019-09-01,sage green,color,8
+2019-10-01,sage green,color,7
+2019-11-01,sage green,color,8
+2019-12-01,sage green,color,6
+2020-01-01,sage green,color,9
+2020-02-01,sage green,color,10
+2020-03-01,sage green,color,8
+2020-04-01,sage green,color,11
+2020-05-01,sage green,color,12
+2020-06-01,sage green,color,12
+2020-07-01,sage green,color,13
+2020-08-01,sage green,color,13
+2020-09-01,sage green,color,12
+2020-10-01,sage green,color,12
+2020-11-01,sage green,color,16
+2020-12-01,sage green,color,15
+2021-01-01,sage green,color,24
+2021-02-01,sage green,color,26
+2021-03-01,sage green,color,30
+2021-04-01,sage green,color,31
+2021-05-01,sage green,color,30
+2021-06-01,sage green,color,32
+2021-07-01,sage green,color,33
+2021-08-01,sage green,color,38
+2021-09-01,sage green,color,34
+2021-10-01,sage green,color,30
+2021-11-01,sage green,color,30
+2021-12-01,sage green,color,30
+2022-01-01,sage green,color,39
+2022-02-01,sage green,color,37
+2022-03-01,sage green,color,42
+2022-04-01,sage green,color,42
+2022-05-01,sage green,color,39
+2022-06-01,sage green,color,38
+2022-07-01,sage green,color,41
+2022-08-01,sage green,color,42
+2022-09-01,sage green,color,41
+2022-10-01,sage green,color,36
+2022-11-01,sage green,color,35
+2022-12-01,sage green,color,33
+2023-01-01,sage green,color,43
+2023-02-01,sage green,color,41
+2023-03-01,sage green,color,46
+2023-04-01,sage green,color,49
+2023-05-01,sage green,color,39
+2023-06-01,sage green,color,38
+2023-07-01,sage green,color,39
+2023-08-01,sage green,color,38
+2023-09-01,sage green,color,36
+2023-10-01,sage green,color,34
+2023-11-01,sage green,color,34
+2023-12-01,sage green,color,30
+2024-01-01,sage green,color,38
+2024-02-01,sage green,color,39
+2024-03-01,sage green,color,44
+2024-04-01,sage green,color,42
+2024-05-01,sage green,color,38
+2024-06-01,sage green,color,38
+2024-07-01,sage green,color,40
+2024-08-01,sage green,color,40
+2024-09-01,sage green,color,36
+2024-10-01,sage green,color,36
+2024-11-01,sage green,color,40
+2024-12-01,sage green,color,35
+2025-01-01,sage green,color,44
+2025-02-01,sage green,color,42
+2025-03-01,sage green,color,48
+2025-04-01,sage green,color,45
+2025-05-01,sage green,color,45
+2025-06-01,sage green,color,42
+2025-07-01,sage green,color,46
+2025-08-01,sage green,color,53
+2025-09-01,sage green,color,49
+2025-10-01,sage green,color,47
+2025-11-01,sage green,color,48
+2025-12-01,sage green,color,40
+2026-01-01,sage green,color,48
+2026-02-01,sage green,color,67
+2026-03-01,sage green,color,64
+2026-04-01,sage green,color,79
+2026-05-01,sage green,color,80
+2026-06-01,sage green,color,66
+2026-07-01,sage green,color,51
+2015-01-01,butter yellow,color,1
+2015-02-01,butter yellow,color,1
+2015-03-01,butter yellow,color,1
+2015-04-01,butter yellow,color,1
+2015-05-01,butter yellow,color,1
+2015-06-01,butter yellow,color,1
+2015-07-01,butter yellow,color,1
+2015-08-01,butter yellow,color,1
+2015-09-01,butter yellow,color,1
+2015-10-01,butter yellow,color,1
+2015-11-01,butter yellow,color,1
+2015-12-01,butter yellow,color,1
+2016-01-01,butter yellow,color,1
+2016-02-01,butter yellow,color,1
+2016-03-01,butter yellow,color,1
+2016-04-01,butter yellow,color,1
+2016-05-01,butter yellow,color,1
+2016-06-01,butter yellow,color,1
+2016-07-01,butter yellow,color,1
+2016-08-01,butter yellow,color,1
+2016-09-01,butter yellow,color,1
+2016-10-01,butter yellow,color,1
+2016-11-01,butter yellow,color,1
+2016-12-01,butter yellow,color,1
+2017-01-01,butter yellow,color,1
+2017-02-01,butter yellow,color,1
+2017-03-01,butter yellow,color,1
+2017-04-01,butter yellow,color,1
+2017-05-01,butter yellow,color,1
+2017-06-01,butter yellow,color,1
+2017-07-01,butter yellow,color,1
+2017-08-01,butter yellow,color,1
+2017-09-01,butter yellow,color,1
+2017-10-01,butter yellow,color,1
+2017-11-01,butter yellow,color,1
+2017-12-01,butter yellow,color,2
+2018-01-01,butter yellow,color,1
+2018-02-01,butter yellow,color,2
+2018-03-01,butter yellow,color,2
+2018-04-01,butter yellow,color,1
+2018-05-01,butter yellow,color,1
+2018-06-01,butter yellow,color,2
+2018-07-01,butter yellow,color,2
+2018-08-01,butter yellow,color,1
+2018-09-01,butter yellow,color,1
+2018-10-01,butter yellow,color,1
+2018-11-01,butter yellow,color,1
+2018-12-01,butter yellow,color,1
+2019-01-01,butter yellow,color,2
+2019-02-01,butter yellow,color,1
+2019-03-01,butter yellow,color,1
+2019-04-01,butter yellow,color,1
+2019-05-01,butter yellow,color,1
+2019-06-01,butter yellow,color,1
+2019-07-01,butter yellow,color,1
+2019-08-01,butter yellow,color,1
+2019-09-01,butter yellow,color,1
+2019-10-01,butter yellow,color,1
+2019-11-01,butter yellow,color,1
+2019-12-01,butter yellow,color,1
+2020-01-01,butter yellow,color,1
+2020-02-01,butter yellow,color,1
+2020-03-01,butter yellow,color,2
+2020-04-01,butter yellow,color,2
+2020-05-01,butter yellow,color,2
+2020-06-01,butter yellow,color,2
+2020-07-01,butter yellow,color,2
+2020-08-01,butter yellow,color,2
+2020-09-01,butter yellow,color,2
+2020-10-01,butter yellow,color,2
+2020-11-01,butter yellow,color,2
+2020-12-01,butter yellow,color,2
+2021-01-01,butter yellow,color,2
+2021-02-01,butter yellow,color,2
+2021-03-01,butter yellow,color,2
+2021-04-01,butter yellow,color,1
+2021-05-01,butter yellow,color,2
+2021-06-01,butter yellow,color,2
+2021-07-01,butter yellow,color,2
+2021-08-01,butter yellow,color,2
+2021-09-01,butter yellow,color,1
+2021-10-01,butter yellow,color,1
+2021-11-01,butter yellow,color,2
+2021-12-01,butter yellow,color,2
+2022-01-01,butter yellow,color,2
+2022-02-01,butter yellow,color,2
+2022-03-01,butter yellow,color,2
+2022-04-01,butter yellow,color,2
+2022-05-01,butter yellow,color,2
+2022-06-01,butter yellow,color,2
+2022-07-01,butter yellow,color,2
+2022-08-01,butter yellow,color,2
+2022-09-01,butter yellow,color,2
+2022-10-01,butter yellow,color,2
+2022-11-01,butter yellow,color,2
+2022-12-01,butter yellow,color,2
+2023-01-01,butter yellow,color,2
+2023-02-01,butter yellow,color,2
+2023-03-01,butter yellow,color,2
+2023-04-01,butter yellow,color,2
+2023-05-01,butter yellow,color,2
+2023-06-01,butter yellow,color,2
+2023-07-01,butter yellow,color,2
+2023-08-01,butter yellow,color,2
+2023-09-01,butter yellow,color,2
+2023-10-01,butter yellow,color,2
+2023-11-01,butter yellow,color,2
+2023-12-01,butter yellow,color,2
+2024-01-01,butter yellow,color,2
+2024-02-01,butter yellow,color,2
+2024-03-01,butter yellow,color,3
+2024-04-01,butter yellow,color,3
+2024-05-01,butter yellow,color,3
+2024-06-01,butter yellow,color,3
+2024-07-01,butter yellow,color,3
+2024-08-01,butter yellow,color,3
+2024-09-01,butter yellow,color,3
+2024-10-01,butter yellow,color,3
+2024-11-01,butter yellow,color,3
+2024-12-01,butter yellow,color,3
+2025-01-01,butter yellow,color,3
+2025-02-01,butter yellow,color,4
+2025-03-01,butter yellow,color,8
+2025-04-01,butter yellow,color,13
+2025-05-01,butter yellow,color,17
+2025-06-01,butter yellow,color,18
+2025-07-01,butter yellow,color,17
+2025-08-01,butter yellow,color,16
+2025-09-01,butter yellow,color,11
+2025-10-01,butter yellow,color,10
+2025-11-01,butter yellow,color,10
+2025-12-01,butter yellow,color,9
+2026-01-01,butter yellow,color,11
+2026-02-01,butter yellow,color,15
+2026-03-01,butter yellow,color,25
+2026-04-01,butter yellow,color,40
+2026-05-01,butter yellow,color,36
+2026-06-01,butter yellow,color,26
+2026-07-01,butter yellow,color,22
+2015-01-01,chocolate brown,color,12
+2015-02-01,chocolate brown,color,13
+2015-03-01,chocolate brown,color,12
+2015-04-01,chocolate brown,color,11
+2015-05-01,chocolate brown,color,13
+2015-06-01,chocolate brown,color,10
+2015-07-01,chocolate brown,color,12
+2015-08-01,chocolate brown,color,12
+2015-09-01,chocolate brown,color,12
+2015-10-01,chocolate brown,color,13
+2015-11-01,chocolate brown,color,14
+2015-12-01,chocolate brown,color,16
+2016-01-01,chocolate brown,color,14
+2016-02-01,chocolate brown,color,14
+2016-03-01,chocolate brown,color,12
+2016-04-01,chocolate brown,color,11
+2016-05-01,chocolate brown,color,12
+2016-06-01,chocolate brown,color,12
+2016-07-01,chocolate brown,color,11
+2016-08-01,chocolate brown,color,11
+2016-09-01,chocolate brown,color,12
+2016-10-01,chocolate brown,color,14
+2016-11-01,chocolate brown,color,14
+2016-12-01,chocolate brown,color,15
+2017-01-01,chocolate brown,color,13
+2017-02-01,chocolate brown,color,12
+2017-03-01,chocolate brown,color,11
+2017-04-01,chocolate brown,color,11
+2017-05-01,chocolate brown,color,11
+2017-06-01,chocolate brown,color,13
+2017-07-01,chocolate brown,color,12
+2017-08-01,chocolate brown,color,12
+2017-09-01,chocolate brown,color,12
+2017-10-01,chocolate brown,color,13
+2017-11-01,chocolate brown,color,14
+2017-12-01,chocolate brown,color,16
+2018-01-01,chocolate brown,color,12
+2018-02-01,chocolate brown,color,12
+2018-03-01,chocolate brown,color,12
+2018-04-01,chocolate brown,color,11
+2018-05-01,chocolate brown,color,10
+2018-06-01,chocolate brown,color,11
+2018-07-01,chocolate brown,color,11
+2018-08-01,chocolate brown,color,11
+2018-09-01,chocolate brown,color,11
+2018-10-01,chocolate brown,color,12
+2018-11-01,chocolate brown,color,13
+2018-12-01,chocolate brown,color,14
+2019-01-01,chocolate brown,color,12
+2019-02-01,chocolate brown,color,12
+2019-03-01,chocolate brown,color,11
+2019-04-01,chocolate brown,color,10
+2019-05-01,chocolate brown,color,10
+2019-06-01,chocolate brown,color,10
+2019-07-01,chocolate brown,color,10
+2019-08-01,chocolate brown,color,11
+2019-09-01,chocolate brown,color,11
+2019-10-01,chocolate brown,color,12
+2019-11-01,chocolate brown,color,13
+2019-12-01,chocolate brown,color,14
+2020-01-01,chocolate brown,color,12
+2020-02-01,chocolate brown,color,12
+2020-03-01,chocolate brown,color,12
+2020-04-01,chocolate brown,color,17
+2020-05-01,chocolate brown,color,17
+2020-06-01,chocolate brown,color,14
+2020-07-01,chocolate brown,color,14
+2020-08-01,chocolate brown,color,12
+2020-09-01,chocolate brown,color,13
+2020-10-01,chocolate brown,color,14
+2020-11-01,chocolate brown,color,14
+2020-12-01,chocolate brown,color,17
+2021-01-01,chocolate brown,color,14
+2021-02-01,chocolate brown,color,14
+2021-03-01,chocolate brown,color,12
+2021-04-01,chocolate brown,color,12
+2021-05-01,chocolate brown,color,12
+2021-06-01,chocolate brown,color,11
+2021-07-01,chocolate brown,color,12
+2021-08-01,chocolate brown,color,12
+2021-09-01,chocolate brown,color,13
+2021-10-01,chocolate brown,color,15
+2021-11-01,chocolate brown,color,15
+2021-12-01,chocolate brown,color,16
+2022-01-01,chocolate brown,color,15
+2022-02-01,chocolate brown,color,14
+2022-03-01,chocolate brown,color,13
+2022-04-01,chocolate brown,color,13
+2022-05-01,chocolate brown,color,12
+2022-06-01,chocolate brown,color,12
+2022-07-01,chocolate brown,color,12
+2022-08-01,chocolate brown,color,12
+2022-09-01,chocolate brown,color,15
+2022-10-01,chocolate brown,color,15
+2022-11-01,chocolate brown,color,15
+2022-12-01,chocolate brown,color,18
+2023-01-01,chocolate brown,color,14
+2023-02-01,chocolate brown,color,14
+2023-03-01,chocolate brown,color,13
+2023-04-01,chocolate brown,color,13
+2023-05-01,chocolate brown,color,12
+2023-06-01,chocolate brown,color,13
+2023-07-01,chocolate brown,color,13
+2023-08-01,chocolate brown,color,14
+2023-09-01,chocolate brown,color,15
+2023-10-01,chocolate brown,color,17
+2023-11-01,chocolate brown,color,19
+2023-12-01,chocolate brown,color,20
+2024-01-01,chocolate brown,color,17
+2024-02-01,chocolate brown,color,16
+2024-03-01,chocolate brown,color,16
+2024-04-01,chocolate brown,color,14
+2024-05-01,chocolate brown,color,15
+2024-06-01,chocolate brown,color,14
+2024-07-01,chocolate brown,color,15
+2024-08-01,chocolate brown,color,17
+2024-09-01,chocolate brown,color,21
+2024-10-01,chocolate brown,color,24
+2024-11-01,chocolate brown,color,27
+2024-12-01,chocolate brown,color,29
+2025-01-01,chocolate brown,color,23
+2025-02-01,chocolate brown,color,22
+2025-03-01,chocolate brown,color,22
+2025-04-01,chocolate brown,color,21
+2025-05-01,chocolate brown,color,22
+2025-06-01,chocolate brown,color,21
+2025-07-01,chocolate brown,color,23
+2025-08-01,chocolate brown,color,32
+2025-09-01,chocolate brown,color,39
+2025-10-01,chocolate brown,color,43
+2025-11-01,chocolate brown,color,49
+2025-12-01,chocolate brown,color,44
+2026-01-01,chocolate brown,color,35
+2026-02-01,chocolate brown,color,42
+2026-03-01,chocolate brown,color,40
+2026-04-01,chocolate brown,color,58
+2026-05-01,chocolate brown,color,56
+2026-06-01,chocolate brown,color,41
+2026-07-01,chocolate brown,color,35
+2015-01-01,pink dress,color,5
+2015-02-01,pink dress,color,5
+2015-03-01,pink dress,color,6
+2015-04-01,pink dress,color,6
+2015-05-01,pink dress,color,6
+2015-06-01,pink dress,color,5
+2015-07-01,pink dress,color,5
+2015-08-01,pink dress,color,5
+2015-09-01,pink dress,color,5
+2015-10-01,pink dress,color,5
+2015-11-01,pink dress,color,4
+2015-12-01,pink dress,color,4
+2016-01-01,pink dress,color,6
+2016-02-01,pink dress,color,6
+2016-03-01,pink dress,color,6
+2016-04-01,pink dress,color,6
+2016-05-01,pink dress,color,6
+2016-06-01,pink dress,color,6
+2016-07-01,pink dress,color,6
+2016-08-01,pink dress,color,5
+2016-09-01,pink dress,color,6
+2016-10-01,pink dress,color,6
+2016-11-01,pink dress,color,5
+2016-12-01,pink dress,color,4
+2017-01-01,pink dress,color,6
+2017-02-01,pink dress,color,6
+2017-03-01,pink dress,color,7
+2017-04-01,pink dress,color,7
+2017-05-01,pink dress,color,7
+2017-06-01,pink dress,color,6
+2017-07-01,pink dress,color,6
+2017-08-01,pink dress,color,6
+2017-09-01,pink dress,color,6
+2017-10-01,pink dress,color,7
+2017-11-01,pink dress,color,5
+2017-12-01,pink dress,color,5
+2018-01-01,pink dress,color,6
+2018-02-01,pink dress,color,7
+2018-03-01,pink dress,color,7
+2018-04-01,pink dress,color,7
+2018-05-01,pink dress,color,8
+2018-06-01,pink dress,color,7
+2018-07-01,pink dress,color,7
+2018-08-01,pink dress,color,6
+2018-09-01,pink dress,color,6
+2018-10-01,pink dress,color,6
+2018-11-01,pink dress,color,5
+2018-12-01,pink dress,color,5
+2019-01-01,pink dress,color,6
+2019-02-01,pink dress,color,7
+2019-03-01,pink dress,color,7
+2019-04-01,pink dress,color,8
+2019-05-01,pink dress,color,7
+2019-06-01,pink dress,color,7
+2019-07-01,pink dress,color,7
+2019-08-01,pink dress,color,6
+2019-09-01,pink dress,color,6
+2019-10-01,pink dress,color,7
+2019-11-01,pink dress,color,5
+2019-12-01,pink dress,color,5
+2020-01-01,pink dress,color,6
+2020-02-01,pink dress,color,7
+2020-03-01,pink dress,color,5
+2020-04-01,pink dress,color,4
+2020-05-01,pink dress,color,4
+2020-06-01,pink dress,color,5
+2020-07-01,pink dress,color,6
+2020-08-01,pink dress,color,6
+2020-09-01,pink dress,color,5
+2020-10-01,pink dress,color,5
+2020-11-01,pink dress,color,4
+2020-12-01,pink dress,color,4
+2021-01-01,pink dress,color,5
+2021-02-01,pink dress,color,5
+2021-03-01,pink dress,color,6
+2021-04-01,pink dress,color,7
+2021-05-01,pink dress,color,7
+2021-06-01,pink dress,color,8
+2021-07-01,pink dress,color,8
+2021-08-01,pink dress,color,8
+2021-09-01,pink dress,color,8
+2021-10-01,pink dress,color,8
+2021-11-01,pink dress,color,7
+2021-12-01,pink dress,color,6
+2022-01-01,pink dress,color,8
+2022-02-01,pink dress,color,9
+2022-03-01,pink dress,color,10
+2022-04-01,pink dress,color,11
+2022-05-01,pink dress,color,10
+2022-06-01,pink dress,color,10
+2022-07-01,pink dress,color,11
+2022-08-01,pink dress,color,9
+2022-09-01,pink dress,color,9
+2022-10-01,pink dress,color,9
+2022-11-01,pink dress,color,7
+2022-12-01,pink dress,color,7
+2023-01-01,pink dress,color,10
+2023-02-01,pink dress,color,10
+2023-03-01,pink dress,color,10
+2023-04-01,pink dress,color,12
+2023-05-01,pink dress,color,11
+2023-06-01,pink dress,color,11
+2023-07-01,pink dress,color,13
+2023-08-01,pink dress,color,11
+2023-09-01,pink dress,color,10
+2023-10-01,pink dress,color,10
+2023-11-01,pink dress,color,8
+2023-12-01,pink dress,color,7
+2024-01-01,pink dress,color,10
+2024-02-01,pink dress,color,11
+2024-03-01,pink dress,color,12
+2024-04-01,pink dress,color,12
+2024-05-01,pink dress,color,12
+2024-06-01,pink dress,color,11
+2024-07-01,pink dress,color,11
+2024-08-01,pink dress,color,11
+2024-09-01,pink dress,color,10
+2024-10-01,pink dress,color,10
+2024-11-01,pink dress,color,8
+2024-12-01,pink dress,color,8
+2025-01-01,pink dress,color,11
+2025-02-01,pink dress,color,12
+2025-03-01,pink dress,color,13
+2025-04-01,pink dress,color,13
+2025-05-01,pink dress,color,13
+2025-06-01,pink dress,color,12
+2025-07-01,pink dress,color,12
+2025-08-01,pink dress,color,13
+2025-09-01,pink dress,color,12
+2025-10-01,pink dress,color,11
+2025-11-01,pink dress,color,10
+2025-12-01,pink dress,color,9
+2026-01-01,pink dress,color,11
+2026-02-01,pink dress,color,28
+2026-03-01,pink dress,color,18
+2026-04-01,pink dress,color,31
+2026-05-01,pink dress,color,29
+2026-06-01,pink dress,color,17
+2026-07-01,pink dress,color,12
+2015-01-01,red dress,color,10
+2015-02-01,red dress,color,12
+2015-03-01,red dress,color,10
+2015-04-01,red dress,color,9
+2015-05-01,red dress,color,12
+2015-06-01,red dress,color,8
+2015-07-01,red dress,color,8
+2015-08-01,red dress,color,9
+2015-09-01,red dress,color,11
+2015-10-01,red dress,color,12
+2015-11-01,red dress,color,11
+2015-12-01,red dress,color,12
+2016-01-01,red dress,color,10
+2016-02-01,red dress,color,12
+2016-03-01,red dress,color,10
+2016-04-01,red dress,color,10
+2016-05-01,red dress,color,11
+2016-06-01,red dress,color,9
+2016-07-01,red dress,color,10
+2016-08-01,red dress,color,10
+2016-09-01,red dress,color,11
+2016-10-01,red dress,color,12
+2016-11-01,red dress,color,12
+2016-12-01,red dress,color,12
+2017-01-01,red dress,color,10
+2017-02-01,red dress,color,11
+2017-03-01,red dress,color,10
+2017-04-01,red dress,color,10
+2017-05-01,red dress,color,10
+2017-06-01,red dress,color,9
+2017-07-01,red dress,color,10
+2017-08-01,red dress,color,10
+2017-09-01,red dress,color,11
+2017-10-01,red dress,color,12
+2017-11-01,red dress,color,13
+2017-12-01,red dress,color,13
+2018-01-01,red dress,color,11
+2018-02-01,red dress,color,11
+2018-03-01,red dress,color,10
+2018-04-01,red dress,color,11
+2018-05-01,red dress,color,11
+2018-06-01,red dress,color,10
+2018-07-01,red dress,color,9
+2018-08-01,red dress,color,10
+2018-09-01,red dress,color,10
+2018-10-01,red dress,color,11
+2018-11-01,red dress,color,12
+2018-12-01,red dress,color,12
+2019-01-01,red dress,color,10
+2019-02-01,red dress,color,11
+2019-03-01,red dress,color,10
+2019-04-01,red dress,color,11
+2019-05-01,red dress,color,10
+2019-06-01,red dress,color,10
+2019-07-01,red dress,color,9
+2019-08-01,red dress,color,9
+2019-09-01,red dress,color,10
+2019-10-01,red dress,color,11
+2019-11-01,red dress,color,12
+2019-12-01,red dress,color,11
+2020-01-01,red dress,color,10
+2020-02-01,red dress,color,11
+2020-03-01,red dress,color,7
+2020-04-01,red dress,color,5
+2020-05-01,red dress,color,6
+2020-06-01,red dress,color,7
+2020-07-01,red dress,color,7
+2020-08-01,red dress,color,7
+2020-09-01,red dress,color,7
+2020-10-01,red dress,color,8
+2020-11-01,red dress,color,8
+2020-12-01,red dress,color,8
+2021-01-01,red dress,color,7
+2021-02-01,red dress,color,7
+2021-03-01,red dress,color,7
+2021-04-01,red dress,color,8
+2021-05-01,red dress,color,8
+2021-06-01,red dress,color,8
+2021-07-01,red dress,color,9
+2021-08-01,red dress,color,9
+2021-09-01,red dress,color,10
+2021-10-01,red dress,color,12
+2021-11-01,red dress,color,12
+2021-12-01,red dress,color,13
+2022-01-01,red dress,color,10
+2022-02-01,red dress,color,10
+2022-03-01,red dress,color,10
+2022-04-01,red dress,color,11
+2022-05-01,red dress,color,10
+2022-06-01,red dress,color,9
+2022-07-01,red dress,color,9
+2022-08-01,red dress,color,9
+2022-09-01,red dress,color,10
+2022-10-01,red dress,color,11
+2022-11-01,red dress,color,10
+2022-12-01,red dress,color,11
+2023-01-01,red dress,color,10
+2023-02-01,red dress,color,10
+2023-03-01,red dress,color,9
+2023-04-01,red dress,color,10
+2023-05-01,red dress,color,10
+2023-06-01,red dress,color,9
+2023-07-01,red dress,color,9
+2023-08-01,red dress,color,9
+2023-09-01,red dress,color,10
+2023-10-01,red dress,color,11
+2023-11-01,red dress,color,11
+2023-12-01,red dress,color,12
+2024-01-01,red dress,color,11
+2024-02-01,red dress,color,12
+2024-03-01,red dress,color,10
+2024-04-01,red dress,color,10
+2024-05-01,red dress,color,11
+2024-06-01,red dress,color,11
+2024-07-01,red dress,color,10
+2024-08-01,red dress,color,11
+2024-09-01,red dress,color,12
+2024-10-01,red dress,color,13
+2024-11-01,red dress,color,15
+2024-12-01,red dress,color,16
+2025-01-01,red dress,color,12
+2025-02-01,red dress,color,13
+2025-03-01,red dress,color,12
+2025-04-01,red dress,color,12
+2025-05-01,red dress,color,12
+2025-06-01,red dress,color,12
+2025-07-01,red dress,color,11
+2025-08-01,red dress,color,15
+2025-09-01,red dress,color,15
+2025-10-01,red dress,color,15
+2025-11-01,red dress,color,18
+2025-12-01,red dress,color,16
+2026-01-01,red dress,color,14
+2026-02-01,red dress,color,32
+2026-03-01,red dress,color,18
+2026-04-01,red dress,color,34
+2026-05-01,red dress,color,31
+2026-06-01,red dress,color,19
+2026-07-01,red dress,color,12
+2015-01-01,black dress,color,15
+2015-02-01,black dress,color,74
+2015-03-01,black dress,color,42
+2015-04-01,black dress,color,20
+2015-05-01,black dress,color,17
+2015-06-01,black dress,color,15
+2015-07-01,black dress,color,15
+2015-08-01,black dress,color,16
+2015-09-01,black dress,color,18
+2015-10-01,black dress,color,21
+2015-11-01,black dress,color,21
+2015-12-01,black dress,color,23
+2016-01-01,black dress,color,19
+2016-02-01,black dress,color,20
+2016-03-01,black dress,color,19
+2016-04-01,black dress,color,21
+2016-05-01,black dress,color,19
+2016-06-01,black dress,color,17
+2016-07-01,black dress,color,16
+2016-08-01,black dress,color,16
+2016-09-01,black dress,color,21
+2016-10-01,black dress,color,23
+2016-11-01,black dress,color,22
+2016-12-01,black dress,color,20
+2017-01-01,black dress,color,18
+2017-02-01,black dress,color,19
+2017-03-01,black dress,color,18
+2017-04-01,black dress,color,19
+2017-05-01,black dress,color,19
+2017-06-01,black dress,color,18
+2017-07-01,black dress,color,17
+2017-08-01,black dress,color,18
+2017-09-01,black dress,color,20
+2017-10-01,black dress,color,25
+2017-11-01,black dress,color,23
+2017-12-01,black dress,color,20
+2018-01-01,black dress,color,20
+2018-02-01,black dress,color,19
+2018-03-01,black dress,color,20
+2018-04-01,black dress,color,20
+2018-05-01,black dress,color,25
+2018-06-01,black dress,color,16
+2018-07-01,black dress,color,17
+2018-08-01,black dress,color,17
+2018-09-01,black dress,color,19
+2018-10-01,black dress,color,21
+2018-11-01,black dress,color,22
+2018-12-01,black dress,color,19
+2019-01-01,black dress,color,17
+2019-02-01,black dress,color,20
+2019-03-01,black dress,color,18
+2019-04-01,black dress,color,17
+2019-05-01,black dress,color,18
+2019-06-01,black dress,color,16
+2019-07-01,black dress,color,17
+2019-08-01,black dress,color,17
+2019-09-01,black dress,color,20
+2019-10-01,black dress,color,21
+2019-11-01,black dress,color,22
+2019-12-01,black dress,color,21
+2020-01-01,black dress,color,18
+2020-02-01,black dress,color,18
+2020-03-01,black dress,color,11
+2020-04-01,black dress,color,9
+2020-05-01,black dress,color,11
+2020-06-01,black dress,color,12
+2020-07-01,black dress,color,14
+2020-08-01,black dress,color,15
+2020-09-01,black dress,color,15
+2020-10-01,black dress,color,16
+2020-11-01,black dress,color,14
+2020-12-01,black dress,color,14
+2021-01-01,black dress,color,14
+2021-02-01,black dress,color,14
+2021-03-01,black dress,color,15
+2021-04-01,black dress,color,15
+2021-05-01,black dress,color,17
+2021-06-01,black dress,color,18
+2021-07-01,black dress,color,19
+2021-08-01,black dress,color,19
+2021-09-01,black dress,color,24
+2021-10-01,black dress,color,28
+2021-11-01,black dress,color,27
+2021-12-01,black dress,color,23
+2022-01-01,black dress,color,20
+2022-02-01,black dress,color,22
+2022-03-01,black dress,color,22
+2022-04-01,black dress,color,26
+2022-05-01,black dress,color,23
+2022-06-01,black dress,color,21
+2022-07-01,black dress,color,21
+2022-08-01,black dress,color,22
+2022-09-01,black dress,color,26
+2022-10-01,black dress,color,28
+2022-11-01,black dress,color,26
+2022-12-01,black dress,color,24
+2023-01-01,black dress,color,25
+2023-02-01,black dress,color,23
+2023-03-01,black dress,color,22
+2023-04-01,black dress,color,23
+2023-05-01,black dress,color,23
+2023-06-01,black dress,color,22
+2023-07-01,black dress,color,21
+2023-08-01,black dress,color,22
+2023-09-01,black dress,color,26
+2023-10-01,black dress,color,27
+2023-11-01,black dress,color,27
+2023-12-01,black dress,color,26
+2024-01-01,black dress,color,23
+2024-02-01,black dress,color,24
+2024-03-01,black dress,color,23
+2024-04-01,black dress,color,25
+2024-05-01,black dress,color,24
+2024-06-01,black dress,color,23
+2024-07-01,black dress,color,23
+2024-08-01,black dress,color,24
+2024-09-01,black dress,color,26
+2024-10-01,black dress,color,29
+2024-11-01,black dress,color,29
+2024-12-01,black dress,color,27
+2025-01-01,black dress,color,25
+2025-02-01,black dress,color,25
+2025-03-01,black dress,color,26
+2025-04-01,black dress,color,26
+2025-05-01,black dress,color,27
+2025-06-01,black dress,color,30
+2025-07-01,black dress,color,31
+2025-08-01,black dress,color,39
+2025-09-01,black dress,color,38
+2025-10-01,black dress,color,39
+2025-11-01,black dress,color,44
+2025-12-01,black dress,color,36
+2026-01-01,black dress,color,34
+2026-02-01,black dress,color,71
+2026-03-01,black dress,color,52
+2026-04-01,black dress,color,97
+2026-05-01,black dress,color,82
+2026-06-01,black dress,color,47
+2026-07-01,black dress,color,25
+2015-01-01,designer bag,accessory,1
+2015-02-01,designer bag,accessory,1
+2015-03-01,designer bag,accessory,1
+2015-04-01,designer bag,accessory,1
+2015-05-01,designer bag,accessory,1
+2015-06-01,designer bag,accessory,1
+2015-07-01,designer bag,accessory,1
+2015-08-01,designer bag,accessory,1
+2015-09-01,designer bag,accessory,1
+2015-10-01,designer bag,accessory,1
+2015-11-01,designer bag,accessory,1
+2015-12-01,designer bag,accessory,1
+2016-01-01,designer bag,accessory,1
+2016-02-01,designer bag,accessory,1
+2016-03-01,designer bag,accessory,1
+2016-04-01,designer bag,accessory,1
+2016-05-01,designer bag,accessory,1
+2016-06-01,designer bag,accessory,1
+2016-07-01,designer bag,accessory,1
+2016-08-01,designer bag,accessory,1
+2016-09-01,designer bag,accessory,1
+2016-10-01,designer bag,accessory,1
+2016-11-01,designer bag,accessory,1
+2016-12-01,designer bag,accessory,1
+2017-01-01,designer bag,accessory,1
+2017-02-01,designer bag,accessory,1
+2017-03-01,designer bag,accessory,1
+2017-04-01,designer bag,accessory,1
+2017-05-01,designer bag,accessory,1
+2017-06-01,designer bag,accessory,1
+2017-07-01,designer bag,accessory,1
+2017-08-01,designer bag,accessory,1
+2017-09-01,designer bag,accessory,1
+2017-10-01,designer bag,accessory,1
+2017-11-01,designer bag,accessory,1
+2017-12-01,designer bag,accessory,1
+2018-01-01,designer bag,accessory,1
+2018-02-01,designer bag,accessory,1
+2018-03-01,designer bag,accessory,1
+2018-04-01,designer bag,accessory,1
+2018-05-01,designer bag,accessory,1
+2018-06-01,designer bag,accessory,1
+2018-07-01,designer bag,accessory,1
+2018-08-01,designer bag,accessory,1
+2018-09-01,designer bag,accessory,1
+2018-10-01,designer bag,accessory,1
+2018-11-01,designer bag,accessory,1
+2018-12-01,designer bag,accessory,1
+2019-01-01,designer bag,accessory,1
+2019-02-01,designer bag,accessory,1
+2019-03-01,designer bag,accessory,1
+2019-04-01,designer bag,accessory,1
+2019-05-01,designer bag,accessory,1
+2019-06-01,designer bag,accessory,1
+2019-07-01,designer bag,accessory,1
+2019-08-01,designer bag,accessory,1
+2019-09-01,designer bag,accessory,1
+2019-10-01,designer bag,accessory,1
+2019-11-01,designer bag,accessory,1
+2019-12-01,designer bag,accessory,2
+2020-01-01,designer bag,accessory,1
+2020-02-01,designer bag,accessory,1
+2020-03-01,designer bag,accessory,1
+2020-04-01,designer bag,accessory,1
+2020-05-01,designer bag,accessory,1
+2020-06-01,designer bag,accessory,1
+2020-07-01,designer bag,accessory,2
+2020-08-01,designer bag,accessory,2
+2020-09-01,designer bag,accessory,2
+2020-10-01,designer bag,accessory,2
+2020-11-01,designer bag,accessory,2
+2020-12-01,designer bag,accessory,2
+2021-01-01,designer bag,accessory,2
+2021-02-01,designer bag,accessory,1
+2021-03-01,designer bag,accessory,2
+2021-04-01,designer bag,accessory,2
+2021-05-01,designer bag,accessory,2
+2021-06-01,designer bag,accessory,2
+2021-07-01,designer bag,accessory,2
+2021-08-01,designer bag,accessory,2
+2021-09-01,designer bag,accessory,2
+2021-10-01,designer bag,accessory,2
+2021-11-01,designer bag,accessory,2
+2021-12-01,designer bag,accessory,3
+2022-01-01,designer bag,accessory,2
+2022-02-01,designer bag,accessory,2
+2022-03-01,designer bag,accessory,2
+2022-04-01,designer bag,accessory,2
+2022-05-01,designer bag,accessory,2
+2022-06-01,designer bag,accessory,2
+2022-07-01,designer bag,accessory,2
+2022-08-01,designer bag,accessory,2
+2022-09-01,designer bag,accessory,2
+2022-10-01,designer bag,accessory,2
+2022-11-01,designer bag,accessory,2
+2022-12-01,designer bag,accessory,2
+2023-01-01,designer bag,accessory,2
+2023-02-01,designer bag,accessory,2
+2023-03-01,designer bag,accessory,2
+2023-04-01,designer bag,accessory,2
+2023-05-01,designer bag,accessory,2
+2023-06-01,designer bag,accessory,2
+2023-07-01,designer bag,accessory,3
+2023-08-01,designer bag,accessory,2
+2023-09-01,designer bag,accessory,2
+2023-10-01,designer bag,accessory,2
+2023-11-01,designer bag,accessory,2
+2023-12-01,designer bag,accessory,3
+2024-01-01,designer bag,accessory,2
+2024-02-01,designer bag,accessory,2
+2024-03-01,designer bag,accessory,2
+2024-04-01,designer bag,accessory,2
+2024-05-01,designer bag,accessory,3
+2024-06-01,designer bag,accessory,3
+2024-07-01,designer bag,accessory,3
+2024-08-01,designer bag,accessory,3
+2024-09-01,designer bag,accessory,3
+2024-10-01,designer bag,accessory,3
+2024-11-01,designer bag,accessory,3
+2024-12-01,designer bag,accessory,3
+2025-01-01,designer bag,accessory,3
+2025-02-01,designer bag,accessory,3
+2025-03-01,designer bag,accessory,3
+2025-04-01,designer bag,accessory,3
+2025-05-01,designer bag,accessory,3
+2025-06-01,designer bag,accessory,3
+2025-07-01,designer bag,accessory,3
+2025-08-01,designer bag,accessory,3
+2025-09-01,designer bag,accessory,3
+2025-10-01,designer bag,accessory,3
+2025-11-01,designer bag,accessory,4
+2025-12-01,designer bag,accessory,4
+2026-01-01,designer bag,accessory,3
+2026-02-01,designer bag,accessory,5
+2026-03-01,designer bag,accessory,4
+2026-04-01,designer bag,accessory,7
+2026-05-01,designer bag,accessory,7
+2026-06-01,designer bag,accessory,5
+2026-07-01,designer bag,accessory,3
+2015-01-01,tote bag,accessory,5
+2015-02-01,tote bag,accessory,4
+2015-03-01,tote bag,accessory,4
+2015-04-01,tote bag,accessory,4
+2015-05-01,tote bag,accessory,4
+2015-06-01,tote bag,accessory,4
+2015-07-01,tote bag,accessory,4
+2015-08-01,tote bag,accessory,5
+2015-09-01,tote bag,accessory,4
+2015-10-01,tote bag,accessory,4
+2015-11-01,tote bag,accessory,5
+2015-12-01,tote bag,accessory,5
+2016-01-01,tote bag,accessory,5
+2016-02-01,tote bag,accessory,5
+2016-03-01,tote bag,accessory,5
+2016-04-01,tote bag,accessory,5
+2016-05-01,tote bag,accessory,5
+2016-06-01,tote bag,accessory,5
+2016-07-01,tote bag,accessory,5
+2016-08-01,tote bag,accessory,5
+2016-09-01,tote bag,accessory,5
+2016-10-01,tote bag,accessory,5
+2016-11-01,tote bag,accessory,5
+2016-12-01,tote bag,accessory,6
+2017-01-01,tote bag,accessory,5
+2017-02-01,tote bag,accessory,5
+2017-03-01,tote bag,accessory,5
+2017-04-01,tote bag,accessory,5
+2017-05-01,tote bag,accessory,5
+2017-06-01,tote bag,accessory,5
+2017-07-01,tote bag,accessory,6
+2017-08-01,tote bag,accessory,6
+2017-09-01,tote bag,accessory,6
+2017-10-01,tote bag,accessory,5
+2017-11-01,tote bag,accessory,6
+2017-12-01,tote bag,accessory,7
+2018-01-01,tote bag,accessory,6
+2018-02-01,tote bag,accessory,5
+2018-03-01,tote bag,accessory,6
+2018-04-01,tote bag,accessory,6
+2018-05-01,tote bag,accessory,6
+2018-06-01,tote bag,accessory,6
+2018-07-01,tote bag,accessory,6
+2018-08-01,tote bag,accessory,7
+2018-09-01,tote bag,accessory,6
+2018-10-01,tote bag,accessory,6
+2018-11-01,tote bag,accessory,7
+2018-12-01,tote bag,accessory,7
+2019-01-01,tote bag,accessory,6
+2019-02-01,tote bag,accessory,6
+2019-03-01,tote bag,accessory,7
+2019-04-01,tote bag,accessory,6
+2019-05-01,tote bag,accessory,7
+2019-06-01,tote bag,accessory,7
+2019-07-01,tote bag,accessory,7
+2019-08-01,tote bag,accessory,8
+2019-09-01,tote bag,accessory,8
+2019-10-01,tote bag,accessory,7
+2019-11-01,tote bag,accessory,8
+2019-12-01,tote bag,accessory,9
+2020-01-01,tote bag,accessory,8
+2020-02-01,tote bag,accessory,8
+2020-03-01,tote bag,accessory,6
+2020-04-01,tote bag,accessory,5
+2020-05-01,tote bag,accessory,6
+2020-06-01,tote bag,accessory,7
+2020-07-01,tote bag,accessory,8
+2020-08-01,tote bag,accessory,8
+2020-09-01,tote bag,accessory,8
+2020-10-01,tote bag,accessory,7
+2020-11-01,tote bag,accessory,8
+2020-12-01,tote bag,accessory,9
+2021-01-01,tote bag,accessory,7
+2021-02-01,tote bag,accessory,7
+2021-03-01,tote bag,accessory,8
+2021-04-01,tote bag,accessory,8
+2021-05-01,tote bag,accessory,9
+2021-06-01,tote bag,accessory,9
+2021-07-01,tote bag,accessory,11
+2021-08-01,tote bag,accessory,13
+2021-09-01,tote bag,accessory,13
+2021-10-01,tote bag,accessory,12
+2021-11-01,tote bag,accessory,14
+2021-12-01,tote bag,accessory,15
+2022-01-01,tote bag,accessory,14
+2022-02-01,tote bag,accessory,15
+2022-03-01,tote bag,accessory,16
+2022-04-01,tote bag,accessory,16
+2022-05-01,tote bag,accessory,16
+2022-06-01,tote bag,accessory,17
+2022-07-01,tote bag,accessory,19
+2022-08-01,tote bag,accessory,24
+2022-09-01,tote bag,accessory,22
+2022-10-01,tote bag,accessory,18
+2022-11-01,tote bag,accessory,19
+2022-12-01,tote bag,accessory,22
+2023-01-01,tote bag,accessory,21
+2023-02-01,tote bag,accessory,20
+2023-03-01,tote bag,accessory,20
+2023-04-01,tote bag,accessory,20
+2023-05-01,tote bag,accessory,19
+2023-06-01,tote bag,accessory,21
+2023-07-01,tote bag,accessory,23
+2023-08-01,tote bag,accessory,24
+2023-09-01,tote bag,accessory,22
+2023-10-01,tote bag,accessory,19
+2023-11-01,tote bag,accessory,20
+2023-12-01,tote bag,accessory,23
+2024-01-01,tote bag,accessory,20
+2024-02-01,tote bag,accessory,20
+2024-03-01,tote bag,accessory,20
+2024-04-01,tote bag,accessory,18
+2024-05-01,tote bag,accessory,20
+2024-06-01,tote bag,accessory,22
+2024-07-01,tote bag,accessory,24
+2024-08-01,tote bag,accessory,26
+2024-09-01,tote bag,accessory,23
+2024-10-01,tote bag,accessory,20
+2024-11-01,tote bag,accessory,22
+2024-12-01,tote bag,accessory,28
+2025-01-01,tote bag,accessory,22
+2025-02-01,tote bag,accessory,21
+2025-03-01,tote bag,accessory,21
+2025-04-01,tote bag,accessory,21
+2025-05-01,tote bag,accessory,22
+2025-06-01,tote bag,accessory,21
+2025-07-01,tote bag,accessory,26
+2025-08-01,tote bag,accessory,33
+2025-09-01,tote bag,accessory,26
+2025-10-01,tote bag,accessory,23
+2025-11-01,tote bag,accessory,26
+2025-12-01,tote bag,accessory,26
+2026-01-01,tote bag,accessory,24
+2026-02-01,tote bag,accessory,50
+2026-03-01,tote bag,accessory,44
+2026-04-01,tote bag,accessory,100
+2026-05-01,tote bag,accessory,92
+2026-06-01,tote bag,accessory,41
+2026-07-01,tote bag,accessory,26
+2015-01-01,loafers,accessory,5
+2015-02-01,loafers,accessory,5
+2015-03-01,loafers,accessory,6
+2015-04-01,loafers,accessory,6
+2015-05-01,loafers,accessory,6
+2015-06-01,loafers,accessory,6
+2015-07-01,loafers,accessory,6
+2015-08-01,loafers,accessory,6
+2015-09-01,loafers,accessory,6
+2015-10-01,loafers,accessory,6
+2015-11-01,loafers,accessory,6
+2015-12-01,loafers,accessory,7
+2016-01-01,loafers,accessory,6
+2016-02-01,loafers,accessory,6
+2016-03-01,loafers,accessory,6
+2016-04-01,loafers,accessory,8
+2016-05-01,loafers,accessory,8
+2016-06-01,loafers,accessory,7
+2016-07-01,loafers,accessory,7
+2016-08-01,loafers,accessory,7
+2016-09-01,loafers,accessory,8
+2016-10-01,loafers,accessory,7
+2016-11-01,loafers,accessory,7
+2016-12-01,loafers,accessory,7
+2017-01-01,loafers,accessory,6
+2017-02-01,loafers,accessory,7
+2017-03-01,loafers,accessory,8
+2017-04-01,loafers,accessory,9
+2017-05-01,loafers,accessory,9
+2017-06-01,loafers,accessory,8
+2017-07-01,loafers,accessory,8
+2017-08-01,loafers,accessory,9
+2017-09-01,loafers,accessory,9
+2017-10-01,loafers,accessory,9
+2017-11-01,loafers,accessory,9
+2017-12-01,loafers,accessory,8
+2018-01-01,loafers,accessory,7
+2018-02-01,loafers,accessory,8
+2018-03-01,loafers,accessory,8
+2018-04-01,loafers,accessory,10
+2018-05-01,loafers,accessory,9
+2018-06-01,loafers,accessory,9
+2018-07-01,loafers,accessory,8
+2018-08-01,loafers,accessory,9
+2018-09-01,loafers,accessory,9
+2018-10-01,loafers,accessory,8
+2018-11-01,loafers,accessory,8
+2018-12-01,loafers,accessory,8
+2019-01-01,loafers,accessory,7
+2019-02-01,loafers,accessory,8
+2019-03-01,loafers,accessory,8
+2019-04-01,loafers,accessory,9
+2019-05-01,loafers,accessory,9
+2019-06-01,loafers,accessory,9
+2019-07-01,loafers,accessory,8
+2019-08-01,loafers,accessory,9
+2019-09-01,loafers,accessory,9
+2019-10-01,loafers,accessory,8
+2019-11-01,loafers,accessory,9
+2019-12-01,loafers,accessory,8
+2020-01-01,loafers,accessory,8
+2020-02-01,loafers,accessory,8
+2020-03-01,loafers,accessory,6
+2020-04-01,loafers,accessory,5
+2020-05-01,loafers,accessory,5
+2020-06-01,loafers,accessory,6
+2020-07-01,loafers,accessory,6
+2020-08-01,loafers,accessory,7
+2020-09-01,loafers,accessory,7
+2020-10-01,loafers,accessory,7
+2020-11-01,loafers,accessory,7
+2020-12-01,loafers,accessory,7
+2021-01-01,loafers,accessory,6
+2021-02-01,loafers,accessory,6
+2021-03-01,loafers,accessory,7
+2021-04-01,loafers,accessory,8
+2021-05-01,loafers,accessory,8
+2021-06-01,loafers,accessory,8
+2021-07-01,loafers,accessory,8
+2021-08-01,loafers,accessory,10
+2021-09-01,loafers,accessory,11
+2021-10-01,loafers,accessory,11
+2021-11-01,loafers,accessory,10
+2021-12-01,loafers,accessory,10
+2022-01-01,loafers,accessory,9
+2022-02-01,loafers,accessory,10
+2022-03-01,loafers,accessory,11
+2022-04-01,loafers,accessory,12
+2022-05-01,loafers,accessory,12
+2022-06-01,loafers,accessory,10
+2022-07-01,loafers,accessory,11
+2022-08-01,loafers,accessory,13
+2022-09-01,loafers,accessory,14
+2022-10-01,loafers,accessory,14
+2022-11-01,loafers,accessory,12
+2022-12-01,loafers,accessory,11
+2023-01-01,loafers,accessory,11
+2023-02-01,loafers,accessory,11
+2023-03-01,loafers,accessory,12
+2023-04-01,loafers,accessory,13
+2023-05-01,loafers,accessory,13
+2023-06-01,loafers,accessory,12
+2023-07-01,loafers,accessory,11
+2023-08-01,loafers,accessory,13
+2023-09-01,loafers,accessory,15
+2023-10-01,loafers,accessory,15
+2023-11-01,loafers,accessory,13
+2023-12-01,loafers,accessory,13
+2024-01-01,loafers,accessory,12
+2024-02-01,loafers,accessory,13
+2024-03-01,loafers,accessory,15
+2024-04-01,loafers,accessory,16
+2024-05-01,loafers,accessory,16
+2024-06-01,loafers,accessory,13
+2024-07-01,loafers,accessory,14
+2024-08-01,loafers,accessory,15
+2024-09-01,loafers,accessory,17
+2024-10-01,loafers,accessory,18
+2024-11-01,loafers,accessory,18
+2024-12-01,loafers,accessory,17
+2025-01-01,loafers,accessory,16
+2025-02-01,loafers,accessory,15
+2025-03-01,loafers,accessory,18
+2025-04-01,loafers,accessory,18
+2025-05-01,loafers,accessory,19
+2025-06-01,loafers,accessory,17
+2025-07-01,loafers,accessory,17
+2025-08-01,loafers,accessory,22
+2025-09-01,loafers,accessory,23
+2025-10-01,loafers,accessory,23
+2025-11-01,loafers,accessory,21
+2025-12-01,loafers,accessory,19
+2026-01-01,loafers,accessory,19
+2026-02-01,loafers,accessory,24
+2026-03-01,loafers,accessory,28
+2026-04-01,loafers,accessory,38
+2026-05-01,loafers,accessory,34
+2026-06-01,loafers,accessory,24
+2026-07-01,loafers,accessory,18
+2015-01-01,ballet flats,accessory,1
+2015-02-01,ballet flats,accessory,1
+2015-03-01,ballet flats,accessory,1
+2015-04-01,ballet flats,accessory,1
+2015-05-01,ballet flats,accessory,1
+2015-06-01,ballet flats,accessory,1
+2015-07-01,ballet flats,accessory,1
+2015-08-01,ballet flats,accessory,1
+2015-09-01,ballet flats,accessory,1
+2015-10-01,ballet flats,accessory,1
+2015-11-01,ballet flats,accessory,1
+2015-12-01,ballet flats,accessory,1
+2016-01-01,ballet flats,accessory,1
+2016-02-01,ballet flats,accessory,1
+2016-03-01,ballet flats,accessory,1
+2016-04-01,ballet flats,accessory,1
+2016-05-01,ballet flats,accessory,1
+2016-06-01,ballet flats,accessory,1
+2016-07-01,ballet flats,accessory,1
+2016-08-01,ballet flats,accessory,1
+2016-09-01,ballet flats,accessory,1
+2016-10-01,ballet flats,accessory,1
+2016-11-01,ballet flats,accessory,1
+2016-12-01,ballet flats,accessory,1
+2017-01-01,ballet flats,accessory,1
+2017-02-01,ballet flats,accessory,1
+2017-03-01,ballet flats,accessory,1
+2017-04-01,ballet flats,accessory,1
+2017-05-01,ballet flats,accessory,1
+2017-06-01,ballet flats,accessory,1
+2017-07-01,ballet flats,accessory,1
+2017-08-01,ballet flats,accessory,1
+2017-09-01,ballet flats,accessory,1
+2017-10-01,ballet flats,accessory,1
+2017-11-01,ballet flats,accessory,1
+2017-12-01,ballet flats,accessory,1
+2018-01-01,ballet flats,accessory,1
+2018-02-01,ballet flats,accessory,1
+2018-03-01,ballet flats,accessory,1
+2018-04-01,ballet flats,accessory,1
+2018-05-01,ballet flats,accessory,1
+2018-06-01,ballet flats,accessory,1
+2018-07-01,ballet flats,accessory,1
+2018-08-01,ballet flats,accessory,1
+2018-09-01,ballet flats,accessory,1
+2018-10-01,ballet flats,accessory,1
+2018-11-01,ballet flats,accessory,1
+2018-12-01,ballet flats,accessory,1
+2019-01-01,ballet flats,accessory,1
+2019-02-01,ballet flats,accessory,1
+2019-03-01,ballet flats,accessory,1
+2019-04-01,ballet flats,accessory,1
+2019-05-01,ballet flats,accessory,1
+2019-06-01,ballet flats,accessory,1
+2019-07-01,ballet flats,accessory,1
+2019-08-01,ballet flats,accessory,1
+2019-09-01,ballet flats,accessory,1
+2019-10-01,ballet flats,accessory,1
+2019-11-01,ballet flats,accessory,1
+2019-12-01,ballet flats,accessory,1
+2020-01-01,ballet flats,accessory,1
+2020-02-01,ballet flats,accessory,1
+2020-03-01,ballet flats,accessory,1
+2020-04-01,ballet flats,accessory,1
+2020-05-01,ballet flats,accessory,1
+2020-06-01,ballet flats,accessory,1
+2020-07-01,ballet flats,accessory,1
+2020-08-01,ballet flats,accessory,1
+2020-09-01,ballet flats,accessory,1
+2020-10-01,ballet flats,accessory,1
+2020-11-01,ballet flats,accessory,1
+2020-12-01,ballet flats,accessory,1
+2021-01-01,ballet flats,accessory,1
+2021-02-01,ballet flats,accessory,1
+2021-03-01,ballet flats,accessory,1
+2021-04-01,ballet flats,accessory,1
+2021-05-01,ballet flats,accessory,1
+2021-06-01,ballet flats,accessory,1
+2021-07-01,ballet flats,accessory,1
+2021-08-01,ballet flats,accessory,1
+2021-09-01,ballet flats,accessory,1
+2021-10-01,ballet flats,accessory,1
+2021-11-01,ballet flats,accessory,1
+2021-12-01,ballet flats,accessory,1
+2022-01-01,ballet flats,accessory,1
+2022-02-01,ballet flats,accessory,1
+2022-03-01,ballet flats,accessory,1
+2022-04-01,ballet flats,accessory,1
+2022-05-01,ballet flats,accessory,1
+2022-06-01,ballet flats,accessory,1
+2022-07-01,ballet flats,accessory,1
+2022-08-01,ballet flats,accessory,1
+2022-09-01,ballet flats,accessory,1
+2022-10-01,ballet flats,accessory,1
+2022-11-01,ballet flats,accessory,1
+2022-12-01,ballet flats,accessory,1
+2023-01-01,ballet flats,accessory,1
+2023-02-01,ballet flats,accessory,1
+2023-03-01,ballet flats,accessory,1
+2023-04-01,ballet flats,accessory,1
+2023-05-01,ballet flats,accessory,1
+2023-06-01,ballet flats,accessory,1
+2023-07-01,ballet flats,accessory,1
+2023-08-01,ballet flats,accessory,2
+2023-09-01,ballet flats,accessory,3
+2023-10-01,ballet flats,accessory,2
+2023-11-01,ballet flats,accessory,2
+2023-12-01,ballet flats,accessory,2
+2024-01-01,ballet flats,accessory,2
+2024-02-01,ballet flats,accessory,2
+2024-03-01,ballet flats,accessory,2
+2024-04-01,ballet flats,accessory,3
+2024-05-01,ballet flats,accessory,3
+2024-06-01,ballet flats,accessory,2
+2024-07-01,ballet flats,accessory,2
+2024-08-01,ballet flats,accessory,3
+2024-09-01,ballet flats,accessory,3
+2024-10-01,ballet flats,accessory,3
+2024-11-01,ballet flats,accessory,2
+2024-12-01,ballet flats,accessory,2
+2025-01-01,ballet flats,accessory,2
+2025-02-01,ballet flats,accessory,2
+2025-03-01,ballet flats,accessory,3
+2025-04-01,ballet flats,accessory,4
+2025-05-01,ballet flats,accessory,4
+2025-06-01,ballet flats,accessory,4
+2025-07-01,ballet flats,accessory,4
+2025-08-01,ballet flats,accessory,5
+2025-09-01,ballet flats,accessory,5
+2025-10-01,ballet flats,accessory,4
+2025-11-01,ballet flats,accessory,5
+2025-12-01,ballet flats,accessory,4
+2026-01-01,ballet flats,accessory,4
+2026-02-01,ballet flats,accessory,6
+2026-03-01,ballet flats,accessory,7
+2026-04-01,ballet flats,accessory,12
+2026-05-01,ballet flats,accessory,12
+2026-06-01,ballet flats,accessory,8
+2026-07-01,ballet flats,accessory,8
+2015-01-01,mary janes,accessory,1
+2015-02-01,mary janes,accessory,1
+2015-03-01,mary janes,accessory,1
+2015-04-01,mary janes,accessory,1
+2015-05-01,mary janes,accessory,1
+2015-06-01,mary janes,accessory,1
+2015-07-01,mary janes,accessory,1
+2015-08-01,mary janes,accessory,1
+2015-09-01,mary janes,accessory,1
+2015-10-01,mary janes,accessory,1
+2015-11-01,mary janes,accessory,1
+2015-12-01,mary janes,accessory,1
+2016-01-01,mary janes,accessory,1
+2016-02-01,mary janes,accessory,1
+2016-03-01,mary janes,accessory,1
+2016-04-01,mary janes,accessory,1
+2016-05-01,mary janes,accessory,1
+2016-06-01,mary janes,accessory,1
+2016-07-01,mary janes,accessory,1
+2016-08-01,mary janes,accessory,1
+2016-09-01,mary janes,accessory,1
+2016-10-01,mary janes,accessory,1
+2016-11-01,mary janes,accessory,1
+2016-12-01,mary janes,accessory,1
+2017-01-01,mary janes,accessory,1
+2017-02-01,mary janes,accessory,1
+2017-03-01,mary janes,accessory,1
+2017-04-01,mary janes,accessory,1
+2017-05-01,mary janes,accessory,1
+2017-06-01,mary janes,accessory,1
+2017-07-01,mary janes,accessory,1
+2017-08-01,mary janes,accessory,1
+2017-09-01,mary janes,accessory,1
+2017-10-01,mary janes,accessory,1
+2017-11-01,mary janes,accessory,1
+2017-12-01,mary janes,accessory,1
+2018-01-01,mary janes,accessory,1
+2018-02-01,mary janes,accessory,1
+2018-03-01,mary janes,accessory,1
+2018-04-01,mary janes,accessory,1
+2018-05-01,mary janes,accessory,1
+2018-06-01,mary janes,accessory,1
+2018-07-01,mary janes,accessory,1
+2018-08-01,mary janes,accessory,1
+2018-09-01,mary janes,accessory,1
+2018-10-01,mary janes,accessory,1
+2018-11-01,mary janes,accessory,1
+2018-12-01,mary janes,accessory,1
+2019-01-01,mary janes,accessory,1
+2019-02-01,mary janes,accessory,1
+2019-03-01,mary janes,accessory,1
+2019-04-01,mary janes,accessory,1
+2019-05-01,mary janes,accessory,1
+2019-06-01,mary janes,accessory,1
+2019-07-01,mary janes,accessory,1
+2019-08-01,mary janes,accessory,1
+2019-09-01,mary janes,accessory,1
+2019-10-01,mary janes,accessory,1
+2019-11-01,mary janes,accessory,1
+2019-12-01,mary janes,accessory,1
+2020-01-01,mary janes,accessory,1
+2020-02-01,mary janes,accessory,1
+2020-03-01,mary janes,accessory,0
+2020-04-01,mary janes,accessory,0
+2020-05-01,mary janes,accessory,1
+2020-06-01,mary janes,accessory,1
+2020-07-01,mary janes,accessory,1
+2020-08-01,mary janes,accessory,1
+2020-09-01,mary janes,accessory,1
+2020-10-01,mary janes,accessory,1
+2020-11-01,mary janes,accessory,1
+2020-12-01,mary janes,accessory,1
+2021-01-01,mary janes,accessory,1
+2021-02-01,mary janes,accessory,1
+2021-03-01,mary janes,accessory,1
+2021-04-01,mary janes,accessory,1
+2021-05-01,mary janes,accessory,1
+2021-06-01,mary janes,accessory,1
+2021-07-01,mary janes,accessory,1
+2021-08-01,mary janes,accessory,1
+2021-09-01,mary janes,accessory,1
+2021-10-01,mary janes,accessory,1
+2021-11-01,mary janes,accessory,1
+2021-12-01,mary janes,accessory,1
+2022-01-01,mary janes,accessory,1
+2022-02-01,mary janes,accessory,1
+2022-03-01,mary janes,accessory,1
+2022-04-01,mary janes,accessory,1
+2022-05-01,mary janes,accessory,1
+2022-06-01,mary janes,accessory,1
+2022-07-01,mary janes,accessory,1
+2022-08-01,mary janes,accessory,1
+2022-09-01,mary janes,accessory,1
+2022-10-01,mary janes,accessory,1
+2022-11-01,mary janes,accessory,1
+2022-12-01,mary janes,accessory,1
+2023-01-01,mary janes,accessory,1
+2023-02-01,mary janes,accessory,1
+2023-03-01,mary janes,accessory,1
+2023-04-01,mary janes,accessory,1
+2023-05-01,mary janes,accessory,1
+2023-06-01,mary janes,accessory,1
+2023-07-01,mary janes,accessory,1
+2023-08-01,mary janes,accessory,1
+2023-09-01,mary janes,accessory,2
+2023-10-01,mary janes,accessory,2
+2023-11-01,mary janes,accessory,2
+2023-12-01,mary janes,accessory,2
+2024-01-01,mary janes,accessory,1
+2024-02-01,mary janes,accessory,2
+2024-03-01,mary janes,accessory,2
+2024-04-01,mary janes,accessory,2
+2024-05-01,mary janes,accessory,2
+2024-06-01,mary janes,accessory,2
+2024-07-01,mary janes,accessory,2
+2024-08-01,mary janes,accessory,2
+2024-09-01,mary janes,accessory,3
+2024-10-01,mary janes,accessory,2
+2024-11-01,mary janes,accessory,2
+2024-12-01,mary janes,accessory,2
+2025-01-01,mary janes,accessory,2
+2025-02-01,mary janes,accessory,2
+2025-03-01,mary janes,accessory,2
+2025-04-01,mary janes,accessory,2
+2025-05-01,mary janes,accessory,2
+2025-06-01,mary janes,accessory,2
+2025-07-01,mary janes,accessory,2
+2025-08-01,mary janes,accessory,3
+2025-09-01,mary janes,accessory,3
+2025-10-01,mary janes,accessory,3
+2025-11-01,mary janes,accessory,3
+2025-12-01,mary janes,accessory,3
+2026-01-01,mary janes,accessory,2
+2026-02-01,mary janes,accessory,2
+2026-03-01,mary janes,accessory,3
+2026-04-01,mary janes,accessory,4
+2026-05-01,mary janes,accessory,4
+2026-06-01,mary janes,accessory,3
+2026-07-01,mary janes,accessory,3
+2015-01-01,shoulder bag,accessory,2
+2015-02-01,shoulder bag,accessory,2
+2015-03-01,shoulder bag,accessory,2
+2015-04-01,shoulder bag,accessory,2
+2015-05-01,shoulder bag,accessory,2
+2015-06-01,shoulder bag,accessory,2
+2015-07-01,shoulder bag,accessory,3
+2015-08-01,shoulder bag,accessory,3
+2015-09-01,shoulder bag,accessory,2
+2015-10-01,shoulder bag,accessory,2
+2015-11-01,shoulder bag,accessory,3
+2015-12-01,shoulder bag,accessory,3
+2016-01-01,shoulder bag,accessory,3
+2016-02-01,shoulder bag,accessory,3
+2016-03-01,shoulder bag,accessory,3
+2016-04-01,shoulder bag,accessory,3
+2016-05-01,shoulder bag,accessory,3
+2016-06-01,shoulder bag,accessory,3
+2016-07-01,shoulder bag,accessory,3
+2016-08-01,shoulder bag,accessory,3
+2016-09-01,shoulder bag,accessory,3
+2016-10-01,shoulder bag,accessory,3
+2016-11-01,shoulder bag,accessory,3
+2016-12-01,shoulder bag,accessory,4
+2017-01-01,shoulder bag,accessory,3
+2017-02-01,shoulder bag,accessory,3
+2017-03-01,shoulder bag,accessory,3
+2017-04-01,shoulder bag,accessory,3
+2017-05-01,shoulder bag,accessory,3
+2017-06-01,shoulder bag,accessory,3
+2017-07-01,shoulder bag,accessory,3
+2017-08-01,shoulder bag,accessory,4
+2017-09-01,shoulder bag,accessory,3
+2017-10-01,shoulder bag,accessory,3
+2017-11-01,shoulder bag,accessory,4
+2017-12-01,shoulder bag,accessory,5
+2018-01-01,shoulder bag,accessory,4
+2018-02-01,shoulder bag,accessory,4
+2018-03-01,shoulder bag,accessory,4
+2018-04-01,shoulder bag,accessory,4
+2018-05-01,shoulder bag,accessory,4
+2018-06-01,shoulder bag,accessory,4
+2018-07-01,shoulder bag,accessory,4
+2018-08-01,shoulder bag,accessory,4
+2018-09-01,shoulder bag,accessory,4
+2018-10-01,shoulder bag,accessory,4
+2018-11-01,shoulder bag,accessory,4
+2018-12-01,shoulder bag,accessory,5
+2019-01-01,shoulder bag,accessory,4
+2019-02-01,shoulder bag,accessory,4
+2019-03-01,shoulder bag,accessory,4
+2019-04-01,shoulder bag,accessory,4
+2019-05-01,shoulder bag,accessory,4
+2019-06-01,shoulder bag,accessory,4
+2019-07-01,shoulder bag,accessory,5
+2019-08-01,shoulder bag,accessory,5
+2019-09-01,shoulder bag,accessory,4
+2019-10-01,shoulder bag,accessory,4
+2019-11-01,shoulder bag,accessory,5
+2019-12-01,shoulder bag,accessory,6
+2020-01-01,shoulder bag,accessory,5
+2020-02-01,shoulder bag,accessory,4
+2020-03-01,shoulder bag,accessory,3
+2020-04-01,shoulder bag,accessory,3
+2020-05-01,shoulder bag,accessory,4
+2020-06-01,shoulder bag,accessory,4
+2020-07-01,shoulder bag,accessory,5
+2020-08-01,shoulder bag,accessory,5
+2020-09-01,shoulder bag,accessory,5
+2020-10-01,shoulder bag,accessory,5
+2020-11-01,shoulder bag,accessory,5
+2020-12-01,shoulder bag,accessory,6
+2021-01-01,shoulder bag,accessory,5
+2021-02-01,shoulder bag,accessory,4
+2021-03-01,shoulder bag,accessory,4
+2021-04-01,shoulder bag,accessory,5
+2021-05-01,shoulder bag,accessory,5
+2021-06-01,shoulder bag,accessory,5
+2021-07-01,shoulder bag,accessory,5
+2021-08-01,shoulder bag,accessory,5
+2021-09-01,shoulder bag,accessory,5
+2021-10-01,shoulder bag,accessory,5
+2021-11-01,shoulder bag,accessory,6
+2021-12-01,shoulder bag,accessory,7
+2022-01-01,shoulder bag,accessory,6
+2022-02-01,shoulder bag,accessory,6
+2022-03-01,shoulder bag,accessory,6
+2022-04-01,shoulder bag,accessory,6
+2022-05-01,shoulder bag,accessory,6
+2022-06-01,shoulder bag,accessory,6
+2022-07-01,shoulder bag,accessory,7
+2022-08-01,shoulder bag,accessory,7
+2022-09-01,shoulder bag,accessory,6
+2022-10-01,shoulder bag,accessory,6
+2022-11-01,shoulder bag,accessory,6
+2022-12-01,shoulder bag,accessory,7
+2023-01-01,shoulder bag,accessory,6
+2023-02-01,shoulder bag,accessory,6
+2023-03-01,shoulder bag,accessory,6
+2023-04-01,shoulder bag,accessory,6
+2023-05-01,shoulder bag,accessory,7
+2023-06-01,shoulder bag,accessory,7
+2023-07-01,shoulder bag,accessory,7
+2023-08-01,shoulder bag,accessory,7
+2023-09-01,shoulder bag,accessory,7
+2023-10-01,shoulder bag,accessory,7
+2023-11-01,shoulder bag,accessory,9
+2023-12-01,shoulder bag,accessory,9
+2024-01-01,shoulder bag,accessory,8
+2024-02-01,shoulder bag,accessory,7
+2024-03-01,shoulder bag,accessory,7
+2024-04-01,shoulder bag,accessory,7
+2024-05-01,shoulder bag,accessory,8
+2024-06-01,shoulder bag,accessory,9
+2024-07-01,shoulder bag,accessory,9
+2024-08-01,shoulder bag,accessory,10
+2024-09-01,shoulder bag,accessory,9
+2024-10-01,shoulder bag,accessory,8
+2024-11-01,shoulder bag,accessory,10
+2024-12-01,shoulder bag,accessory,13
+2025-01-01,shoulder bag,accessory,10
+2025-02-01,shoulder bag,accessory,9
+2025-03-01,shoulder bag,accessory,9
+2025-04-01,shoulder bag,accessory,10
+2025-05-01,shoulder bag,accessory,10
+2025-06-01,shoulder bag,accessory,10
+2025-07-01,shoulder bag,accessory,12
+2025-08-01,shoulder bag,accessory,15
+2025-09-01,shoulder bag,accessory,13
+2025-10-01,shoulder bag,accessory,12
+2025-11-01,shoulder bag,accessory,16
+2025-12-01,shoulder bag,accessory,16
+2026-01-01,shoulder bag,accessory,13
+2026-02-01,shoulder bag,accessory,31
+2026-03-01,shoulder bag,accessory,32
+2026-04-01,shoulder bag,accessory,100
+2026-05-01,shoulder bag,accessory,90
+2026-06-01,shoulder bag,accessory,33
+2026-07-01,shoulder bag,accessory,15
+2015-01-01,animal print,print,5
+2015-02-01,animal print,print,4
+2015-03-01,animal print,print,4
+2015-04-01,animal print,print,4
+2015-05-01,animal print,print,4
+2015-06-01,animal print,print,4
+2015-07-01,animal print,print,4
+2015-08-01,animal print,print,4
+2015-09-01,animal print,print,4
+2015-10-01,animal print,print,4
+2015-11-01,animal print,print,4
+2015-12-01,animal print,print,4
+2016-01-01,animal print,print,3
+2016-02-01,animal print,print,3
+2016-03-01,animal print,print,3
+2016-04-01,animal print,print,3
+2016-05-01,animal print,print,3
+2016-06-01,animal print,print,3
+2016-07-01,animal print,print,3
+2016-08-01,animal print,print,3
+2016-09-01,animal print,print,3
+2016-10-01,animal print,print,3
+2016-11-01,animal print,print,3
+2016-12-01,animal print,print,3
+2017-01-01,animal print,print,2
+2017-02-01,animal print,print,2
+2017-03-01,animal print,print,2
+2017-04-01,animal print,print,2
+2017-05-01,animal print,print,2
+2017-06-01,animal print,print,2
+2017-07-01,animal print,print,2
+2017-08-01,animal print,print,2
+2017-09-01,animal print,print,2
+2017-10-01,animal print,print,2
+2017-11-01,animal print,print,2
+2017-12-01,animal print,print,2
+2018-01-01,animal print,print,2
+2018-02-01,animal print,print,2
+2018-03-01,animal print,print,2
+2018-04-01,animal print,print,2
+2018-05-01,animal print,print,2
+2018-06-01,animal print,print,2
+2018-07-01,animal print,print,2
+2018-08-01,animal print,print,3
+2018-09-01,animal print,print,4
+2018-10-01,animal print,print,4
+2018-11-01,animal print,print,4
+2018-12-01,animal print,print,4
+2019-01-01,animal print,print,4
+2019-02-01,animal print,print,4
+2019-03-01,animal print,print,4
+2019-04-01,animal print,print,4
+2019-05-01,animal print,print,4
+2019-06-01,animal print,print,4
+2019-07-01,animal print,print,4
+2019-08-01,animal print,print,4
+2019-09-01,animal print,print,5
+2019-10-01,animal print,print,5
+2019-11-01,animal print,print,5
+2019-12-01,animal print,print,5
+2020-01-01,animal print,print,4
+2020-02-01,animal print,print,4
+2020-03-01,animal print,print,3
+2020-04-01,animal print,print,3
+2020-05-01,animal print,print,4
+2020-06-01,animal print,print,4
+2020-07-01,animal print,print,4
+2020-08-01,animal print,print,4
+2020-09-01,animal print,print,4
+2020-10-01,animal print,print,4
+2020-11-01,animal print,print,4
+2020-12-01,animal print,print,4
+2021-01-01,animal print,print,4
+2021-02-01,animal print,print,4
+2021-03-01,animal print,print,4
+2021-04-01,animal print,print,4
+2021-05-01,animal print,print,4
+2021-06-01,animal print,print,4
+2021-07-01,animal print,print,4
+2021-08-01,animal print,print,4
+2021-09-01,animal print,print,4
+2021-10-01,animal print,print,4
+2021-11-01,animal print,print,4
+2021-12-01,animal print,print,4
+2022-01-01,animal print,print,4
+2022-02-01,animal print,print,4
+2022-03-01,animal print,print,4
+2022-04-01,animal print,print,4
+2022-05-01,animal print,print,4
+2022-06-01,animal print,print,4
+2022-07-01,animal print,print,4
+2022-08-01,animal print,print,4
+2022-09-01,animal print,print,4
+2022-10-01,animal print,print,4
+2022-11-01,animal print,print,4
+2022-12-01,animal print,print,4
+2023-01-01,animal print,print,3
+2023-02-01,animal print,print,4
+2023-03-01,animal print,print,3
+2023-04-01,animal print,print,3
+2023-05-01,animal print,print,3
+2023-06-01,animal print,print,3
+2023-07-01,animal print,print,3
+2023-08-01,animal print,print,3
+2023-09-01,animal print,print,3
+2023-10-01,animal print,print,3
+2023-11-01,animal print,print,3
+2023-12-01,animal print,print,3
+2024-01-01,animal print,print,3
+2024-02-01,animal print,print,3
+2024-03-01,animal print,print,3
+2024-04-01,animal print,print,3
+2024-05-01,animal print,print,3
+2024-06-01,animal print,print,3
+2024-07-01,animal print,print,3
+2024-08-01,animal print,print,4
+2024-09-01,animal print,print,4
+2024-10-01,animal print,print,5
+2024-11-01,animal print,print,4
+2024-12-01,animal print,print,4
+2025-01-01,animal print,print,4
+2025-02-01,animal print,print,4
+2025-03-01,animal print,print,4
+2025-04-01,animal print,print,4
+2025-05-01,animal print,print,4
+2025-06-01,animal print,print,4
+2025-07-01,animal print,print,4
+2025-08-01,animal print,print,4
+2025-09-01,animal print,print,5
+2025-10-01,animal print,print,5
+2025-11-01,animal print,print,5
+2025-12-01,animal print,print,5
+2026-01-01,animal print,print,5
+2026-02-01,animal print,print,15
+2026-03-01,animal print,print,6
+2026-04-01,animal print,print,8
+2026-05-01,animal print,print,7
+2026-06-01,animal print,print,5
+2026-07-01,animal print,print,4
+2015-01-01,leopard print,print,7
+2015-02-01,leopard print,print,7
+2015-03-01,leopard print,print,6
+2015-04-01,leopard print,print,6
+2015-05-01,leopard print,print,5
+2015-06-01,leopard print,print,5
+2015-07-01,leopard print,print,5
+2015-08-01,leopard print,print,6
+2015-09-01,leopard print,print,6
+2015-10-01,leopard print,print,7
+2015-11-01,leopard print,print,6
+2015-12-01,leopard print,print,6
+2016-01-01,leopard print,print,6
+2016-02-01,leopard print,print,5
+2016-03-01,leopard print,print,5
+2016-04-01,leopard print,print,5
+2016-05-01,leopard print,print,4
+2016-06-01,leopard print,print,4
+2016-07-01,leopard print,print,4
+2016-08-01,leopard print,print,4
+2016-09-01,leopard print,print,5
+2016-10-01,leopard print,print,6
+2016-11-01,leopard print,print,6
+2016-12-01,leopard print,print,6
+2017-01-01,leopard print,print,5
+2017-02-01,leopard print,print,4
+2017-03-01,leopard print,print,5
+2017-04-01,leopard print,print,4
+2017-05-01,leopard print,print,4
+2017-06-01,leopard print,print,4
+2017-07-01,leopard print,print,4
+2017-08-01,leopard print,print,4
+2017-09-01,leopard print,print,5
+2017-10-01,leopard print,print,6
+2017-11-01,leopard print,print,6
+2017-12-01,leopard print,print,6
+2018-01-01,leopard print,print,6
+2018-02-01,leopard print,print,5
+2018-03-01,leopard print,print,5
+2018-04-01,leopard print,print,5
+2018-05-01,leopard print,print,5
+2018-06-01,leopard print,print,6
+2018-07-01,leopard print,print,7
+2018-08-01,leopard print,print,10
+2018-09-01,leopard print,print,13
+2018-10-01,leopard print,print,14
+2018-11-01,leopard print,print,14
+2018-12-01,leopard print,print,12
+2019-01-01,leopard print,print,11
+2019-02-01,leopard print,print,12
+2019-03-01,leopard print,print,11
+2019-04-01,leopard print,print,10
+2019-05-01,leopard print,print,10
+2019-06-01,leopard print,print,9
+2019-07-01,leopard print,print,10
+2019-08-01,leopard print,print,11
+2019-09-01,leopard print,print,12
+2019-10-01,leopard print,print,14
+2019-11-01,leopard print,print,13
+2019-12-01,leopard print,print,13
+2020-01-01,leopard print,print,11
+2020-02-01,leopard print,print,10
+2020-03-01,leopard print,print,8
+2020-04-01,leopard print,print,8
+2020-05-01,leopard print,print,9
+2020-06-01,leopard print,print,9
+2020-07-01,leopard print,print,9
+2020-08-01,leopard print,print,10
+2020-09-01,leopard print,print,10
+2020-10-01,leopard print,print,11
+2020-11-01,leopard print,print,10
+2020-12-01,leopard print,print,10
+2021-01-01,leopard print,print,9
+2021-02-01,leopard print,print,8
+2021-03-01,leopard print,print,9
+2021-04-01,leopard print,print,9
+2021-05-01,leopard print,print,8
+2021-06-01,leopard print,print,8
+2021-07-01,leopard print,print,8
+2021-08-01,leopard print,print,9
+2021-09-01,leopard print,print,9
+2021-10-01,leopard print,print,10
+2021-11-01,leopard print,print,10
+2021-12-01,leopard print,print,10
+2022-01-01,leopard print,print,8
+2022-02-01,leopard print,print,8
+2022-03-01,leopard print,print,7
+2022-04-01,leopard print,print,7
+2022-05-01,leopard print,print,7
+2022-06-01,leopard print,print,6
+2022-07-01,leopard print,print,6
+2022-08-01,leopard print,print,7
+2022-09-01,leopard print,print,7
+2022-10-01,leopard print,print,7
+2022-11-01,leopard print,print,7
+2022-12-01,leopard print,print,7
+2023-01-01,leopard print,print,6
+2023-02-01,leopard print,print,6
+2023-03-01,leopard print,print,6
+2023-04-01,leopard print,print,6
+2023-05-01,leopard print,print,5
+2023-06-01,leopard print,print,5
+2023-07-01,leopard print,print,5
+2023-08-01,leopard print,print,6
+2023-09-01,leopard print,print,5
+2023-10-01,leopard print,print,6
+2023-11-01,leopard print,print,6
+2023-12-01,leopard print,print,6
+2024-01-01,leopard print,print,7
+2024-02-01,leopard print,print,7
+2024-03-01,leopard print,print,8
+2024-04-01,leopard print,print,9
+2024-05-01,leopard print,print,9
+2024-06-01,leopard print,print,9
+2024-07-01,leopard print,print,10
+2024-08-01,leopard print,print,12
+2024-09-01,leopard print,print,16
+2024-10-01,leopard print,print,16
+2024-11-01,leopard print,print,14
+2024-12-01,leopard print,print,13
+2025-01-01,leopard print,print,13
+2025-02-01,leopard print,print,14
+2025-03-01,leopard print,print,13
+2025-04-01,leopard print,print,12
+2025-05-01,leopard print,print,11
+2025-06-01,leopard print,print,11
+2025-07-01,leopard print,print,12
+2025-08-01,leopard print,print,14
+2025-09-01,leopard print,print,14
+2025-10-01,leopard print,print,16
+2025-11-01,leopard print,print,17
+2025-12-01,leopard print,print,16
+2026-01-01,leopard print,print,16
+2026-02-01,leopard print,print,38
+2026-03-01,leopard print,print,19
+2026-04-01,leopard print,print,25
+2026-05-01,leopard print,print,22
+2026-06-01,leopard print,print,15
+2026-07-01,leopard print,print,13
+2015-01-01,floral dress,print,3
+2015-02-01,floral dress,print,4
+2015-03-01,floral dress,print,6
+2015-04-01,floral dress,print,7
+2015-05-01,floral dress,print,7
+2015-06-01,floral dress,print,6
+2015-07-01,floral dress,print,6
+2015-08-01,floral dress,print,5
+2015-09-01,floral dress,print,4
+2015-10-01,floral dress,print,4
+2015-11-01,floral dress,print,3
+2015-12-01,floral dress,print,3
+2016-01-01,floral dress,print,5
+2016-02-01,floral dress,print,6
+2016-03-01,floral dress,print,7
+2016-04-01,floral dress,print,9
+2016-05-01,floral dress,print,9
+2016-06-01,floral dress,print,8
+2016-07-01,floral dress,print,8
+2016-08-01,floral dress,print,7
+2016-09-01,floral dress,print,6
+2016-10-01,floral dress,print,5
+2016-11-01,floral dress,print,5
+2016-12-01,floral dress,print,4
+2017-01-01,floral dress,print,6
+2017-02-01,floral dress,print,7
+2017-03-01,floral dress,print,10
+2017-04-01,floral dress,print,12
+2017-05-01,floral dress,print,12
+2017-06-01,floral dress,print,12
+2017-07-01,floral dress,print,10
+2017-08-01,floral dress,print,9
+2017-09-01,floral dress,print,8
+2017-10-01,floral dress,print,8
+2017-11-01,floral dress,print,6
+2017-12-01,floral dress,print,5
+2018-01-01,floral dress,print,7
+2018-02-01,floral dress,print,9
+2018-03-01,floral dress,print,12
+2018-04-01,floral dress,print,13
+2018-05-01,floral dress,print,13
+2018-06-01,floral dress,print,13
+2018-07-01,floral dress,print,12
+2018-08-01,floral dress,print,9
+2018-09-01,floral dress,print,7
+2018-10-01,floral dress,print,6
+2018-11-01,floral dress,print,5
+2018-12-01,floral dress,print,5
+2019-01-01,floral dress,print,7
+2019-02-01,floral dress,print,8
+2019-03-01,floral dress,print,11
+2019-04-01,floral dress,print,13
+2019-05-01,floral dress,print,12
+2019-06-01,floral dress,print,12
+2019-07-01,floral dress,print,11
+2019-08-01,floral dress,print,10
+2019-09-01,floral dress,print,9
+2019-10-01,floral dress,print,7
+2019-11-01,floral dress,print,6
+2019-12-01,floral dress,print,6
+2020-01-01,floral dress,print,8
+2020-02-01,floral dress,print,9
+2020-03-01,floral dress,print,6
+2020-04-01,floral dress,print,6
+2020-05-01,floral dress,print,8
+2020-06-01,floral dress,print,9
+2020-07-01,floral dress,print,9
+2020-08-01,floral dress,print,9
+2020-09-01,floral dress,print,7
+2020-10-01,floral dress,print,6
+2020-11-01,floral dress,print,5
+2020-12-01,floral dress,print,5
+2021-01-01,floral dress,print,6
+2021-02-01,floral dress,print,7
+2021-03-01,floral dress,print,10
+2021-04-01,floral dress,print,12
+2021-05-01,floral dress,print,12
+2021-06-01,floral dress,print,14
+2021-07-01,floral dress,print,13
+2021-08-01,floral dress,print,11
+2021-09-01,floral dress,print,10
+2021-10-01,floral dress,print,8
+2021-11-01,floral dress,print,7
+2021-12-01,floral dress,print,6
+2022-01-01,floral dress,print,8
+2022-02-01,floral dress,print,11
+2022-03-01,floral dress,print,14
+2022-04-01,floral dress,print,16
+2022-05-01,floral dress,print,16
+2022-06-01,floral dress,print,14
+2022-07-01,floral dress,print,13
+2022-08-01,floral dress,print,12
+2022-09-01,floral dress,print,10
+2022-10-01,floral dress,print,8
+2022-11-01,floral dress,print,7
+2022-12-01,floral dress,print,6
+2023-01-01,floral dress,print,9
+2023-02-01,floral dress,print,11
+2023-03-01,floral dress,print,13
+2023-04-01,floral dress,print,15
+2023-05-01,floral dress,print,15
+2023-06-01,floral dress,print,15
+2023-07-01,floral dress,print,14
+2023-08-01,floral dress,print,12
+2023-09-01,floral dress,print,11
+2023-10-01,floral dress,print,9
+2023-11-01,floral dress,print,8
+2023-12-01,floral dress,print,7
+2024-01-01,floral dress,print,11
+2024-02-01,floral dress,print,13
+2024-03-01,floral dress,print,17
+2024-04-01,floral dress,print,19
+2024-05-01,floral dress,print,18
+2024-06-01,floral dress,print,17
+2024-07-01,floral dress,print,16
+2024-08-01,floral dress,print,14
+2024-09-01,floral dress,print,12
+2024-10-01,floral dress,print,10
+2024-11-01,floral dress,print,9
+2024-12-01,floral dress,print,8
+2025-01-01,floral dress,print,12
+2025-02-01,floral dress,print,14
+2025-03-01,floral dress,print,20
+2025-04-01,floral dress,print,21
+2025-05-01,floral dress,print,20
+2025-06-01,floral dress,print,16
+2025-07-01,floral dress,print,18
+2025-08-01,floral dress,print,20
+2025-09-01,floral dress,print,18
+2025-10-01,floral dress,print,13
+2025-11-01,floral dress,print,13
+2025-12-01,floral dress,print,10
+2026-01-01,floral dress,print,15
+2026-02-01,floral dress,print,63
+2026-03-01,floral dress,print,38
+2026-04-01,floral dress,print,100
+2026-05-01,floral dress,print,76
+2026-06-01,floral dress,print,42
+2026-07-01,floral dress,print,18
+2015-01-01,polka dot,print,10
+2015-02-01,polka dot,print,10
+2015-03-01,polka dot,print,11
+2015-04-01,polka dot,print,11
+2015-05-01,polka dot,print,12
+2015-06-01,polka dot,print,11
+2015-07-01,polka dot,print,12
+2015-08-01,polka dot,print,11
+2015-09-01,polka dot,print,10
+2015-10-01,polka dot,print,10
+2015-11-01,polka dot,print,9
+2015-12-01,polka dot,print,9
+2016-01-01,polka dot,print,10
+2016-02-01,polka dot,print,10
+2016-03-01,polka dot,print,10
+2016-04-01,polka dot,print,10
+2016-05-01,polka dot,print,10
+2016-06-01,polka dot,print,9
+2016-07-01,polka dot,print,10
+2016-08-01,polka dot,print,9
+2016-09-01,polka dot,print,9
+2016-10-01,polka dot,print,9
+2016-11-01,polka dot,print,8
+2016-12-01,polka dot,print,8
+2017-01-01,polka dot,print,8
+2017-02-01,polka dot,print,8
+2017-03-01,polka dot,print,9
+2017-04-01,polka dot,print,9
+2017-05-01,polka dot,print,9
+2017-06-01,polka dot,print,9
+2017-07-01,polka dot,print,10
+2017-08-01,polka dot,print,9
+2017-09-01,polka dot,print,9
+2017-10-01,polka dot,print,9
+2017-11-01,polka dot,print,8
+2017-12-01,polka dot,print,8
+2018-01-01,polka dot,print,9
+2018-02-01,polka dot,print,9
+2018-03-01,polka dot,print,10
+2018-04-01,polka dot,print,10
+2018-05-01,polka dot,print,12
+2018-06-01,polka dot,print,12
+2018-07-01,polka dot,print,13
+2018-08-01,polka dot,print,11
+2018-09-01,polka dot,print,9
+2018-10-01,polka dot,print,9
+2018-11-01,polka dot,print,8
+2018-12-01,polka dot,print,8
+2019-01-01,polka dot,print,9
+2019-02-01,polka dot,print,9
+2019-03-01,polka dot,print,11
+2019-04-01,polka dot,print,12
+2019-05-01,polka dot,print,12
+2019-06-01,polka dot,print,12
+2019-07-01,polka dot,print,12
+2019-08-01,polka dot,print,11
+2019-09-01,polka dot,print,11
+2019-10-01,polka dot,print,9
+2019-11-01,polka dot,print,9
+2019-12-01,polka dot,print,9
+2020-01-01,polka dot,print,10
+2020-02-01,polka dot,print,10
+2020-03-01,polka dot,print,8
+2020-04-01,polka dot,print,8
+2020-05-01,polka dot,print,10
+2020-06-01,polka dot,print,10
+2020-07-01,polka dot,print,11
+2020-08-01,polka dot,print,12
+2020-09-01,polka dot,print,10
+2020-10-01,polka dot,print,9
+2020-11-01,polka dot,print,8
+2020-12-01,polka dot,print,8
+2021-01-01,polka dot,print,9
+2021-02-01,polka dot,print,10
+2021-03-01,polka dot,print,10
+2021-04-01,polka dot,print,11
+2021-05-01,polka dot,print,11
+2021-06-01,polka dot,print,10
+2021-07-01,polka dot,print,11
+2021-08-01,polka dot,print,17
+2021-09-01,polka dot,print,11
+2021-10-01,polka dot,print,9
+2021-11-01,polka dot,print,9
+2021-12-01,polka dot,print,9
+2022-01-01,polka dot,print,8
+2022-02-01,polka dot,print,8
+2022-03-01,polka dot,print,9
+2022-04-01,polka dot,print,9
+2022-05-01,polka dot,print,9
+2022-06-01,polka dot,print,9
+2022-07-01,polka dot,print,9
+2022-08-01,polka dot,print,8
+2022-09-01,polka dot,print,7
+2022-10-01,polka dot,print,7
+2022-11-01,polka dot,print,6
+2022-12-01,polka dot,print,6
+2023-01-01,polka dot,print,6
+2023-02-01,polka dot,print,7
+2023-03-01,polka dot,print,7
+2023-04-01,polka dot,print,7
+2023-05-01,polka dot,print,8
+2023-06-01,polka dot,print,8
+2023-07-01,polka dot,print,8
+2023-08-01,polka dot,print,7
+2023-09-01,polka dot,print,7
+2023-10-01,polka dot,print,6
+2023-11-01,polka dot,print,6
+2023-12-01,polka dot,print,6
+2024-01-01,polka dot,print,6
+2024-02-01,polka dot,print,6
+2024-03-01,polka dot,print,7
+2024-04-01,polka dot,print,7
+2024-05-01,polka dot,print,7
+2024-06-01,polka dot,print,7
+2024-07-01,polka dot,print,8
+2024-08-01,polka dot,print,7
+2024-09-01,polka dot,print,7
+2024-10-01,polka dot,print,7
+2024-11-01,polka dot,print,6
+2024-12-01,polka dot,print,8
+2025-01-01,polka dot,print,11
+2025-02-01,polka dot,print,9
+2025-03-01,polka dot,print,11
+2025-04-01,polka dot,print,12
+2025-05-01,polka dot,print,13
+2025-06-01,polka dot,print,14
+2025-07-01,polka dot,print,18
+2025-08-01,polka dot,print,19
+2025-09-01,polka dot,print,16
+2025-10-01,polka dot,print,17
+2025-11-01,polka dot,print,17
+2025-12-01,polka dot,print,17
+2026-01-01,polka dot,print,20
+2026-02-01,polka dot,print,40
+2026-03-01,polka dot,print,31
+2026-04-01,polka dot,print,41
+2026-05-01,polka dot,print,38
+2026-06-01,polka dot,print,29
+2026-07-01,polka dot,print,28
+2015-01-01,gingham,print,3
+2015-02-01,gingham,print,3
+2015-03-01,gingham,print,4
+2015-04-01,gingham,print,4
+2015-05-01,gingham,print,4
+2015-06-01,gingham,print,4
+2015-07-01,gingham,print,3
+2015-08-01,gingham,print,3
+2015-09-01,gingham,print,3
+2015-10-01,gingham,print,2
+2015-11-01,gingham,print,2
+2015-12-01,gingham,print,2
+2016-01-01,gingham,print,3
+2016-02-01,gingham,print,3
+2016-03-01,gingham,print,3
+2016-04-01,gingham,print,4
+2016-05-01,gingham,print,4
+2016-06-01,gingham,print,4
+2016-07-01,gingham,print,3
+2016-08-01,gingham,print,3
+2016-09-01,gingham,print,3
+2016-10-01,gingham,print,3
+2016-11-01,gingham,print,3
+2016-12-01,gingham,print,2
+2017-01-01,gingham,print,3
+2017-02-01,gingham,print,3
+2017-03-01,gingham,print,5
+2017-04-01,gingham,print,5
+2017-05-01,gingham,print,6
+2017-06-01,gingham,print,6
+2017-07-01,gingham,print,6
+2017-08-01,gingham,print,5
+2017-09-01,gingham,print,4
+2017-10-01,gingham,print,4
+2017-11-01,gingham,print,4
+2017-12-01,gingham,print,3
+2018-01-01,gingham,print,4
+2018-02-01,gingham,print,4
+2018-03-01,gingham,print,5
+2018-04-01,gingham,print,6
+2018-05-01,gingham,print,6
+2018-06-01,gingham,print,6
+2018-07-01,gingham,print,6
+2018-08-01,gingham,print,5
+2018-09-01,gingham,print,4
+2018-10-01,gingham,print,4
+2018-11-01,gingham,print,4
+2018-12-01,gingham,print,3
+2019-01-01,gingham,print,3
+2019-02-01,gingham,print,4
+2019-03-01,gingham,print,4
+2019-04-01,gingham,print,5
+2019-05-01,gingham,print,5
+2019-06-01,gingham,print,5
+2019-07-01,gingham,print,5
+2019-08-01,gingham,print,5
+2019-09-01,gingham,print,4
+2019-10-01,gingham,print,4
+2019-11-01,gingham,print,4
+2019-12-01,gingham,print,4
+2020-01-01,gingham,print,4
+2020-02-01,gingham,print,4
+2020-03-01,gingham,print,3
+2020-04-01,gingham,print,4
+2020-05-01,gingham,print,5
+2020-06-01,gingham,print,5
+2020-07-01,gingham,print,5
+2020-08-01,gingham,print,5
+2020-09-01,gingham,print,4
+2020-10-01,gingham,print,4
+2020-11-01,gingham,print,4
+2020-12-01,gingham,print,4
+2021-01-01,gingham,print,4
+2021-02-01,gingham,print,4
+2021-03-01,gingham,print,5
+2021-04-01,gingham,print,6
+2021-05-01,gingham,print,6
+2021-06-01,gingham,print,6
+2021-07-01,gingham,print,6
+2021-08-01,gingham,print,5
+2021-09-01,gingham,print,5
+2021-10-01,gingham,print,5
+2021-11-01,gingham,print,5
+2021-12-01,gingham,print,5
+2022-01-01,gingham,print,5
+2022-02-01,gingham,print,5
+2022-03-01,gingham,print,5
+2022-04-01,gingham,print,6
+2022-05-01,gingham,print,6
+2022-06-01,gingham,print,6
+2022-07-01,gingham,print,6
+2022-08-01,gingham,print,5
+2022-09-01,gingham,print,5
+2022-10-01,gingham,print,5
+2022-11-01,gingham,print,4
+2022-12-01,gingham,print,4
+2023-01-01,gingham,print,5
+2023-02-01,gingham,print,5
+2023-03-01,gingham,print,5
+2023-04-01,gingham,print,6
+2023-05-01,gingham,print,6
+2023-06-01,gingham,print,6
+2023-07-01,gingham,print,7
+2023-08-01,gingham,print,6
+2023-09-01,gingham,print,6
+2023-10-01,gingham,print,6
+2023-11-01,gingham,print,5
+2023-12-01,gingham,print,5
+2024-01-01,gingham,print,6
+2024-02-01,gingham,print,6
+2024-03-01,gingham,print,8
+2024-04-01,gingham,print,8
+2024-05-01,gingham,print,9
+2024-06-01,gingham,print,9
+2024-07-01,gingham,print,9
+2024-08-01,gingham,print,8
+2024-09-01,gingham,print,7
+2024-10-01,gingham,print,7
+2024-11-01,gingham,print,7
+2024-12-01,gingham,print,7
+2025-01-01,gingham,print,8
+2025-02-01,gingham,print,9
+2025-03-01,gingham,print,11
+2025-04-01,gingham,print,13
+2025-05-01,gingham,print,14
+2025-06-01,gingham,print,14
+2025-07-01,gingham,print,14
+2025-08-01,gingham,print,13
+2025-09-01,gingham,print,12
+2025-10-01,gingham,print,11
+2025-11-01,gingham,print,11
+2025-12-01,gingham,print,9
+2026-01-01,gingham,print,10
+2026-02-01,gingham,print,17
+2026-03-01,gingham,print,15
+2026-04-01,gingham,print,24
+2026-05-01,gingham,print,21
+2026-06-01,gingham,print,18
+2026-07-01,gingham,print,15
+2015-01-01,tie dye,print,11
+2015-02-01,tie dye,print,12
+2015-03-01,tie dye,print,13
+2015-04-01,tie dye,print,16
+2015-05-01,tie dye,print,18
+2015-06-01,tie dye,print,18
+2015-07-01,tie dye,print,20
+2015-08-01,tie dye,print,17
+2015-09-01,tie dye,print,15
+2015-10-01,tie dye,print,13
+2015-11-01,tie dye,print,10
+2015-12-01,tie dye,print,10
+2016-01-01,tie dye,print,10
+2016-02-01,tie dye,print,12
+2016-03-01,tie dye,print,13
+2016-04-01,tie dye,print,15
+2016-05-01,tie dye,print,17
+2016-06-01,tie dye,print,19
+2016-07-01,tie dye,print,19
+2016-08-01,tie dye,print,15
+2016-09-01,tie dye,print,15
+2016-10-01,tie dye,print,13
+2016-11-01,tie dye,print,10
+2016-12-01,tie dye,print,9
+2017-01-01,tie dye,print,10
+2017-02-01,tie dye,print,11
+2017-03-01,tie dye,print,12
+2017-04-01,tie dye,print,15
+2017-05-01,tie dye,print,17
+2017-06-01,tie dye,print,19
+2017-07-01,tie dye,print,18
+2017-08-01,tie dye,print,16
+2017-09-01,tie dye,print,13
+2017-10-01,tie dye,print,12
+2017-11-01,tie dye,print,9
+2017-12-01,tie dye,print,9
+2018-01-01,tie dye,print,9
+2018-02-01,tie dye,print,9
+2018-03-01,tie dye,print,11
+2018-04-01,tie dye,print,12
+2018-05-01,tie dye,print,14
+2018-06-01,tie dye,print,16
+2018-07-01,tie dye,print,17
+2018-08-01,tie dye,print,14
+2018-09-01,tie dye,print,12
+2018-10-01,tie dye,print,10
+2018-11-01,tie dye,print,8
+2018-12-01,tie dye,print,7
+2019-01-01,tie dye,print,8
+2019-02-01,tie dye,print,9
+2019-03-01,tie dye,print,12
+2019-04-01,tie dye,print,15
+2019-05-01,tie dye,print,17
+2019-06-01,tie dye,print,21
+2019-07-01,tie dye,print,30
+2019-08-01,tie dye,print,22
+2019-09-01,tie dye,print,17
+2019-10-01,tie dye,print,15
+2019-11-01,tie dye,print,12
+2019-12-01,tie dye,print,13
+2020-01-01,tie dye,print,13
+2020-02-01,tie dye,print,16
+2020-03-01,tie dye,print,21
+2020-04-01,tie dye,print,50
+2020-05-01,tie dye,print,65
+2020-06-01,tie dye,print,74
+2020-07-01,tie dye,print,74
+2020-08-01,tie dye,print,63
+2020-09-01,tie dye,print,49
+2020-10-01,tie dye,print,41
+2020-11-01,tie dye,print,33
+2020-12-01,tie dye,print,31
+2021-01-01,tie dye,print,27
+2021-02-01,tie dye,print,26
+2021-03-01,tie dye,print,27
+2021-04-01,tie dye,print,30
+2021-05-01,tie dye,print,31
+2021-06-01,tie dye,print,35
+2021-07-01,tie dye,print,34
+2021-08-01,tie dye,print,30
+2021-09-01,tie dye,print,23
+2021-10-01,tie dye,print,23
+2021-11-01,tie dye,print,19
+2021-12-01,tie dye,print,18
+2022-01-01,tie dye,print,16
+2022-02-01,tie dye,print,17
+2022-03-01,tie dye,print,18
+2022-04-01,tie dye,print,19
+2022-05-01,tie dye,print,21
+2022-06-01,tie dye,print,23
+2022-07-01,tie dye,print,24
+2022-08-01,tie dye,print,20
+2022-09-01,tie dye,print,16
+2022-10-01,tie dye,print,14
+2022-11-01,tie dye,print,12
+2022-12-01,tie dye,print,12
+2023-01-01,tie dye,print,12
+2023-02-01,tie dye,print,13
+2023-03-01,tie dye,print,14
+2023-04-01,tie dye,print,15
+2023-05-01,tie dye,print,17
+2023-06-01,tie dye,print,19
+2023-07-01,tie dye,print,17
+2023-08-01,tie dye,print,15
+2023-09-01,tie dye,print,12
+2023-10-01,tie dye,print,11
+2023-11-01,tie dye,print,10
+2023-12-01,tie dye,print,9
+2024-01-01,tie dye,print,9
+2024-02-01,tie dye,print,9
+2024-03-01,tie dye,print,10
+2024-04-01,tie dye,print,10
+2024-05-01,tie dye,print,13
+2024-06-01,tie dye,print,14
+2024-07-01,tie dye,print,13
+2024-08-01,tie dye,print,11
+2024-09-01,tie dye,print,10
+2024-10-01,tie dye,print,9
+2024-11-01,tie dye,print,7
+2024-12-01,tie dye,print,7
+2025-01-01,tie dye,print,7
+2025-02-01,tie dye,print,7
+2025-03-01,tie dye,print,8
+2025-04-01,tie dye,print,9
+2025-05-01,tie dye,print,11
+2025-06-01,tie dye,print,13
+2025-07-01,tie dye,print,13
+2025-08-01,tie dye,print,11
+2025-09-01,tie dye,print,9
+2025-10-01,tie dye,print,8
+2025-11-01,tie dye,print,7
+2025-12-01,tie dye,print,6
+2026-01-01,tie dye,print,6
+2026-02-01,tie dye,print,37
+2026-03-01,tie dye,print,9
+2026-04-01,tie dye,print,18
+2026-05-01,tie dye,print,17
+2026-06-01,tie dye,print,14
+2026-07-01,tie dye,print,12
+2015-01-01,wide leg pants,silhouette,0
+2015-02-01,wide leg pants,silhouette,0
+2015-03-01,wide leg pants,silhouette,1
+2015-04-01,wide leg pants,silhouette,1
+2015-05-01,wide leg pants,silhouette,1
+2015-06-01,wide leg pants,silhouette,1
+2015-07-01,wide leg pants,silhouette,1
+2015-08-01,wide leg pants,silhouette,1
+2015-09-01,wide leg pants,silhouette,1
+2015-10-01,wide leg pants,silhouette,0
+2015-11-01,wide leg pants,silhouette,0
+2015-12-01,wide leg pants,silhouette,0
+2016-01-01,wide leg pants,silhouette,1
+2016-02-01,wide leg pants,silhouette,1
+2016-03-01,wide leg pants,silhouette,1
+2016-04-01,wide leg pants,silhouette,1
+2016-05-01,wide leg pants,silhouette,1
+2016-06-01,wide leg pants,silhouette,1
+2016-07-01,wide leg pants,silhouette,1
+2016-08-01,wide leg pants,silhouette,1
+2016-09-01,wide leg pants,silhouette,1
+2016-10-01,wide leg pants,silhouette,1
+2016-11-01,wide leg pants,silhouette,1
+2016-12-01,wide leg pants,silhouette,1
+2017-01-01,wide leg pants,silhouette,1
+2017-02-01,wide leg pants,silhouette,1
+2017-03-01,wide leg pants,silhouette,1
+2017-04-01,wide leg pants,silhouette,1
+2017-05-01,wide leg pants,silhouette,1
+2017-06-01,wide leg pants,silhouette,1
+2017-07-01,wide leg pants,silhouette,1
+2017-08-01,wide leg pants,silhouette,1
+2017-09-01,wide leg pants,silhouette,1
+2017-10-01,wide leg pants,silhouette,1
+2017-11-01,wide leg pants,silhouette,1
+2017-12-01,wide leg pants,silhouette,1
+2018-01-01,wide leg pants,silhouette,1
+2018-02-01,wide leg pants,silhouette,1
+2018-03-01,wide leg pants,silhouette,1
+2018-04-01,wide leg pants,silhouette,1
+2018-05-01,wide leg pants,silhouette,2
+2018-06-01,wide leg pants,silhouette,1
+2018-07-01,wide leg pants,silhouette,1
+2018-08-01,wide leg pants,silhouette,1
+2018-09-01,wide leg pants,silhouette,1
+2018-10-01,wide leg pants,silhouette,1
+2018-11-01,wide leg pants,silhouette,1
+2018-12-01,wide leg pants,silhouette,1
+2019-01-01,wide leg pants,silhouette,1
+2019-02-01,wide leg pants,silhouette,1
+2019-03-01,wide leg pants,silhouette,2
+2019-04-01,wide leg pants,silhouette,1
+2019-05-01,wide leg pants,silhouette,2
+2019-06-01,wide leg pants,silhouette,2
+2019-07-01,wide leg pants,silhouette,1
+2019-08-01,wide leg pants,silhouette,1
+2019-09-01,wide leg pants,silhouette,1
+2019-10-01,wide leg pants,silhouette,1
+2019-11-01,wide leg pants,silhouette,1
+2019-12-01,wide leg pants,silhouette,1
+2020-01-01,wide leg pants,silhouette,1
+2020-02-01,wide leg pants,silhouette,1
+2020-03-01,wide leg pants,silhouette,1
+2020-04-01,wide leg pants,silhouette,1
+2020-05-01,wide leg pants,silhouette,1
+2020-06-01,wide leg pants,silhouette,1
+2020-07-01,wide leg pants,silhouette,1
+2020-08-01,wide leg pants,silhouette,1
+2020-09-01,wide leg pants,silhouette,1
+2020-10-01,wide leg pants,silhouette,1
+2020-11-01,wide leg pants,silhouette,1
+2020-12-01,wide leg pants,silhouette,1
+2021-01-01,wide leg pants,silhouette,1
+2021-02-01,wide leg pants,silhouette,2
+2021-03-01,wide leg pants,silhouette,2
+2021-04-01,wide leg pants,silhouette,2
+2021-05-01,wide leg pants,silhouette,2
+2021-06-01,wide leg pants,silhouette,2
+2021-07-01,wide leg pants,silhouette,2
+2021-08-01,wide leg pants,silhouette,2
+2021-09-01,wide leg pants,silhouette,2
+2021-10-01,wide leg pants,silhouette,2
+2021-11-01,wide leg pants,silhouette,2
+2021-12-01,wide leg pants,silhouette,2
+2022-01-01,wide leg pants,silhouette,2
+2022-02-01,wide leg pants,silhouette,2
+2022-03-01,wide leg pants,silhouette,3
+2022-04-01,wide leg pants,silhouette,3
+2022-05-01,wide leg pants,silhouette,3
+2022-06-01,wide leg pants,silhouette,3
+2022-07-01,wide leg pants,silhouette,3
+2022-08-01,wide leg pants,silhouette,3
+2022-09-01,wide leg pants,silhouette,3
+2022-10-01,wide leg pants,silhouette,3
+2022-11-01,wide leg pants,silhouette,3
+2022-12-01,wide leg pants,silhouette,3
+2023-01-01,wide leg pants,silhouette,3
+2023-02-01,wide leg pants,silhouette,3
+2023-03-01,wide leg pants,silhouette,4
+2023-04-01,wide leg pants,silhouette,4
+2023-05-01,wide leg pants,silhouette,3
+2023-06-01,wide leg pants,silhouette,3
+2023-07-01,wide leg pants,silhouette,3
+2023-08-01,wide leg pants,silhouette,3
+2023-09-01,wide leg pants,silhouette,4
+2023-10-01,wide leg pants,silhouette,3
+2023-11-01,wide leg pants,silhouette,4
+2023-12-01,wide leg pants,silhouette,4
+2024-01-01,wide leg pants,silhouette,3
+2024-02-01,wide leg pants,silhouette,3
+2024-03-01,wide leg pants,silhouette,4
+2024-04-01,wide leg pants,silhouette,4
+2024-05-01,wide leg pants,silhouette,4
+2024-06-01,wide leg pants,silhouette,4
+2024-07-01,wide leg pants,silhouette,4
+2024-08-01,wide leg pants,silhouette,4
+2024-09-01,wide leg pants,silhouette,4
+2024-10-01,wide leg pants,silhouette,4
+2024-11-01,wide leg pants,silhouette,4
+2024-12-01,wide leg pants,silhouette,4
+2025-01-01,wide leg pants,silhouette,4
+2025-02-01,wide leg pants,silhouette,4
+2025-03-01,wide leg pants,silhouette,4
+2025-04-01,wide leg pants,silhouette,4
+2025-05-01,wide leg pants,silhouette,5
+2025-06-01,wide leg pants,silhouette,4
+2025-07-01,wide leg pants,silhouette,5
+2025-08-01,wide leg pants,silhouette,6
+2025-09-01,wide leg pants,silhouette,6
+2025-10-01,wide leg pants,silhouette,6
+2025-11-01,wide leg pants,silhouette,7
+2025-12-01,wide leg pants,silhouette,6
+2026-01-01,wide leg pants,silhouette,6
+2026-02-01,wide leg pants,silhouette,17
+2026-03-01,wide leg pants,silhouette,12
+2026-04-01,wide leg pants,silhouette,27
+2026-05-01,wide leg pants,silhouette,22
+2026-06-01,wide leg pants,silhouette,11
+2026-07-01,wide leg pants,silhouette,6
+2015-01-01,oversized blazer,silhouette,0
+2015-02-01,oversized blazer,silhouette,0
+2015-03-01,oversized blazer,silhouette,0
+2015-04-01,oversized blazer,silhouette,0
+2015-05-01,oversized blazer,silhouette,0
+2015-06-01,oversized blazer,silhouette,0
+2015-07-01,oversized blazer,silhouette,0
+2015-08-01,oversized blazer,silhouette,0
+2015-09-01,oversized blazer,silhouette,0
+2015-10-01,oversized blazer,silhouette,0
+2015-11-01,oversized blazer,silhouette,0
+2015-12-01,oversized blazer,silhouette,0
+2016-01-01,oversized blazer,silhouette,0
+2016-02-01,oversized blazer,silhouette,0
+2016-03-01,oversized blazer,silhouette,0
+2016-04-01,oversized blazer,silhouette,0
+2016-05-01,oversized blazer,silhouette,0
+2016-06-01,oversized blazer,silhouette,0
+2016-07-01,oversized blazer,silhouette,0
+2016-08-01,oversized blazer,silhouette,0
+2016-09-01,oversized blazer,silhouette,0
+2016-10-01,oversized blazer,silhouette,0
+2016-11-01,oversized blazer,silhouette,0
+2016-12-01,oversized blazer,silhouette,0
+2017-01-01,oversized blazer,silhouette,0
+2017-02-01,oversized blazer,silhouette,0
+2017-03-01,oversized blazer,silhouette,0
+2017-04-01,oversized blazer,silhouette,0
+2017-05-01,oversized blazer,silhouette,0
+2017-06-01,oversized blazer,silhouette,0
+2017-07-01,oversized blazer,silhouette,0
+2017-08-01,oversized blazer,silhouette,0
+2017-09-01,oversized blazer,silhouette,0
+2017-10-01,oversized blazer,silhouette,0
+2017-11-01,oversized blazer,silhouette,0
+2017-12-01,oversized blazer,silhouette,0
+2018-01-01,oversized blazer,silhouette,0
+2018-02-01,oversized blazer,silhouette,0
+2018-03-01,oversized blazer,silhouette,0
+2018-04-01,oversized blazer,silhouette,0
+2018-05-01,oversized blazer,silhouette,0
+2018-06-01,oversized blazer,silhouette,0
+2018-07-01,oversized blazer,silhouette,0
+2018-08-01,oversized blazer,silhouette,0
+2018-09-01,oversized blazer,silhouette,0
+2018-10-01,oversized blazer,silhouette,0
+2018-11-01,oversized blazer,silhouette,0
+2018-12-01,oversized blazer,silhouette,0
+2019-01-01,oversized blazer,silhouette,0
+2019-02-01,oversized blazer,silhouette,0
+2019-03-01,oversized blazer,silhouette,0
+2019-04-01,oversized blazer,silhouette,0
+2019-05-01,oversized blazer,silhouette,0
+2019-06-01,oversized blazer,silhouette,0
+2019-07-01,oversized blazer,silhouette,0
+2019-08-01,oversized blazer,silhouette,0
+2019-09-01,oversized blazer,silhouette,0
+2019-10-01,oversized blazer,silhouette,0
+2019-11-01,oversized blazer,silhouette,0
+2019-12-01,oversized blazer,silhouette,0
+2020-01-01,oversized blazer,silhouette,0
+2020-02-01,oversized blazer,silhouette,0
+2020-03-01,oversized blazer,silhouette,0
+2020-04-01,oversized blazer,silhouette,0
+2020-05-01,oversized blazer,silhouette,0
+2020-06-01,oversized blazer,silhouette,0
+2020-07-01,oversized blazer,silhouette,0
+2020-08-01,oversized blazer,silhouette,0
+2020-09-01,oversized blazer,silhouette,0
+2020-10-01,oversized blazer,silhouette,0
+2020-11-01,oversized blazer,silhouette,0
+2020-12-01,oversized blazer,silhouette,0
+2021-01-01,oversized blazer,silhouette,0
+2021-02-01,oversized blazer,silhouette,0
+2021-03-01,oversized blazer,silhouette,0
+2021-04-01,oversized blazer,silhouette,0
+2021-05-01,oversized blazer,silhouette,1
+2021-06-01,oversized blazer,silhouette,0
+2021-07-01,oversized blazer,silhouette,0
+2021-08-01,oversized blazer,silhouette,1
+2021-09-01,oversized blazer,silhouette,1
+2021-10-01,oversized blazer,silhouette,1
+2021-11-01,oversized blazer,silhouette,1
+2021-12-01,oversized blazer,silhouette,1
+2022-01-01,oversized blazer,silhouette,1
+2022-02-01,oversized blazer,silhouette,1
+2022-03-01,oversized blazer,silhouette,1
+2022-04-01,oversized blazer,silhouette,1
+2022-05-01,oversized blazer,silhouette,1
+2022-06-01,oversized blazer,silhouette,1
+2022-07-01,oversized blazer,silhouette,0
+2022-08-01,oversized blazer,silhouette,0
+2022-09-01,oversized blazer,silhouette,1
+2022-10-01,oversized blazer,silhouette,1
+2022-11-01,oversized blazer,silhouette,1
+2022-12-01,oversized blazer,silhouette,1
+2023-01-01,oversized blazer,silhouette,1
+2023-02-01,oversized blazer,silhouette,1
+2023-03-01,oversized blazer,silhouette,1
+2023-04-01,oversized blazer,silhouette,1
+2023-05-01,oversized blazer,silhouette,1
+2023-06-01,oversized blazer,silhouette,0
+2023-07-01,oversized blazer,silhouette,0
+2023-08-01,oversized blazer,silhouette,0
+2023-09-01,oversized blazer,silhouette,1
+2023-10-01,oversized blazer,silhouette,1
+2023-11-01,oversized blazer,silhouette,1
+2023-12-01,oversized blazer,silhouette,1
+2024-01-01,oversized blazer,silhouette,1
+2024-02-01,oversized blazer,silhouette,1
+2024-03-01,oversized blazer,silhouette,1
+2024-04-01,oversized blazer,silhouette,1
+2024-05-01,oversized blazer,silhouette,1
+2024-06-01,oversized blazer,silhouette,0
+2024-07-01,oversized blazer,silhouette,0
+2024-08-01,oversized blazer,silhouette,1
+2024-09-01,oversized blazer,silhouette,1
+2024-10-01,oversized blazer,silhouette,1
+2024-11-01,oversized blazer,silhouette,1
+2024-12-01,oversized blazer,silhouette,1
+2025-01-01,oversized blazer,silhouette,1
+2025-02-01,oversized blazer,silhouette,1
+2025-03-01,oversized blazer,silhouette,1
+2025-04-01,oversized blazer,silhouette,1
+2025-05-01,oversized blazer,silhouette,1
+2025-06-01,oversized blazer,silhouette,0
+2025-07-01,oversized blazer,silhouette,0
+2025-08-01,oversized blazer,silhouette,1
+2025-09-01,oversized blazer,silhouette,1
+2025-10-01,oversized blazer,silhouette,1
+2025-11-01,oversized blazer,silhouette,1
+2025-12-01,oversized blazer,silhouette,1
+2026-01-01,oversized blazer,silhouette,1
+2026-02-01,oversized blazer,silhouette,1
+2026-03-01,oversized blazer,silhouette,3
+2026-04-01,oversized blazer,silhouette,8
+2026-05-01,oversized blazer,silhouette,7
+2026-06-01,oversized blazer,silhouette,1
+2026-07-01,oversized blazer,silhouette,0
+2015-01-01,maxi dress,silhouette,8
+2015-02-01,maxi dress,silhouette,9
+2015-03-01,maxi dress,silhouette,12
+2015-04-01,maxi dress,silhouette,14
+2015-05-01,maxi dress,silhouette,15
+2015-06-01,maxi dress,silhouette,15
+2015-07-01,maxi dress,silhouette,13
+2015-08-01,maxi dress,silhouette,11
+2015-09-01,maxi dress,silhouette,8
+2015-10-01,maxi dress,silhouette,8
+2015-11-01,maxi dress,silhouette,7
+2015-12-01,maxi dress,silhouette,6
+2016-01-01,maxi dress,silhouette,9
+2016-02-01,maxi dress,silhouette,11
+2016-03-01,maxi dress,silhouette,13
+2016-04-01,maxi dress,silhouette,14
+2016-05-01,maxi dress,silhouette,16
+2016-06-01,maxi dress,silhouette,15
+2016-07-01,maxi dress,silhouette,14
+2016-08-01,maxi dress,silhouette,12
+2016-09-01,maxi dress,silhouette,10
+2016-10-01,maxi dress,silhouette,9
+2016-11-01,maxi dress,silhouette,8
+2016-12-01,maxi dress,silhouette,7
+2017-01-01,maxi dress,silhouette,10
+2017-02-01,maxi dress,silhouette,11
+2017-03-01,maxi dress,silhouette,14
+2017-04-01,maxi dress,silhouette,15
+2017-05-01,maxi dress,silhouette,18
+2017-06-01,maxi dress,silhouette,17
+2017-07-01,maxi dress,silhouette,15
+2017-08-01,maxi dress,silhouette,12
+2017-09-01,maxi dress,silhouette,10
+2017-10-01,maxi dress,silhouette,10
+2017-11-01,maxi dress,silhouette,10
+2017-12-01,maxi dress,silhouette,8
+2018-01-01,maxi dress,silhouette,10
+2018-02-01,maxi dress,silhouette,11
+2018-03-01,maxi dress,silhouette,13
+2018-04-01,maxi dress,silhouette,15
+2018-05-01,maxi dress,silhouette,18
+2018-06-01,maxi dress,silhouette,17
+2018-07-01,maxi dress,silhouette,16
+2018-08-01,maxi dress,silhouette,12
+2018-09-01,maxi dress,silhouette,9
+2018-10-01,maxi dress,silhouette,8
+2018-11-01,maxi dress,silhouette,8
+2018-12-01,maxi dress,silhouette,8
+2019-01-01,maxi dress,silhouette,9
+2019-02-01,maxi dress,silhouette,10
+2019-03-01,maxi dress,silhouette,13
+2019-04-01,maxi dress,silhouette,14
+2019-05-01,maxi dress,silhouette,14
+2019-06-01,maxi dress,silhouette,15
+2019-07-01,maxi dress,silhouette,15
+2019-08-01,maxi dress,silhouette,12
+2019-09-01,maxi dress,silhouette,10
+2019-10-01,maxi dress,silhouette,9
+2019-11-01,maxi dress,silhouette,9
+2019-12-01,maxi dress,silhouette,8
+2020-01-01,maxi dress,silhouette,9
+2020-02-01,maxi dress,silhouette,10
+2020-03-01,maxi dress,silhouette,7
+2020-04-01,maxi dress,silhouette,6
+2020-05-01,maxi dress,silhouette,12
+2020-06-01,maxi dress,silhouette,11
+2020-07-01,maxi dress,silhouette,11
+2020-08-01,maxi dress,silhouette,10
+2020-09-01,maxi dress,silhouette,8
+2020-10-01,maxi dress,silhouette,7
+2020-11-01,maxi dress,silhouette,6
+2020-12-01,maxi dress,silhouette,6
+2021-01-01,maxi dress,silhouette,7
+2021-02-01,maxi dress,silhouette,8
+2021-03-01,maxi dress,silhouette,10
+2021-04-01,maxi dress,silhouette,12
+2021-05-01,maxi dress,silhouette,13
+2021-06-01,maxi dress,silhouette,15
+2021-07-01,maxi dress,silhouette,14
+2021-08-01,maxi dress,silhouette,11
+2021-09-01,maxi dress,silhouette,10
+2021-10-01,maxi dress,silhouette,10
+2021-11-01,maxi dress,silhouette,10
+2021-12-01,maxi dress,silhouette,8
+2022-01-01,maxi dress,silhouette,10
+2022-02-01,maxi dress,silhouette,11
+2022-03-01,maxi dress,silhouette,14
+2022-04-01,maxi dress,silhouette,15
+2022-05-01,maxi dress,silhouette,17
+2022-06-01,maxi dress,silhouette,16
+2022-07-01,maxi dress,silhouette,15
+2022-08-01,maxi dress,silhouette,13
+2022-09-01,maxi dress,silhouette,10
+2022-10-01,maxi dress,silhouette,9
+2022-11-01,maxi dress,silhouette,9
+2022-12-01,maxi dress,silhouette,8
+2023-01-01,maxi dress,silhouette,10
+2023-02-01,maxi dress,silhouette,12
+2023-03-01,maxi dress,silhouette,13
+2023-04-01,maxi dress,silhouette,16
+2023-05-01,maxi dress,silhouette,17
+2023-06-01,maxi dress,silhouette,17
+2023-07-01,maxi dress,silhouette,16
+2023-08-01,maxi dress,silhouette,13
+2023-09-01,maxi dress,silhouette,12
+2023-10-01,maxi dress,silhouette,11
+2023-11-01,maxi dress,silhouette,12
+2023-12-01,maxi dress,silhouette,11
+2024-01-01,maxi dress,silhouette,13
+2024-02-01,maxi dress,silhouette,15
+2024-03-01,maxi dress,silhouette,18
+2024-04-01,maxi dress,silhouette,21
+2024-05-01,maxi dress,silhouette,21
+2024-06-01,maxi dress,silhouette,22
+2024-07-01,maxi dress,silhouette,19
+2024-08-01,maxi dress,silhouette,18
+2024-09-01,maxi dress,silhouette,16
+2024-10-01,maxi dress,silhouette,14
+2024-11-01,maxi dress,silhouette,14
+2024-12-01,maxi dress,silhouette,13
+2025-01-01,maxi dress,silhouette,17
+2025-02-01,maxi dress,silhouette,18
+2025-03-01,maxi dress,silhouette,23
+2025-04-01,maxi dress,silhouette,25
+2025-05-01,maxi dress,silhouette,26
+2025-06-01,maxi dress,silhouette,24
+2025-07-01,maxi dress,silhouette,23
+2025-08-01,maxi dress,silhouette,25
+2025-09-01,maxi dress,silhouette,24
+2025-10-01,maxi dress,silhouette,20
+2025-11-01,maxi dress,silhouette,19
+2025-12-01,maxi dress,silhouette,16
+2026-01-01,maxi dress,silhouette,20
+2026-02-01,maxi dress,silhouette,52
+2026-03-01,maxi dress,silhouette,45
+2026-04-01,maxi dress,silhouette,100
+2026-05-01,maxi dress,silhouette,87
+2026-06-01,maxi dress,silhouette,55
+2026-07-01,maxi dress,silhouette,31
+2015-01-01,baggy jeans,silhouette,1
+2015-02-01,baggy jeans,silhouette,1
+2015-03-01,baggy jeans,silhouette,1
+2015-04-01,baggy jeans,silhouette,1
+2015-05-01,baggy jeans,silhouette,1
+2015-06-01,baggy jeans,silhouette,0
+2015-07-01,baggy jeans,silhouette,0
+2015-08-01,baggy jeans,silhouette,0
+2015-09-01,baggy jeans,silhouette,1
+2015-10-01,baggy jeans,silhouette,1
+2015-11-01,baggy jeans,silhouette,1
+2015-12-01,baggy jeans,silhouette,0
+2016-01-01,baggy jeans,silhouette,1
+2016-02-01,baggy jeans,silhouette,1
+2016-03-01,baggy jeans,silhouette,1
+2016-04-01,baggy jeans,silhouette,1
+2016-05-01,baggy jeans,silhouette,1
+2016-06-01,baggy jeans,silhouette,0
+2016-07-01,baggy jeans,silhouette,0
+2016-08-01,baggy jeans,silhouette,0
+2016-09-01,baggy jeans,silhouette,1
+2016-10-01,baggy jeans,silhouette,1
+2016-11-01,baggy jeans,silhouette,1
+2016-12-01,baggy jeans,silhouette,1
+2017-01-01,baggy jeans,silhouette,1
+2017-02-01,baggy jeans,silhouette,1
+2017-03-01,baggy jeans,silhouette,1
+2017-04-01,baggy jeans,silhouette,1
+2017-05-01,baggy jeans,silhouette,0
+2017-06-01,baggy jeans,silhouette,0
+2017-07-01,baggy jeans,silhouette,0
+2017-08-01,baggy jeans,silhouette,1
+2017-09-01,baggy jeans,silhouette,1
+2017-10-01,baggy jeans,silhouette,1
+2017-11-01,baggy jeans,silhouette,1
+2017-12-01,baggy jeans,silhouette,0
+2018-01-01,baggy jeans,silhouette,1
+2018-02-01,baggy jeans,silhouette,1
+2018-03-01,baggy jeans,silhouette,1
+2018-04-01,baggy jeans,silhouette,1
+2018-05-01,baggy jeans,silhouette,1
+2018-06-01,baggy jeans,silhouette,0
+2018-07-01,baggy jeans,silhouette,0
+2018-08-01,baggy jeans,silhouette,1
+2018-09-01,baggy jeans,silhouette,1
+2018-10-01,baggy jeans,silhouette,1
+2018-11-01,baggy jeans,silhouette,1
+2018-12-01,baggy jeans,silhouette,1
+2019-01-01,baggy jeans,silhouette,1
+2019-02-01,baggy jeans,silhouette,1
+2019-03-01,baggy jeans,silhouette,1
+2019-04-01,baggy jeans,silhouette,1
+2019-05-01,baggy jeans,silhouette,1
+2019-06-01,baggy jeans,silhouette,1
+2019-07-01,baggy jeans,silhouette,1
+2019-08-01,baggy jeans,silhouette,1
+2019-09-01,baggy jeans,silhouette,1
+2019-10-01,baggy jeans,silhouette,1
+2019-11-01,baggy jeans,silhouette,1
+2019-12-01,baggy jeans,silhouette,1
+2020-01-01,baggy jeans,silhouette,1
+2020-02-01,baggy jeans,silhouette,1
+2020-03-01,baggy jeans,silhouette,1
+2020-04-01,baggy jeans,silhouette,1
+2020-05-01,baggy jeans,silhouette,1
+2020-06-01,baggy jeans,silhouette,1
+2020-07-01,baggy jeans,silhouette,2
+2020-08-01,baggy jeans,silhouette,2
+2020-09-01,baggy jeans,silhouette,2
+2020-10-01,baggy jeans,silhouette,2
+2020-11-01,baggy jeans,silhouette,2
+2020-12-01,baggy jeans,silhouette,2
+2021-01-01,baggy jeans,silhouette,3
+2021-02-01,baggy jeans,silhouette,3
+2021-03-01,baggy jeans,silhouette,3
+2021-04-01,baggy jeans,silhouette,3
+2021-05-01,baggy jeans,silhouette,3
+2021-06-01,baggy jeans,silhouette,2
+2021-07-01,baggy jeans,silhouette,3
+2021-08-01,baggy jeans,silhouette,3
+2021-09-01,baggy jeans,silhouette,3
+2021-10-01,baggy jeans,silhouette,3
+2021-11-01,baggy jeans,silhouette,3
+2021-12-01,baggy jeans,silhouette,4
+2022-01-01,baggy jeans,silhouette,3
+2022-02-01,baggy jeans,silhouette,3
+2022-03-01,baggy jeans,silhouette,4
+2022-04-01,baggy jeans,silhouette,4
+2022-05-01,baggy jeans,silhouette,4
+2022-06-01,baggy jeans,silhouette,3
+2022-07-01,baggy jeans,silhouette,4
+2022-08-01,baggy jeans,silhouette,5
+2022-09-01,baggy jeans,silhouette,6
+2022-10-01,baggy jeans,silhouette,5
+2022-11-01,baggy jeans,silhouette,5
+2022-12-01,baggy jeans,silhouette,5
+2023-01-01,baggy jeans,silhouette,5
+2023-02-01,baggy jeans,silhouette,6
+2023-03-01,baggy jeans,silhouette,6
+2023-04-01,baggy jeans,silhouette,6
+2023-05-01,baggy jeans,silhouette,6
+2023-06-01,baggy jeans,silhouette,6
+2023-07-01,baggy jeans,silhouette,6
+2023-08-01,baggy jeans,silhouette,8
+2023-09-01,baggy jeans,silhouette,9
+2023-10-01,baggy jeans,silhouette,8
+2023-11-01,baggy jeans,silhouette,9
+2023-12-01,baggy jeans,silhouette,9
+2024-01-01,baggy jeans,silhouette,9
+2024-02-01,baggy jeans,silhouette,9
+2024-03-01,baggy jeans,silhouette,10
+2024-04-01,baggy jeans,silhouette,10
+2024-05-01,baggy jeans,silhouette,8
+2024-06-01,baggy jeans,silhouette,8
+2024-07-01,baggy jeans,silhouette,9
+2024-08-01,baggy jeans,silhouette,14
+2024-09-01,baggy jeans,silhouette,12
+2024-10-01,baggy jeans,silhouette,12
+2024-11-01,baggy jeans,silhouette,13
+2024-12-01,baggy jeans,silhouette,14
+2025-01-01,baggy jeans,silhouette,12
+2025-02-01,baggy jeans,silhouette,12
+2025-03-01,baggy jeans,silhouette,14
+2025-04-01,baggy jeans,silhouette,12
+2025-05-01,baggy jeans,silhouette,11
+2025-06-01,baggy jeans,silhouette,10
+2025-07-01,baggy jeans,silhouette,12
+2025-08-01,baggy jeans,silhouette,17
+2025-09-01,baggy jeans,silhouette,16
+2025-10-01,baggy jeans,silhouette,16
+2025-11-01,baggy jeans,silhouette,17
+2025-12-01,baggy jeans,silhouette,18
+2026-01-01,baggy jeans,silhouette,15
+2026-02-01,baggy jeans,silhouette,16
+2026-03-01,baggy jeans,silhouette,20
+2026-04-01,baggy jeans,silhouette,35
+2026-05-01,baggy jeans,silhouette,28
+2026-06-01,baggy jeans,silhouette,17
+2026-07-01,baggy jeans,silhouette,12
+2015-01-01,mini skirt,silhouette,4
+2015-02-01,mini skirt,silhouette,4
+2015-03-01,mini skirt,silhouette,4
+2015-04-01,mini skirt,silhouette,4
+2015-05-01,mini skirt,silhouette,4
+2015-06-01,mini skirt,silhouette,4
+2015-07-01,mini skirt,silhouette,4
+2015-08-01,mini skirt,silhouette,5
+2015-09-01,mini skirt,silhouette,4
+2015-10-01,mini skirt,silhouette,4
+2015-11-01,mini skirt,silhouette,4
+2015-12-01,mini skirt,silhouette,5
+2016-01-01,mini skirt,silhouette,4
+2016-02-01,mini skirt,silhouette,4
+2016-03-01,mini skirt,silhouette,4
+2016-04-01,mini skirt,silhouette,4
+2016-05-01,mini skirt,silhouette,4
+2016-06-01,mini skirt,silhouette,4
+2016-07-01,mini skirt,silhouette,4
+2016-08-01,mini skirt,silhouette,4
+2016-09-01,mini skirt,silhouette,4
+2016-10-01,mini skirt,silhouette,4
+2016-11-01,mini skirt,silhouette,4
+2016-12-01,mini skirt,silhouette,4
+2017-01-01,mini skirt,silhouette,4
+2017-02-01,mini skirt,silhouette,3
+2017-03-01,mini skirt,silhouette,4
+2017-04-01,mini skirt,silhouette,4
+2017-05-01,mini skirt,silhouette,4
+2017-06-01,mini skirt,silhouette,4
+2017-07-01,mini skirt,silhouette,4
+2017-08-01,mini skirt,silhouette,4
+2017-09-01,mini skirt,silhouette,4
+2017-10-01,mini skirt,silhouette,4
+2017-11-01,mini skirt,silhouette,4
+2017-12-01,mini skirt,silhouette,4
+2018-01-01,mini skirt,silhouette,4
+2018-02-01,mini skirt,silhouette,3
+2018-03-01,mini skirt,silhouette,4
+2018-04-01,mini skirt,silhouette,3
+2018-05-01,mini skirt,silhouette,4
+2018-06-01,mini skirt,silhouette,4
+2018-07-01,mini skirt,silhouette,4
+2018-08-01,mini skirt,silhouette,4
+2018-09-01,mini skirt,silhouette,4
+2018-10-01,mini skirt,silhouette,4
+2018-11-01,mini skirt,silhouette,4
+2018-12-01,mini skirt,silhouette,4
+2019-01-01,mini skirt,silhouette,4
+2019-02-01,mini skirt,silhouette,4
+2019-03-01,mini skirt,silhouette,4
+2019-04-01,mini skirt,silhouette,4
+2019-05-01,mini skirt,silhouette,3
+2019-06-01,mini skirt,silhouette,4
+2019-07-01,mini skirt,silhouette,4
+2019-08-01,mini skirt,silhouette,4
+2019-09-01,mini skirt,silhouette,4
+2019-10-01,mini skirt,silhouette,4
+2019-11-01,mini skirt,silhouette,4
+2019-12-01,mini skirt,silhouette,4
+2020-01-01,mini skirt,silhouette,3
+2020-02-01,mini skirt,silhouette,3
+2020-03-01,mini skirt,silhouette,3
+2020-04-01,mini skirt,silhouette,3
+2020-05-01,mini skirt,silhouette,3
+2020-06-01,mini skirt,silhouette,4
+2020-07-01,mini skirt,silhouette,4
+2020-08-01,mini skirt,silhouette,4
+2020-09-01,mini skirt,silhouette,4
+2020-10-01,mini skirt,silhouette,4
+2020-11-01,mini skirt,silhouette,4
+2020-12-01,mini skirt,silhouette,4
+2021-01-01,mini skirt,silhouette,4
+2021-02-01,mini skirt,silhouette,3
+2021-03-01,mini skirt,silhouette,3
+2021-04-01,mini skirt,silhouette,4
+2021-05-01,mini skirt,silhouette,4
+2021-06-01,mini skirt,silhouette,4
+2021-07-01,mini skirt,silhouette,4
+2021-08-01,mini skirt,silhouette,4
+2021-09-01,mini skirt,silhouette,5
+2021-10-01,mini skirt,silhouette,6
+2021-11-01,mini skirt,silhouette,5
+2021-12-01,mini skirt,silhouette,5
+2022-01-01,mini skirt,silhouette,4
+2022-02-01,mini skirt,silhouette,4
+2022-03-01,mini skirt,silhouette,4
+2022-04-01,mini skirt,silhouette,4
+2022-05-01,mini skirt,silhouette,5
+2022-06-01,mini skirt,silhouette,5
+2022-07-01,mini skirt,silhouette,5
+2022-08-01,mini skirt,silhouette,5
+2022-09-01,mini skirt,silhouette,5
+2022-10-01,mini skirt,silhouette,7
+2022-11-01,mini skirt,silhouette,6
+2022-12-01,mini skirt,silhouette,6
+2023-01-01,mini skirt,silhouette,5
+2023-02-01,mini skirt,silhouette,5
+2023-03-01,mini skirt,silhouette,5
+2023-04-01,mini skirt,silhouette,5
+2023-05-01,mini skirt,silhouette,5
+2023-06-01,mini skirt,silhouette,6
+2023-07-01,mini skirt,silhouette,6
+2023-08-01,mini skirt,silhouette,6
+2023-09-01,mini skirt,silhouette,7
+2023-10-01,mini skirt,silhouette,8
+2023-11-01,mini skirt,silhouette,8
+2023-12-01,mini skirt,silhouette,8
+2024-01-01,mini skirt,silhouette,6
+2024-02-01,mini skirt,silhouette,7
+2024-03-01,mini skirt,silhouette,7
+2024-04-01,mini skirt,silhouette,8
+2024-05-01,mini skirt,silhouette,8
+2024-06-01,mini skirt,silhouette,8
+2024-07-01,mini skirt,silhouette,8
+2024-08-01,mini skirt,silhouette,8
+2024-09-01,mini skirt,silhouette,9
+2024-10-01,mini skirt,silhouette,11
+2024-11-01,mini skirt,silhouette,9
+2024-12-01,mini skirt,silhouette,9
+2025-01-01,mini skirt,silhouette,7
+2025-02-01,mini skirt,silhouette,7
+2025-03-01,mini skirt,silhouette,8
+2025-04-01,mini skirt,silhouette,7
+2025-05-01,mini skirt,silhouette,8
+2025-06-01,mini skirt,silhouette,8
+2025-07-01,mini skirt,silhouette,9
+2025-08-01,mini skirt,silhouette,9
+2025-09-01,mini skirt,silhouette,9
+2025-10-01,mini skirt,silhouette,11
+2025-11-01,mini skirt,silhouette,10
+2025-12-01,mini skirt,silhouette,9
+2026-01-01,mini skirt,silhouette,7
+2026-02-01,mini skirt,silhouette,15
+2026-03-01,mini skirt,silhouette,20
+2026-04-01,mini skirt,silhouette,64
+2026-05-01,mini skirt,silhouette,58
+2026-06-01,mini skirt,silhouette,16
+2026-07-01,mini skirt,silhouette,8
